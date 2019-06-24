@@ -1,4 +1,6 @@
-# My Scholarly Article
+# PhD Thesis
+
+This is the source for my thesis for obtaining a PhD in Computer Science at Ghent University.
 
 ## Build
 ```
