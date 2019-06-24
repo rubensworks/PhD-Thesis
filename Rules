@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require 'scholarmarkdown/preprocess/katex'
 require 'scholarmarkdown/snippets'
 require 'scholarmarkdown/filter/acronym'
 require 'scholarmarkdown/filter/citation'
@@ -8,15 +9,24 @@ require 'scholarmarkdown/filter/include_code'
 require 'scholarmarkdown/filter/labelify'
 require 'scholarmarkdown/filter/references_to_footer'
 require 'scholarmarkdown/filter/headerids_to_section'
+require 'scholarmarkdown/filter/dokieli_ui'
 require 'scholarmarkdown/filter/citation_metadata'
 
 Encoding.default_external = "UTF-8"
+
+preprocess do
+  # Enables math-mode
+  preprocess_katex_assets
+end
 
 compile '/index.*' do
   filter :erb
   filter :scholar_citation, bibfile: items['/references.bib'],
                             style: 'lncs-custom'
-  filter :kramdown
+  filter :kramdown, math_engine: 'sskatex',
+                    math_engine_opts: {
+                      :katex_js=> File.join(Katex.gem_path, 'vendor', 'katex', 'javascripts', 'katex.js')
+                    }
   filter :scholar_hyphenate_iri
   filter :scholar_include_code
   filter :scholar_labelify
@@ -24,6 +34,7 @@ compile '/index.*' do
   filter :scholar_headerids_to_section
   filter :rubypants
   layout '/default.*'
+  filter :scholar_dokieli_ui
   filter :scholar_citation_metadata
 end
 
