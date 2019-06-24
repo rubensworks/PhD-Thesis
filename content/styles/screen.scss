@@ -24,21 +24,42 @@ img.plot {
 }
 
 body {
-  margin: 0 auto;
-  padding: 1em;
-
+  margin: 0px;
   font: 13pt/1.4 "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header-wrapper {
+  background-color: #424242;
+  border-top: solid 20px #0090f7;
+  border-bottom: solid 1px #0090f7;
+}
+
+#frontmatter, main, footer, header {
+  margin: 0 auto;
   max-width: 800px;
 }
 
 header {
+  padding-top: 10px;
   margin-bottom: 2em;
+  color: #e8e8e8;
+  
+  a {
+    color: #e8e8e8;
+  }
 
   h1 {
-    font-size: 1.9em;
+    font-size: 2.9em;
     letter-spacing: -.01em;
     font-weight: bold;
     margin: 1em 0 .5em;
+  }
+  
+  h2 {
+    font-size: 2.1em;
+    letter-spacing: -.01em;
+    margin: 1em 0 .5em;
+    font-style: italic;
   }
 
   ul {
@@ -270,7 +291,7 @@ a {
   $hover-color: #0b99bc;
 
   color: $link-color;
-  text-decoration: none;
+  text-decoration: dashed;
   background-image: linear-gradient(currentColor 50%, currentColor 50%);
   background-repeat: repeat-x;
   background-position: 0 1.2em;
