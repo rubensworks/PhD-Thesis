@@ -118,6 +118,15 @@ header {
   }
 }
 
+section#frontmatter {
+  // Sections
+  h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1.5em 0 .5em;
+  }
+}
+
 main, #appendix {
   counter-reset: section;
 
