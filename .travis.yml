@@ -1,0 +1,17 @@
+language: ruby
+rvm:
+  - 2.4.4
+bundler_args: --without development
+script:
+  - bundle exec nanoc compile
+  - bundle exec nanoc check internal_links mixed_content stale
+cache:
+  - bundler
+deploy:
+  provider: pages
+  local-dir: output
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
