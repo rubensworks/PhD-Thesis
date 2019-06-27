@@ -39,6 +39,29 @@ body {
   max-width: 800px;
 }
 
+.sub-paper {
+  .authors {
+    ul {
+      list-style: none;
+    }
+  
+    li {
+      display: inline;
+      margin-right: 1.5em;
+      white-space: nowrap;
+      
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+  .published-as {
+    font-size: 18px;
+    font-style: italic;
+  }
+}
+
 header {
   padding-top: 10px;
   margin-bottom: 2em;
@@ -188,9 +211,22 @@ main, #appendix {
     margin: 0 1em 0 0;
     
     counter-increment: subsubsection;
+    counter-reset: subsubsubsection;
     
     &::before {
       content: counter(section) "." counter(subsection) "." counter(subsubsection) ". ";
+    }
+  }
+  
+  // Titled sub-paragraphs
+  h5 {
+    font-weight: bold;
+    margin: 0 1em 0 0;
+    
+    counter-increment: subsubsubsection;
+    
+    &::before {
+      content: counter(section) "." counter(subsection) "." counter(subsubsection) "." counter(subsubsubsection) ". ";
     }
   }
 

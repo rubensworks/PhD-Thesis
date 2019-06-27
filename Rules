@@ -38,9 +38,9 @@ compile '/index.*' do
   filter :scholar_citation_metadata
 end
 
-ignore '/*.md'
-ignore '/*.bib'
-ignore '/*.csv'
+ignore '/**/*.md'
+ignore '/**/*.bib'
+ignore '/**/*.csv'
 
 route '/**/*.{html,md}*' do
   if item.identifier =~ '/index.*'

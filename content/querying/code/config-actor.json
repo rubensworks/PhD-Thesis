@@ -1,0 +1,19 @@
+{
+  "@context": [ ... ],
+  "@id": "npmd:@comunica/actor-rdf-parse-n3",
+  "components": [
+    {
+      "@id":            "crpn3:Actor/RdfParse/N3",
+      "@type":          "Class",
+      "extends":        "cbrp:Actor/RdfParse",
+      "requireElement": "ActorRdfParseN3",
+      "comment":        "An actor that parses Turtle-like RDF",
+      "parameters": [
+        {
+          "@id": "caam:Actor/AbstractMediaTypedFixed/mediaType",
+          "default": [ "text/turtle", "application/n-triples" ]
+        }
+      ]
+    }
+  ]
+}
