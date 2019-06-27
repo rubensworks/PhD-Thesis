@@ -1,10 +1,25 @@
 ## Introduction
 {:#introduction}
 
-This is a great article on the [Semantic Web](cite:cites semanticweb), written in Markdown.
+Context: Web+SemWeb
+{:.todo}
 
-Make sure to [write your document effectively](http://www.treesmapsandtheorems.com/pdfs/TM&Th-2.0-summary.pdf)!
+### Research Question
 
-Write proper introduction.
-More information on snippets like this can be found on the [ScholarMarkdown wiki](https://github.com/rubensworks/ScholarMarkdown/wiki/Snippets).
+"How to store and query evolving knowledge graphs on the Web?"
+challenges: (let them correspond to the chapters)
+    * The Web is highly heterogeneous
+    * Experimentation requires realistic evolving data
+    * Indexing evolving data is a trade-off between storage size and lookup efficiency
+    * Publishing evolving data via a queryable interface is costly
+{:.todo}
+
+### Publications
+
+Full list of publications?
+{:.todo}
+
+### Outline
+
+Outline of the following chapters
 {:.todo}
