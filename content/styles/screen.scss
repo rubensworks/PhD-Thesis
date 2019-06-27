@@ -60,6 +60,19 @@ body {
     font-size: 18px;
     font-style: italic;
   }
+  
+  #querying_abstract,
+  #generating_abstract,
+  #storing_abstract,
+  #querying-evolving_abstract {
+    font-weight: bold;
+    hyphens: auto;
+    padding-bottom: 10px;
+
+    h3 {
+      display: none;
+    }
+  }
 }
 
 header {

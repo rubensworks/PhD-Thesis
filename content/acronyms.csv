@@ -1,6 +1,8 @@
 abbreviation,full
+HOBBIT,Holistic Benchmarking of Big Linked Data
 HTTP,Hypertext Transfer Protocol
-IRI,
+IRI,Internationalized Resource Identifier
+PoDiGG,POpulation DIstribution-based Gtfs Generator
 RDF,Resource Description Framework
 SPARQL,SPARQL Procotol and RDF Query Language
 TPF,Triple Pattern Fragments

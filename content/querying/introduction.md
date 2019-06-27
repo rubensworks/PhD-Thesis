@@ -1,5 +1,5 @@
 ### Introduction
-{:#introduction}
+{:#querying_introduction}
 
 Linked Data on the Web exists in many shapes and forms—and
 so do the processors we use to query data from one or multiple sources.
