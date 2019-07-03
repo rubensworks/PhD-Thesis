@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+
+% Page setup
+\usepackage[a4paper,landscape,margin=2cm]{geometry}
+\usepackage{amsmath}
+
+% Typography
+\usepackage[scaled]{helvet}
+\let\familydefault\sfdefault
+
+\usepackage[usenames,svgnames]{xcolor}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows,positioning,shapes,calc,intersections}
+
+\definecolor{one}  {RGB}{142, 23,  4}
+\definecolor{two}  {RGB}{ 62,111,186}
+\definecolor{three}{RGB}{172,196, 75}
+
+\newcommand\plotfontsize{\fontsize{6}{6}\selectfont}
+\pgfplotsset{compat=1.9,
+  axis lines=left,
+  every axis/.append style={
+    font=\plotfontsize,
+  },
+  label style={
+    font=\plotfontsize\bfseries,
+  },
+  tick label style={
+    font=\plotfontsize,
+  },
+  legend cell align=left,
+  legend style={
+    /tikz/every even column/.append style={column sep=.3em},
+    draw=none, fill=none,
+    inner sep=0pt, outer sep=0pt,
+    anchor=north east,
+    text height=3pt,
+  },
+  log base 10 number format code/.code={%
+    $\pgfmathparse{10^(#1)}\pgfmathprintnumber{\pgfmathresult}$%
+  },
+}
+
+\begin{document}
+\pagestyle{empty}
+
+\pgfplotsset{
+  /pgfplots/bar cycle list/.style={/pgfplots/cycle list={%
+      {draw=none,fill=YellowGreen!70!ForestGreen,mark=none},%
+      {draw=none,fill=NavyBlue!60,mark=none},%
+      {draw=none,fill=one,mark=none},%
+    }
+  },
+}
+
+\newenvironment{resultAxis}{
+\begin{axis}[
+    xbar=1pt,
+    xtick=data,
+    width=250pt,
+    height=144pt,
+    ymin=0,
+    bar width=3pt,
+    enlarge x limits={abs=6pt},
+    symbolic x coords={C1, F1, F2, F3, F4, F5, L1, L2, L3, L4, L5, S1, S2, S3, S4, S5, S6, S7},
+    % symbolic y coords={C3, C2, C1, S7, S6, S5, S4, S3, S2, S1, L5, L4, L3, L2, L1, F5, F4, F3, F2, F1},
+    % Don't show axis exponent
+    ytick scale label code/.code={},
+    scaled y ticks=false,
+    x axis line style=-,
+    % reverse legend,
+    scale only axis,
+    clip=false,
+    axis on top,
+    area legend,
+    ylabel={Duration (sec)}
+]
+}{\end{axis}}
+\begin{tikzpicture}
+\begin{resultAxis}
+\addplot+[ybar] table [x=name, y expr=\thisrow{ldf_time} / 1000, col sep=semicolon]{avg.csv};
+\addplot+[ybar] table [x=name, y expr=\thisrow{sort_time} / 1000, col sep=semicolon]{avg.csv};
+\addplot+[ybar] table [x=name, y expr=\thisrow{comunica_time} / 1000, col sep=semicolon]{avg.csv};
+\legend{TPF,Comunica-sort,Comunica-smallest}
+\end{resultAxis}
+\end{tikzpicture}
+\end{document}

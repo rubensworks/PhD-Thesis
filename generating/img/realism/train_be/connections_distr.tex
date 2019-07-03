@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+% Page setup
+\usepackage[a4paper,landscape,margin=2cm]{geometry}
+\usepackage{amsmath}
+
+% Typography
+\usepackage[scaled]{helvet}
+\let\familydefault\sfdefault
+
+\usepackage[usenames,svgnames]{xcolor}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{positioning,arrows,intersections,calc}
+
+\definecolor{one}  {RGB}{142, 23,  4}
+\definecolor{two}  {RGB}{ 62,111,186}
+\definecolor{three}{RGB}{172,196, 75}
+
+\newcommand\plotfontsize{\fontsize{6}{6}\selectfont}
+\pgfplotsset{%
+  compat=1.6,
+  xmin=0.9, xmax=270,
+  axis lines=left,
+  every axis/.append style={
+    font=\plotfontsize,
+  },
+  label style={
+    font=\plotfontsize\bfseries,
+  },
+  tick label style={
+    font=\plotfontsize,
+  },
+  legend cell align=left,
+  legend style={
+    /tikz/every even column/.append style={column sep=.3em},
+    draw=none, fill=none,
+    inner sep=0pt, outer sep=0pt,
+    anchor=north east,
+    text height=3pt,
+  },
+  legend image post style={only marks},
+  log base 10 number format code/.code={%
+    $\pgfmathparse{10^(#1)}\pgfmathprintnumber{\pgfmathresult}$%
+  },
+  % Don't show axis exponent
+  ytick scale label code/.code={},
+}
+
+\begin{document}
+\pagestyle{empty}
+    \begin{tikzpicture}[smooth]
+        \begin{axis}[
+            legend columns=3,
+            legend entries={Random, Generated, Gold Standard},
+            every axis legend/.append style={at={(0.6,0.3)},anchor=north},
+            xmax=23,
+            height=3cm,
+            width=8cm,
+            mark repeat={4},
+            xlabel={Hour},
+            ylabel={Connections}
+        ]
+            \addplot [color=two,mark=triangle*]     table [x=hour, y=rand , col sep=comma] {connections_distr.csv};
+            \addplot [color=one,mark=square*]       table [x=hour, y=param, col sep=comma] {connections_distr.csv};
+            \addplot [color=yellow!70!black,mark=*] table [x=hour, y=gs   , col sep=comma] {connections_distr.csv};
+        \end{axis}
+    \end{tikzpicture}
+\end{document}
