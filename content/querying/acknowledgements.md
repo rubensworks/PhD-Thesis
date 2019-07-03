@@ -1,5 +1,5 @@
 ### Acknowledgements
-{:#querying_acknowledgements}
+{:#querying_acknowledgements .no-label-increment}
 
 The described research activities were funded by Ghent University, imec,
 Flanders Innovation & Entrepreneurship (AIO), and the European Union.

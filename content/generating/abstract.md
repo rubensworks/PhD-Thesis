@@ -1,5 +1,5 @@
 ### Abstract
-{:#generating_abstract}
+{:#generating_abstract .no-label-increment}
 
 <!--context-->
 When benchmarking RDF data management systems such as public transport route planners,

@@ -76,3 +76,15 @@ dl {
 var {
   font-style: italic;
 }
+
+.rotate {
+  transform: rotate(-90.0deg);
+  text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 1.5em;
+}
+
+tr.row-sep-above {
+  border-top: solid 1px;
+}

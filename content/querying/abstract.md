@@ -1,5 +1,5 @@
 ### Abstract
-{:#querying_abstract}
+{:#querying_abstract .no-label-increment}
 
 <!-- Context      -->
 Query evaluation over Linked Data sources has become a complex story,
