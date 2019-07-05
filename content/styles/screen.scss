@@ -512,5 +512,43 @@ blockquote {
   }
 }
 
+table.acronyms {
+  margin: 0 1em;
+}
+
+#toc h2 {
+  display: none;
+}
+
+ol.index-entries-root {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  border: solid 1px #0090f7;
+  padding: 5px;
+  background-color: white;
+  z-index: 1000;
+}
+
+ol.index-entries {
+  font-size: 10px;
+
+  li {
+    a.index-entry-name {
+      background: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    a.index-entry-active {
+      font-weight: bold;
+    }
+  }
+}
+
+ol.index-entries[depth="2"] {
+  display: none;
+}
+
 @import "shared.scss";
 @import "shared_override.scss";

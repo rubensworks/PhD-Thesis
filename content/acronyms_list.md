@@ -1,5 +1,4 @@
 ## Acronyms
 {:#acronyms}
 
-Generate by serializing acronyms.csv
-{:.todo}
+<div id="scholarmarkdown-acronyms-list"></div>

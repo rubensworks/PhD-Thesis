@@ -21,9 +21,9 @@ title_nl: "De opslag en bevraging<br />van evoluerende kennisgrafen<br />op het 
 
 <section id="frontmatter">
   <%= section 'abstract' %>
+  <%= section 'preface' %>
   <%= section 'toc' %>
   <%= section 'acronyms_list' %>
-  <%= section 'preface' %>
   <%= section 'summary' %>
 </section>
 
@@ -100,3 +100,37 @@ Published as [Generating Public Transport Data based on Population Distributions
 </main>
 
 <footer></footer>
+
+<script type="text/javascript">
+    window.addEventListener('load', updateIndex);
+    window.addEventListener('scroll', updateIndex);
+    
+    function updateIndex(){
+        // Unselect all other entries
+        const entries = document.querySelectorAll('a.index-entry-name');
+        for (var i = 0; i < entries.length; i++) {
+            entries[i].classList.remove('index-entry-active');
+        }
+    
+        // Select the hovered entry
+        var pos = getTocPos();
+        if (pos) {            
+            var toc = document.querySelector('.index-entries-root');
+            var match = toc.querySelector('a[href="#' + pos + '"]');
+            if (match) {
+                match.classList.add('index-entry-active');
+            }
+        }
+    }
+    
+    // Get the first section that is visible
+    function getTocPos() {
+        var sections = document.getElementsByTagName('section');
+        for (var i = 0; i < sections.length; i++) {
+            var section = sections[i];
+            if (section.id && section.getElementsByTagName('section').length === 0 && section.getBoundingClientRect().bottom >= 0) {
+                return section.id;
+            }
+        }
+    }
+</script>

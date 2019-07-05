@@ -27,9 +27,11 @@ compile '/index.*' do
                     math_engine_opts: {
                       :katex_js=> File.join(Katex.gem_path, 'vendor', 'katex', 'javascripts', 'katex.js')
                     }
+  filter :scholar_acronym, acronyms: items['/acronyms.csv']
   filter :scholar_hyphenate_iri
   filter :scholar_include_code
-  filter :scholar_labelify, chapters: true
+  filter :scholar_labelify, chapters: true,
+                            sections_index_depth: 3
   filter :scholar_references_to_footer
   filter :scholar_headerids_to_section
   filter :rubypants
