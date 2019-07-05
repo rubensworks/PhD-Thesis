@@ -1,11 +1,26 @@
 abbreviation,full
 API,Application Programming Interface
+BEAR,Benchmark of rdf Archives
+CB,Change-based
+CM,Change materialization
 CSV,Comma separated values
+CV,Cross-version join
+CVS,Concurrent Versions System
+DM,Delta materialization
 GTFS,General Transit Feed Specification
+HDT-FoQ,hdt Focus on Querying
+HDT,Header Dictionary Triples
 HOBBIT,Holistic Benchmarking of Big Linked Data
 HTTP,Hypertext Transfer Protocol
+IC,Independent copies
 IRI,Internationalized Resource Identifier
+LUBM,Lehigh University Benchmark
+OSTRICH,Offset-Enabled Triple Store for Changesets
 PoDiGG,POpulation DIstribution-based Gtfs Generator
 RDF,Resource Description Framework
 SPARQL,SPARQL Procotol and RDF Query Language
+TB,Timestamp-based
 TPF,Triple Pattern Fragments
+VM,Version materialization
+VTPF,Versioned Triple Pattern Fragments
+VQ,Version query

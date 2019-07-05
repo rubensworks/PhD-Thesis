@@ -1,0 +1,15 @@
+mergeChangesets(changesetOriginal, changesetIngest) {
+  changesetNew = new Changeset()
+  changesetNew.addAll(changesetOriginal)
+  for (triple : changesetIngest.getTriples()) {
+    if (changesetOriginal.contains(triple)) {
+      localChange = !changesetOriginal.isLocalChange(triple)
+      changesetNew.setLocalChange(triple, localChange)
+    } else {
+      changesetNew.add(triple)
+      changesetNew.setLocalChange(triple, false)
+    }
+    changesetNew.setAddition(triple, changesetIngest.isAddition(triple))
+  }
+  return changesetNew
+}
