@@ -1,0 +1,21 @@
+\newcommand{\storage}{vq}
+\documentclass{article}
+\input{content/img/results_query_common.tex}
+\begin{document}
+\pagestyle{empty}
+\begin{tikzpicture}
+    \begin{semilogyaxis}[barqueryplot]
+        
+        \addplot[barostrich] table [x expr=0,y=lookup-mus, col sep=comma] {data/bearb-daily/query/ostrich/_median_\storage.csv};
+        
+        \addplot[barhdtic] table [x expr=1,y=ms, col sep=comma] {data/bearb-daily/query/hdt-ic/_median_\storage.csv};
+        \addplot[barhdtcb] table [x expr=2,y=ms, col sep=comma] {data/bearb-daily/query/hdt-cb/_median_\storage.csv};
+        
+        \addplot[barjenaic] table [x expr=3,y=ms, col sep=comma] {data/bearb-daily/query/jena-ic/_median_\storage.csv};
+        \addplot[barjenacb] table [x expr=4,y=ms, col sep=comma] {data/bearb-daily/query/jena-cb/_median_\storage.csv};
+        \addplot[barjenatb] table [x expr=5,y=ms, col sep=comma] {data/bearb-daily/query/jena-tb/_median_\storage.csv};
+        \addplot[barjenacbtb] table [x expr=6,y=ms, col sep=comma] {data/bearb-daily/query/jena-cb-tb/_median_\storage.csv};
+        
+    \end{semilogyaxis}
+\end{tikzpicture}
+\end{document}

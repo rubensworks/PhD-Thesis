@@ -1,0 +1,74 @@
+ingestStreaming(new, store)  {
+  newVersion = store.getLastVersion() + 1
+  additions = store.getAdditionsStream(store.getLastVersion())
+  deletions = store.getDeletionsStream(store.getLastVersion())
+  while (new.hasNext()
+      || additions.hasNext()
+      || deletions.hasNext()) {
+    if ( deletions.peek() < new.peek()
+      && deletions.peek() < additions.peek()) {
+      deletion = deletions.next()
+      store.addDeletion(deletion.getTriple(), newVersion,
+        deletion.isLocalChange(), calculatePositions(deletion.getTriple()))
+    } else if (additions.peek() < new.peek()
+            && additions.peek() < deletions.peek()) {  
+      addition = additions.next()
+      store.addAddition(addition.getTriple(),
+        newVersion, addition.isLocalChange())
+    } else if (new.peek() < additions.peek()
+            && new.peek() < deletions.peek()) {
+      element = new.next()
+      if (element.isAddition()) {
+        store.addAddition(element.getTriple(), newVersion, false)
+      } else {
+        store.addDeletion(element.getTriple(), newVersion,
+          false, calculatePositions(element.getTriple()))
+      }
+    } else if (new.peek() = deletions.peek()
+            && new.peek() < additions.peek()) {
+      element = new.next()
+      deletion = deletions.next()
+      if (element.isAddition()) {
+        store.addAddition(element.getTriple(), newVersion, true)
+      } else {
+        store.addDeletion(element.getTriple(), newVersion,
+          deletion.isLocalChange(),
+          calculatePositions(element.getTriple()))
+      }
+    } else if (new.peek() = additions.peek()
+            && new.peek() < deletions.peek()) {
+      element = new.next()
+      addition = addition.next()
+      if (element.isAddition()) {
+        store.addAddition(element.getTriple(),
+          newVersion, addition.isLocalChange())
+      } else {
+        store.addDeletion(element.getTriple(), newVersion,
+          true, calculatePositions(element.getTriple()))
+      }
+    } else {
+      addition = addition.next()
+      deletion = deletions.next()
+      element = new.next()
+      if (addition < element) {
+        if (addition.getLastVersion() > deletion.getLastVersion()) {
+          store.addAddition(addition.getTriple(),
+            newVersion, addition.isLocalChange())
+        } else {
+          store.addDeletion(deletion.getTriple(), newVersion,
+            deletion.isLocalChange(),
+            calculatePositions(deletion.getTriple()))
+        }
+      } else {
+        if (addition.getLastVersion() > deletion.getLastVersion()) {
+          store.addDeletion(element.getTriple(), newVersion,
+            addition.isLocalChange(),
+            calculatePositions(element.getTriple()))
+        } else {
+          store.addAddition(element.getTriple(),
+            newVersion, deletion.isLocalChange())
+        }
+      }
+    }
+  }
+}

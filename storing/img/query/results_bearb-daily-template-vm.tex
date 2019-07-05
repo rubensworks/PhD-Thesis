@@ -1,0 +1,22 @@
+\newcommand{\storage}{vm}
+\newcommand{\query}{QUERY}
+\documentclass{article}
+\input{content/img/results_query_common.tex}
+\begin{document}
+\pagestyle{empty}
+\begin{tikzpicture}
+    \begin{semilogyaxis}[queryplotbearbd,mark repeat={5}]
+        
+        \addplot[ostrich] table [x=patch, y=lookup-mus, col sep=comma] {data/bearb-daily/query/ostrich/\query/_median_\storage.csv};
+        
+        \addplot[hdtic] table [x=version, y=ms, col sep=comma] {data/bearb-daily/query/hdt-ic/\query/\storage.csv};
+        \addplot[hdtcb] table [x=version, y=ms, col sep=comma] {data/bearb-daily/query/hdt-cb/\query/\storage.csv};
+        
+        \addplot[jenaic] table [x=version, y=ms, col sep=comma] {data/bearb-daily/query/jena-ic/\query/\storage.csv};
+        \addplot[jenacb] table [x=version, y=ms, col sep=comma] {data/bearb-daily/query/jena-cb/\query/\storage.csv};
+        \addplot[jenatb] table [x=version, y=ms, col sep=comma] {data/bearb-daily/query/jena-tb/\query/\storage.csv};
+        \addplot[jenacbtb] table [x=version, y=ms, col sep=comma] {data/bearb-daily/query/jena-cb-tb/\query/\storage.csv};
+        
+    \end{semilogyaxis}
+\end{tikzpicture}
+\end{document}

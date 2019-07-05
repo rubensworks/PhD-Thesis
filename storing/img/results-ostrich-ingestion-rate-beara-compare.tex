@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+% Page setup
+\usepackage[a4paper,landscape,margin=2cm]{geometry}
+\usepackage{amsmath}
+
+% Typography
+\usepackage[scaled]{helvet}
+\let\familydefault\sfdefault
+
+\usepackage[usenames,svgnames]{xcolor}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows,positioning,shapes,calc,intersections}
+
+\definecolor{one}  {RGB}{142, 23,  4}
+\definecolor{two}  {RGB}{ 62,111,186}
+\definecolor{three}{RGB}{172,196, 75}
+
+\newcommand\plotfontsize{\fontsize{6}{6}\selectfont}
+\pgfplotsset{%
+  compat=1.6,
+  axis lines=left,
+  every axis/.append style={
+    font=\plotfontsize,
+  },
+  label style={
+    font=\plotfontsize\bfseries,
+  },
+  tick label style={
+    font=\plotfontsize,
+  },
+  scaled y ticks = false,
+  y tick label style={/pgf/number format/fixed, /pgf/number format/1000 sep = \thinspace}
+}
+
+\begin{document}
+\pagestyle{empty}
+\begin{tikzpicture}
+    \begin{axis}[width=7cm,height=3cm,xmax=14,ymax=700,ytick={100,200,300,400,500,600,700},ylabel={Duration (min)},xlabel={Version},legend entries = {Streaming,Batch},legend image post style={sharp plot, line width=0.5pt},legend columns=2,every axis legend/.append style={at={(0.35,1)},anchor=north}]
+        \addplot[color=one,thick,mark=*,mark options={solid,fill=one},mark size=0.3] table [x=version, y=durationmin, col sep=comma] {data/beara/ostrich-compare-ingest/insertions-streaming.csv};
+        \addplot[color=two,thick,mark=triangle*,mark options={solid,fill=one},mark size=0.3] table [x=version, y=durationmin, col sep=comma] {data/beara/ostrich-compare-ingest/insertions-batch.csv};
+    \end{axis}
+\end{tikzpicture}
+\end{document}

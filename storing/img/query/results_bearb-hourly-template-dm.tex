@@ -1,0 +1,22 @@
+\newcommand{\storage}{dm}
+\newcommand{\query}{QUERY}
+\documentclass{article}
+\input{content/img/results_query_common.tex}
+\begin{document}
+\pagestyle{empty}
+\begin{tikzpicture}
+    \begin{semilogyaxis}[queryplotbearbh,mark repeat={15}]
+        
+        \addplot[ostrich,discard if not={patch_start}{0}] table [x=patch_end, y=lookup-mus-inf, col sep=comma] {data/bearb-hourly/query/ostrich/\query/_median_\storage.csv};
+        
+        \addplot[hdtic] table [x=versionend, y=ms, col sep=comma] {data/bearb-hourly/query/hdt-ic/\query/\storage.csv};
+        \addplot[hdtcb] table [x=versionend, y=ms, col sep=comma] {data/bearb-hourly/query/hdt-cb/\query/\storage.csv};
+        
+        \addplot[jenaic] table [x=versionend, y=ms, col sep=comma] {data/bearb-hourly/query/jena-ic/\query/\storage.csv};
+        \addplot[jenacb] table [x=versionend, y=ms, col sep=comma] {data/bearb-hourly/query/jena-cb/\query/\storage.csv};
+        \addplot[jenatb] table [x=versionend, y=ms, col sep=comma] {data/bearb-hourly/query/jena-tb/\query/\storage.csv};
+        \addplot[jenacbtb] table [x=versionend, y=ms, col sep=comma] {data/bearb-hourly/query/jena-cb-tb/\query/\storage.csv};
+        
+    \end{semilogyaxis}
+\end{tikzpicture}
+\end{document}
