@@ -1,0 +1,4 @@
+SELECT ?s ?p ?o ?time WHERE {
+    GRAPH ?g0 { ?s ?p ?o }
+    ?g0 tmp:expiration ?time
+}

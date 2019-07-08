@@ -1,0 +1,8 @@
+SELECT ?id ?headSign ?routeLabel ?departureTime
+WHERE {
+    ?id t:departureTime ?departureTime.
+    ?id t:headSign      ?headSign.
+    ?id t:routeLabel    ?routeLabel.
+    FILTER (?departureTime > "2015-12-08T10:20:00"^^xsd:dateTime).
+    FILTER (?departureTime < "2015-12-08T11:20:00"^^xsd:dateTime).
+}

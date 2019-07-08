@@ -7,9 +7,6 @@
   <link rel="stylesheet" media="print"  href="styles/print.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" media="all"    href="styles/katex.css" />
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" />
-  <link href="https://dokie.li/media/css/dokieli.css" media="all" rel="stylesheet" />
-  <script src="https://dokie.li/scripts/dokieli.js"></script>
   <meta name="citation_title" content="Storing and Querying<br />Evolving Knowledge Graphs<br />on the Web">
   <meta name="citation_author" content="Ruben Taelman" />
   <meta name="citation_author" content="Ruben Taelman" />
@@ -25,10 +22,14 @@
   <meta name="citation_author" content="Joachim Van Herwegen" />
   <meta name="citation_author" content="Erik Mannens" />
   <meta name="citation_author" content="Ruben Verborgh" />
+  <meta name="citation_author" content="Ruben Taelman" />
+  <meta name="citation_author" content="Ruben Verborgh" />
+  <meta name="citation_author" content="Pieter Colpaert" />
+  <meta name="citation_author" content="Erik Mannens" />
+  <meta name="citation_author" content="Rik Van de Walle" />
   
-  <meta name="citation_publication_date" content="2019/07/05" />
+  <meta name="citation_publication_date" content="2019/07/08" />
 </head>
-
 
 <body prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ dctypes: http://purl.org/dc/dcmitype/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: https://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# qb: http://purl.org/linked-data/cube# schema: http://schema.org/ void: http://rdfs.org/ns/void# rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ sioc: http://rdfs.org/sioc/ns# doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: https://www.w3.org/ns/activitystreams# ldp: http://www.w3.org/ns/ldp# solid: http://www.w3.org/ns/solid/terms# acl: http://www.w3.org/ns/auth/acl# dio: https://w3id.org/dio# as: https://www.w3.org/ns/activitystreams# oa: http://www.w3.org/ns/oa# ldp: http://www.w3.org/ns/ldp#" typeof="schema:CreativeWork sioc:Post prov:Entity">
   <div class="header-wrapper">
@@ -118,7 +119,20 @@ challenges: (let them correspond to the chapters)
 
     <h3 id="publications">Publications</h3>
 
-    <p class="todo">Full list of publications?</p>
+    <p>This thesis is based on the following four peer-reviewed publications:</p>
+
+    <ul>
+      <li>Ruben Taelman et al. <a href="https://comunica.github.io/Article-ISWC2018-Resource/">Comunica: a Modular <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> Query Engine for the Web</a>.
+  <br />In: <em>International Semantic Web Conference</em>. Springer, October 2018.</li>
+      <li>Ruben Taelman et al. <a href="https://www.rubensworks.net/raw/publications/2018/podigg.pdf">Generating Public Transport Data based on Population Distributions for <abbr title='Resource Description Framework'>RDF</abbr> Benchmarking</a>.
+  <br />In: <em>In Semantic Web Journal</em>. IOS Press, 2019.</li>
+      <li>Ruben Taelman et al. <a href="https://rdfostrich.github.io/article-jws2018-ostrich/">Triple Storage for Random-Access Versioned Querying of <abbr title='Resource Description Framework'>RDF</abbr> Archives</a>.
+  <br />In: <em>Journal of Web Semantics</em>. Elsevier, 2019.</li>
+      <li>Ruben Taelman et al. <a href="https://www.rubensworks.net/raw/publications/2016/Continuous_Client-Side_Query_Evaluation_over_Dynamic_Linked_Data.pdf">Continuous Client-side Query Evaluation over Dynamic Linked Data</a>.
+  <br />In: <em>The Semantic Web: ESWC 2016 Satellite Events, Revised Selected Papers</em>. Springer, May 2016.</li>
+    </ul>
+
+    <p class="todo">Full list of all publications?</p>
 
     <h3 id="outline">Outline</h3>
 
@@ -5250,13 +5264,777 @@ Ruben Verborgh is a postdoctoral fellow of the Research Foundation – Flanders.
 </div>
   </section>
 
-  <section id="querying-evolving">
-    <h2>Querying Evolving Data on the Web</h2>
+  <section class="sub-paper">
+    <h2 id="querying-evolving">Querying Evolving Data</h2>
 
-    <p class="todo">Write me: https://www.rubensworks.net/publications/taelman_mepdaw_bp_2016/</p>
+    <section>
+      <p class="todo">Write an introduction to this chapter</p>
+    </section>
+
+    <ul class="authors">
+      <li><a href="http://www.rubensworks.net/" typeof="http://xmlns.com/foaf/0.1/Person" resource="http://www.rubensworks.net/#me">Ruben Taelman</a></li>
+      <li><a href="https://ruben.verborgh.org/" typeof="http://xmlns.com/foaf/0.1/Person" resource="https://ruben.verborgh.org/profile/#me">Ruben Verborgh</a></li>
+      <li><a href="https://pietercolpaert.be/" typeof="http://xmlns.com/foaf/0.1/Person" resource="https://pietercolpaert.be/#me">Pieter Colpaert</a></li>
+      <li><a href="https://www.ugent.be/ea/idlab/en/members/erik-mannens.htm" typeof="http://xmlns.com/foaf/0.1/Person" resource="https://data.verborgh.org/people/erik_mannens">Erik Mannens</a></li>
+      <li><a href="https://www.ugent.be/ea/idlab/en/members/rik-van-de-walle.htm" typeof="http://xmlns.com/foaf/0.1/Person" resource="https://data.verborgh.org/people/rik_van_de_walle">Rik Van de Walle</a></li>
+    </ul>
+
+    <p class="published-as">Published as <a href="https://www.rubensworks.net/raw/publications/2016/Continuous_Client-Side_Query_Evaluation_over_Dynamic_Linked_Data.pdf">Continuous Client-side Query Evaluation over Dynamic Linked Data</a></p>
+
+    <section id="querying-evolving_abstract">
+      <h3 class="no-label-increment">Abstract</h3>
+
+      <p>Existing solutions to query dynamic Linked Data sources extend the <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> language,
+and require continuous server processing for each query.
+Traditional <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> endpoints already accept highly expressive queries,
+so extending these endpoints for time-sensitive queries increases the server cost even further.
+To make continuous querying over dynamic Linked Data more affordable,
+we extend the low-cost Triple Pattern Fragments (<abbr title='Triple Pattern Fragments'>TPF</abbr>)
+interface with support for time-sensitive queries.
+In this paper, we introduce the <abbr title='Triple Pattern Fragments'>TPF</abbr> Query Streamer that allows clients to evaluate <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> queries
+with continuously updating results.
+Our experiments indicate that this extension significantly lowers the server complexity,
+at the expense of an increase in the execution time per query.
+We prove that by moving the complexity of continuously evaluating queries over
+dynamic Linked Data to the clients and thus increasing bandwidth usage,
+the cost at the server side is significantly reduced.
+Our results show that this solution makes real-time querying more scalable for a large amount
+of concurrent clients when compared to the alternatives.</p>
+
+    </section>
+
+    <section id="querying-evolving_introduction">
+      <h3>Introduction</h3>
+
+      <p>As the Web of Data is a <em>dynamic</em> dataspace, different results may be returned depending on when a question was asked.
+The end-user might be interested in seeing the query results update over time,
+for instance, by re-executing the entire query over and over again (“polling”).
+This is, however, not very practical,
+especially if it is unknown beforehand when data will change.
+An additional problem is that
+many public (even static) <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query endpoints suffer from a low availability <span class="references">[<a href="#ref-118">118</a>]</span>.
+The unrestricted complexity of <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> queries <span class="references">[<a href="#ref-119">119</a>]</span> combined
+with the public character of <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> endpoints entails a high server cost, which makes it expensive to host such an interface with high availability.
+<em>Dynamic</em> <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> streaming solutions offer combined access to dynamic data streams and
+static background data through continuously executing queries. Because of this continuous querying, the cost
+for these servers is even higher than with static querying.</p>
+
+      <p>In this work, we therefore devise a solution that enables clients to continuously evaluate non-high frequency
+queries by polling specific fragments of the data.
+The resulting framework performs this without the server needing to remember any client state.
+Its mechanism requires the server to <em>annotate</em> its data so that the client can efficiently determine when to retrieve fresh data.
+The generic approach in this paper is applied to the use case of public transit route planning.
+It can be used in various other domains with continuously updating data, such as smart city dashboards, business intelligence, or sensor networks.
+This paper extends our earlier work <span class="references">[<a href="#ref-120">120</a>]</span> with additional experiments.</p>
+
+      <p>In the next section, we discuss related research on which our solution will be based.
+After that, <a href="#querying-evolving_problem-statement">Subsection 5.4</a> gives a general problem statement.
+In <a href="#querying-evolving_use-case">Subsection 5.5</a>, we present a motivating use case.
+<a href="#querying-evolving_dynamic-data-representation">Subsection 5.6</a> discusses different techniques to represent dynamic data,
+after which <a href="#querying-evolving_query-engine">Subsection 5.7</a> gives an explanation of our proposed query solution.
+Next, <a href="#querying-evolving_evaluation">Subsection 5.8</a> shows an overview of our experimental setup and its results.
+Finally, <a href="#querying-evolving_conclusions">Subsection 5.9</a> discusses the conclusions of this work with further research opportunities.</p>
+
+    </section>
+
+    <section id="querying-evolving_related-work">
+      <h3>Related Work</h3>
+
+      <p>In this section, we first explain techniques to perform <abbr title='Resource Description Framework'>RDF</abbr> annotation,
+which will be used to determine freshness.
+Then, we zoom in on possible representations of temporal data in <abbr title='Resource Description Framework'>RDF</abbr>.
+We finish by discussing existing <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> streaming extensions
+and a low-cost (static) Linked Data publication technique.</p>
+
+      <h4 id="querying-evolving_related-work_annotations"><abbr title='Resource Description Framework'>RDF</abbr> Annotations</h4>
+
+      <p>Annotations allow us to attach metadata to triples.
+We might for example want to say that a triple is
+only valid within a certain time interval, or that a triple is only valid in a certain geographical area.</p>
+
+      <p><a property="schema:citation http://purl.org/spar/cito/cites" href="http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/"><abbr title='Resource Description Framework'>RDF</abbr> 1.0</a> <span class="references">[<a href="#ref-121">121</a>]</span> allows triple annotation through <em>reification</em>.
+This mechanism uses <em>subject</em>, <em>predicate</em>, and <em>object</em> as predicates, which allow the addition of annotations
+to such reified <abbr title='Resource Description Framework'>RDF</abbr> triples.
+The downside of this approach is that one triple is now transformed to three triples, which significantly increases the
+total amount of triples.</p>
+
+      <p>Singleton Properties <span class="references">[<a href="#ref-122">122</a>]</span> create unique instances (singletons) of predicates, which then can be used for further specifying
+that relationship, for example, by adding annotations. New instances of predicates are created by relating them to the
+old predicate through the <code>sp:singletonPropertyOf</code> predicate.
+While this approach requires fewer triples than reification to represent the same information, it still has
+the issue of the original triple being lost, because the predicate is changed in this approach.</p>
+
+      <p>With <a property="schema:citation http://purl.org/spar/cito/cites" href="https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/"><abbr title='Resource Description Framework'>RDF</abbr> 1.1</a> <span class="references">[<a href="#ref-74">74</a>]</span> came <em>graph</em> support, which allows triples to be encapsulated into named graphs, which can also be annotated.
+Graph-based annotation requires fewer triples than both reification and singleton properties when representing
+the same information. It requires the addition of a fourth element to the triple which transforms it to a quad.
+This fourth element, the <em>graph</em>, can be used to add the annotations to.</p>
+
+      <h4 id="temporal-data-in-the-rdf-model">Temporal data in the <abbr title='Resource Description Framework'>RDF</abbr> model</h4>
+
+      <p>Regular <abbr title='Resource Description Framework'>RDF</abbr> triples cannot express the time and space in which the fact they describe is true.
+In domains where data needs to be represented for certain times or time ranges, these traditional representations
+should thus be extended.
+There are two main mechanisms for adding time <span class="references">[<a href="#ref-123">123</a>]</span>.
+<em>Versioning</em> will take snapshots of the complete graph every time a change occurs.
+<em>Time labeling</em> will annotate triples with their change time.
+The latter is believed to be a better approach in the context of <abbr title='Resource Description Framework'>RDF</abbr>,
+because complete snapshots introduce overhead,
+especially if only a small part of the graph changes.
+Gutierrez et al. made a distinction between <em>point-based</em> and <em>interval-based</em> labeling,
+which are interchangeable <span class="references">[<a href="#ref-124">124</a>]</span>.
+The former states information about an element at a certain time instant, while the latter states
+information at all possible times between two time instants.</p>
+
+      <p>The same authors introduced a temporal vocabulary <span class="references">[<a href="#ref-124">124</a>]</span> for the discussed mechanisms, which will
+be referred to as <code>tmp</code> in the remainder of this chapter. Its core predicates are:</p>
+
+      <ul>
+        <li><code>tmp:interval</code>: This predicate can be used on a subject to make it valid in a certain time interval.
+  The range of this property is a time interval, which is represented by the two mandatory
+  properties <code>tmp:initial</code> and <code>tmp:final</code>.</li>
+        <li><code>tmp:instant</code>: Used on subjects to make it valid on a certain time instant as a point-based time representation.
+  The range of this property is <code>xsd:dateTime</code>.</li>
+        <li><code>tmp:initial</code> and <code>tmp:final</code>: The domain of these predicates is a time interval.
+  Their range is a <code>xsd:dateTime</code>, and they respectively indicate the start and the
+  end of the interval-based time representation.</li>
+      </ul>
+
+      <p>Next to these properties, we will also introduce our own predicate <code>tmp:expiration</code> with range <code>xsd:dateTime</code>
+which indicates that the subject is only valid up until the given time.</p>
+
+      <h4 id="sparql-streaming-extensions"><abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> Streaming Extensions</h4>
+
+      <p>Several <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> extensions exist that enable querying over data streams.
+These data streams are traditionaly represented as a monotonically non-decreasing stream of triples that are annotated with their timestamp.
+These require <a property="schema:citation http://purl.org/spar/cito/cites" href="http://www.few.vu.nl/~frankh/postscript/IEEE-IS09.pdf"><em>continuous processing</em></a> <span class="references">[<a href="#ref-70">70</a>]</span> of queries because of the constantly changing data.</p>
+
+      <p><a property="schema:citation http://purl.org/spar/cito/cites" href="http://doi.acm.org/10.1145/1526709.1526856"><abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr></a> <span class="references">[<a href="#ref-53">53</a>]</span> is an approach to querying over static and dynamic data.
+This system requires the client to <em>register</em> a query to the server in an extended
+<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> syntax that allows the use of <em>windows</em> over dynamic data.
+This <a property="schema:citation http://purl.org/spar/cito/cites" href="http://www.few.vu.nl/~frankh/postscript/IEEE-IS09.pdf"><em>query registration</em></a> <span class="references">[<a href="#ref-70">70</a>, <a href="#ref-125">125</a>]</span>
+must occur by clients to make sure that the streaming-enabled <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> endpoint can continuously re-evaluate this query,
+as opposed to traditional endpoints where the query is evaluated only once.
+A <em>window</em> <span class="references">[<a href="#ref-126">126</a>]</span> is a subsection of facts ordered by time so that not all available
+information has to be taken into account while processing. These windows can have a certain size which
+indicates the time range and is advanced in time by a <em>stepsize</em>.
+<abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr>’s execution of queries is based on the combination of a regular <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> engine with a
+<em>Data Stream Management System</em> (<abbr title='Data Stream Management System'>DSMS</abbr>) <span class="references">[<a href="#ref-126">126</a>]</span>. The internal model of <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr> 
+creates queries that distribute work between the <abbr title='Data Stream Management System'>DSMS</abbr> and the <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> engine to respectively
+process the dynamic and static data.</p>
+
+      <p><a property="schema:citation http://purl.org/spar/cito/cites" href="https://link.springer.com/content/pdf/10.1007/978-3-642-25073-6_24.pdf"><em><abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr></em></a> <span class="references">[<a href="#ref-54">54</a>]</span> is a <em>white box</em> approach, as opposed to <em>black box</em>
+approaches like <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr>.
+This means that <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr> natively implements all query operators without transforming it to another
+language, removing the overhead of delegating it to another system.
+The syntax is similar to that of <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr>, also supporting query registration and time windows.
+According to previous research <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr>, <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr> performs much better than <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr> for large
+datasets; for simple queries and small datasets the opposite is true.</p>
+
+      <h4 id="triple-pattern-fragments">Triple Pattern Fragments</h4>
+
+      <p>Experiments have shown that more than half of public <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> endpoints have an availability of less than 95% <span class="references">[<a href="#ref-118">118</a>]</span>.
+Any number of clients can send arbitrarily complex <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> queries, which could form a bottleneck in endpoints.
+<span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf"><em>Triple Pattern Fragments</em> (<abbr title='Triple Pattern Fragments'>TPF</abbr>)</a></span> <span class="references">[<a href="#ref-8">8</a>]</span> aim to solve this issue of high interface cost by moving part of
+the query evaluation to the client, which reduces the server load, at the cost of increased query times and bandwidth.
+The purposely limited interface only accepts separate triple pattern queries.
+Clients can use it to evaluate more complex <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> queries locally,
+also over federations of interfaces.</p>
+
+    </section>
+
+    <section id="querying-evolving_problem-statement">
+      <h3>Problem Statement</h3>
+
+      <p>In order to lower server load during continuous query evaluation,
+we move a significant part of the query evaluation from server to client.
+We annotate dynamic data with their valid time to make it possible for clients
+to derive an optimal query evaluation frequency.</p>
+
+      <p>For this research, we identified the following research questions:</p>
+
+      <blockquote id="querying-evolving_researchquestion1">
+        <p>Can clients use volatility knowledge to perform more efficient continuous <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query evaluation by polling for data?</p>
+      </blockquote>
+
+      <blockquote id="querying-evolving_researchquestion2">
+        <p>How does the client and server load of our solution compare to alternatives?</p>
+      </blockquote>
+
+      <blockquote id="querying-evolving_researchquestion3">
+        <p>How do different time-annotation methods perform in terms of the resulting execution times?</p>
+      </blockquote>
+
+      <p>These research questions lead to the following hypotheses:</p>
+
+      <ol>
+    <li id="querying-evolving_hypothesis1">The proposed framework has a lower server cost than alternatives.</li>
+    <li id="querying-evolving_hypothesis2">The proposed framework has a higher client cost than streaming-based <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> approaches for equivalent queries.</li>
+    <li id="querying-evolving_hypothesis3">Client-side caching of static data reduces the execution times proportional to the fraction of static triple patterns that are present in the query.</li>
+</ol>
+
+    </section>
+
+    <section id="querying-evolving_use-case">
+      <h3>Use Case</h3>
+
+      <p>A guiding use case, based on public transport, will be referred to in the remainder of this paper.
+When public transport route planning applications return dynamic data,
+they can account for factors such as train delays
+as part of a continuously updating route plan.
+In this use case, different clients need to obtain all train departure information for a certain station.
+This requires the following concepts:</p>
+
+      <ul>
+        <li><strong>Departure</strong> (<em>static</em>): Unique <abbr title='Internationalized Resource Identifier'>IRI</abbr> for the departure of a certain train.</li>
+        <li><strong>Headsign</strong> (<em>static</em>): The label of the train showing its destination.</li>
+        <li><strong>Departure Time</strong> (<em>static</em>): The <em>scheduled</em> departure time of the train.</li>
+        <li><strong>Route Label</strong> (<em>static</em>): The identifier for the train and its route.</li>
+        <li><strong>Delay</strong> (<em>dynamic</em>): The delay of the train, which can increase through time.</li>
+        <li><strong>Platform</strong> (<em>dynamic</em>): The platform number of the station at which the train will depart, which can be changed through time if delays occur.</li>
+      </ul>
+
+      <p><a href="#querying-evolving_listing:ta:originaltriples">Listing 8</a> shows example data in this model.
+The <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query in <a href="#querying-evolving_listing:usecase:basicquery">Listing 5</a>
+can retrieve all information using this basic data model.</p>
+
+      <figure id="querying-evolving_listing:ta:originaltriples" class="listing">
+<pre><code>@prefix t: &lt;http://example.org/train/&gt;.
+</code><code>@prefix td: &lt;http://example.org/traindata/&gt;.
+</code><code>td:departure-48 t:delay         &quot;0S&quot;^^xsd:xs:duration;
+</code><code>                t:platform      td:platform-1a;
+</code><code>                t:departureTime &quot;2014-12-05T10:37:00+01:00&quot;^^xsd:dateTimeStamp;
+</code><code>                t:headSign      &quot;Ghent&quot;;
+</code><code>                t:routeLabel    &quot;IC 1831&quot;.
+</code></pre>
+<figcaption>
+          <p><span class="label">Listing 8:</span> Train information with static time information according to the basic data model.</p>
+        </figcaption>
+</figure>
+
+      <figure id="querying-evolving_listing:usecase:basicquery" class="listing">
+<pre><code>SELECT ?delay ?platform ?headSign ?routeLabel ?departureTime
+</code><code>WHERE {
+</code><code>    _:id t:delay         ?delay.
+</code><code>    _:id t:platform      ?platform.
+</code><code>    _:id t:departureTime ?departureTime.
+</code><code>    _:id t:headSign      ?headSign.
+</code><code>    _:id t:routeLabel    ?routeLabel.
+</code><code>    FILTER (?departureTime &gt; &quot;2015-12-08T10:20:00&quot;^^xsd:dateTime).
+</code><code>    FILTER (?departureTime &lt; &quot;2015-12-08T11:20:00&quot;^^xsd:dateTime).
+</code><code>}
+</code></pre>
+<figcaption>
+          <p><span class="label">Listing 5:</span> The basic <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query for retrieving all upcoming train departure information in a certain station.
+The two first triple patterns are dynamic, the last three are static.</p>
+        </figcaption>
+</figure>
+
+    </section>
+
+    <section id="querying-evolving_dynamic-data-representation">
+      <h3>Dynamic Data Representation</h3>
+
+      <p>Our solution consists of a partial redistribution of query evaluation workload from the server to the client,
+which requires the client to be able to access the server data.
+There needs to be a distinction between regular static data and continuously updating dynamic data in the server’s
+dataset.
+For this, we chose to define a certain temporal range in which these dynamic facts are valid, as a consequence
+the client will know when the data becomes invalid and has to fetch new data to remain up-to-date.
+To capture the temporal scope of data triples, we annotate this data with time.
+In this section, we discuss two different types of time labeling, and different methods to annotate this data.</p>
+
+      <h4 id="query-evolving_subsec:temporaldomains">Time Labeling Types</h4>
+
+      <p>We use interval-based labeling to indicate the <em>start and endpoint</em> of the period during which triples are valid.
+Point-based labeling is used to indicate the <em>expiration time</em>.</p>
+
+      <p>With expiration times, we only save the latest version of a given fact in a dataset, assuming that 
+the old version can be removed when a newer one arrives.
+These expiration times provide enough information to determine when a certain fact becomes invalid in time.
+We use time intervals for storing multiple versions of the same fact, i.e., for maintaining a history of facts.
+These time intervals must indicate a start- and endtime for making it possible to distinguish between different versions
+of a certain fact. These intervals cannot overlap in time for the same facts.
+When data is volatile, consecutive interval-based facts will accumulate quickly.
+Without techniques to aggregate or remove old data, datasets will quickly grow, which can cause increasingly slower query executions.
+This problem does not exist with expiration times because in this approach we decided to only save the latest version of a fact, so
+this volatility will not have any effect on the dataset size.</p>
+
+      <h4 id="query-evolving_sec:tatypes">Methods for Time Annotation</h4>
+
+      <p>The two time labeling types introduced in the last section can be annotated on triples in different ways.
+In <a href="#querying-evolving_related-work_annotations">Subsubsection 5.3.1</a> we discussed several methods for <abbr title='Resource Description Framework'>RDF</abbr> annotation.
+We will apply time labels to triples using the singleton properties, graphs and implicit graphs annotation techniques.</p>
+
+      <p><strong>Singleton Properties</strong>
+<em>Singleton properties</em> annotation is done by creating
+a singleton property for the predicate of each dynamic triple.
+Each of these singleton properties can then be annotated with its time annotation, being either
+a time interval or expiration times.</p>
+
+      <h5 id="graphs">Graphs</h5>
+      <p>To time-annotate triples using <em>graphs</em>, we can encapsulate triples inside contexts,
+and annotate each context graph with a time annotation.</p>
+
+      <h5 id="implicit-graphs">Implicit Graphs</h5>
+      <p>A <abbr title='Triple Pattern Fragments'>TPF</abbr> interface gives a unique <abbr title='Internationalized Resource Identifier'>IRI</abbr> to each fragment corresponding to a triple pattern, including patterns without variables, i.e., actual triples.
+Since Triple Pattern Fragments are the basis of our solution, we can interpret each fragment as a graph.
+We will refer to these as <em>implicit graphs</em>.
+This <abbr title='Internationalized Resource Identifier'>IRI</abbr> can then be used as graph identifier for this triple for adding time information.
+For example, the <abbr title='Internationalized Resource Identifier'>IRI</abbr> for the triple <code>&lt;s&gt; &lt;p&gt; &lt;o&gt;</code> on the <abbr title='Triple Pattern Fragments'>TPF</abbr> interface located at <code>http:/​/​example.org/dataset/</code> is <code>http:/​/​example.org/dataset?subject=s&amp;predicate=p&amp;object=o</code>.</p>
+
+      <p>The choice of time annotation method for publishing temporal data will also depend on its capability to
+<em>group</em> time labels.
+If certain dynamic triples have identical time labels, these annotations can be shared to further reduce the required
+amount of triples if we are using singleton properies or graphs.
+When we would have three train delay triples which are valid for the same time interval using
+graph annotation, these three triples can be placed in the same graph.
+This will make sure they refer to the same time interval without having to replicate this annotation two times more.
+In the case of implicit graph annotation, this grouping of triples is not possible, because each triple has a unique
+graph identifier determined by the interface.
+This would be possible if these different identifiers are linked to each other with
+for example <code>owl:sameAs</code> relationships that our query engine takes into account, which would introduce further overhead.</p>
+
+      <p>We will execute our use case for each of these annotation methods.
+In practise, an annotation method must be chosen depending on the requirements and available technologies.
+If we have a datastore that supports quads, graph-based annotation is the best choice because of it requires the least amount of triples.
+If our datastore does not support quads, we can use singleton properties.
+If we have a <abbr title='Triple Pattern Fragments'>TPF</abbr>-like interface at which our data is hosted, we can use implicit graphs as annotation technique,
+if however many of those triples can be grouped under the same time label, singleton properties are a better alternative because
+the latter has grouping support.</p>
+
+    </section>
+
+    <section id="querying-evolving_query-engine">
+      <h3>Query Engine</h3>
+
+      <p><abbr title='Triple Pattern Fragments'>TPF</abbr> query evaluation involves server and client software, because the client actively takes part in the
+query evaluation, as opposed to traditional <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> endpoints where the server does all of the work.
+Our solution allows users to send a normal <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query to the local query engine
+which autonomously detects the dynamic parts of the query and continuously sends back results
+from that query to the user.
+In this section, we discuss the architecture of our proposed solution and the most important
+algorithms that were used to implement this.</p>
+
+      <h4 id="architecture">Architecture</h4>
+
+      <p>Our solution must be able to handle regular <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> 1.1 queries,
+detect the dynamic parts, and produce continuously updating results for non-high frequency queries.
+To achieve this, we chose to build an extra software layer on top of the existing <abbr title='Triple Pattern Fragments'>TPF</abbr> client that
+supports each discussed labeling type and annotation method and is capable of doing
+dynamic query transformation and result streaming.
+At the <abbr title='Triple Pattern Fragments'>TPF</abbr> server, dynamic data must be annotated with time depending on the
+used combination of labeling type and method.
+The server expects dynamic data to be pushed to the platform by an external process with varying data.
+In the case of graph-based annotation, we have to extend the <abbr title='Triple Pattern Fragments'>TPF</abbr> server implementation,
+so that it supports quads.
+This dynamic data should be pushed to the platform by an external process with varying data.</p>
+
+      <figure id="querying-evolving_fig:architecture">
+<img src="querying-evolving/img/solution-architecture.svg" alt="[<abbr title='Triple Pattern Fragments'>TPF</abbr> Query Streamer architecture]&#8221; />
+<figcaption>
+          <p><span class="label">Fig. 58:</span> Overview of the proposed client-server architecture.</p>
+        </figcaption>
+</figure>
+
+      <p><a href="#querying-evolving_fig:architecture">Fig. 58</a> shows an overview of the architecture for this extra layer on top of the
+<abbr title='Triple Pattern Fragments'>TPF</abbr> client, which will be called the <em><abbr title='Triple Pattern Fragments'>TPF</abbr> Query Streamer</em> from now on.
+The left-hand side shows the <em>User</em> that can send a regular <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query to the <abbr title='Triple Pattern Fragments'>TPF</abbr> Query Streamer
+entry-point and receives a stream of query results.
+The system can execute queries through the local <em>Basic Graph Iterator</em>, which is part of
+the <abbr title='Triple Pattern Fragments'>TPF</abbr> client and executes queries against a <abbr title='Triple Pattern Fragments'>TPF</abbr> server.</p>
+
+      <p>The <abbr title='Triple Pattern Fragments'>TPF</abbr> Query Streamer consists of six major components.
+First, there is the <em>Rewriter</em> module which is executed only once at the start of the query streaming loop.
+This module is able to transform the original input query into a <em>static</em> and a <em>dynamic query</em>
+which will respectively retrieve the static background data and the time-annotated changing data.
+This transformation happens by querying metadata of the triple patterns against the entry-point through
+the local <abbr title='Triple Pattern Fragments'>TPF</abbr> client.
+The <em>Streamer</em> module takes this dynamic query, executes it and forwards its results
+to the <em>Time Filter</em>.
+The <em>Time Filter</em> checks the time annotation for each of the results and rejects those that are
+not valid for the current time.
+The minimal expiration time of all these results is then determined and used as a delayed call to the
+<em>Streamer</em> module to continue with the <em>streaming loop</em>, which is determined by the repeated
+invocation of the <em>Streamer</em> module.
+This minimal expiration time will make sure that when at least one of the results expire, a new set
+of results will be fetched as part of the next query iteration.
+The filtered dynamic results will be passed on to the <em>Materializer</em> which is responsible for
+creating <em>materialized static queries</em>.
+This is a transformation of the <em>static query</em> with the dynamic results filled in.
+These <em>materialized static queries</em> are passed to the <em>Result Manager</em> which is able to cache
+these queries.
+Finally, the <em>Result Manager</em> retrieves previous <em>materialized static query</em> results from
+the local cache or executes this query for the first time and stores its results in the cache.
+These results are then sent to the client who had initiated continuous query.</p>
+
+      <h4 id="algorithms">Algorithms</h4>
+
+      <p><strong>Query rewriting</strong>
+As mentioned in the previous section, the <em>Rewriter</em> module performs a preprocessing step
+that can transform a regular <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> 1.1 query into a static and dynamic query.
+A first step in this transformation is to detect which triple patterns inside the original query
+refer to static triples and which refer to dynamic triples.
+We detect this by making a separate query for each of the triple patterns and transforming each of them
+to a dynamic query.
+An example of such a transformation can be found in <a href="#query-evolving_listing:example:dynamic"></a>.
+We then evaluate each of these transformed queries and assume a triple pattern is
+<em>dynamic</em> if its corresponding query has at least one result.
+Another step before the actual query splitting is the conversion of blank nodes to variables.
+We will end up with one static query and one dynamic query,
+in case these graphs were originally connected, they still need to be connected after the query splitting.
+This connection is only possible with variables that are visible,
+meaning that these variables need to be part of the <code>SELECT</code> clause.
+However, a variable can also be anonymous and not visible: these are blank nodes.
+To make sure that we take into account blank nodes that connect the static and dynamic graph,
+these nodes have to be converted to variables, while maintaining their semantics.
+After this step, we iterate over each
+triple pattern of the original query and assign them to either the static or the dynamic query
+depending on whether or not the pattern is respectively static or dynamic.
+This assignment must maintain the hierarchical structure of the original query,
+in some cases this causes triple patterns to be present in the dynamic query when using complex operators
+like \union to maintain correct query semantics.
+An example of this query transformation for our basic query from <a href="#query-evolving_listing:usecase:basicquery"></a>
+can be found in <a href="#query-evolving_listing:usecase:staticquery"></a> and <a href="#query-evolving_listing:usecase:dynamicquery"></a>.</p>
+
+      <figure id="querying-evolving_listing:example:dynamic" class="listing">
+<pre><code>SELECT ?s ?p ?o ?time WHERE {
+</code><code>    GRAPH ?g0 { ?s ?p ?o }
+</code><code>    ?g0 tmp:expiration ?time
+</code><code>}
+</code></pre>
+<figcaption>
+          <p><span class="label">Listing 6:</span> Dynamic <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query for the triple pattern <code>?s ?p ?o</code> for graph-based annotation with expiration times.</p>
+        </figcaption>
+</figure>
+
+      <figure id="querying-evolving_listing:usecase:dynamicquery" class="listing">
+<pre><code>SELECT ?id ?headSign ?routeLabel ?departureTime
+</code><code>WHERE {
+</code><code>    ?id t:departureTime ?departureTime.
+</code><code>    ?id t:headSign      ?headSign.
+</code><code>    ?id t:routeLabel    ?routeLabel.
+</code><code>    FILTER (?departureTime &gt; &quot;2015-12-08T10:20:00&quot;^^xsd:dateTime).
+</code><code>    FILTER (?departureTime &lt; &quot;2015-12-08T11:20:00&quot;^^xsd:dateTime).
+</code><code>}
+</code></pre>
+<figcaption>
+          <p><span class="label">Listing 7:</span> Static <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query which has been derived from the basic <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query from <a href="#querying-evolving_listing:usecase:basicquery">Listing 5</a> by the <em>Rewriter</em> module.</p>
+        </figcaption>
+</figure>
+
+      <figure id="querying-evolving_listing:ta:originaltriples" class="listing">
+<pre><code>SELECT ?id ?delay ?platform ?final0 ?final1
+</code><code>WHERE {
+</code><code>    GRAPH ?g0 { ?id t:delay ?delay. }
+</code><code>    ?g0 tmp:expiration ?final0.
+</code><code>    GRAPH ?g1 { ?id t:platform ?platform. }
+</code><code>    ?g1 tmp:expiration ?final1.
+</code><code>}
+</code></pre>
+<figcaption>
+          <p><span class="label">Listing 8:</span> Dynamic <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query which has been derived from the basic <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query from <a href="#querying-evolving_listing:usecase:basicquery">Listing 5</a> by the <em>Rewriter</em> module. Graph-based annotation is used with expiration times.</p>
+        </figcaption>
+</figure>
+
+      <p><strong>Query materialization</strong>
+The <em>Materializer</em> module is responsible for creating <em>materialized static queries</em>
+from the static query and the current dynamic query results.
+This is done by filling in each dynamic result into the static query variables.
+It is possible that multiple results are returned from the dynamic query evaluation, which
+is the same amount of materialized static queries that can be derived.
+Assuming that we, for example, find the following single dynamic query result from the dynamic query in
+<a href="#query-evolving_listing:usecase:dynamicquery"></a>:
+<span class="kdmath">$\{ \texttt{?id} \mapsto \texttt{<http://example.org/train\#train4815>},
+    \texttt{?delay} \mapsto \texttt{&#8220;P10S&#8221;\^{}\^{}xsd:duration}
+\}$</span>
+then we can derive the materialized static query by filling in these two variables into the static query from
+<a href="#query-evolving_listing:usecase:staticquery"></a>, the resulting query can be found in 
+<a href="#query-evolving_listing:usecase:materializedstaticquery"></a>.</p>
+
+      <figure id="querying-evolving_listing:usecase:materializedstaticquery" class="listing">
+<pre><code>SELECT ?headSign ?routeLabel ?departureTime
+</code><code>WHERE {
+</code><code>    &lt;http://example.org/train#train4815&gt; t:departureTime ?departureTime.
+</code><code>    &lt;http://example.org/train#train4815&gt; t:headSign      ?headSign.
+</code><code>    &lt;http://example.org/train#train4815&gt; t:routeLabel    ?routeLabel.
+</code><code>    FILTER (?departureTime &gt; &quot;2015-12-08T10:20:00&quot;^^xsd:dateTime).
+</code><code>    FILTER (?departureTime &lt; &quot;2015-12-08T11:20:00&quot;^^xsd:dateTime).
+</code><code>}
+</code></pre>
+<figcaption>
+          <p><span class="label">Listing 9:</span> Materialized static <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query derived by filling in the dynamic query results into the static query from <a href="#querying-evolving_listing:usecase:materializedstaticquery">Listing 9</a>.</p>
+        </figcaption>
+</figure>
+
+      <p><strong>Caching</strong>
+The <em>Result manager</em> is the last step in the streaming loop for returning the materialized
+static query results of one time instance.
+This module is responsible for either getting results for given queries from its cache,
+or fetching the results from the <abbr title='Triple Pattern Fragments'>TPF</abbr> client.
+First, an identifier will be determined for each materialized static query.
+This identifier will serve as a key to cache static data and should correctly
+and uniquely identify static results based on dynamic results.
+This is equivalent to saying that this identifier should be the <em>connection</em>
+between the static and dynamic graphs.
+This connection is the intersection of the variables present in the \where clause of the
+static and dynamic queries.
+Since the dynamic query results are already available at this point, these variables
+all have values, so this cache identifier can be represented by these variable results.
+The graph connection between the static and dynamic queries from <a href="#query-evolving_listing:usecase:staticquery"></a> and <a href="#query-evolving_listing:usecase:dynamicquery"></a> is <code>?id</code>.
+The cache identifier for a result where <code>?id</code> is <code>"train:4815"</code> is for example <code>"?id=train:4815"</code>.</p>
+
+    </section>
+
+    <section id="querying-evolving_evaluation">
+      <h3>Evaluation</h3>
+
+      <p>In order to validate our hypotheses from <a href="#querying-evolving_problem-statement">Subsection 5.4</a>, we set up an experiment to measure the
+impact of our proposed redistribution of workload between the client and server by simultaneously executing
+a set of queries against a server using our proposed solution.
+We repeat this experiment for two
+state-of-the-art solutions: <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr> and <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr>.</p>
+
+      <p>To test the client and server performance, our experiment consisted of one server and ten physical clients.
+Each of these clients can execute from one to twenty unique concurrent queries
+based on the use case from <a href="#querying-evolving_use-case">Subsection 5.5</a>.
+The data for this experiment was derived from real-world Belgian railway data
+using the <a href="https://hello.irail.be/api/1-0/" class="mandatory" data-link-text="https:/​/​hello.irail.be/​api/​1-​0/​">iRail <abbr title='Application Programming Interface'>API</abbr></a>.
+This results in a series of 10 to 200 concurrent query executions.
+This setup was used to test the client and server performance of different <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> streaming approaches.</p>
+
+      <p>For comparing the efficiency of different time annotation methods
+and for measuring the effectiveness of our client-side cache,
+we measured the execution times of the query for our use case from <a href="#querying-evolving_use-case">Subsection 5.5</a>.
+This measurement was done for different annotation methods, once with the cache and once without the cache.
+For discovering the evolution of the query evaluation efficiency through time,
+the measurements were done over each query stream iteration of the query.</p>
+
+      <p>The discussed architecture was <a href="https://github.com/LinkedDataFragments/QueryStreamer.js/tree/eswc2016" class="mandatory" data-link-text="https:/​/​github.com/​LinkedDataFragments/​QueryStreamer.js/​tree/​eswc2016">implemented in JavaScript using Node.js</a> to
+allow for easy communication with the existing <abbr title='Triple Pattern Fragments'>TPF</abbr> client.</p>
+
+      <p>The <a href="https://github.com/rubensworks/TPFStreamingQueryExecutor-experiments/" class="mandatory" data-link-text="https:/​/​github.com/​rubensworks/​TPFStreamingQueryExecutor-​experiments/​">tests</a> were executed on the
+<a property="schema:citation http://purl.org/spar/cito/cites" href="http://ilabt.iminds.be/virtualwall">Virtual Wall (generation 2) environment from imec</a> <span class="references">[<a href="#ref-127">127</a>]</span>.
+Each machine had two Hexacore Intel E5645 (2.4GHz) CPUs with 24 GB RAM and was running Ubuntu 12.04 LTS.
+For <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr>, we used <a property="schema:citation http://purl.org/spar/cito/cites" href="https://code.google.com/p/cqels/wiki/<abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr>_engine&#8221;>version 1.0.1 of the engine</a> <span class="references">[<a href="#ref-128">128</a>]</span>. For <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr>, this was <a property="schema:citation http://purl.org/spar/cito/cites" href="http://streamreasoning.org/download">version 0.9</a> <span class="references">[<a href="#ref-129">129</a>]</span>.
+The dataset for this use case consisted of about 300 static triples, and around
+200 dynamic triples that were created and removed each ten seconds.
+Even this relatively small dataset size already reveals important differences
+in server and client cost, as we will discuss in the paragraphs below.</p>
+
+      <h4 id="querying-evolving_subsec:Results-ServerCost">Server Cost</h4>
+
+      <p>The server performance results from our main experiment can be seen in <a href="#querying-evolving_fig:res:scalability-server">Fig. 60</a>.
+This plot shows an increasing CPU usage for <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr> and <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr> for higher numbers of concurrent query executions.
+On the other hand, our solution never reaches more than one percent of server CPU usage.
+<a href="#querying-evolving_fig:res:scalability-server-200">Fig. 63</a> shows a detailed view on the measurements in the case of 200 simultaneous
+query executions: the CPU peaks for the alternative approaches are much higher and more frequent than for our solution.</p>
+
+      <h4 id="querying-evolving_subsec:Results-ClientCost">Client Cost</h4>
+
+      <p>The results for the average CPU usage across the duration of the query evaluation
+of all clients that sent queries to the server in our main experiment can be seen
+in <a href="#querying-evolving_fig:res:scalability-client">Fig. 61</a> and <a href="#querying-evolving_fig:res:scalability-client-all">Fig. 64</a>.
+The clients that were sending <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr> and <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr> queries to the server had a client
+CPU usage of nearly zero percent for the whole duration of the query evaluation.
+The clients using the client-side <abbr title='Triple Pattern Fragments'>TPF</abbr> Query Streamer solution that was presented in this work
+had an initial CPU peak reaching about 80%, which dropped to about
+5% after 4 seconds.</p>
+
+      <h4 id="querying-evolving_subsec:Results-AnnotationMethods">Annotation Methods</h4>
+
+      <p>The execution times for the different annotation methods, once with and once without cache can be seen in <a href="#querying-evolving_fig:res:overview">Fig. 65</a>.
+The three annotation methods have about the same relative performance in all figures, but the execution
+times are generally lower in the case where the client-side cache was used, except for the first
+query iteration.
+The execution times for expiration time annotation when no cache is used are constant,
+while the execution times with caching slightly decrease over time.</p>
+
+      <figure id="querying-evolving_fig:res:scalability">
+
+<figure id="querying-evolving_fig:res:scalability-server" class="subfigure">
+<center><strong>Server load</strong></center>
+<img src="querying-evolving/img/scalability.png" />
+<figcaption>
+            <p><span class="label">Fig. 59:</span> The server CPU usage of our solution proves to be influenced less by the number of clients.</p>
+          </figcaption>
+</figure>
+
+<figure id="querying-evolving_fig:res:scalability-client" class="subfigure">
+<center><strong>Client load</strong></center>
+<img src="querying-evolving/img/scalability-client.png" />
+<figcaption>
+            <p><span class="label">Fig. 61:</span> In the case of 200 concurrent clients,
+client CPU usage initially is high after which it converges to about 5%.
+The usage for <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr> and <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr> is almost non-existing.</p>
+          </figcaption>
+</figure>
+
+<figcaption>
+          <p>Average server and client CPU usage for one query stream for <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr>, <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr> and the proposed solution.
+Our solution effectively moves complexity from the server to the client.</p>
+        </figcaption>
+</figure>
+
+      <figure id="querying-evolving_fig:res:boxplots">
+
+<figure id="querying-evolving_fig:res:scalability-server-200" class="subfigure">
+<center><strong>Server load</strong></center>
+<img src="querying-evolving/img/scalabilityBoxplot-200.png" />
+<figcaption>
+            <p><span class="label">Fig. 62:</span> Server CPU peaks for <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr> and <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr> compared to our solution.</p>
+          </figcaption>
+</figure>
+
+<figure id="querying-evolving_fig:res:scalability-client-all" class="subfigure">
+<center><strong>Client load</strong></center>
+<img src="querying-evolving/img/clientScalabilityBoxplot.png" />
+<figcaption>
+            <p><span class="label">Fig. 64:</span> Client CPU usage for our solution is significantly higher.</p>
+          </figcaption>
+</figure>
+
+<figcaption>
+          <p>Detailed view on all server and client CPU measurements for <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr>, <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr> and the solution presented in this work for 200 simultaneous query evaluations against the server.</p>
+        </figcaption>
+</figure>
+
+      <figure id="querying-evolving_fig:res:overview">
+
+<figure id="querying-evolving_fig:res:ItCf" class="subfigure">
+<img src="querying-evolving/img/interval-true_caching-false.png" />
+<figcaption>
+            <p><span class="label">Fig. 65:</span> Time intervals without caching.</p>
+          </figcaption>
+</figure>
+
+<figure id="querying-evolving_fig:res:ItCt" class="subfigure">
+<img src="querying-evolving/img/interval-true_caching-true.png" />
+<figcaption>
+            <p><span class="label">Fig. 67:</span> Time intervals with caching.</p>
+          </figcaption>
+</figure>
+
+<figure id="querying-evolving_fig:res:IfCf" class="subfigure">
+<img src="querying-evolving/img/interval-false_caching-false.png" />
+<figcaption>
+            <p><span class="label">Fig. 68:</span> Expiration times without caching.</p>
+          </figcaption>
+</figure>
+
+<figure id="querying-evolving_fig:res:IfCt" class="subfigure">
+<img src="querying-evolving/img/interval-false_caching-true.png" />
+<figcaption>
+            <p><span class="label">Fig. 69:</span> Expiration times with caching.</p>
+          </figcaption>
+</figure>
+
+<figcaption>
+          <p>Executions times for the three different types of dynamic data representation for several subsequent streaming requests.
+The figures show a mostly linear increase when using time intervals and constant execution times for annotation using expiration times.
+In general, caching results in lower execution times.
+They also reveal that the graph approach has the lowest execution times.</p>
+        </figcaption>
+</figure>
+
+    </section>
+
+    <section id="querying-evolving_conclusions">
+      <h3>Conclusions</h3>
+
+      <p>In this paper, we researched a solution for querying over dynamic data with a low server cost,
+by continuously polling the data based on volatility information.
+In this section, we draw conclusions from our evaluation results to give an answer
+to the research questions and hypotheses we defined in <a href="#querying-evolving_problem-statement">Subsection 5.4</a>.
+First, the server and client costs for our solution will be compared with the alternatives.
+After that, the effect of our client-side cache will be explained.
+Next, we will discuss the effect of time annotation on the amount of requests to be sent, after which the
+performance of our solution will be shown and the effects of the annotation methods.</p>
+
+      <h4 id="server-cost">Server cost</h4>
+      <p>The results from <a href="#querying-evolving_subsec:Results-ServerCost">Subsubsection 5.8.1</a> confirm <a href="#querying-evolving_hypothesis1">Hypothesis 1</a>, in which we wanted to
+know if we could lower the server cost when compared to <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr> and <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr>.
+Not only is the server cost for our solution more than ten times lower on average when compared to the alternatives,
+this cost also increases much slower for a growing number of simultaneous clients.
+This makes our proposed solution more scalable for the server.
+Another disadvantage of <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr> and <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr> is the fact that the server load for a large number of
+concurrent clients varies significantly, as can be seen in <a href="#querying-evolving_fig:res:scalability-server-200">Fig. 63</a>.
+This makes it hard to scale the required processing powers for servers using these technologies.
+Our solution has a low and more constant CPU usage.</p>
+
+      <h4 id="client-cost">Client cost</h4>
+      <p>The results for the client load measurements from <a href="#querying-evolving_subsec:Results-ClientCost">Subsubsection 5.8.2</a> confirm
+<a href="#querying-evolving_hypothesis2">Hypothesis 2</a>, which stated that our solution increases the client’s processing need.
+The required client processing power using our solution is clearly much higher than for <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr> and <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr>.
+This is because we redistributed the required processing power from the server to the client.
+In our solution, it is the client that has to do most of the work for evaluating queries, which puts
+less load on the server.
+The load on the client still remains around 5% for the largest part of the query evaluation
+as shown in <a href="#querying-evolving_fig:res:scalability-client">Fig. 61</a>. Only during the first few seconds, the query engines
+CPU usage peaks, which is because of the processor-intensive rewriting step that needs to be done once
+at the start of each dynamic query evaluation.</p>
+
+      <h4 id="caching">Caching</h4>
+      <p>We can also confirm <a href="#querying-evolving_hypothesis3">Hypothesis 3</a> about the positive effect of caching
+from the results in <a href="#querying-evolving_subsec:Results-AnnotationMethods">Subsubsection 5.8.3</a>.
+Our caching solution has a positive effect on the execution times.
+In an optimal scenario for our use case, caching would lead to an execution time reduction of 60% because three of the five triple
+patterns in the query for our use case from <a href="#querying-evolving_use-case">Subsection 5.5</a> are dynamic.
+For our results, this caching leads to an average reduction of 56% which is close to the optimal case.
+Since we are working with dynamic data, some required background-data is bound to overlap, in these
+cases it is advantageous to have a client-side caching solution so that these redundant requests for
+static data can be avoided.
+The longer our query evaluation runs, the more static data the cache accumulates, so the bigger the
+chance that there are cache hits when background data is needed in a certain query iteration.
+Future research should indicate what the limits of such a client-side cache for static data are, and
+whether or not it is advantageous to reuse this cache for different queries.</p>
+
+      <h4 id="request-reduction">Request reduction</h4>
+      <p>By annotating dynamic data with a time annotation, we successfully reduced the amount of required requests
+for polling-based <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> querying to a minimum, which answers <a href="#querying-evolving_researchquestion1">Research Question 1</a>
+about the question if clients can use volatility knowledge to perform continuous querying.
+Because now, the client can derive the exact moment at which the data can change on the server, and this will be used
+to schedule a new query execution on the server.
+In future research, it is still possible to reduce the amount of requests our client engine needs to send
+through a better caching strategy, which could for example also temporarily cache dynamic data which changes
+at different frequencies.
+We can also look into differential data transmission by only sending data to the client that has been changed since
+the last time the client has requested a specific resource.</p>
+
+      <h4 id="performance">Performance</h4>
+      <p>For answering <a href="#querying-evolving_researchquestion2">Research Question 2</a>, the performance of our solution compared to alternatives,
+we compared our solution with two state-of-the-art approaches for dynamic <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> querying.
+Our solution significantly reduces the required server processing per client, this complexity is mostly moved to the client.
+This comparison shows that our technique allows data providers to offer dynamic data which can be used to continuously
+evaluate dynamic queries with a low server cost.
+Our low-cost publication technique for dynamic data is useful when the number of potential simultaneous clients
+is large. When this data is needed for only a small number of clients in a closed off environment
+and query evaluation must happen fast, traditional approaches like <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr> or <abbr title='Continuous sparql'>C-<abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr></abbr> are advised.
+These are only two possible points on the <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf"><em>Linked Data Fragments</em> axis</a></span> <span class="references">[<a href="#ref-8">8</a>]</span>, depending on the
+publication requirements, combinations of these approaches can be used.</p>
+
+      <h4 id="annotation-methods">Annotation methods</h4>
+      <p>In <a href="#querying-evolving_researchquestion3">Research Question 3</a>, we wanted to know how the different annotation methods influenced the execution times.
+From the results in <a href="#querying-evolving_subsec:Results-AnnotationMethods">Subsubsection 5.8.3</a>, we can conclude that graph-based annotation results in the lowest execution times.
+It can also be seen that annotation with time intervals has the problem of continuously increasing execution times, because
+of the continuously growing dataset. Time interval annotation can be desired if we for example want to maintain
+the history of certain facts, as opposed to just having the last version of facts using expiration times.
+In future work, we will investigate alternative techniques to support time interval annotation without the continuously increasing execution times.</p>
+
+      <p>In this work, the frequency at which our queries are updated is purely data-driven using time intervals or expiration times.
+In the future it might be interesting, to provide a control to the user to change this frequency, if for example this user
+only desires query updates at a lower frequency than the data actually changes.</p>
+
+      <p>In future work, it is important to test this approach with a larger variety of use cases.
+The time annotation mechanisms we use are generic enough to
+transform all static facts to dynamic data for any number of triples.
+The <a property="schema:citation http://purl.org/spar/cito/cites" href="https://pdfs.semanticscholar.org/7537/3ee7efaca72d4894bb2c86033a2cadeef655.pdf">CityBench</a> <span class="references">[<a href="#ref-71">71</a>]</span> benchmark can for example be
+used to evaluate these different cases based on city sensor data.
+These tests must be scaled (both in terms of clients as in terms of dataset size),
+so that the maximum number of concurrent requests can be determined, with respect to the dataset size.</p>
+
+    </section>
 
   </section>
-
 
   <section id="summary">
     <h2>Conclusions</h2>
@@ -5504,6 +6282,30 @@ Ruben Verborgh is a postdoctoral fellow of the Research Foundation – Flanders.
   <dd resource="http://users.ics.forth.gr/~fgeo/files/ER14.pdf" typeof="schema:Article">Stefanidis, K., Chrysakis, I., Flouris, G.: On Designing Archiving Policies for Evolving <abbr title='Resource Description Framework'>RDF</abbr> Datasets on the Web. In: International Conference on Conceptual Modeling. pp. 43–56. Springer (2014).</dd>
   <dt id="ref-117">[117]</dt>
   <dd resource="#semanticweb" typeof="schema:Article">Berners-Lee, T., Hendler, J., Lassila, O., others: The semantic web. Scientific American. 284, 28–37 (2001).</dd>
+  <dt id="ref-118">[118]</dt>
+  <dd resource="#buil2013sparql" typeof="schema:Chapter">Buil-Aranda, C., Hogan, A., Umbrich, J., Vandenbussche, P.-Y.: \sparql Web-Querying Infrastructure: Ready for Action? In: The Semantic Web–ISWC 2013. pp. 277–293 (2013).</dd>
+  <dt id="ref-119">[119]</dt>
+  <dd resource="#sparqlcomplexity" typeof="schema:Article">Pérez, J., Arenas, M., Gutierrez, C.: Semantics and Complexity of <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr>. In: International semantic web conference. pp. 30–43. Springer (2006).</dd>
+  <dt id="ref-120">[120]</dt>
+  <dd resource="#taelman_mepdaw_2016" typeof="schema:Article">Taelman, R., Verborgh, R., Colpaert, P., Mannens, E., Van de Walle, R.: Continuously Updating Query Results over Real-Time Linked Data. In: Proceedings of the 2nd Workshop on Managing the Evolution and Preservation of the Data Web (2016).</dd>
+  <dt id="ref-121">[121]</dt>
+  <dd resource="http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/" typeof="schema:CreativeWork">Klyne, G., J. Carroll, J.: Resource Description Framework (\rdf): Concepts and Abstract Syntax. W3C, <a href="http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/">http:/​/​www.w3.org/TR/2004/REC-rdf-concepts-20040210/</a> (2004).</dd>
+  <dt id="ref-122">[122]</dt>
+  <dd resource="https://dx.doi.org/10.1145/2566486.2567973" typeof="schema:Article">Nguyen, V., Bodenreider, O., Sheth, A.: Don’t Like \rdf Reification? Making Statements About Statements Using Singleton Property. In: Proceedings of the 23rd International Conference on World Wide Web. pp. 759–770. , New York, NY, USA (2014).</dd>
+  <dt id="ref-123">[123]</dt>
+  <dd resource="#temporalrdf" typeof="schema:Chapter">Gutierrez, C., Hurtado, C., Vaisman, A.: Temporal \rdf. In: The Semantic Web: Research and Applications. pp. 93–107 (2005).</dd>
+  <dt id="ref-124">[124]</dt>
+  <dd resource="https://dx.doi.org/10.1109/TKDE.2007.34" typeof="schema:Article">Gutierrez, C., Hurtado, C.A., Vaisman, A.: Introducing Time into \rdf. Knowledge and Data Engineering, IEEE Transactions on. 19, 207–218 (2007).</dd>
+  <dt id="ref-125">[125]</dt>
+  <dd resource="#streamreasoningsofar" typeof="schema:Article">Barbieri, D., Braga, D., Ceri, S., Della Valle, E., Grossniklaus, M.: Stream Reasoning: Where We Got So Far. In: Proceedings of the NeFoRS2010 Workshop (2010).</dd>
+  <dt id="ref-126">[126]</dt>
+  <dd resource="#arasu2004stream" typeof="schema:Article">Arasu, A., Babcock, B., Babu, S., Cieslewicz, J., Datar, M., Ito, K., Motwani, R., Srivastava, U., Widom, J.: \stream: The Stanford Data Stream Management System. Book chapter. (2004).</dd>
+  <dt id="ref-127">[127]</dt>
+  <dd resource="http://ilabt.iminds.be/virtualwall" typeof="schema:CreativeWork">iLab.t, iMinds: Virtual Wall: wired networks and applications. <a href="http://ilabt.iminds.be/virtualwall">http:/​/​ilabt.iminds.be/virtualwall</a></dd>
+  <dt id="ref-128">[128]</dt>
+  <dd resource="https://code.google.com/p/cqels/wiki/<abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr>_engine&#8221; typeof=&#8221;schema:CreativeWork&#8221;>Levan, C.: \cqels engine: Instructions on experimenting \cqels. <a href="https://code.google.com/p/cqels/wiki/<abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr>_engine&#8221;>https:/​/​code.google.com/p/cqels/wiki/<abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr>_engine</a></dd>
+  <dt id="ref-129">[129]</dt>
+  <dd resource="http://streamreasoning.org/download" typeof="schema:CreativeWork">StreamReasoning: Continuous \sparql (\csparql) Ready To Go Pack. <a href="http://streamreasoning.org/download">http:/​/​streamreasoning.org/download</a></dd>
 </dl>
 </section>
 </footer>
