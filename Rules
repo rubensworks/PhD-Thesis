@@ -9,7 +9,6 @@ require 'scholarmarkdown/filter/include_code'
 require 'scholarmarkdown/filter/labelify'
 require 'scholarmarkdown/filter/references_to_footer'
 require 'scholarmarkdown/filter/headerids_to_section'
-require 'scholarmarkdown/filter/dokieli_ui'
 require 'scholarmarkdown/filter/citation_metadata'
 
 Encoding.default_external = "UTF-8"
@@ -36,7 +35,6 @@ compile '/index.*' do
   filter :scholar_headerids_to_section
   filter :rubypants
   layout '/default.*'
-  filter :scholar_dokieli_ui
   filter :scholar_citation_metadata
 end
 
