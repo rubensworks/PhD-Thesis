@@ -1,12 +1,15 @@
 abbreviation,full
 API,Application Programming Interface
 BEAR,Benchmark of rdf Archives
+C-SPARQL,Continuous sparql
 CB,Change-based
 CM,Change materialization
+CQELS,Continuous Query Evaluation over Linked Stream
 CSV,Comma separated values
 CV,Cross-version join
 CVS,Concurrent Versions System
 DM,Delta materialization
+DSMS,Data Stream Management System
 GTFS,General Transit Feed Specification
 HDT-FoQ,hdt Focus on Querying
 HDT,Header Dictionary Triples

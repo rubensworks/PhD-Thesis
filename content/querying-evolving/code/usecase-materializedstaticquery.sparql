@@ -1,0 +1,8 @@
+SELECT ?headSign ?routeLabel ?departureTime
+WHERE {
+    <http://example.org/train#train4815> t:departureTime ?departureTime.
+    <http://example.org/train#train4815> t:headSign      ?headSign.
+    <http://example.org/train#train4815> t:routeLabel    ?routeLabel.
+    FILTER (?departureTime > "2015-12-08T10:20:00"^^xsd:dateTime).
+    FILTER (?departureTime < "2015-12-08T11:20:00"^^xsd:dateTime).
+}

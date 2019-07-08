@@ -1,0 +1,7 @@
+SELECT ?id ?delay ?platform ?final0 ?final1
+WHERE {
+    GRAPH ?g0 { ?id t:delay ?delay. }
+    ?g0 tmp:expiration ?final0.
+    GRAPH ?g1 { ?id t:platform ?platform. }
+    ?g1 tmp:expiration ?final1.
+}
