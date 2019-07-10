@@ -73,15 +73,46 @@ In order for this dream to become a reality,
 the Web had to become *machine-readable*.
 This Web extension is typically referred to as the *Semantic Web*.
 
-explain semweb+ld+rdf basics (just a paragraph, not too extensive)
-{:.todo}
-
 Now —almost twenty years later—, several standards and technologies have been developed to make this dream a reality,
 [In 2013, more than four million Web domains are using these technologies](http://iswc2013.semanticweb.org/content/keynote-ramanathan-v-guha.html).
 Using these Semantic Web technologies, so-called *Knowledge Graphs* are being constructed by many major companies world-wide,
 such as [Google](https://developers.google.com/knowledge-graph/) and [Microsoft](https://developer.microsoft.com/en-us/graph/).
 These Knowledge Graphs are being used to support tasks that were part of Tim Berners-Lee's original vision,
 such as managing day-to-day tasks with the [Google Now assistant](https://www.google.com/intl/nl/landing/now/).
+
+The standard for modeling Knowledge Graphs is the [Resource Description Framework (RDF)](cite:cites spec:rdf).
+Fundamentally, it is based around the concept of *triples* that are used to make statements about things.
+A triple is made up of a *subject*, *predicate* and *object*,
+where the *subject* and *object* are resources, and the *predicate* denotes their relationship.
+For example, [](#introduction-figure-triple) shows an example of a simple triple indicating the nationality of a person.
+Multiple resources can combined with each other through multiple triples, which forms a *graph*.
+[](#introduction-figure-graph) shows an example of such a graph, which contains *knowledge* about a person.
+In order to look up information within such graphs, the [SPARQL query language](cite:cites spec:sparqllang)
+was introduced as a standard.
+Essentially, SPARQL allows RDF data to be looked up through combinations of *triple patterns*,
+which are triples where any of its elements can be replace with *variables* such as `?name`.
+For example, [](#introduction-code-sparql) contains a SPARQL query that find the names of all people that Alice knows.
+
+<figure id="introduction-figure-triple">
+<img src="img/triple.svg" alt="A triple" />
+<figcaption markdown="block">
+A triple indicating that Alice knows Bob.
+</figcaption>
+</figure>
+
+<figure id="introduction-figure-graph">
+<img src="img/graph.svg" alt="A knowledge graph" />
+<figcaption markdown="block">
+A small knowledge graph about Alice.
+</figcaption>
+</figure>
+
+<figure id="introduction-code-sparql" class="listing">
+````/code/query.sparql````
+<figcaption markdown="block">
+A simplified SPARQL query selecting the names of all people that Alice knows.
+</figcaption>
+</figure>
 
 #### Evolving Knowledge Graphs
 
