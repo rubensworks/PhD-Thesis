@@ -151,7 +151,7 @@ which is why this is of important factor within my research.
 {:#introduction-research-question}
 
 The goal of my research is to allow people to *publish* and *find* knowledge
-without having to depend on large corporations,
+without having to depend on large centralized entities,
 with a focus on knowledge that *evolves* over time.
 This lead me to the following research question for my PhD:
 
