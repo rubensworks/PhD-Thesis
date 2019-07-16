@@ -161,20 +161,20 @@ This lead me to the following research question for my PhD:
 During my research, I focused on *four* main challenges
 related to this research question:
 
-1. **The Web is highly *heterogeneous*.**
-    <br />
-    Before data can be queried from the Web,
-    the different *formats* and *interfaces* in which data is available need to be considered and harmonized.
-2. **Experimentation requires *realistic* evolving data.**
+1. **Experimentation requires *realistic* evolving data.**
     <br />
     In order to *evaluate* the performance of systems that handle *evolving* data,
     a flexible method for *obtaining* such data needs to be available.
-3. **Indexing evolving data involves a *trade-off* between *storage size* and *lookup efficiency*.**
+2. **Indexing evolving data involves a *trade-off* between *storage size* and *lookup efficiency*.**
     <br />
     Indexing techniques are used to improve the efficiency of querying,
     but comes at the cost of increased storage.
     As such, it is important to find a good *balance* between the amount of *storage*,
     and the amount of *querying speedup*.
+3. **The Web is highly *heterogeneous*.**
+    <br />
+    Before data can be queried from the Web,
+    the different *formats* and *interfaces* in which data is available need to be considered and harmonized.
 4. **Publishing *evolving* data via a *queryable interface* is costly.**
     <br />
     Centralized querying interfaces are hard to scale for an increasing number of concurrent clients,
@@ -187,26 +187,27 @@ related to this research question:
 Corresponding to my four research challenges,
 this thesis is based on the following four peer-reviewed publications:
 
-* Ruben Taelman et al. [Comunica: a Modular SPARQL Query Engine for the Web](https://comunica.github.io/Article-ISWC2018-Resource/).
-    <br />In: *International Semantic Web Conference*. Springer, October 2018.
 * Ruben Taelman et al. [Generating Public Transport Data based on Population Distributions for RDF Benchmarking](https://www.rubensworks.net/raw/publications/2018/podigg.pdf).
     <br />In: *In Semantic Web Journal*. IOS Press, 2019.
 * Ruben Taelman et al. [Triple Storage for Random-Access Versioned Querying of RDF Archives](https://rdfostrich.github.io/article-jws2018-ostrich/).
     <br />In: *Journal of Web Semantics*. Elsevier, 2019.
+* Ruben Taelman et al. [Comunica: a Modular SPARQL Query Engine for the Web](https://comunica.github.io/Article-ISWC2018-Resource/).
+    <br />In: *International Semantic Web Conference*. Springer, October 2018.
 * Ruben Taelman et al. [Continuous Client-side Query Evaluation over Dynamic Linked Data](https://www.rubensworks.net/raw/publications/2016/Continuous_Client-Side_Query_Evaluation_over_Dynamic_Linked_Data.pdf).
     <br />In: *The Semantic Web: ESWC 2016 Satellite Events, Revised Selected Papers*. Springer, May 2016.
 
-In [](#querying), A modular query engine is introduced called *Comunica* that is able to cope with the heterogeneity of date on the Web.
-This engine has been designed to be highly flexible, so that it simplifies research within the query domain,
-where new query algorithms can for example be developed in a separate module, and plugged into the engine without much effort.
-Next, in [](#generating) a mimicking algorithm (*PoDiGG*) is introduced for generating *realistic* evolving public transport data,
+
+In [](#generating) a mimicking algorithm (*PoDiGG*) is introduced for generating *realistic* evolving public transport data,
 so that it can be used to benchmark systems that work with evolving data.
 This algorithm is based on established concepts for designing public transport networks,
 and takes into account population distributions for simulating the flow of vehicles.
-In [](#storing), a storage architecture and querying algorithms are introduced
+Next, in [](#storing), a storage architecture and querying algorithms are introduced
 for managing evolving data.
 It has been implemented as a system called *OSTRICH*,
 and extensive experimentation shows that this systems introduces a useful trade-off between storage size and querying efficiency.
+In [](#querying), A modular query engine is introduced called *Comunica* that is able to cope with the heterogeneity of date on the Web.
+This engine has been designed to be highly flexible, so that it simplifies research within the query domain,
+where new query algorithms can for example be developed in a separate module, and plugged into the engine without much effort.
 In [](#querying-evolving), a publishing interface and accompanying querying algorithm (*TPF Query Streamer*) is introduced and evaluated
 to enable evolving data with a low volatility to be published at a low cost, and queried continuously.
 Finally, this work is concluded in [](#conclusions) and future research opportunities are discussed.
