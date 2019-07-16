@@ -12,6 +12,7 @@ As such, RDF archiving solutions should also allow query results to be returned 
 The ability to achieve such stream subsets is limited in existing solutions.
 
 This leads us to the following research question:
+
 > How can we store RDF archives to enable efficient VM, DM and VQ triple pattern queries with offsets?
 {:#storing_researchquestion}
 

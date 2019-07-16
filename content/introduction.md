@@ -163,7 +163,7 @@ related to this research question:
 
 1. **Experimentation requires *realistic* evolving data.**
     <br />
-    In order to *evaluate* the performance of systems that handle *evolving* data,
+    In order to *evaluate* the performance of systems that handle *evolving* knowledge graphs,
     a flexible method for *obtaining* such data needs to be available.
 2. **Indexing evolving data involves a *trade-off* between *storage size* and *lookup efficiency*.**
     <br />
@@ -173,12 +173,14 @@ related to this research question:
     and the amount of *querying speedup*.
 3. **The Web is highly *heterogeneous*.**
     <br />
-    Before data can be queried from the Web,
-    the different *formats* and *interfaces* in which data is available need to be considered and harmonized.
+    Before knowledge graphs can be queried from the Web,
+    the different *interfaces* through which data is available,
+    and the different *algorithms* using which the data can be retrieved and combined
+    need to be considered.
 4. **Publishing *evolving* data via a *queryable interface* is costly.**
     <br />
     Centralized querying interfaces are hard to scale for an increasing number of concurrent clients,
-    especially when the data that is being queried over is continuously evolving.
+    especially when the knowledge graphs that are being queried over are continuously evolving.
     New kinds of interfaces and querying algorithms are needed to cope with this scalability issue.
 
 ### Outline
