@@ -130,7 +130,15 @@ As such, *evolving* Knowledge Graphs are the main focus of my research.
 
 #### Decentralized Knowledge Graphs
 
-The current *centralized* Knowledge Graphs do however not match well with the *decentralized* nature of the Web.
+As stated by Tim Berners-Lee, [the Web if for everyone](https://twitter.com/timberners_lee/status/228960085672599552).
+This means that the Web is a *free* platform (as *freedom*, not *free beer*),
+where anyone can *say* anything about anything,
+and anyone can *access* anything that has been said.
+The original Web standards and technologies have been designed with these fundamental liberties in mind.
+However, over the recent years, the Web has been growing towards more *centralized* entities,
+where these liberties are being challenged.
+
+The current *centralized* Knowledge Graphs do not match well with the original *decentralized* nature of the Web.
 At the time of writing, these new Knowledge Graphs are in the hands of a few large corporations,
 and intelligent agents on top of them are restricted to what these corporations allow them to do.
 As people depend on the capabilities of these Knowledge Graphs,
