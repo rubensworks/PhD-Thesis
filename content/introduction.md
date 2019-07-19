@@ -117,19 +117,27 @@ A simplified SPARQL query selecting the names of all people that Alice knows.
 #### Evolving Knowledge Graphs
 
 Within *Big Data*, we talk about the three V's: *volume*, *velocity* and *variety*.
-As such, the Web itself can be seen as a *Big Data*set.
-More specifically, the Web is highly *volatile*,
+As the Web meets these three requirements, it can be seen as a global *Big Data*set.
+Specifically, the Web is highly *volatile*,
 as it is continuously evolving,
 and it does to at an increasing rate.
 For example, [Google is processing more than *40.000 search requests* *every second*](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#6907ae2460ba),
 [*500 hours of video* are being uploaded to YouTube *every minute*](https://expandedramblings.com/index.php/youtube-statistics/),
 and [more than *5.000* tweets are being sent *every seconds*](https://blog.hootsuite.com/twitter-statistics/).
 
-Statistics like these show that significant research and engineering effort is needed to keep things on the Web working.
-Specifically, work is needed to make it possible to
-*store* all of this data as fast as possible,
+A lot of research and engineering work is needed to make it possible to handle this evolving data.
+For instance, it should be possible to *store* all of this data as fast as possible,
 and to make it *searchable* for *knowledge* as soon as possible.
-As such, *evolving* Knowledge Graphs are the main focus of my research.
+This is important, as there is a lot of value in evolving knowledge.
+For example, by tracking the evolution of biomedical information, the spread of diseases can be reduced,
+and by observing highway sensors, traffic jams may be avoided by preemptively rerouting traffic.
+
+Due to the the [(RDF) knowledge graph model originally being *atemporal*](https://www.w3.org/TR/rdf11-concepts/#change-over-time),
+the usage of evolving knowledge graphs remains limited.
+As such, research and engineering is needed for new
+models, storage techniques, and querying algorithms
+for evolving knowledge graphs.
+As such, *evolving* knowledge graphs are the main focus of my research.
 
 #### Decentralized Knowledge Graphs
 
