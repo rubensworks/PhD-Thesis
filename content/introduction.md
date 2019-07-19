@@ -116,7 +116,10 @@ A simplified SPARQL query selecting the names of all people that Alice knows.
 
 #### Evolving Knowledge Graphs
 
-As one could expect, the Web is continuously evolving,
+Within *Big Data*, we talk about the three V's: *volume*, *velocity* and *variety*.
+As such, the Web itself can be seen as a *Big Data*set.
+More specifically, the Web is highly *volatile*,
+as it is continuously evolving,
 and it does to at an increasing rate.
 For example, [Google is processing more than *40.000 search requests* *every second*](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#6907ae2460ba),
 [*500 hours of video* are being uploaded to YouTube *every minute*](https://expandedramblings.com/index.php/youtube-statistics/),
