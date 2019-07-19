@@ -137,9 +137,16 @@ As stated by Tim Berners-Lee, [the Web if for everyone](https://twitter.com/timb
 This means that the Web is a *free* platform (as *freedom*, not *free beer*),
 where anyone can *say* anything about anything,
 and anyone can *access* anything that has been said.
-The original Web standards and technologies have been designed with these fundamental liberties in mind.
+This is directly compatible with Article 19 of [the Universal Declaration of Human Rights](https://www.un.org/en/universal-declaration-human-rights/),
+which says the following:
+
+> Everyone has the right to freedom of opinion and expression;
+this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas
+through any media and regardless of frontiers.
+
+The original Web standards and technologies have been designed with this fundamental right in mind.
 However, over the recent years, the Web has been growing towards more *centralized* entities,
-where these liberties are being challenged.
+where this right is being challenged.
 
 The current *centralized* Knowledge Graphs do not match well with the original *decentralized* nature of the Web.
 At the time of writing, these new Knowledge Graphs are in the hands of a few large corporations,
@@ -150,6 +157,9 @@ In the last couple of years, these centralized powers have proven to be problema
 for example when [the flow of information is redirected to influence election results](https://fs.blog/2017/07/filter-bubbles/),
 when [personal information is being misused](https://www.theguardian.com/technology/live/2018/apr/10/mark-zuckerberg-testimony-live-congress-facebook-cambridge-analytica),
 or when [information is being censored due to idealogical differences](https://quillette.com/2019/06/06/against-big-tech-viewpoint-discrimination/).
+This shows that our freedom of expression is being challenged by these large centralized entities,
+as there is clear interference of opinions through redirection of the information flow,
+and obstruction to receive information through censorship.
 
 For these reasons, there is a massive push for [*re-decentralizing the Web*](https://ruben.verborgh.org/articles/redecentralizing-the-web/),
 where people regain *ownership* of their data.
@@ -218,9 +228,9 @@ Next, in [](#storing), a storage architecture and querying algorithms are introd
 for managing evolving data.
 It has been implemented as a system called *OSTRICH*,
 and extensive experimentation shows that this systems introduces a useful trade-off between storage size and querying efficiency.
-In [](#querying), A modular query engine is introduced called *Comunica* that is able to cope with the heterogeneity of date on the Web.
+In [](#querying), A modular query engine is introduced called *Comunica* that is able to cope with the heterogeneity of data on the Web.
 This engine has been designed to be highly flexible, so that it simplifies research within the query domain,
 where new query algorithms can for example be developed in a separate module, and plugged into the engine without much effort.
 In [](#querying-evolving), a publishing interface and accompanying querying algorithm (*TPF Query Streamer*) is introduced and evaluated
-to enable evolving data with a low volatility to be published at a low cost, and queried continuously.
+to enable querying *evolving* data with a low volatility to be published at a low cost, and queried continuously.
 Finally, this work is concluded in [](#conclusions) and future research opportunities are discussed.
