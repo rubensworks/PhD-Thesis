@@ -2,17 +2,27 @@
 {:#abstract}
 
 <!-- Context      -->
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+The Web has become our most valuable tool for sharing information.
+Using *knowledge graphs*, this information can be linked in a structured way,
+so that intelligent agents can act upon this data autonomously.
+Current knowledge graphs remain however rather static.
+As there is a lot of value in acting upon *evolving* knowledge,
 <!-- Need         -->
-Vestibulum finibus dignissim augue, id pellentesque est facilisis non.
+there is a need for *evolving knowledge graphs*.
 <!-- Task         -->
-Donec fringilla dolor non neque iaculis blandit.
+As such, the goal of this PhD is to allow such evolving knowledge graphs to be stored and queried,
+taking into account that the *decentralized* nature Web
+where anyone should be able say anything about anything.
 <!-- Object       -->
-Praesent aliquet eleifend iaculis.
+Concretely, four challenges related to this goal are investigated:
+(1) generation of evolving data,
+(2) storage of evolving data,
+(3) querying over heterogeneous datasets,
+and (4) querying evolving data.
 <!-- Findings     -->
-Quisque pellentesque at odio ac bibendum.
+For each of these challenges, techniques and algorithms have been developed,
 <!-- Conclusion   -->
-Pellentesque imperdiet felis urna, quis facilisis lacus gravida non.
+which prove to be valuable for storing and querying evolving knowledge graphs on the Web.
 <!-- Perspectives -->
-Donec quis lectus eget sem tempor tristique pellentesque in dolor.
-
+This work therefore brings us closer towards a Web
+in which both human and machine can act upon evolving knowledge.
