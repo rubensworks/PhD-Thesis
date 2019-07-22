@@ -88,6 +88,12 @@ header {
   
   a {
     color: #e8e8e8;
+    &:not(:hover) {
+      background: none;
+    }
+    sup {
+      margin: 0 -.1em 0 .1em;
+    }
   }
 
   h1 {
@@ -146,15 +152,6 @@ header {
       display: inline;
       margin-right: 1.5em;
       white-space: nowrap;
-    }
-
-    a {
-      &:not(:hover) {
-        background: none;
-      }
-      sup {
-        margin: 0 -.1em 0 .1em;
-      }
     }
   }
 
