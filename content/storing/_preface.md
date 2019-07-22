@@ -7,7 +7,7 @@ This can however introduce a tremendous storage overhead when consecutive versio
 Furthermore, querying over such a naive storage method would require going through _all_ of these versions,
 which does not scale well when the number of versions is high.
 
-The focus of our work in this chapter is to come up with a trade-off between storage size and lookup efficiency,
+The focus of our work in this chapter is to come up with a Web-friendly trade-off between storage size and lookup efficiency,
 so that evolving knowledge graphs can be published on the Web without requiring high-end machines.
 We introduce of a new indexing technique for evolving data,
 that focuses on querying in a _stream-based_ manner.
@@ -26,3 +26,6 @@ These indexes are essential for achieving efficient querying for different kinds
 We extensively evaluate this approach based on our implementation _OSTRICH_.
 Our results show that our method achieves a trade-off between storage size and lookup efficiency
 that is useful for hosting evolving knowledge graphs on the Web.
+Concretely, at the cost of an increase in storage size and ingestion time,
+query execution time is significantly reduced.
+As storage is typically cheap, and ingestion can happen offline, this trade-off is acceptable in a Web environment.

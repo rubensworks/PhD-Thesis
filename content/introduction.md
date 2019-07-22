@@ -175,6 +175,9 @@ Decentralization is however a technologically difficult thing.
 As people do want ownership of their data, they do not want to give up their intelligent agents.
 As such, this decentralization wave requires significant research effort to achieve the same capabilities as these *centralized* Knowledge Graphs,
 which is why this is of important factor within my research.
+Specifically, I focus on supporting knowledge graphs *on the Web*,
+instead of only being available behind closed doors,
+so that they are available for everyone.
 
 ### Research Question
 {:#introduction-research-question}

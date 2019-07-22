@@ -76,6 +76,14 @@ For example, new techniques and algorithms are needed to
 (2) allow *authentication-aware* querying over *private* data,
 and (3) support *collaborative* querying between agents that handle similar queries.
 
+As I put a strong emphasis on *reusability* during this PhD,
+all of the tools and experiments that were implemented
+are available under an open license.
+Furthermore, accepted development methods from the software industry were followed
+to achieve implementations with decent code quality and valuable usage and development documentation.
+This should therefore lower the barrier for other researchers in the future
+to build upon this research and its tools.
+
 For the next couple of years,
 I aim to focus more on the topic of querying decentralized knowledge graphs.
 Through collaboration with my colleagues from IDLab,
