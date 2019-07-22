@@ -198,22 +198,9 @@ main, #appendix {
 
   // Chapters
   h2 {
-    background-color: #424242;
-    color: #e8e8e8;
-    border: solid 1px #0090f7;
-    border-bottom: solid 4px #0090f7;
-  
     font-size: 2.5em;
     font-weight: bolder;
-    @media (max-width: 1100px) {
-      margin: 3em 0 1.5em 0;
-      padding: 1em 20px 1em 20px;
-    }
-    @media (min-width: 1100px) {
-      margin: 3em -150px 1.5em -150px;
-      padding: 1em 150px 1em 150px;
-    }
-
+    margin: 4em 0 1em 0;
     counter-increment: section;
     counter-reset: subsection;
 
