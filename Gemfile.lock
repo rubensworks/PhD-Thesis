@@ -33,7 +33,7 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    equatable (0.6.0)
+    equatable (0.6.1)
     eventmachine (1.2.7)
     execjs (2.7.0)
     ffi (1.11.1)
@@ -70,6 +70,9 @@ GEM
     katex (0.5.1)
       execjs (~> 2.7)
     kramdown (2.1.0)
+    kramdown-math-sskatex (1.0.0)
+      kramdown (~> 2.0)
+      sskatex (>= 0.9.37)
     latex-decode (0.3.1)
     libv8 (3.16.14.19)
     listen (3.1.5)
@@ -114,7 +117,7 @@ GEM
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
-    public_suffix (3.1.0)
+    public_suffix (3.1.1)
     rack (1.6.11)
     rack-livereload (0.3.17)
       rack
@@ -132,7 +135,7 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    scholarmarkdown (2.3.0)
+    scholarmarkdown (2.5.0)
       bibmarkdown (~> 2.0.0)
       bibtex-ruby
       citeproc-ruby (>= 1.1.6)
@@ -140,6 +143,7 @@ GEM
       execjs
       i18n
       katex
+      kramdown-math-sskatex
       latex-decode
       sskatex
       therubyracer
@@ -192,7 +196,7 @@ GEM
       json (>= 1.8)
       nokogiri (~> 1.6)
     wisper (2.0.0)
-    zeitwerk (2.1.6)
+    zeitwerk (2.1.8)
 
 PLATFORMS
   ruby
@@ -211,7 +215,7 @@ DEPENDENCIES
   rb-readline
   rubypants
   sass
-  scholarmarkdown
+  scholarmarkdown (~> 2.5.0)
   serve
   thin
   unicode_utils
