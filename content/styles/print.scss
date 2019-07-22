@@ -8,6 +8,15 @@ header {
   }
 }
 
+section {
+  page-break-after: always;
+}
+
+section.sub-paper section {
+  page-break-after: initial;
+}
+
+
 .screenonly {
   display: none;
 }
