@@ -75,12 +75,12 @@ This Web extension is typically referred to as the *Semantic Web*.
 
 Now —almost twenty years later—, several standards and technologies have been developed to make this dream a reality,
 [In 2013, more than four million Web domains are using these technologies](http://iswc2013.semanticweb.org/content/keynote-ramanathan-v-guha.html).
-Using these Semantic Web technologies, so-called *Knowledge Graphs* are being constructed by many major companies world-wide,
+Using these Semantic Web technologies, so-called *knowledge graphs* are being constructed by many major companies world-wide,
 such as [Google](https://developers.google.com/knowledge-graph/) and [Microsoft](https://developer.microsoft.com/en-us/graph/).
-These Knowledge Graphs are being used to support tasks that were part of Tim Berners-Lee's original vision,
+These knowledge graphs are being used to support tasks that were part of Tim Berners-Lee's original vision,
 such as managing day-to-day tasks with the [Google Now assistant](https://www.google.com/intl/nl/landing/now/).
 
-The standard for modeling Knowledge Graphs is the [Resource Description Framework (RDF)](cite:cites spec:rdf).
+The standard for modeling knowledge graphs is the [Resource Description Framework (RDF)](cite:cites spec:rdf).
 Fundamentally, it is based around the concept of *triples* that are used to make statements about things.
 A triple is made up of a *subject*, *predicate* and *object*,
 where the *subject* and *object* are resources, and the *predicate* denotes their relationship.
@@ -156,10 +156,10 @@ The original Web standards and technologies have been designed with this fundame
 However, over the recent years, the Web has been growing towards more *centralized* entities,
 where this right is being challenged.
 
-The current *centralized* Knowledge Graphs do not match well with the original *decentralized* nature of the Web.
-At the time of writing, these new Knowledge Graphs are in the hands of a few large corporations,
+The current *centralized* knowledge graphs do not match well with the original *decentralized* nature of the Web.
+At the time of writing, these new knowledge graphs are in the hands of a few large corporations,
 and intelligent agents on top of them are restricted to what these corporations allow them to do.
-As people depend on the capabilities of these Knowledge Graphs,
+As people depend on the capabilities of these knowledge graphs,
 large corporations gain significant control over the Web.
 In the last couple of years, these centralized powers have proven to be problematic,
 for example when [the flow of information is redirected to influence election results](https://fs.blog/2017/07/filter-bubbles/),
@@ -173,7 +173,7 @@ For these reasons, there is a massive push for [*re-decentralizing the Web*](htt
 where people regain *ownership* of their data.
 Decentralization is however a technologically difficult thing.
 As people do want ownership of their data, they do not want to give up their intelligent agents.
-As such, this decentralization wave requires significant research effort to achieve the same capabilities as these *centralized* Knowledge Graphs,
+As such, this decentralization wave requires significant research effort to achieve the same capabilities as these *centralized* knowledge graphs,
 which is why this is of important factor within my research.
 Specifically, I focus on supporting knowledge graphs *on the Web*,
 instead of only being available behind closed doors,
