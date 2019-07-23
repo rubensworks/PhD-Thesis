@@ -30,7 +30,7 @@
   <meta name="citation_author" content="Erik Mannens" />
   <meta name="citation_author" content="Rik Van de Walle" />
   
-  <meta name="citation_publication_date" content="2019/07/22" />
+  <meta name="citation_publication_date" content="2019/07/23" />
 </head>
 
 <body prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ dctypes: http://purl.org/dc/dcmitype/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: https://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# qb: http://purl.org/linked-data/cube# schema: http://schema.org/ void: http://rdfs.org/ns/void# rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ sioc: http://rdfs.org/sioc/ns# doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: https://www.w3.org/ns/activitystreams# ldp: http://www.w3.org/ns/ldp# solid: http://www.w3.org/ns/solid/terms# acl: http://www.w3.org/ns/auth/acl# dio: https://w3id.org/dio# as: https://www.w3.org/ns/activitystreams# oa: http://www.w3.org/ns/oa# ldp: http://www.w3.org/ns/ldp#" typeof="schema:CreativeWork sioc:Post prov:Entity">
@@ -86,7 +86,7 @@ As there is a lot of value in acting upon <em>evolving</em> knowledge,
 there is a need for <em>evolving knowledge graphs</em>.
 <!-- Task         -->
 As such, the goal of this PhD is to allow such evolving knowledge graphs to be stored and queried,
-taking into account that the <em>decentralized</em> nature Web
+taking into account the <em>decentralized</em> nature Web
 where anyone should be able say anything about anything.
 <!-- Object       -->
 Concretely, four challenges related to this goal are investigated:
@@ -151,21 +151,21 @@ in which both human and machine can act upon evolving knowledge.</p>
   <section id="summary">
     <h2>Summary</h2>
 
-    <p>Over the last 30 years, the Web has significantly improved the way we share information,
-which has lead to significant transformations of our society.
-Initially, the Web was designed for humans,
+    <p>Over the last 30 years, the Web has significantly enhanced the way we share information,
+which has lead to major transformations of our society.
+Initially, information on the Web was targeted at humans,
 and machines had a difficult time understanding information on the Web
 in the same way as humans can.
 This hindered <em>intelligent agents</em> to perform certain tasks autonomously,
 such as finding all stores that sell rice in the current area,
 or determining the time to leave for catching your flight on time based on the current traffic and weather conditions.
 To enable such intelligent agents, researchers have been investigating technologies and introducing standards
-for making the Web understandable for machines as well.
+for making the Web understandable for machines.
 In the recent years, <em>knowledge graphs</em> are being built based on these technologies
 to support intelligent agents such as Siri and Google Now to perform these tasks.</p>
 
-    <p>Most research on knowledge graphs has been focused on <em>static</em> data,
-even though there is a huge amount of <em>evolving</em> data available,
+    <p>Most research on knowledge graphs has been focused on <em>static</em> data.
+There is however a huge amount of <em>evolving</em> data available,
 such as traffic events from highway sensors or continuous heart rate measurements.
 As there is a lot of value in evolving knowledge,
 it is important to <em>store</em> this information in <em>evolving knowledge graphs</em>,
@@ -174,7 +174,7 @@ As such, this is the primary focus of my research.</p>
 
     <p>Just like the Web, knowledge graphs are continuously becoming more and more <em>centralized</em>,
 and only having limited availability for the public.
-This leads to information coming increasingly more in the hands of a few large entities,
+This leads to information becoming increasingly more in the hands of a few large entities,
 which endangers the democratic and <em>decentralized</em> nature of the Web.
 Events in recent years have shown that centralizing information at this scale is problematic,
 as it leads to issues such as censorship and manipulation of information.
@@ -196,7 +196,7 @@ Third, I design a flexible system to <em>query</em> various kinds of data on the
 Finally, I investigate methods for <em>publishing and querying evolving data on the Web</em>.</p>
 
     <p>In order to properly evaluate systems that handle evolving knowledge graphs,
-one must first <em>have</em> evolving knowledge graphs to test with.
+one must first <em>have</em> evolving knowledge graphs to test these systems with.
 As existing evolving knowledge graphs are limited to having only specific sizes,
 they are unsuited for the needs of extensive system evaluations,
 where configurable evolving knowledge graph sizes are required.
@@ -220,13 +220,12 @@ Based on an implementation of this storage approach and querying algorithms,
 experimental results show that this system achieves a trade-off between storage size and query efficiency
 that is useful for hosting evolving knowledge graphs on the Web.
 Concretely, query execution time is reduced at the cost of an increase in storage size.
-This cost is acceptable due to cheap storage typically being cheap.</p>
+This cost is acceptable due to storage typically being cheap.</p>
 
     <p>In the third challenge, the <em>heterogeneous</em> nature of the Web is investigated.
 Concretely, a query engine is designed that can query over various kinds of Web interfaces,
-based on various kinds of query algorithms.
-Such an engine is needed as existing engines typically focus on one goal,
-with limited capabilities,
+based on different kinds of query algorithms.
+Such an engine is needed as existing engines typically focus on one specific interface or algorithm,
 which makes it difficult to compare different approaches with each other in a fair way.
 Furthermore, the engine is designed in a modular way,
 so that new interfaces and algorithms can be developed and plugged in flexibly.</p>
@@ -241,13 +240,15 @@ and non-expired data can be reused when other more volatile data expires.
 Results show that this approach achieves a lower server load compared to fully server-side continuous query engines,
 at the cost of an increase in execution time and bandwidth usage.</p>
 
-    <p>Within on these four challenges,
+    <p>Within these four challenges,
 methods are designed to allow evolving knowledge graphs to be stored and queried
 in a Web-friendly way.
 Concretely, this can be done by storing evolving knowledge graphs in a system
 based on the one designed for the second challenge.
 On top of this, a Web interface can be setup such as the one designed for the fourth challenge,
-which can then be queried client-side to reduce server load as seen in challenge three and four.</p>
+which can then be queried client-side to reduce server load as seen in challenge three and four.
+All of this can then be evaluated using synthetic evolving knowledge graphs
+as generated with the algorithm from challenge one.</p>
 
     <p>While this PhD shows a way to store and query evolving knowledge graphs on the Web,
 there does not exist a single perfect way to achieve this,
@@ -296,7 +297,7 @@ this lowered the barrier for spreading knowledge even further.
 Third, we had the development of the internet near the end of the 20th century,
 and the invention of the World Wide Web in 1989 on top of that,
 which gave us a globally interlinked information space
-that is fully <em>open</em> and <em>decentralized</em>, where anyone can say anything.
+that is fully <em>open</em> and <em>decentralized</em>, where anyone can say anything about anything.
 With the Web, bandwidth for knowledge sharing has become nearly unlimited,
 as knowledge no longer has to go through a few large radio or tv stations,
 but can now be shared over a virtually unlimited amount of Web pages,
@@ -311,7 +312,7 @@ To put this in perspective in terms of a human life,
 the Web would only be a baby of just under 3 days old,
 assuming <a href="https://countrymeters.info/en/Belgium">a life expectancy of 80 years</a>.
 This means that the Web <em>just</em> got started,
-and it will take a long time for it to mature and achieve its full potential.</p>
+and it will take a long time for it to mature and to achieve its full potential.</p>
 
     <p>Even in this short amount of time,
 the Web has already transformed our world in an unprecedented way.
@@ -326,7 +327,7 @@ Next to that, it is also significantly <a href="https://stratechery.com/2015/air
     <h4 id="knowledge-graphs">Knowledge Graphs</h4>
 
     <p>Even though the Web has only existed for a brief window of time,
-it already has made a significant impact on world for the better.
+it has already made a significant impact on world for the better.
 Yet, the goal of curiosity-driven researchers is to uncover
 what the next steps are to improve the world <em>even more</em>.</p>
 
@@ -339,16 +340,16 @@ the Web had to become <em>machine-readable</em>.
 This Web extension is typically referred to as the <em>Semantic Web</em>.</p>
 
     <p>Now —almost twenty years later—, several standards and technologies have been developed to make this dream a reality,
-<a href="http://iswc2013.semanticweb.org/content/keynote-ramanathan-v-guha.html">In 2013, more than four million Web domains are using these technologies</a>.
-Using these Semantic Web technologies, so-called <em>Knowledge Graphs</em> are being constructed by many major companies world-wide,
+<a href="http://iswc2013.semanticweb.org/content/keynote-ramanathan-v-guha.html">In 2013, more than four million Web domains were already using these technologies</a>.
+Using these Semantic Web technologies, so-called <em>knowledge graphs</em> are being constructed by many major companies world-wide,
 such as <a href="https://developers.google.com/knowledge-graph/">Google</a> and <a href="https://developer.microsoft.com/en-us/graph/">Microsoft</a>.
-These Knowledge Graphs are being used to support tasks that were part of Tim Berners-Lee’s original vision,
+These knowledge graphs are being used to support tasks that were part of Tim Berners-Lee’s original vision,
 such as managing day-to-day tasks with the <a href="https://www.google.com/intl/nl/landing/now/">Google Now assistant</a>.</p>
 
-    <p>The standard for modeling Knowledge Graphs is the <a property="schema:citation http://purl.org/spar/cito/cites" href="https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/">Resource Description Framework (RDF)</a> <span class="references">[<a href="#ref-2">2</a>]</span>.
-Fundamentally, it is based around the concept of <em>triples</em> that are used to make statements about things.
+    <p>The standard for modeling knowledge graphs is the <a property="schema:citation http://purl.org/spar/cito/cites" href="https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/">Resource Description Framework (RDF)</a> <span class="references">[<a href="#ref-2">2</a>]</span>.
+Fundamentally, it is based around the concept of <em>triples</em> that are used to make statements about <em>things</em>.
 A triple is made up of a <em>subject</em>, <em>predicate</em> and <em>object</em>,
-where the <em>subject</em> and <em>object</em> are resources, and the <em>predicate</em> denotes their relationship.
+where the <em>subject</em> and <em>object</em> are resources (or things), and the <em>predicate</em> denotes their relationship.
 For example, <a href="#introduction-figure-triple">Fig. 1</a> shows an example of a simple triple indicating the nationality of a person.
 Multiple resources can combined with each other through multiple triples, which forms a <em>graph</em>.
 <a href="#introduction-figure-graph">Fig. 2</a> shows an example of such a graph, which contains <em>knowledge</em> about a person.
@@ -374,11 +375,12 @@ For example, <a href="#introduction-code-sparql">Listing 1</a> contains a <abbr
 
     <figure id="introduction-code-sparql" class="listing">
 <pre><code>SELECT ?name WHERE {
-</code><code>  ?alice knows ?person.
+</code><code>  Alice knows ?person.
 </code><code>  ?person name ?name.
 </code><code>}</code></pre>
 <figcaption>
-        <p><span class="label">Listing 1:</span> A simplified <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query selecting the names of all people that Alice knows.</p>
+        <p><span class="label">Listing 1:</span> A simplified <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query selecting the names of all people that Alice knows.
+The results of this query would be <code>"Bob"</code> and <code>"Carol"</code>.</p>
       </figcaption>
 </figure>
 
@@ -388,7 +390,7 @@ For example, <a href="#introduction-code-sparql">Listing 1</a> contains a <abbr
 As the Web meets these three requirements, it can be seen as a global <em>Big Data</em>set.
 Specifically, the Web is highly <em>volatile</em>,
 as it is continuously evolving,
-and it does to at an increasing rate.
+and it does so at an increasing rate.
 For example, <a href="https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#6907ae2460ba">Google is processing more than <em>40.000 search requests</em> <em>every second</em></a>,
 <a href="https://expandedramblings.com/index.php/youtube-statistics/"><em>500 hours of video</em> are being uploaded to YouTube <em>every minute</em></a>,
 and <a href="https://blog.hootsuite.com/twitter-statistics/">more than <em>5.000</em> tweets are being sent <em>every seconds</em></a>.</p>
@@ -400,16 +402,16 @@ This is important, as there is a lot of value in evolving knowledge.
 For example, by tracking the evolution of biomedical information, the spread of diseases can be reduced,
 and by observing highway sensors, traffic jams may be avoided by preemptively rerouting traffic.</p>
 
-    <p>Due to the the <a href="https://www.w3.org/TR/rdf11-concepts/#change-over-time">(RDF) knowledge graph model originally being <em>atemporal</em></a>,
+    <p>Due to the <a href="https://www.w3.org/TR/rdf11-concepts/#change-over-time">(RDF) knowledge graph model currently being <em>atemporal</em></a>,
 the usage of evolving knowledge graphs remains limited.
 As such, research and engineering is needed for new
-models, storage techniques, and querying algorithms
+models, storage techniques, and query algorithms
 for evolving knowledge graphs.
 As such, <em>evolving</em> knowledge graphs are the main focus of my research.</p>
 
     <h4 id="decentralized-knowledge-graphs">Decentralized Knowledge Graphs</h4>
 
-    <p>As stated by Tim Berners-Lee, <a href="https://twitter.com/timberners_lee/status/228960085672599552">the Web if for everyone</a>.
+    <p>As stated by Tim Berners-Lee, <a href="https://twitter.com/timberners_lee/status/228960085672599552">the Web is for everyone</a>.
 This means that the Web is a <em>free</em> platform (as <em>freedom</em>, not <em>free beer</em>),
 where anyone can <em>say</em> anything about anything,
 and anyone can <em>access</em> anything that has been said.
@@ -426,10 +428,10 @@ through any media and regardless of frontiers.</p>
 However, over the recent years, the Web has been growing towards more <em>centralized</em> entities,
 where this right is being challenged.</p>
 
-    <p>The current <em>centralized</em> Knowledge Graphs do not match well with the original <em>decentralized</em> nature of the Web.
-At the time of writing, these new Knowledge Graphs are in the hands of a few large corporations,
+    <p>The current <em>centralized</em> knowledge graphs do not match well with the original <em>decentralized</em> nature of the Web.
+At the time of writing, these new knowledge graphs are in the hands of a few large corporations,
 and intelligent agents on top of them are restricted to what these corporations allow them to do.
-As people depend on the capabilities of these Knowledge Graphs,
+As people depend on the capabilities of these knowledge graphs,
 large corporations gain significant control over the Web.
 In the last couple of years, these centralized powers have proven to be problematic,
 for example when <a href="https://fs.blog/2017/07/filter-bubbles/">the flow of information is redirected to influence election results</a>,
@@ -443,7 +445,7 @@ and obstruction to receive information through censorship.</p>
 where people regain <em>ownership</em> of their data.
 Decentralization is however a technologically difficult thing.
 As people do want ownership of their data, they do not want to give up their intelligent agents.
-As such, this decentralization wave requires significant research effort to achieve the same capabilities as these <em>centralized</em> Knowledge Graphs,
+As such, this decentralization wave requires significant research effort to achieve the same capabilities as these <em>centralized</em> knowledge graphs,
 which is why this is of important factor within my research.
 Specifically, I focus on supporting knowledge graphs <em>on the Web</em>,
 instead of only being available behind closed doors,
@@ -460,7 +462,7 @@ This lead me to the following research question for my PhD:</p>
       <p>How to store and query evolving knowledge graphs on the Web?</p>
     </blockquote>
 
-    <p>During my research, I focused on <em>four</em> main challenges
+    <p>During my research, I focus on <em>four</em> main challenges
 related to this research question:</p>
 
     <ol>
@@ -473,12 +475,13 @@ related to this research question:</p>
  Indexing techniques are used to improve the efficiency of querying,
  but comes at the cost of increased storage.
  As such, it is important to find a good <em>balance</em> between the amount of <em>storage</em>,
- and the amount of <em>querying speedup</em>.</li>
+ and the amount of <em>querying speedup</em>,
+ so that evolving data can be stored in a Web-friendly way.</li>
       <li><strong>The Web is highly <em>heterogeneous</em>.</strong>
  <br />
  Before knowledge graphs can be queried from the Web,
- the different <em>interfaces</em> through which data is available,
- and the different <em>algorithms</em> using which the data can be retrieved and combined
+ different <em>interfaces</em> through which data is available,
+ and different <em>algorithms</em> using which the data can be retrieved and combined
  need to be considered.</li>
       <li><strong>Publishing <em>evolving</em> data via a <em>queryable interface</em> is costly.</strong>
  <br />
@@ -527,7 +530,7 @@ Finally, this work is concluded in <a href="#conclusions">Chapter 6</a> and fut
     <section class="sub-preface">
       <p>In this chapter, we address the first challenge of this PhD,
 namely: “Experimentation requires <em>realistic</em> evolving data”.
-This challenge is a prerequisite to the next challenges, in which storage and querying techniques will be introduced.
+This challenge is a prerequisite to the next challenges, in which storage and querying techniques are introduced for evolving data.
 In order to evaluate the performance of storage and querying systems that handle evolving knowledge graphs,
 we must first have such knowledge graphs available to us.
 Ideally, real-world knowledge graphs should be used,
@@ -2526,15 +2529,15 @@ new storage and querying techniques are required.
 A naive way to handle this temporal dimension would be to store each knowledge graph version as a separately materialized knowledge graph.
 This can however introduce a tremendous storage overhead when consecutive versions are similar to each other.
 Furthermore, querying over such a naive storage method would require going through <em>all</em> of these versions,
-which does not scale well when the number of versions is high.</p>
+which does not scale well with many versions.</p>
 
       <p>The focus of our work in this chapter is to come up with a Web-friendly trade-off between storage size and lookup efficiency,
 so that evolving knowledge graphs can be published on the Web without requiring high-end machines.
-We introduce of a new indexing technique for evolving data,
+We introduce a new indexing technique for evolving data,
 that focuses on querying in a <em>stream-based</em> manner.
 This allows results to be sent to the client from the moment that they are found,
 which reduces waiting time compared to batch-based querying.
-Streaming results are especially useful when the number of results is very large,
+Streaming is especially useful when the number of results is very large,
 and is memory friendly for machines with limited capabilities.</p>
 
       <p>This chapter is based on the research question:
@@ -5735,7 +5738,7 @@ As such, the interface introduced in this work could be implemented based on the
       <p>A query interface that accepts continuous queries over evolving knowledge graphs,
 inherently requires more server effort compared to one-time queries over static knowledge graphs.
 That is because queries need to be evaluated <em>continuously</em> instead of only <em>once</em>.
-As such, when evolving knowledge graphs needs to be published on the Web,
+As such, when evolving knowledge graphs need to be published on the Web,
 an interface is needed that scales well in a public Web environment with a potentially large number of concurrent clients.</p>
 
       <p>The work in this chapter is based on the research question:
@@ -6569,16 +6572,18 @@ with a hybrid snapshot/delta/timestamp-based storage system in the back end.
 On top of this and other interfaces,
 intelligent client-side query engines can perform continuous queries.
 This comes at the cost of an increase in bandwidth usage and execution time,
-but with a higher guarantee on result completeness as server availability is improved.</p>
+but with a higher guarantee on result completeness as server availability is improved.
+All of this can be evaluated thoroughly using synthetic evolving datasets
+that can for example be generated with a mimicking algorithm for public transport network.</p>
 
     <p>This proves that evolving knowledge graphs <em>can</em> be published and queried on the Web.
 Furthermore, no high-cost Web infrastructure is needed to publish or query such graphs,
 which lowers the barrier for smaller, <em>decentralized</em> evolving knowledge graphs to be published,
-without having to be a large entity with a large budget.</p>
+without having to be a giant company with a large budget.</p>
 
     <h3 id="future-work">Future work</h3>
 
-    <p>While I have formulated one possible answer the question
+    <p>While I formulated one possible answer the question
 on how to store and query evolving knowledge graphs on the Web,
 this is definitely not the <em>only</em> answer.
 As such, further research is needed on all aspects.</p>
@@ -6600,17 +6605,17 @@ and (3) support <em>collaborative</em> querying between agents that handle simil
     <p>As I put a strong emphasis on <em>reusability</em> during this PhD,
 all of the tools and experiments that were implemented
 are available under an open license.
-Furthermore, accepted development methods from the software industry were followed
+Furthermore, well-established development methods from the software industry were followed
 to achieve implementations with decent code quality and valuable usage and development documentation.
 This should therefore lower the barrier for other researchers in the future
 to build upon this research and its tools.</p>
 
     <p>For the next couple of years,
 I aim to focus more on the topic of querying decentralized knowledge graphs.
-Through collaboration with my colleagues from IDLab,
+For this, I will collaborate further with my colleagues from IDLab,
 researchers from other labs,
-and companies with similar goals,
-With this, I hope to empower people on the Web,
+and companies with similar goals.
+With this, I hope to empower <em>individuals</em> on the Web,
 by allowing them to find the information <em>they</em> want,
 instead of what is being forced upon them,
 which is <a href="https://www.un.org/en/universal-declaration-human-rights/">a fundamental human right</a>.</p>
@@ -6629,19 +6634,19 @@ which is <a href="https://www.un.org/en/universal-declaration-human-rights/">a f
   <dt id="ref-3">[3]</dt>
   <dd resource="https://www.w3.org/TR/2013/REC-sparql11-query-20130321/" typeof="schema:CreativeWork">Harris, S., Seaborne, A., Prud’hommeaux, E.: <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> 1.1 Query Language. W3C, <a href="https://www.w3.org/TR/2013/REC-sparql11-query-20130321/">https:/​/​www.w3.org/TR/2013/REC-sparql11-query-20130321/</a> (2013).</dd>
   <dt id="ref-4">[4]</dt>
-  <dd resource="http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/" typeof="schema:CreativeWork">Cyganiak, R., Wood, D., Lanthaler, M.: \rdf 1.1: Concepts and Abstract Syntax. W3C, <a href="http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/">http:/​/​www.w3.org/TR/2014/REC-rdf11-concepts-20140225/</a> (2014).</dd>
+  <dd resource="http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/" typeof="schema:CreativeWork">Cyganiak, R., Wood, D., Lanthaler, M.: <abbr title='Resource Description Framework'>RDF</abbr> 1.1: Concepts and Abstract Syntax. W3C, <a href="http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/">http:/​/​www.w3.org/TR/2014/REC-rdf11-concepts-20140225/</a> (2014).</dd>
   <dt id="ref-5">[5]</dt>
   <dd resource="http://www.w3.org/DesignIssues/LinkedData.html" typeof="schema:CreativeWork">Berners-Lee, T.: Linked Data. <a href="http://www.w3.org/DesignIssues/LinkedData.html">http:/​/​www.w3.org/DesignIssues/LinkedData.html</a> (2006).</dd>
   <dt id="ref-6">[6]</dt>
-  <dd resource="http://wifo5-03.informatik.uni-mannheim.de/bizer/pub/Bizer-Schultz-Berlin-SPARQL-Benchmark-IJSWIS.pdf" typeof="schema:Article">Bizer, C., Schultz, A.: The Berlin \sparql benchmark. International Journal on Semantic Web and Information Systems. 5, 1–24 (2009).</dd>
+  <dd resource="http://wifo5-03.informatik.uni-mannheim.de/bizer/pub/Bizer-Schultz-Berlin-SPARQL-Benchmark-IJSWIS.pdf" typeof="schema:Article">Bizer, C., Schultz, A.: The Berlin <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> benchmark. International Journal on Semantic Web and Information Systems. 5, 1–24 (2009).</dd>
   <dt id="ref-7">[7]</dt>
   <dd resource="#lubmbenchmark" typeof="schema:Article">Guo, Y., Pan, Z., Heflin, J.: \textscLUBM: A benchmark for \textscOWL knowledge base systems. Web Semantics: Science, Services and Agents on the World Wide Web. 3, 158–182 (2005).</dd>
   <dt id="ref-8">[8]</dt>
-  <dd resource="#sp2benchmark" typeof="schema:Article">Schmidt, M., Hornung, T., Lausen, G., Pinkel, C.: \textscSP^2Bench: a \sparql performance benchmark. In: 2009 IEEE 25th International Conference on Data Engineering. pp. 222–233. IEEE (2009).</dd>
+  <dd resource="#sp2benchmark" typeof="schema:Article">Schmidt, M., Hornung, T., Lausen, G., Pinkel, C.: \textscSP^2Bench: a <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> performance benchmark. In: 2009 IEEE 25th International Conference on Data Engineering. pp. 222–233. IEEE (2009).</dd>
   <dt id="ref-9">[9]</dt>
-  <dd resource="http://ceur-ws.org/Vol-1700/paper-02.pdf" typeof="schema:Article">Spasić, M., Jovanovik, M., Prat-Pérez, A.: An \rdf Dataset Generator for the Social Network Benchmark with Real-World Coherence. In: Fundulaki, I., Krithara, A., Ngonga Ngomo, A.-C., and Rentoumi, V. (eds.) Proceedings of the Workshop on Benchmarking Linked Data (2016).</dd>
+  <dd resource="http://ceur-ws.org/Vol-1700/paper-02.pdf" typeof="schema:Article">Spasić, M., Jovanovik, M., Prat-Pérez, A.: An <abbr title='Resource Description Framework'>RDF</abbr> Dataset Generator for the Social Network Benchmark with Real-World Coherence. In: Fundulaki, I., Krithara, A., Ngonga Ngomo, A.-C., and Rentoumi, V. (eds.) Proceedings of the Workshop on Benchmarking Linked Data (2016).</dd>
   <dt id="ref-10">[10]</dt>
-  <dd resource="#rdfbenchmarksdatasets" typeof="schema:Article">Duan, S., Kementsietsidis, A., Srinivas, K., Udrea, O.: Apples and oranges: a comparison of \rdf benchmarks and real \rdf datasets. In: Proceedings of the 2011 ACM SIGMOD International Conference on Management of data. pp. 145–156. ACM, New York, NY, USA (2011).</dd>
+  <dd resource="#rdfbenchmarksdatasets" typeof="schema:Article">Duan, S., Kementsietsidis, A., Srinivas, K., Udrea, O.: Apples and oranges: a comparison of <abbr title='Resource Description Framework'>RDF</abbr> benchmarks and real <abbr title='Resource Description Framework'>RDF</abbr> datasets. In: Proceedings of the 2011 ACM SIGMOD International Conference on Management of data. pp. 145–156. ACM, New York, NY, USA (2011).</dd>
   <dt id="ref-11">[11]</dt>
   <dd resource="#linkedconnections" typeof="schema:Article">Colpaert, P., Llaves, A., Verborgh, R., Corcho, O., Mannens, E., Van de Walle, R.: Intermodal public transit routing using Linked Connections. In: Proceedings of the 14th International Semantic Web Conference: Posters and Demos. pp. 1–5 (2015).</dd>
   <dt id="ref-12">[12]</dt>
@@ -6651,11 +6656,11 @@ which is <a href="https://www.un.org/en/universal-declaration-human-rights/">a f
   <dt id="ref-14">[14]</dt>
   <dd resource="http://www.semantic-web-journal.net/sites/default/files/swj176_3.pdf" typeof="schema:Article">Battle, R., Kolas, D.: Enabling the geospatial semantic web with parliament and \scshapegeosparql. Semantic Web. 3, 355–370 (2012).</dd>
   <dt id="ref-15">[15]</dt>
-  <dd resource="http://doi.acm.org/10.1145/1526709.1526856" typeof="schema:Article">Barbieri, D.F., Braga, D., Ceri, S., Della Valle, E., Grossniklaus, M.: C-\sparql: \sparql for continuous querying. In: Proceedings of the 18th international conference on World wide web. pp. 1061–1062. ACM (2009).</dd>
+  <dd resource="http://doi.acm.org/10.1145/1526709.1526856" typeof="schema:Article">Barbieri, D.F., Braga, D., Ceri, S., Della Valle, E., Grossniklaus, M.: C-SPARQL: <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> for continuous querying. In: Proceedings of the 18th international conference on World wide web. pp. 1061–1062. ACM (2009).</dd>
   <dt id="ref-16">[16]</dt>
   <dd resource="https://link.springer.com/content/pdf/10.1007/978-3-642-25073-6_24.pdf" typeof="schema:Article">Le-Phuoc, D., Dao-Tran, M., Parreira, J.X., Hauswirth, M.: A native and adaptive approach for unified processing of Linked Streams and Linked Data. In: Aroyo, L., Welty, C., Alani, H., Taylor, J., Bernstein, A., Kagal, L., Noy, N., and Blomqvist, E. (eds.) The Semantic Web – ISWC 2011. pp. 370–388. Springer Berlin Heidelberg, Berlin, Heidelberg (2011).</dd>
   <dt id="ref-17">[17]</dt>
-  <dd resource="http://dx.doi.org/10.1007/978-3-642-41338-4_22" typeof="schema:Article">Garbis, G., Kyzirakos, K., Koubarakis, M.: Geographica: A Benchmark for Geospatial \rdf Stores. In: Alani, H., Kagal, L., Fokoue, A., Groth, P., Biemann, C., Parreira, J.X., Aroyo, L., Noy, N., Welty, C., and Janowicz, K. (eds.) Proceedings of the 12th International Semantic Web Conference. pp. 343–359. Springer Berlin Heidelberg, Berlin, Heidelberg (2013).</dd>
+  <dd resource="http://dx.doi.org/10.1007/978-3-642-41338-4_22" typeof="schema:Article">Garbis, G., Kyzirakos, K., Koubarakis, M.: Geographica: A Benchmark for Geospatial <abbr title='Resource Description Framework'>RDF</abbr> Stores. In: Alani, H., Kagal, L., Fokoue, A., Groth, P., Biemann, C., Parreira, J.X., Aroyo, L., Noy, N., Welty, C., and Janowicz, K. (eds.) Proceedings of the 12th International Semantic Web Conference. pp. 343–359. Springer Berlin Heidelberg, Berlin, Heidelberg (2013).</dd>
   <dt id="ref-18">[18]</dt>
   <dd resource="#lsbench" typeof="schema:Article">Le-Phuoc, D., Dao-Tran, M., Pham, M.-D., Boncz, P., Eiter, T., Fink, M.: Linked stream data processing engines: Facts and figures. In: Cudré-Mauroux, P., Heflin, J., Sirin, E., Tudorache, T., Euzenat, J., Hauswirth, M., Parreira, J.X., Hendler, J., Schreiber, G., Bernstein, A., and Blomqvist, E. (eds.) The Semantic Web – ISWC 2012. pp. 300–312. Springer Berlin Heidelberg, Berlin, Heidelberg (2012).</dd>
   <dt id="ref-19">[19]</dt>
@@ -6667,7 +6672,7 @@ which is <a href="https://www.un.org/en/universal-declaration-human-rights/">a f
   <dt id="ref-22">[22]</dt>
   <dd resource="https://doi.org/10.1109/ITNG.2006.51" typeof="schema:Article">Lin, P.J., Samadi, B., Cipolone, A., Jeske, D.R., Cox, S., Rendon, C., Holt, D., Xiao, R.: Development of a synthetic data set generator for building and testing information discovery systems. In: Third International Conference on Information Technology: New Generations (ITNG’06). pp. 707–712. IEEE (2006).</dd>
   <dt id="ref-23">[23]</dt>
-  <dd resource="#ldbc" typeof="schema:Article">Angles, R., Boncz, P., Larriba-Pey, J., Fundulaki, I., Neumann, T., Erling, O., Neubauer, P., Martinez-Bazan, N., Kotsev, V., Toma, I.: The Linked Data Benchmark Council: a graph and \rdf industry benchmarking effort. ACM SIGMOD Record. 43, 27–31 (2014).</dd>
+  <dd resource="#ldbc" typeof="schema:Article">Angles, R., Boncz, P., Larriba-Pey, J., Fundulaki, I., Neumann, T., Erling, O., Neubauer, P., Martinez-Bazan, N., Kotsev, V., Toma, I.: The Linked Data Benchmark Council: a graph and <abbr title='Resource Description Framework'>RDF</abbr> industry benchmarking effort. ACM SIGMOD Record. 43, 27–31 (2014).</dd>
   <dt id="ref-24">[24]</dt>
   <dd resource="https://doi.org/10.1007/978-3-642-02094-0_7" typeof="schema:Chapter">Delling, D., Sanders, P., Schultes, D., Wagner, D.: Engineering route planning algorithms. In: Lerner, J., Wagner, D., and Zweig, K.A. (eds.) Algorithmics of Large and Complex Networks: Design, Analysis, and Simulation. pp. 117–139. Springer Berlin Heidelberg, Berlin, Heidelberg (2009).</dd>
   <dt id="ref-25">[25]</dt>
@@ -6857,19 +6862,19 @@ which is <a href="https://www.un.org/en/universal-declaration-human-rights/">a f
   <dt id="ref-117">[117]</dt>
   <dd resource="http://facebook.github.io/graphql/October2016/" typeof="schema:CreativeWork">Facebook, I.: GraphQL. Working Draft, Oct. 2016. <a href="http://facebook.github.io/graphql/October2016/">http:/​/​facebook.github.io/graphql/October2016/</a></dd>
   <dt id="ref-118">[118]</dt>
-  <dd resource="#buil2013sparql" typeof="schema:Chapter">Buil-Aranda, C., Hogan, A., Umbrich, J., Vandenbussche, P.-Y.: \sparql Web-Querying Infrastructure: Ready for Action? In: The Semantic Web–ISWC 2013. pp. 277–293 (2013).</dd>
+  <dd resource="#buil2013sparql" typeof="schema:Chapter">Buil-Aranda, C., Hogan, A., Umbrich, J., Vandenbussche, P.-Y.: <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> Web-Querying Infrastructure: Ready for Action? In: The Semantic Web–ISWC 2013. pp. 277–293 (2013).</dd>
   <dt id="ref-119">[119]</dt>
   <dd resource="#sparqlcomplexity" typeof="schema:Article">Pérez, J., Arenas, M., Gutierrez, C.: Semantics and Complexity of <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr>. In: International semantic web conference. pp. 30–43. Springer (2006).</dd>
   <dt id="ref-120">[120]</dt>
   <dd resource="#taelman_mepdaw_2016" typeof="schema:Article">Taelman, R., Verborgh, R., Colpaert, P., Mannens, E., Van de Walle, R.: Continuously Updating Query Results over Real-Time Linked Data. In: Proceedings of the 2nd Workshop on Managing the Evolution and Preservation of the Data Web (2016).</dd>
   <dt id="ref-121">[121]</dt>
-  <dd resource="http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/" typeof="schema:CreativeWork">Klyne, G., J. Carroll, J.: Resource Description Framework (\rdf): Concepts and Abstract Syntax. W3C, <a href="http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/">http:/​/​www.w3.org/TR/2004/REC-rdf-concepts-20040210/</a> (2004).</dd>
+  <dd resource="http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/" typeof="schema:CreativeWork">Klyne, G., J. Carroll, J.: Resource Description Framework (RDF): Concepts and Abstract Syntax. W3C, <a href="http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/">http:/​/​www.w3.org/TR/2004/REC-rdf-concepts-20040210/</a> (2004).</dd>
   <dt id="ref-122">[122]</dt>
-  <dd resource="https://dx.doi.org/10.1145/2566486.2567973" typeof="schema:Article">Nguyen, V., Bodenreider, O., Sheth, A.: Don’t Like \rdf Reification? Making Statements About Statements Using Singleton Property. In: Proceedings of the 23rd International Conference on World Wide Web. pp. 759–770. , New York, NY, USA (2014).</dd>
+  <dd resource="https://dx.doi.org/10.1145/2566486.2567973" typeof="schema:Article">Nguyen, V., Bodenreider, O., Sheth, A.: Don’t Like <abbr title='Resource Description Framework'>RDF</abbr> Reification? Making Statements About Statements Using Singleton Property. In: Proceedings of the 23rd International Conference on World Wide Web. pp. 759–770. , New York, NY, USA (2014).</dd>
   <dt id="ref-123">[123]</dt>
-  <dd resource="#temporalrdf" typeof="schema:Chapter">Gutierrez, C., Hurtado, C., Vaisman, A.: Temporal \rdf. In: The Semantic Web: Research and Applications. pp. 93–107 (2005).</dd>
+  <dd resource="#temporalrdf" typeof="schema:Chapter">Gutierrez, C., Hurtado, C., Vaisman, A.: Temporal <abbr title='Resource Description Framework'>RDF</abbr>. In: The Semantic Web: Research and Applications. pp. 93–107 (2005).</dd>
   <dt id="ref-124">[124]</dt>
-  <dd resource="https://dx.doi.org/10.1109/TKDE.2007.34" typeof="schema:Article">Gutierrez, C., Hurtado, C.A., Vaisman, A.: Introducing Time into \rdf. Knowledge and Data Engineering, IEEE Transactions on. 19, 207–218 (2007).</dd>
+  <dd resource="https://dx.doi.org/10.1109/TKDE.2007.34" typeof="schema:Article">Gutierrez, C., Hurtado, C.A., Vaisman, A.: Introducing Time into <abbr title='Resource Description Framework'>RDF</abbr>. Knowledge and Data Engineering, IEEE Transactions on. 19, 207–218 (2007).</dd>
   <dt id="ref-125">[125]</dt>
   <dd resource="#streamreasoningsofar" typeof="schema:Article">Barbieri, D., Braga, D., Ceri, S., Della Valle, E., Grossniklaus, M.: Stream Reasoning: Where We Got So Far. In: Proceedings of the NeFoRS2010 Workshop (2010).</dd>
   <dt id="ref-126">[126]</dt>
@@ -6879,7 +6884,7 @@ which is <a href="https://www.un.org/en/universal-declaration-human-rights/">a f
   <dt id="ref-128">[128]</dt>
   <dd resource="https://code.google.com/p/cqels/wiki/CQELS_engine" typeof="schema:CreativeWork">Levan, C.: \cqels engine: Instructions on experimenting \cqels. <a href="https://code.google.com/p/cqels/wiki/CQELS_engine">https:/​/​code.google.com/p/cqels/wiki/CQELS_engine</a></dd>
   <dt id="ref-129">[129]</dt>
-  <dd resource="http://streamreasoning.org/download" typeof="schema:CreativeWork">StreamReasoning: Continuous \sparql (\csparql) Ready To Go Pack. <a href="http://streamreasoning.org/download">http:/​/​streamreasoning.org/download</a></dd>
+  <dd resource="http://streamreasoning.org/download" typeof="schema:CreativeWork">StreamReasoning: Continuous <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> (\csparql) Ready To Go Pack. <a href="http://streamreasoning.org/download">http:/​/​streamreasoning.org/download</a></dd>
 </dl>
 </section>
 </footer>

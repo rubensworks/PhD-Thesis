@@ -1,4 +1,4 @@
 SELECT ?name WHERE {
-  ?alice knows ?person.
+  Alice knows ?person.
   ?person name ?name.
 }
