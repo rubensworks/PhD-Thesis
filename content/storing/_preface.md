@@ -5,15 +5,15 @@ new storage and querying techniques are required.
 A naive way to handle this temporal dimension would be to store each knowledge graph version as a separately materialized knowledge graph.
 This can however introduce a tremendous storage overhead when consecutive versions are similar to each other.
 Furthermore, querying over such a naive storage method would require going through _all_ of these versions,
-which does not scale well when the number of versions is high.
+which does not scale well with many versions.
 
 The focus of our work in this chapter is to come up with a Web-friendly trade-off between storage size and lookup efficiency,
 so that evolving knowledge graphs can be published on the Web without requiring high-end machines.
-We introduce of a new indexing technique for evolving data,
+We introduce a new indexing technique for evolving data,
 that focuses on querying in a _stream-based_ manner.
 This allows results to be sent to the client from the moment that they are found,
 which reduces waiting time compared to batch-based querying.
-Streaming results are especially useful when the number of results is very large,
+Streaming is especially useful when the number of results is very large,
 and is memory friendly for machines with limited capabilities.
 
 This chapter is based on the research question:

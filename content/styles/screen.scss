@@ -205,7 +205,9 @@ main, #appendix {
     counter-reset: subsection;
 
     &::before {
+      font-size: 0.8em;
       content: "Chapter " counter(section) ". ";
+      display: block;
     }
   }
 

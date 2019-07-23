@@ -10,7 +10,7 @@ As such, the interface introduced in this work could be implemented based on the
 A query interface that accepts continuous queries over evolving knowledge graphs,
 inherently requires more server effort compared to one-time queries over static knowledge graphs.
 That is because queries need to be evaluated *continuously* instead of only *once*.
-As such, when evolving knowledge graphs needs to be published on the Web,
+As such, when evolving knowledge graphs need to be published on the Web,
 an interface is needed that scales well in a public Web environment with a potentially large number of concurrent clients.
 
 The work in this chapter is based on the research question:

@@ -49,15 +49,17 @@ On top of this and other interfaces,
 intelligent client-side query engines can perform continuous queries.
 This comes at the cost of an increase in bandwidth usage and execution time,
 but with a higher guarantee on result completeness as server availability is improved.
+All of this can be evaluated thoroughly using synthetic evolving datasets
+that can for example be generated with a mimicking algorithm for public transport network.
 
 This proves that evolving knowledge graphs *can* be published and queried on the Web.
 Furthermore, no high-cost Web infrastructure is needed to publish or query such graphs,
 which lowers the barrier for smaller, *decentralized* evolving knowledge graphs to be published,
-without having to be a large entity with a large budget.
+without having to be a giant company with a large budget.
 
 ### Future work
 
-While I have formulated one possible answer the question
+While I formulated one possible answer the question
 on how to store and query evolving knowledge graphs on the Web,
 this is definitely not the *only* answer.
 As such, further research is needed on all aspects.
@@ -79,17 +81,17 @@ and (3) support *collaborative* querying between agents that handle similar quer
 As I put a strong emphasis on *reusability* during this PhD,
 all of the tools and experiments that were implemented
 are available under an open license.
-Furthermore, accepted development methods from the software industry were followed
+Furthermore, well-established development methods from the software industry were followed
 to achieve implementations with decent code quality and valuable usage and development documentation.
 This should therefore lower the barrier for other researchers in the future
 to build upon this research and its tools.
 
 For the next couple of years,
 I aim to focus more on the topic of querying decentralized knowledge graphs.
-Through collaboration with my colleagues from IDLab,
+For this, I will collaborate further with my colleagues from IDLab,
 researchers from other labs,
-and companies with similar goals,
-With this, I hope to empower people on the Web,
+and companies with similar goals.
+With this, I hope to empower *individuals* on the Web,
 by allowing them to find the information *they* want,
 instead of what is being forced upon them,
 which is [a fundamental human right](https://www.un.org/en/universal-declaration-human-rights/).

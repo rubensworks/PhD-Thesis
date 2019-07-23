@@ -11,7 +11,7 @@ As there is a lot of value in acting upon *evolving* knowledge,
 there is a need for *evolving knowledge graphs*.
 <!-- Task         -->
 As such, the goal of this PhD is to allow such evolving knowledge graphs to be stored and queried,
-taking into account that the *decentralized* nature Web
+taking into account the *decentralized* nature Web
 where anyone should be able say anything about anything.
 <!-- Object       -->
 Concretely, four challenges related to this goal are investigated:

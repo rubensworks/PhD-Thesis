@@ -1,6 +1,6 @@
 In this chapter, we address the first challenge of this PhD,
 namely: "Experimentation requires *realistic* evolving data".
-This challenge is a prerequisite to the next challenges, in which storage and querying techniques will be introduced.
+This challenge is a prerequisite to the next challenges, in which storage and querying techniques are introduced for evolving data.
 In order to evaluate the performance of storage and querying systems that handle evolving knowledge graphs,
 we must first have such knowledge graphs available to us.
 Ideally, real-world knowledge graphs should be used,

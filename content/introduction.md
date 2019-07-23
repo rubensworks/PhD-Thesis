@@ -31,7 +31,7 @@ this lowered the barrier for spreading knowledge even further.
 Third, we had the development of the internet near the end of the 20th century,
 and the invention of the World Wide Web in 1989 on top of that,
 which gave us a globally interlinked information space
-that is fully *open* and *decentralized*, where anyone can say anything.
+that is fully *open* and *decentralized*, where anyone can say anything about anything.
 With the Web, bandwidth for knowledge sharing has become nearly unlimited,
 as knowledge no longer has to go through a few large radio or tv stations,
 but can now be shared over a virtually unlimited amount of Web pages,
@@ -46,7 +46,7 @@ To put this in perspective in terms of a human life,
 the Web would only be a baby of just under 3 days old,
 assuming [a life expectancy of 80 years](https://countrymeters.info/en/Belgium).
 This means that the Web *just* got started,
-and it will take a long time for it to mature and achieve its full potential.
+and it will take a long time for it to mature and to achieve its full potential.
 
 Even in this short amount of time,
 the Web has already transformed our world in an unprecedented way.
@@ -61,7 +61,7 @@ Next to that, it is also significantly [disrupting businesses models that have b
 #### Knowledge Graphs
 
 Even though the Web has only existed for a brief window of time,
-it already has made a significant impact on world for the better.
+it has already made a significant impact on world for the better.
 Yet, the goal of curiosity-driven researchers is to uncover
 what the next steps are to improve the world *even more*.
 
@@ -74,16 +74,16 @@ the Web had to become *machine-readable*.
 This Web extension is typically referred to as the *Semantic Web*.
 
 Now —almost twenty years later—, several standards and technologies have been developed to make this dream a reality,
-[In 2013, more than four million Web domains are using these technologies](http://iswc2013.semanticweb.org/content/keynote-ramanathan-v-guha.html).
+[In 2013, more than four million Web domains were already using these technologies](http://iswc2013.semanticweb.org/content/keynote-ramanathan-v-guha.html).
 Using these Semantic Web technologies, so-called *knowledge graphs* are being constructed by many major companies world-wide,
 such as [Google](https://developers.google.com/knowledge-graph/) and [Microsoft](https://developer.microsoft.com/en-us/graph/).
 These knowledge graphs are being used to support tasks that were part of Tim Berners-Lee's original vision,
 such as managing day-to-day tasks with the [Google Now assistant](https://www.google.com/intl/nl/landing/now/).
 
 The standard for modeling knowledge graphs is the [Resource Description Framework (RDF)](cite:cites spec:rdf).
-Fundamentally, it is based around the concept of *triples* that are used to make statements about things.
+Fundamentally, it is based around the concept of *triples* that are used to make statements about *things*.
 A triple is made up of a *subject*, *predicate* and *object*,
-where the *subject* and *object* are resources, and the *predicate* denotes their relationship.
+where the *subject* and *object* are resources (or things), and the *predicate* denotes their relationship.
 For example, [](#introduction-figure-triple) shows an example of a simple triple indicating the nationality of a person.
 Multiple resources can combined with each other through multiple triples, which forms a *graph*.
 [](#introduction-figure-graph) shows an example of such a graph, which contains *knowledge* about a person.
@@ -111,6 +111,7 @@ A small knowledge graph about Alice.
 ````/code/query.sparql````
 <figcaption markdown="block">
 A simplified SPARQL query selecting the names of all people that Alice knows.
+The results of this query would be `"Bob"` and `"Carol"`.
 </figcaption>
 </figure>
 
@@ -120,7 +121,7 @@ Within *Big Data*, we talk about the three V's: *volume*, *velocity* and *variet
 As the Web meets these three requirements, it can be seen as a global *Big Data*set.
 Specifically, the Web is highly *volatile*,
 as it is continuously evolving,
-and it does to at an increasing rate.
+and it does so at an increasing rate.
 For example, [Google is processing more than *40.000 search requests* *every second*](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#6907ae2460ba),
 [*500 hours of video* are being uploaded to YouTube *every minute*](https://expandedramblings.com/index.php/youtube-statistics/),
 and [more than *5.000* tweets are being sent *every seconds*](https://blog.hootsuite.com/twitter-statistics/).
@@ -132,16 +133,16 @@ This is important, as there is a lot of value in evolving knowledge.
 For example, by tracking the evolution of biomedical information, the spread of diseases can be reduced,
 and by observing highway sensors, traffic jams may be avoided by preemptively rerouting traffic.
 
-Due to the the [(RDF) knowledge graph model originally being *atemporal*](https://www.w3.org/TR/rdf11-concepts/#change-over-time),
+Due to the [(RDF) knowledge graph model currently being *atemporal*](https://www.w3.org/TR/rdf11-concepts/#change-over-time),
 the usage of evolving knowledge graphs remains limited.
 As such, research and engineering is needed for new
-models, storage techniques, and querying algorithms
+models, storage techniques, and query algorithms
 for evolving knowledge graphs.
 As such, *evolving* knowledge graphs are the main focus of my research.
 
 #### Decentralized Knowledge Graphs
 
-As stated by Tim Berners-Lee, [the Web if for everyone](https://twitter.com/timberners_lee/status/228960085672599552).
+As stated by Tim Berners-Lee, [the Web is for everyone](https://twitter.com/timberners_lee/status/228960085672599552).
 This means that the Web is a *free* platform (as *freedom*, not *free beer*),
 where anyone can *say* anything about anything,
 and anyone can *access* anything that has been said.
@@ -190,7 +191,7 @@ This lead me to the following research question for my PhD:
 > How to store and query evolving knowledge graphs on the Web?
 {:#research-question .strong}
 
-During my research, I focused on *four* main challenges
+During my research, I focus on *four* main challenges
 related to this research question:
 
 1. **Experimentation requires *realistic* evolving data.**
@@ -202,12 +203,13 @@ related to this research question:
     Indexing techniques are used to improve the efficiency of querying,
     but comes at the cost of increased storage.
     As such, it is important to find a good *balance* between the amount of *storage*,
-    and the amount of *querying speedup*.
+    and the amount of *querying speedup*,
+    so that evolving data can be stored in a Web-friendly way.
 3. **The Web is highly *heterogeneous*.**
     <br />
     Before knowledge graphs can be queried from the Web,
-    the different *interfaces* through which data is available,
-    and the different *algorithms* using which the data can be retrieved and combined
+    different *interfaces* through which data is available,
+    and different *algorithms* using which the data can be retrieved and combined
     need to be considered.
 4. **Publishing *evolving* data via a *queryable interface* is costly.**
     <br />
