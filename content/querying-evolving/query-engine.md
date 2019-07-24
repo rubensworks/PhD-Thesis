@@ -86,7 +86,7 @@ triple pattern of the original query and assign them to either the static or the
 depending on whether or not the pattern is respectively static or dynamic.
 This assignment must maintain the hierarchical structure of the original query,
 in some cases this causes triple patterns to be present in the dynamic query when using complex operators
-like \union to maintain correct query semantics.
+like `UNION` to maintain correct query semantics.
 An example of this query transformation for our basic query from [](#query-evolving_listing:usecase:basicquery)
 can be found in [](#query-evolving_listing:usecase:staticquery) and [](#query-evolving_listing:usecase:dynamicquery).
 
@@ -143,7 +143,7 @@ This identifier will serve as a key to cache static data and should correctly
 and uniquely identify static results based on dynamic results.
 This is equivalent to saying that this identifier should be the *connection*
 between the static and dynamic graphs.
-This connection is the intersection of the variables present in the \where clause of the
+This connection is the intersection of the variables present in the `WHERE` clause of the
 static and dynamic queries.
 Since the dynamic query results are already available at this point, these variables
 all have values, so this cache identifier can be represented by these variable results.

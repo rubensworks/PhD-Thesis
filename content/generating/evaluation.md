@@ -394,7 +394,6 @@ Because the number of edges is implicitly derived from the number of stops in or
 this can not be configured directly.
 In this section, we start from a set of parameters that produces realistic output data that is similar to the Belgian railway case.
 We let the value for each of these parameters increase to see the evolution of the execution times and memory usage.
-\end{paragraph}
 
 ##### Results
 [](#generating_fig:performance:times) shows a linear increase in execution times when increasing the routes or connections.
