@@ -5,6 +5,7 @@ C-SPARQL,Continuous sparql
 CB,Change-based
 CM,Change materialization
 CQELS,Continuous Query Evaluation over Linked Stream
+CPU,Central Processing Unit
 CSV,Comma separated values
 CV,Cross-version join
 CVS,Concurrent Versions System
@@ -20,6 +21,7 @@ IRI,Internationalized Resource Identifier
 LUBM,Lehigh University Benchmark
 OSTRICH,Offset-Enabled Triple Store for Changesets
 PoDiGG,POpulation DIstribution-based Gtfs Generator
+RAM,Random Access Memory
 RDF,Resource Description Framework
 SPARQL,SPARQL Procotol and RDF Query Language
 TB,Timestamp-based
