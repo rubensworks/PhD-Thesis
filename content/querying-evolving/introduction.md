@@ -7,7 +7,7 @@ for instance, by re-executing the entire query over and over again ("polling").
 This is, however, not very practical,
 especially if it is unknown beforehand when data will change.
 An additional problem is that
-[many public (even static) SPARQL query endpoints suffer from a low availability](cite:cites buil2013sparql).
+[many public (even static) SPARQL query endpoints suffer from a low availability](cite:cites sparqlreadyforaction).
 The [unrestricted complexity of SPARQL queries](cite:cites sparqlcomplexity) combined
 with the public character of SPARQL endpoints entails a&nbsp;high server cost, which makes it expensive to host such an interface with high availability.
 *Dynamic* SPARQL streaming solutions offer combined access to dynamic data streams and

@@ -1,7 +1,7 @@
 ### Introduction
 {:#generating_introduction}
 
-The [Resource Description Framework (RDF)](cite:cites rdf) and [Linked Data](cite:cites linkeddata) technologies enable distributed use and management of semantic data models.
+The [Resource Description Framework (RDF)](cite:cites spec:rdf) and [Linked Data](cite:cites linkeddata) technologies enable distributed use and management of semantic data models.
 Datasets with an interoperable domain model can be stored and queried by different data owners in different ways.
 In order to discover the strengths and weaknesses of different storage and querying possibilities,
 data-driven benchmarks with different sizes of datasets and varying characteristics can be used.

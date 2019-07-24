@@ -92,7 +92,7 @@ datasets; for simple queries and small datasets the opposite is true.
 
 #### Triple Pattern Fragments
     
-Experiments have shown that [more than half of public SPARQL endpoints have an availability of less than 95%](cite:cites buil2013sparql).
+Experiments have shown that [more than half of public SPARQL endpoints have an availability of less than 95%](cite:cites sparqlreadyforaction).
 Any number of clients can send arbitrarily complex SPARQL queries, which could form a bottleneck in endpoints.
 [*Triple Pattern Fragments* (TPF)](cite:cites ldf) aim to solve this issue of high interface cost by moving part of
 the query evaluation to the client, which reduces the server load, at the cost of increased query times and bandwidth.

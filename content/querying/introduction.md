@@ -10,7 +10,7 @@ and support [_different language extensions_](cito:cites Erling2009, fSPARQL).
 Furthermore,
 Linked Data is increasingly published through _different Web interfaces_,
 such as
-data dumps, [Linked Data documents](cite:cites LinkedDataPrinciples),
+data dumps, [Linked Data documents](cite:cites linkeddata),
 [SPARQL endpoints](cite:cites spec:sparqlprot)
 and [Triple Pattern Fragments (TPF) interfaces](cite:cites ldf).
 This has led to entirely different query evaluation strategies,

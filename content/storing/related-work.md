@@ -284,7 +284,7 @@ While queries of BEAR-A and BEAR-B are just triple pattern queries and therefore
 they provide the basis for more complex queries, as is proven by the [TPF framework](cite:cites ldf),
 which makes them sufficient for benchmarking.
 
-[EvoGen](cite:cites evogen) is an RDF archive systems benchmark that is based on the synthetic [LUBM dataset generator](cite:cites lubm).
+[EvoGen](cite:cites evogen) is an RDF archive systems benchmark that is based on the synthetic [LUBM dataset generator](cite:cites lubmbenchmark).
 It is an extension of the LUBM generator with additional classes and properties for introducing dataset evolution on schema-level.
 EvoGen enables the user to tweak parameters of the dataset and query generation process,
 for example to change the dataset dynamicity and the number of versions.
