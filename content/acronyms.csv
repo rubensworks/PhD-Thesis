@@ -1,22 +1,22 @@
 abbreviation,full
 API,Application Programming Interface
-BEAR,Benchmark of rdf Archives
-C-SPARQL,Continuous sparql
+BEAR,Benchmark of Rdf Archives
+C-SPARQL,Continuous Sparql
 CB,Change-based
-CM,Change materialization
+CM,Change Materialization
 CQELS,Continuous Query Evaluation over Linked Stream
 CPU,Central Processing Unit
-CSV,Comma separated values
-CV,Cross-version join
+CSV,Comma Separated Values
+CV,Cross-version Join
 CVS,Concurrent Versions System
-DM,Delta materialization
+DM,Delta Materialization
 DSMS,Data Stream Management System
 GTFS,General Transit Feed Specification
-HDT-FoQ,hdt Focus on Querying
+HDT-FoQ,Hdt Focus on Querying
 HDT,Header Dictionary Triples
 HOBBIT,Holistic Benchmarking of Big Linked Data
 HTTP,Hypertext Transfer Protocol
-IC,Independent copies
+IC,Independent Copies
 IRI,Internationalized Resource Identifier
 LUBM,Lehigh University Benchmark
 OSTRICH,Offset-Enabled Triple Store for Changesets
@@ -26,6 +26,6 @@ RDF,Resource Description Framework
 SPARQL,SPARQL Procotol and RDF Query Language
 TB,Timestamp-based
 TPF,Triple Pattern Fragments
-VM,Version materialization
+VM,Version Materialization
 VTPF,Versioned Triple Pattern Fragments
-VQ,Version query
+VQ,Version Query
