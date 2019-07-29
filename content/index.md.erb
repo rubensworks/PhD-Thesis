@@ -1,18 +1,18 @@
 ---
-title: "Storing and Querying<br />Evolving Knowledge Graphs<br />on the Web"
-title_nl: "De opslag en bevraging<br />van evoluerende kennisgrafen<br />op het Web"
+title: "Storing and Querying\nEvolving Knowledge Graphs\non the Web"
+title_nl: "De opslag en bevraging\nvan evoluerende kennisgrafen\nop het Web"
 ---
 <div class="header-wrapper">
 <header markdown="1">
-# <%= @item[:title] %>
+# <%= @item[:title].gsub(/[\n]/, '<br />') %>
 
-## <%= @item[:title_nl] %>
+## <%= @item[:title_nl].gsub(/[\n]/, '<br />') %>
 
 <div style="font-size: 1.3em" markdown="1">
 {:#authors}
 - <%= person 'ir. Ruben Taelman', 'https://www.rubensworks.net/', 'https://www.rubensworks.net/#me' %>
 </div>
-
+ 
 *Thesis for obtaining the degree Doctor of Computer Science Engineering*
  
 <div style="font-size: 1.1em" markdown="1">
