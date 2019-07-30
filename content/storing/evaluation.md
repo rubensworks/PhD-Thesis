@@ -493,6 +493,8 @@ The [appendix](https://rdfostrich.github.io/article-jws2018-ostrich/#hypo-test-1
 we can accept the null hypothesis that the version factor has no influence on the models with a confidence of 99%.
 Based on these results, we *accept* our [first hypothesis](#storing_hypothesis-qualitative-querying).
 
+<meta property="lsc:confirms" resource="#storing_hypothesis-qualitative-querying">
+
 [Hypothesis 2](#storing_hypothesis-qualitative-ic-storage) states that OSTRICH requires *less* storage space than IC-based approaches,
 and [Hypothesis 3](#storing_hypothesis-qualitative-ic-querying) correspondingly states that
 query evaluation is *slower* for VM and *faster* or *equal* for DM and VQ.
@@ -508,6 +510,9 @@ This means that OSTRICH typically requires less storage space than IC-based appr
 and outperforms other approaches in terms of querying efficiency
 unless the number of versions is small or for VM queries.
 
+<meta property="lsc:confirms" resource="#storing_hypothesis-qualitative-ic-storage">
+<meta property="lsc:falsifies" resource="#storing_hypothesis-qualitative-ic-querying">
+
 In [Hypothesis 4](#storing_hypothesis-qualitative-cb-storage), we stated that OSTRICH requires *more*
 storage space than CB-based approaches,
 and in [Hypothesis 5](#storing_hypothesis-qualitative-cb-querying) that query evaluation is *faster* or *equal*.
@@ -519,6 +524,9 @@ However, only one in three query atoms are not fulfilled, and OSTRICH is faster 
 In general, OSTRICH requires more storage space than CB-based approaches,
 and query evaluation is faster unless the number of versions is low.
 
+<meta property="lsc:confirms" resource="#storing_hypothesis-qualitative-cb-storage">
+<meta property="lsc:falsifies" resource="#storing_hypothesis-qualitative-cb-querying">
+
 Finally, in our [last hypothesis](#storing_hypothesis-qualitative-ingestion),
 we state that average query evaluation times are lower than other non-IC approaches at the cost of increased ingestion times.
 In all cases, the ingestion time for OSTRICH is higher than the other approaches,
@@ -527,6 +535,8 @@ This means that we *reject* Hypothesis 6 because it only holds for BEAR-B-hourly
 In general, OSTRICH ingestion is slower than other approaches,
 but improves query evaluation time compared to other non-IC approaches,
 unless the number of versions is low.
+
+<meta property="lsc:falsifies" resource="#storing_hypothesis-qualitative-ingestion">
 
 In this section, we accepted three of the six hypotheses.
 As these are statistical hypotheses, these do not necessarily indicate negative results of our approach.

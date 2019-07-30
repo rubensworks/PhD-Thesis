@@ -16,6 +16,10 @@ For the calculation of these correlations, we ignored the population value outli
 Following this conclusion, our mimicking algorithm will use such population distributions as input,
 and derive public transport networks and trip instances.
 
+<meta property="lsc:tests" resource="#generating_hypothesis">
+<meta about="#generating_hypothesis" property="schema:name" content="Public transport networks and schedules are correlated with the population distribution within the same area.">
+<meta property="lsc:confirms" resource="#generating_hypothesis">
+
 The main objective of a mimicking algorithm is to create *realistic* data,
 so that it can be used to by benchmarks to evaluate systems under realistic circumstances.
 We will measure dataset realism in high-level by comparing the levels of structuredness
@@ -30,8 +34,10 @@ This generic coherence metric together with domain-specific metrics will provide
 
 Based on this, we introduce the following research question for this work:
 
+<div rel="schema:question" markdown="1">
 > Can population distribution data be used to generate realistic synthetic public transport networks and scheduling?
-{:#generating_researchquestion}
+{:#generating_researchquestion about="#generating_researchquestion" property="schema:name"}
+</div>
 
 We provide an answer to this question by first introducing an
 algorithm for generating public transport networks and their scheduling based on population distributions in [](#generating_methodology).

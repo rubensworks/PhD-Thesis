@@ -13,8 +13,10 @@ The ability to achieve such stream subsets is limited in existing solutions.
 
 This leads us to the following research question:
 
+<div rel="schema:question" markdown="1">
 > How can we store RDF archives to enable efficient VM, DM and VQ triple pattern queries with offsets?
-{:#storing_researchquestion}
+{:#storing_researchquestion about="#storing_researchquestion" property="schema:name"}
+</div>
 
 The focus of this article is evaluating version materialization (VM), delta materialization (DM), and version (VQ) queries efficiently,
 as CV and CM queries can be expressed in [terms of the other ones](cite:cites tpfarchives).
@@ -30,15 +32,17 @@ This will increase ingestion times, but will improve the efficiency of performan
 within query engines and Linked Data interfaces, such as querying with offsets.
 To this end, we introduce the following hypotheses:
 
-1. {:#storing_hypothesis-qualitative-querying}
+<div rel="lsc:tests" markdown="1">
+1. {:#storing_hypothesis-qualitative-querying about="#storing_hypothesis-qualitative-querying" property="schema:name"}
 Our approach shows no influence of the selected versions on the querying efficiency of VM and DM triple pattern queries.
-2. {:#storing_hypothesis-qualitative-ic-storage}
+2. {:#storing_hypothesis-qualitative-ic-storage about="#storing_hypothesis-qualitative-ic-storage" property="schema:name"}
 Our approach requires *less* storage space than state-of-the-art IC-based approaches.
-3. {:#storing_hypothesis-qualitative-ic-querying}
+3. {:#storing_hypothesis-qualitative-ic-querying about="#storing_hypothesis-qualitative-ic-querying" property="schema:name"}
 For our approach, querying is *slower* for VM and *equal* or *faster* for DM and VQ than in state-of-the-art IC-based approaches.
-4. {:#storing_hypothesis-qualitative-cb-storage}
+4. {:#storing_hypothesis-qualitative-cb-storage about="#storing_hypothesis-qualitative-cb-storage" property="schema:name"}
 Our approach requires *more* storage space than state-of-the-art CB-based approaches.
-5. {:#storing_hypothesis-qualitative-cb-querying}
+5. {:#storing_hypothesis-qualitative-cb-querying about="#storing_hypothesis-qualitative-cb-querying" property="schema:name"}
 For our approach, querying is *equal* or *faster* than in state-of-the-art CB-based approaches.
-6. {:#storing_hypothesis-qualitative-ingestion}
+6. {:#storing_hypothesis-qualitative-ingestion about="#storing_hypothesis-qualitative-ingestion" property="schema:name"}
 Our approach reduces average query time compared to other non-IC approaches at the cost of increased ingestion time.
+</div>

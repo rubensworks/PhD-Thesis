@@ -21,6 +21,8 @@ concurrent clients varies significantly, as can be seen in [](#querying-evolving
 This makes it hard to scale the required processing powers for servers using these technologies.
 Our solution has a low and more constant CPU usage.
 
+<meta property="lsc:confirms" resource="#querying-evolving_hypothesis1">
+
 #### Client cost
 The results for the client load measurements from [](#querying-evolving_subsec:Results-ClientCost) confirm
 [Hypothesis 2](#querying-evolving_hypothesis2), which stated that our solution increases the client's processing need.
@@ -32,6 +34,8 @@ The load on the client still remains around 5% for the largest part of the query
 as shown in [](#querying-evolving_fig:res:scalability-client). Only during the first few seconds, the query engines
 CPU usage peaks, which is because of the processor-intensive rewriting step that needs to be done once
 at the start of each dynamic query evaluation.
+
+<meta property="lsc:confirms" resource="#querying-evolving_hypothesis2">
 
 #### Caching
 We can also confirm [Hypothesis 3](#querying-evolving_hypothesis3) about the positive effect of caching
@@ -47,6 +51,8 @@ The longer our query evaluation runs, the more static data the cache accumulates
 chance that there are cache hits when background data is needed in a certain query iteration.
 Future research should indicate what the limits of such a client-side cache for static data are, and
 whether or not it is advantageous to reuse this cache for different queries.
+
+<meta property="lsc:confirms" resource="#querying-evolving_hypothesis3">
 
 #### Request reduction
 By annotating dynamic data with a time annotation, we successfully reduced the amount of required requests
