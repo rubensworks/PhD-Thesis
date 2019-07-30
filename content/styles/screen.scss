@@ -544,5 +544,39 @@ ol.index-entries[depth="2"] {
   display: none;
 }
 
+figure {
+  text-align: center;
+}
+
+figure.algorithm,
+figure.code,
+figure.listing {
+  text-align: left;
+}
+
+figure.subfigure {
+  display: inline-block;
+  width: 15em;
+  vertical-align: top;
+}
+
+figcaption {
+  text-align: left;
+}
+
+.figure-medium {
+  width: auto;
+  height: 16em;
+}
+
+.figure-medium-width {
+  width: 30em;
+}
+
+.figure-small {
+  width: auto;
+  height: 8em;
+}
+
 @import "shared.scss";
 @import "shared_override.scss";

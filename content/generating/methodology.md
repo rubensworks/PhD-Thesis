@@ -11,7 +11,7 @@ but prepend this with a network generation phase.
 with connections being the primary data element.
 
 <figure id="generating_fig:methodology:datamodel">
-<img src="generating/img/datamodel.svg" alt="PoDiGG data model">
+<img src="generating/img/datamodel.svg" alt="PoDiGG data model" class="figure-medium">
 <figcaption markdown="block">
 The resources (rectangle), literals (dashed rectangle) and properties (arrows) used to model the generated public transport data.
 Node and text colors indicate vocabularies.
@@ -55,7 +55,7 @@ or this can be generated based on certain statistical distributions.
 For the remainder of this paper, we will reuse the population distribution from Belgium as a running example, as illustrated in [](#generating_fig:methodology:region).
 
 <figure id="generating_fig:methodology:region">
-<img src="generating/img/region.png" alt="Heatmap of the population distribution in Belgium">
+<img src="generating/img/region.png" alt="Heatmap of the population distribution in Belgium" class="figure-medium">
 <figcaption markdown="block">
 Heatmap of the population distribution in Belgium, which is illustrated for each cell
 as a scale going from white (low), to red (medium) and black (high).
@@ -90,21 +90,21 @@ After the second stop generation phase, these line structures become more appare
 <figure id="generating_fig:methodology:stopplacement">
 
 <figure id="generating_fig:methodology:stopplacementgs" class="subfigure">
-<img src="generating/img/stops_gs.png" alt="Real stops" style="width: 30%">
+<img src="generating/img/stops_gs.png" alt="Real stops">
 <figcaption markdown="block">
 Real stops with line structures.
 </figcaption>
 </figure>
 
 <figure id="generating_fig:methodology:stopplacementp1" class="subfigure">
-<img src="generating/img/stops_parameterized_1.png" alt="Generation phase step 1" style="width: 30%">
+<img src="generating/img/stops_parameterized_1.png" alt="Generation phase step 1">
 <figcaption markdown="block">
 Synthetic stops after the first stop generation phase without line structures.
 </figcaption>
 </figure>
 
 <figure id="generating_fig:methodology:stopplacementp2" class="subfigure">
-<img src="generating/img/stops_parameterized_2.png" alt="Generation phase step 2" style="width: 30%">
+<img src="generating/img/stops_parameterized_2.png" alt="Generation phase step 2">
 <figcaption markdown="block">
 Synthetic stops after the second stop generation phase with line structures.
 </figcaption>
@@ -129,28 +129,28 @@ marking the path between the two original edge nodes and the newly selected node
 <figure id="generating_fig:methodology:stopsphase2">
 
 <figure id="generating_fig:methodology:stopsphase2_1" class="subfigure">
-<img src="generating/img/stops_phase2_1.svg" alt="Real stops" style="width: 20%">
+<img src="generating/img/stops_phase2_1.svg" alt="Real stops" class="figure-small">
 <figcaption markdown="block">
 Selecting a weighted random point on the edge.
 </figcaption>
 </figure>
 
 <figure id="generating_fig:methodology:stopsphase2_2" class="subfigure">
-<img src="generating/img/stops_phase2_2.svg" alt="Generation phase step 1" style="width: 20%">
+<img src="generating/img/stops_phase2_2.svg" alt="Generation phase step 1" class="figure-small">
 <figcaption markdown="block">
 Defining an area around the selected point.
 </figcaption>
 </figure>
 
 <figure id="generating_fig:methodology:stopsphase2_3" class="subfigure">
-<img src="generating/img/stops_phase2_3.svg" alt="Generation phase step 2" style="width: 20%">
+<img src="generating/img/stops_phase2_3.svg" alt="Generation phase step 2" class="figure-small">
 <figcaption markdown="block">
 Choosing a random point within the area, weighted by population value.
 </figcaption>
 </figure>
 
 <figure id="generating_fig:methodology:stopplacementp2" class="subfigure">
-<img src="generating/img/stops_phase2_4.svg" alt="Generation phase step 2" style="width: 20%">
+<img src="generating/img/stops_phase2_4.svg" alt="Generation phase step 2" class="figure-small">
 <figcaption markdown="block">
 Modify edges so that the path includes this new point.
 </figcaption>
@@ -216,21 +216,21 @@ After this phase, a network with stops and edges is available, and the actual tr
 <figure id="generating_fig:methodology:edges">
  
 <figure id="generating_fig:methodology:edges1" class="subfigure">
-<img src="generating/img/edges_1.svg" alt="Real stops" style="width: 30%">
+<img src="generating/img/edges_1.svg" alt="Real stops" class="figure-small">
 <figcaption markdown="block">
 Formation of local clusters.
 </figcaption>
 </figure>
 
 <figure id="generating_fig:methodology:edges2" class="subfigure">
-<img src="generating/img/edges_2.svg" alt="Generation phase step 1" style="width: 30%">
+<img src="generating/img/edges_2.svg" alt="Generation phase step 1" class="figure-small">
 <figcaption markdown="block">
 Connecting clusters through border stations.
 </figcaption>
 </figure>
 
 <figure id="generating_fig:methodology:edges3" class="subfigure">
-<img src="generating/img/edges_3.svg" alt="Generation phase step 2" style="width: 30%">
+<img src="generating/img/edges_3.svg" alt="Generation phase step 2" class="figure-small">
 <figcaption markdown="block">
 Cleanup of loose stops.
 </figcaption>

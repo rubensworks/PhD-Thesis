@@ -73,7 +73,7 @@ where each actor interacts with mediators, that in turn invoke other actors that
 The relation between these components, their phases and the chaining of them will be explained hereafter.
 
 <figure id="querying_actor-mediator-bus">
-<img src="querying/img/actor-mediator-bus.svg" alt="[actor-mediator-bus pattern]" class="figure-narrow">
+<img src="querying/img/actor-mediator-bus.svg" alt="[actor-mediator-bus pattern]" class="figure-small">
 <figcaption markdown="block">
 Example logic flow where Actor 0 requires an _action_ to be performed.
 This is done by sending the action to the Mediator, which sends a _test action_ to Actors 1, 2 and 3 via the Bus.
@@ -94,7 +94,7 @@ separate buses exist for different message types.
 [](#querying_relation-actor-bus) shows an example of how actors can be registered to buses.
 
 <figure id="querying_relation-actor-bus">
-<img src="querying/img/relation-actor-bus.svg" alt="[relation between actors and buses]" class="figure-narrow">
+<img src="querying/img/relation-actor-bus.svg" alt="[relation between actors and buses]" class="figure-small">
 <figcaption markdown="block">
 An example of two different buses each having two subscribed actors.
 The left bus has different actors for parsing triples in a certain RDF serialization to triple objects.

@@ -41,7 +41,7 @@ due to each delta _inheriting_ the changes of its preceding delta,
 the overhead can be compensated with compression, which we discuss in [](#storing_storage).
 
 <figure id="storing_alternative-delta-chain">
-<img src="storing/img/alternative-delta-chain.svg" alt="[alternative delta chain]">
+<img src="storing/img/alternative-delta-chain.svg" alt="[alternative delta chain]" class="figure-medium-width">
 <figcaption markdown="block">
 Delta chain in which deltas are relative to the snapshot at the start of the chain, as part of our approach.
 </figcaption>

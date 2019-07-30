@@ -184,7 +184,7 @@ The percentage of storage space that this component requires compared to the com
 </figure>
 
 <figure id="storing_results-ostrich-ingestion-rate-beara">
-<img src="storing/img/results-ostrich-ingestion-rate-beara.svg" alt="[bear-a ostrich ingestion rate]" height="150em" class="plot">
+<img src="storing/img/results-ostrich-ingestion-rate-beara.svg" alt="[bear-a ostrich ingestion rate]" height="150em" class="figure-medium-width">
 <figcaption markdown="block">
 OSTRICH ingestion durations for each consecutive BEAR-A version in minutes for an increasing number of versions,
 showing a lineair growth.
@@ -192,7 +192,7 @@ showing a lineair growth.
 </figure>
 
 <figure id="storing_results-ostrich-ingestion-size-beara">
-<img src="storing/img/results-ostrich-ingestion-size-beara.svg" alt="[bear-a ostrich ingestion sizes]" height="150em" class="plot">
+<img src="storing/img/results-ostrich-ingestion-size-beara.svg" alt="[bear-a ostrich ingestion sizes]" height="150em" class="figure-medium-width">
 <figcaption markdown="block">
 Cumulative OSTRICH store sizes for each consecutive BEAR-A version in GB for an increasing number of versions,
 showing a lineair growth.
@@ -200,14 +200,14 @@ showing a lineair growth.
 </figure>
 
 <figure id="storing_results-ostrich-ingestion-rate-bearb-hourly">
-<img src="storing/img/results-ostrich-ingestion-rate-bearb-hourly.svg" alt="[bear-b-hourly ostrich ingestion rate]" height="150em" class="plot">
+<img src="storing/img/results-ostrich-ingestion-rate-bearb-hourly.svg" alt="[bear-b-hourly ostrich ingestion rate]" height="150em" class="figure-medium-width">
 <figcaption markdown="block">
 OSTRICH ingestion durations for each consecutive BEAR-B-hourly version in minutes for an increasing number of versions.
 </figcaption>
 </figure>
 
 <figure id="storing_results-ostrich-ingestion-size-bearb-hourly">
-<img src="storing/img/results-ostrich-ingestion-size-bearb-hourly.svg" alt="[bear-b-hourly ostrich ingestion sizes]" height="150em" class="plot">
+<img src="storing/img/results-ostrich-ingestion-size-bearb-hourly.svg" alt="[bear-b-hourly ostrich ingestion sizes]" height="150em" class="figure-medium-width">
 <figcaption markdown="block">
 Cumulative OSTRICH store sizes for each consecutive BEAR-B-hourly version in GB for an increasing number of versions.
 </figcaption>
@@ -238,7 +238,7 @@ The lowest sizes are indicated in italics.
 </figure>
 
 <figure id="storing_results-ostrich-ingestion-rate-beara-compare">
-<img src="storing/img/results-ostrich-ingestion-rate-beara-compare.svg" alt="[Comparison of ostrich ingestion algorithms]" height="150em" class="plot">
+<img src="storing/img/results-ostrich-ingestion-rate-beara-compare.svg" alt="[Comparison of ostrich ingestion algorithms]" height="150em" class="figure-medium-width">
 <figcaption markdown="block">
 Comparison of the OSTRICH stream and batch-based ingestion durations.
 </figcaption>
@@ -265,21 +265,21 @@ in which we can see that all approaches collectively become slower for queries w
 and that predicate-queries are also significantly slower for all approaches.
 
 <figure id="storing_results-beara-vm-sumary">
-<img src="storing/img/query/results_beara-vm-summary.svg" alt="[bear-a vm]" height="200em" class="plot">
+<img src="storing/img/query/results_beara-vm-summary.svg" alt="[bear-a vm]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
 Median BEAR-A VM query results for all triple patterns for all versions.
 </figcaption>
 </figure>
 
 <figure id="storing_results-beara-dm-summary">
-<img src="storing/img/query/results_beara-dm-summary.svg" alt="[bear-a dm]" height="200em" class="plot">
+<img src="storing/img/query/results_beara-dm-summary.svg" alt="[bear-a dm]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
 Median BEAR-A DM query results for all triple patterns from version 0 to all other versions.
 </figcaption>
 </figure>
 
 <figure id="storing_results-beara-vq-summary">
-<img src="storing/img/query/results_beara-vq-summary.svg" alt="[bear-a vq]" height="200em" class="plot">
+<img src="storing/img/query/results_beara-vq-summary.svg" alt="[bear-a vq]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
 Median BEAR-A VQ query results for all triple patterns.
 </figcaption>
@@ -296,21 +296,21 @@ For VQ queries, OSTRICH is significantly faster than all other approaches.
 in which we can see that predicate-queries are again consistently slower for all approaches.
 
 <figure id="storing_results-bearb-daily-vm-sumary">
-<img src="storing/img/query/results_bearb-daily-vm-summary.svg" alt="[bear-b-daily vm]" height="200em" class="plot">
+<img src="storing/img/query/results_bearb-daily-vm-summary.svg" alt="[bear-b-daily vm]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
 Median BEAR-B-daily VM query results for all triple patterns for all versions.
 </figcaption>
 </figure>
 
 <figure id="storing_results-bearb-daily-dm-summary">
-<img src="storing/img/query/results_bearb-daily-dm-summary.svg" alt="[bear-b-daily dm]" height="200em" class="plot">
+<img src="storing/img/query/results_bearb-daily-dm-summary.svg" alt="[bear-b-daily dm]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
 Median BEAR-B-daily DM query results for all triple patterns from version 0 to all other versions.
 </figcaption>
 </figure>
 
 <figure id="storing_results-bearb-daily-vq-summary">
-<img src="storing/img/query/results_bearb-daily-vq-summary.svg" alt="[bear-b-daily vq]" height="200em" class="plot">
+<img src="storing/img/query/results_bearb-daily-vq-summary.svg" alt="[bear-b-daily vq]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
 Median BEAR-B-daily VQ query results for all triple patterns.
 </figcaption>
@@ -326,21 +326,21 @@ Finally, OSTRICH outperforms all HDT-based approaches for VQ queries by almost a
 with the same conclusion as before that predicate-queries are slower.
 
 <figure id="storing_results-bearb-hourly-vm-sumary">
-<img src="storing/img/query/results_bearb-hourly-vm-summary.svg" alt="[bear-b-hourly vm]" height="200em" class="plot">
+<img src="storing/img/query/results_bearb-hourly-vm-summary.svg" alt="[bear-b-hourly vm]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
 Median BEAR-B-hourly VM query results for all triple patterns for all versions.
 </figcaption>
 </figure>
 
 <figure id="storing_results-bearb-hourly-dm-summary">
-<img src="storing/img/query/results_bearb-hourly-dm-summary.svg" alt="[bear-b-hourly dm]" height="200em" class="plot">
+<img src="storing/img/query/results_bearb-hourly-dm-summary.svg" alt="[bear-b-hourly dm]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
 Median BEAR-B-hourly DM query results for all triple patterns from version 0 to all other versions.
 </figcaption>
 </figure>
 
 <figure id="storing_results-bearb-hourly-vq-summary">
-<img src="storing/img/query/results_bearb-hourly-vq-summary.svg" alt="[bear-b-hourly vq]" height="200em" class="plot">
+<img src="storing/img/query/results_bearb-hourly-vq-summary.svg" alt="[bear-b-hourly vq]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
 Median BEAR-B-hourly VQ query results for all triple patterns.
 </figcaption>
@@ -357,21 +357,21 @@ Finally, OSTRICH has VQ evaluation times that are approximately independent of t
 while other approaches again have growing evaluation times, as shown in [](#storing_results-offset-vq).
 
 <figure id="storing_results-offset-vm">
-<img src="storing/img/query/results_offsets-vm.svg" alt="[Offsets vm]" height="200em" class="plot">
+<img src="storing/img/query/results_offsets-vm.svg" alt="[Offsets vm]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
 Median VM query results for different offsets over all versions in the BEAR-A dataset.
 </figcaption>
 </figure>
 
 <figure id="storing_results-offset-dm">
-<img src="storing/img/query/results_offsets-dm.svg" alt="[Offsets dm]" height="200em" class="plot">
+<img src="storing/img/query/results_offsets-dm.svg" alt="[Offsets dm]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
 Median DM query results for different offsets between version 0 and all other versions in the BEAR-A dataset.
 </figcaption>
 </figure>
 
 <figure id="storing_results-offset-vq">
-<img src="storing/img/query/results_offsets-vq.svg" alt="[Offsets vq]" height="200em" class="plot">
+<img src="storing/img/query/results_offsets-vq.svg" alt="[Offsets vq]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
 Median VQ query results for different offsets in the BEAR-A dataset.
 </figcaption>
@@ -404,7 +404,7 @@ Alternatively, a new snapshot could dynamically be created when ingestion time b
 which could for example for BEAR-B-hourly take place around version 1000.
 
 <figure id="storing_triples-bearb-hourly-altcb">
-<img src="storing/img/triples-bearb-hourly-altcb.svg" alt="[bear-b-hourly alternative cb]" height="150em" class="plot">
+<img src="storing/img/triples-bearb-hourly-altcb.svg" alt="[bear-b-hourly alternative cb]" height="150em" class="figure-medium-width">
 <figcaption markdown="block">
 Total number of triples for each BEAR-B-hourly version when converted to the alternative CB structure used by OSTRICH,
 i.e., each triple is an addition or deletion relative to the _first_ version instead of the _previous_ version.

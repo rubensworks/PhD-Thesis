@@ -78,7 +78,7 @@ PoDiGG will always produce a figure accompanying the GTFS dataset.
 [](#generating_fig:generated_example) shows an example of such a visualization.
 
 <figure id="generating_fig:generated_example">
-<img src="generating/img/generated_example.png" alt="Visualization of a generated public transport network based on Belgium's population distribution">
+<img src="generating/img/generated_example.png" alt="Visualization of a generated public transport network based on Belgium's population distribution" class="figure-medium">
 <figcaption markdown="block">
 Visualization of a generated public transport network based on Belgium's population distribution.
 Each route has a different color, and dark route colors indicate more frequent trips over them than light colors.

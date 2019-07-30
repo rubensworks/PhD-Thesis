@@ -293,21 +293,21 @@ respectively calculated for the stops $$\rho_\text{s}$$, edges $$\rho_\text{e}$$
 <figure id="generating_fig:realism:stops">
 
 <figure id="generating_fig:realism:stops:rand" class="subfigure">
-<img src="generating/img/realism/train_be/stops_random.png" alt="Stops Random" style="width: 30%">
+<img src="generating/img/realism/train_be/stops_random.png" alt="Stops Random">
 <figcaption markdown="block">
 Random
 </figcaption>
 </figure>
 
 <figure id="generating_fig:realism:stops:gen" class="subfigure">
-<img src="generating/img/realism/train_be/stops_parameterized.png" alt="Stops Generated" style="width: 30%">
+<img src="generating/img/realism/train_be/stops_parameterized.png" alt="Stops Generated">
 <figcaption markdown="block">
 Generated
 </figcaption>
 </figure>
 
 <figure id="generating_fig:realism:stops:gs" class="subfigure">
-<img src="generating/img/realism/train_be/stops_gs.png" alt="Stops Gold standard" style="width: 30%">
+<img src="generating/img/realism/train_be/stops_gs.png" alt="Stops Gold standard">
 <figcaption markdown="block">
 Gold standard
 </figcaption>
@@ -321,21 +321,21 @@ Stops for the Belgian railway case.
 <figure id="generating_fig:realism:edges">
 
 <figure id="generating_fig:realism:edges:rand" class="subfigure">
-<img src="generating/img/realism/train_be/edges_random.png" alt="Edges Random" style="width: 30%">
+<img src="generating/img/realism/train_be/edges_random.png" alt="Edges Random">
 <figcaption markdown="block">
 Random
 </figcaption>
 </figure>
 
 <figure id="generating_fig:realism:edges:gen" class="subfigure">
-<img src="generating/img/realism/train_be/edges_parameterized.png" alt="Edges Generated" style="width: 30%">
+<img src="generating/img/realism/train_be/edges_parameterized.png" alt="Edges Generated">
 <figcaption markdown="block">
 Generated
 </figcaption>
 </figure>
 
 <figure id="generating_fig:realism:edges:gs" class="subfigure">
-<img src="generating/img/realism/train_be/edges_gs.png" alt="Edges Gold standard" style="width: 30%">
+<img src="generating/img/realism/train_be/edges_gs.png" alt="Edges Gold standard">
 <figcaption markdown="block">
 Gold standard
 </figcaption>
@@ -349,21 +349,21 @@ Edges for the Belgian railway case.
 <figure id="generating_fig:realism:routes">
 
 <figure id="generating_fig:realism:routes:rand" class="subfigure">
-<img src="generating/img/realism/train_be/routes_random.png" alt="Routes Random" style="width: 30%">
+<img src="generating/img/realism/train_be/routes_random.png" alt="Routes Random">
 <figcaption markdown="block">
 Random
 </figcaption>
 </figure>
 
 <figure id="generating_fig:realism:routes:gen" class="subfigure">
-<img src="generating/img/realism/train_be/routes_parameterized.png" alt="Routes Generated" style="width: 30%">
+<img src="generating/img/realism/train_be/routes_parameterized.png" alt="Routes Generated">
 <figcaption markdown="block">
 Generated
 </figcaption>
 </figure>
 
 <figure id="generating_fig:realism:routes:gs" class="subfigure">
-<img src="generating/img/realism/train_be/routes_gs.png" alt="Routes Gold standard" style="width: 30%">
+<img src="generating/img/realism/train_be/routes_gs.png" alt="Routes Gold standard">
 <figcaption markdown="block">
 Gold standard
 </figcaption>
@@ -375,7 +375,7 @@ Routes for the Belgian railway case.
 </figure>
 
 <figure id="generating_fig:realism:connections">
-<img src="generating/img/realism/train_be/connections_distr.svg" alt="Hourly distribution">
+<img src="generating/img/realism/train_be/connections_distr.svg" alt="Hourly distribution" class="figure-medium-width">
 <figcaption markdown="block">
 Connections per hour for the Belgian railway case.
 </figcaption>
@@ -406,14 +406,14 @@ These figures show that stops generation is a more CPU intensive process than ro
 These last two are able to make better usage of the available memory for speeding up the process.
 
 <figure id="generating_fig:performance:times">
-<img src="generating/img/performance/times.svg" alt="Execution times">
+<img src="generating/img/performance/times.svg" alt="Execution times" class="figure-medium-width">
 <figcaption markdown="block">
 Execution times when increasing the number of stops, routes or connections.
 </figcaption>
 </figure>
 
 <figure id="generating_fig:performance:mem">
-<img src="generating/img/performance/mem.svg" alt="Memory usage">
+<img src="generating/img/performance/mem.svg" alt="Memory usage" class="figure-medium-width">
 <figcaption markdown="block">
 Memory usage when increasing the number of stops, routes or connections.
 </figcaption>

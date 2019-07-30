@@ -11,7 +11,7 @@ In this section, we discuss each component in more detail.
 In the next section, we describe two ingestion algorithms based on this storage structure.
 
 <figure id="storing_storage-overview">
-<img src="storing/img/storage-overview.svg" alt="[storage overview]">
+<img src="storing/img/storage-overview.svg" alt="[storage overview]" class="figure-medium-width">
 <figcaption markdown="block">
 Overview of the main components of our hybrid IC/CB/TB storage approach.
 </figcaption>
@@ -109,7 +109,7 @@ An overview of this storage technique is shown in [](#storing_delta-storage-over
 which will be explained in detail hereafter.
 
 <figure id="storing_delta-storage-overview">
-<img src="storing/img/delta-storage-overview.svg" alt="[delta storage overview]">
+<img src="storing/img/delta-storage-overview.svg" alt="[delta storage overview]" class="figure-medium-width">
 <figcaption markdown="block">
 Overview of the components for storing a delta chain.
 The value structure for the addition and deletion trees are indicated with the dashed nodes.
