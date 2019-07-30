@@ -10,10 +10,6 @@ LNCS template styles: http://www.springer.com/computer/lncs?SGWID=0-164-6-793341
 */
 
 @media print {
-/*
-@media print and (width:210mm) and (height:297mm) {
-@media print and (width:8.5in) and (height:11in) {
-*/
 @page {
 /*Standard ISO A4 paper dimensions are:*/
 /*210mm x 297mm*/
@@ -22,23 +18,23 @@ LNCS template styles: http://www.springer.com/computer/lncs?SGWID=0-164-6-793341
 /*2480 pixels x 3508 pixels (print resolution)*/
 /*595 pixels x 842 pixels (screen resolution)*/
 /*size:A4;*/
-margin:52mm 0;
+margin:22mm 0;
 }
 
 body {
-font-size:10pt !important;
+font-size:12pt !important;
 margin:0 auto !important;
 padding:0 !important;
-width:122mm !important;
+width:152mm !important;
 height:193mm !important; /* A4 - LNCS height*/
 }
 
-h1, .h1 { font-size:14pt !important; }
-h2, .h2 { font-size:12pt !important; }
-h3, .h3 { font-size:10pt !important; }
-h4, .h4 { font-size:10pt !important; }
-h5, .h5 { font-size:10pt !important; }
-h6, .h6 { font-size:9pt !important; }
+h1, .h1 { font-size:2em !important; }
+h2, .h2 { font-size:1.7em !important; }
+h3, .h3 { font-size:1.1em !important; }
+h4, .h4 { font-size:1.1em !important; }
+h5, .h5 { font-size:1.1em !important; }
+h6, .h6 { font-size:1em !important; }
 
 body > nav,
 body > header nav,
@@ -64,7 +60,7 @@ caption, td, th,
 #general-terms *,
 #categories-and-subject-descriptors *,
 aside.note {
-font-size:9pt !important;
+font-size:1em !important;
 }
 
 aside.note {
@@ -89,7 +85,7 @@ iframe { display:none !important; }
 button {
 margin:0 !important;
 padding:0 !important;
-font-size:10pt;
+font-size:1.07em;
 }
 
 .blink {
@@ -170,10 +166,10 @@ hyphens:none;
 }
 
 main {
-  h1,h2,h3,h4, strong, dt, figcaption .label, caption:before, #subtitle {
+  h1,h2,h3,h4,h5, strong, dt, figcaption .label, caption:before, #subtitle {
     font-weight: bold;
   }
-  h5,h6, em, cite, dfn, address {
+  em, cite, dfn, address {
     font-style: italic;
   }
   h1 em, h2 em, h3 em, h4 em, dt dfn {
@@ -186,9 +182,6 @@ main {
   code strong, samp strong {
   font-weight:bold;
   }
-  h5 {
-  font-weight:normal;
-  }
   section > p {
   text-indent:1em;
   }
@@ -200,32 +193,22 @@ overflow:hidden;
 page-break-after:avoid;
 line-height:1.231;
 }
-h1, .h1 {
-font-size:1.4615em;
-margin-bottom:1.5em;
-text-align:center;
+
+h1 {
+margin-top:5em;
 }
-aside article h1 { text-align:left; }
-h2, .h2 { font-size:1.231em; }
-h3, .h3 { font-size:1em; }
-h4, .h4 { font-size:1em; }
-h5, .h5 { font-size:1em; }
-h6, .h6 { font-size:0.923em; }
 
 h2 {
-margin-top:1.25em;
+margin-top:4em;
 margin-bottom:0.75em;
 }
 h3 {
 margin-top:1.5em;
 margin-bottom:0.5em;
 }
-h4 {
+h4, h5 {
 margin-top:1em;
-display:inline;
-}
-h5 {
-display:inline;
+margin-bottom:0.5em;
 }
 
 #subtitle {
@@ -320,29 +303,45 @@ left:-1.75em;
 main {
   counter-reset: section;
 
-  // Sections
+  // Chapters
   h2 {
+    counter-increment: section;
     counter-reset: subsection;
 
     &::before {
-      counter-increment: section;
-      content: counter(section) ". ";
+      font-size: 0.8em;
+      display: block;
+      content: "Chapter " counter(section) ". ";
     }
   }
 
-  // Subsections
+  // Sections
   h3 {
+    counter-increment: subsection;
+    counter-reset: subsubsection;
+  
     &::before {
-      counter-increment: subsection;
       content: counter(section) "." counter(subsection) ". ";
     }
   }
 
-  // Paragraphs
+  // Subsections
   h4 {
-    margin: 0 1em 0 0;
-    float: left;
-    clear: left;
+    counter-increment: subsubsection;
+    counter-reset: subsubsubsection;
+  
+    &::before {
+      content: counter(section) "." counter(subsection) "." counter(subsubsection) ". ";
+    }
+  }
+  
+  // Subsubsections
+  h5 {
+    counter-increment: subsubsubsection;
+    
+    &::before {
+      content: counter(section) "." counter(subsection) "." counter(subsubsection) "." counter(subsubsubsection) ". ";
+    }
   }
   
   h1.no-label-increment,
@@ -371,10 +370,14 @@ main {
 }
 
 header {
-  text-align: center;
+  text-align: left;
+  
+  ul {
+    list-style: none;
+  }
 }
 
-#authors {
+#authors, .authors {
   list-style: none;
   margin: 1em 0;
   padding: 0;
@@ -402,16 +405,16 @@ header {
   }
 }
 
-#abstract {
-  h2 {
-    float: left;
-    margin: 0;
-
-    &::after {
-      content: ".";
-      margin-right: .5em;
+#abstract,
+#querying_abstract,
+#generating_abstract,
+#storing_abstract,
+#querying-evolving_abstract {
+    h2, h3 {
+      text-align: center;
     }
-  }
+    
+    margin: 0 3em;
 }
 
 dl.references {
@@ -474,36 +477,6 @@ text-indent:0;
 }
 h1 + p {
 margin-bottom:1em;
-}
-
-
-
-h4 + p,
-h5 + p,
-h4 + div,
-h5 + div,
-h4 + div p,
-h5 + div p {
-display:inline;
-text-align:justify;
-
-/*This is a bit hacky.. it appears to work in Webkit and maybe it shouldn't -- breaking words inappropriately*/
-/*word-break:break-all;*/
-
-/*
-Testing?
-text-justify:distribute;
-word-break:break-all;
-hyphens:auto;
-text-wrap:normal;
-line-break:normal;
-*/
-}
-h4 + p + p,
-h5 + p + p,
-h4 + div p + p,
-h5 + div p + p {
-display:block;
 }
 
 

@@ -3,16 +3,27 @@
 @import "shared_override.scss";
 
 header {
+  h1, h2 {
+    text-align: center;
+  }
+
   .actions, .context {
     display: none;
   }
 }
 
-section {
+section,
+.empty-page,
+header {
   page-break-after: always;
+  
+  .purpose {
+    font-style: italic;
+    text-align: center;
+  }
 }
 
-section.sub-paper section {
+section.sub-paper section:not(.sub-preface) {
   page-break-after: initial;
 }
 
@@ -40,4 +51,12 @@ ol.index-entries[depth="1"] {
 
 abbr {
   text-decoration: none;
+}
+
+.acronyms tbody {
+  border: none;
+}
+
+table.acronyms {
+  page-break-inside: auto !important;
 }

@@ -3,6 +3,8 @@ title: "Storing and Querying\nEvolving Knowledge Graphs\non the Web"
 title_nl: "De opslag en bevraging\nvan evoluerende kennisgrafen\nop het Web"
 ---
 <div class="header-wrapper">
+<div class="empty-page">&nbsp;</div>
+<div class="empty-page">&nbsp;</div>
 <header markdown="1">
 # <%= @item[:title].gsub(/[\n]/, '<br />') %>
 
@@ -10,10 +12,11 @@ title_nl: "De opslag en bevraging\nvan evoluerende kennisgrafen\nop het Web"
 
 <div style="font-size: 1.3em" markdown="1">
 {:#authors}
-- <%= person 'ir. Ruben Taelman', 'https://www.rubensworks.net/', 'https://www.rubensworks.net/#me' %>
+- <%= person 'Ruben Taelman', 'https://www.rubensworks.net/', 'https://www.rubensworks.net/#me' %>
 </div>
  
-*Thesis for obtaining the degree Doctor of Computer Science Engineering*
+<div class="purpose">Thesis for obtaining the degree Doctor of Computer Science Engineering</div>
+<div class="printonly" style="height: 8em"></div>
  
 <div style="font-size: 1.1em" markdown="1">
 <br />
@@ -25,6 +28,7 @@ title_nl: "De opslag en bevraging\nvan evoluerende kennisgrafen\nop het Web"
 </div>
 
 <a href="https://ugent.be/"><img src="img/logo_ugent.svg" alt="Ghent University" class="screenonly" style="float: left; height: 150px"></a>
+<a href="https://ugent.be/"><img src="img/logo_ugent_black.svg" alt="Ghent University" class="printonly" style="float: left; height: 150px"></a>
 
 {:#affiliations}
 - {:#idlab} <a href="https://www.ugent.be/ea/idlab/en">IDLab</a><br />
@@ -34,6 +38,16 @@ title_nl: "De opslag en bevraging\nvan evoluerende kennisgrafen\nop het Web"
             Academic year: 2019 - 2020
 
 </header>
+</div>
+
+<!-- Print-only page with ISBN and stuff -->
+<div class="printonly">
+<div style="height: 50em"></div>
+<span style="font-style: italic"><%= @item[:title].gsub(/[\n]/, ' ') %></span><br />
+ISBN: TBD<br />
+NUR-code(s): TBD<br />
+Legal deposit number: TBD<br />
+<div class="empty-page">&nbsp;</div>
 </div>
 
 <section id="frontmatter">
