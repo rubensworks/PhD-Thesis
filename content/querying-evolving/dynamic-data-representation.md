@@ -49,7 +49,7 @@ A&nbsp;TPF interface gives a unique IRI to each fragment corresponding to a&nbsp
 Since Triple Pattern Fragments are the basis of our solution, we can interpret each fragment as a&nbsp;graph.
 We will refer to these as *implicit graphs*.
 This IRI can then be used as graph identifier for this triple for adding time information.
-For example, the IRI for the triple `<s> <p> <o>` on the TPF interface located at `http://example.org/dataset/` is `http://example.org/dataset?subject=s&predicate=p&object=o`.
+For example, the IRI for the triple `<s> <p> <o>` on the TPF interface located at `http://example.org/dataset/` is<br /> `http://example.org/dataset?subject=s&predicate=p&object=o`.
 
 The choice of time annotation method for publishing temporal data will also depend on its capability to
 *group* time labels.
