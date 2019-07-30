@@ -60,3 +60,38 @@ abbr {
 table.acronyms {
   page-break-inside: auto !important;
 }
+
+figure {
+  text-align: center;
+  margin: 0.5em;
+}
+
+figure.algorithm,
+figure.code,
+figure.listing {
+  text-align: left;
+}
+
+figure.subfigure {
+  display: inline-block;
+  width: 15em;
+  vertical-align: top;
+}
+
+figcaption {
+  text-align: left;
+}
+
+.figure-medium {
+  width: auto;
+  height: 16em;
+}
+
+.figure-medium-width {
+  width: 30em;
+}
+
+.figure-small {
+  width: auto;
+  height: 8em;
+}
