@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 gem 'nanoc', '~> 4.7'
 
-gem 'scholarmarkdown', '~> 2.5.0'
+gem 'scholarmarkdown', '~> 2.6.0'
+#gem 'scholarmarkdown', path: '/Users/rtaelman/nosync/scholar.md/ScholarMarkdown'
 
 # text processing
 gem 'kramdown'
