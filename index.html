@@ -10,7 +10,7 @@
   <meta name="citation_title" content="Storing and Querying Evolving Knowledge Graphs on the Web">
   <meta name="citation_author" content="Ruben Taelman" />
   
-  <meta name="citation_publication_date" content="2019/08/01" />
+  <meta name="citation_publication_date" content="2019/08/05" />
 </head>
 
 <body prefix="dctypes: http://purl.org/dc/dcmitype/ pimspace: http://www.w3.org/ns/pim/space# rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ solid: http://www.w3.org/ns/solid/terms# acl: http://www.w3.org/ns/auth/acl# dio: https://w3id.org/dio# lsc: http://linkedscience.org/lsc/ns#" typeof="schema:CreativeWork sioc:Post prov:Entity lsc:Research">
@@ -129,7 +129,70 @@ in which both human and machine can act upon evolving knowledge.</p>
 <div datatype="rdf:HTML" property="schema:description">
       <h2 property="schema:name">Preface</h2>
 
-      <p class="todo">Write me</p>
+      <p>For as long as I can remember, <em>making things</em> has been my greatest passion.
+As I was fortunate enough to grow up with computers around me,
+I quickly became fascinated by them,
+and their ability to automate processes through sequences of instructions.
+Next to that, I was born at the perfect time to experience the introduction of the Web to the public.
+Hence, I grew up together with it, which has impacted my life significantly.
+Thanks to the Web, I was able to easily <em>access information</em> on computers, programming, and Web technologies.
+This allowed me to <em>learn</em>, and to <em>create</em> new things.</p>
+
+      <p>As a teenager, I was never really the type of person that played a lot of video games.
+Nevertheless, I often came in contact with them through friends.
+Instead of being captivated to <em>play</em> these games,
+I was often intrigued by the way these games <em>worked</em>.
+This caused me to ponder on their internal processes,
+and wondering what it would take to make it myself.
+As such, I occasionally set out to <a href="https://www.rubensworks.net/projects/">implement or extend certain games</a>.
+The thing I enjoyed the most, however, was building things that connect people from all over the Web,
+which is why I also spent quite some time building Web sites to <a href="https://www.rubensworks.net/projects/tgcgames/">distribute games</a>
+and <a href="https://www.rubensworks.net/projects/allectroradio/">broadcast music</a>.</p>
+
+      <p>After I graduated secondary school,
+it was obvious to pursue a further education related to computers and programming,
+which is how I ended up at Ghent University.
+The most impactful year for me was the final year of my Master’s,
+which is when I worked on my thesis.
+Due to my existing interest in Web technologies,
+I chose for a topic in the <em>Semantic Web</em> domain.
+Under the excellent supervision of <a href="https://ruben.verborgh.org/">Ruben Verborgh</a> and <a href="https://pietercolpaert.be/">Pieter Colpaert</a>,
+I investigated <a href="https://www.rubensworks.net/publications/taelman_mastersthesis/"><em>continuous querying</em></a> within the Semantic Web.
+Due to the motivating guidance of Ruben and Pieter, and my interest in the domain,
+I continued upon that research as a PhD topic, and became their colleague at Multimedia Lab.</p>
+
+      <p>Working at <strike>Multimedia Lab</strike>, <strike>Data Science Lab</strike>, <a href="https://www.ugent.be/ea/idlab/en">IDLab</a>
+has been very exciting so far.
+I came in contact with many new interesting people,
+learned about new technologies,
+and traveled to various places.
+Most importantly, I was able to (at least slightly) advance the research domain,
+through the contributions that are described in this PhD thesis.
+All of this was of course impossible without <a href="https://en.wikiquote.org/wiki/Isaac_Newton">standing on the shoulders of giants</a>.
+These giants are on the one hand all researchers that my work builds upon,
+and on the other hand everyone that has directly or indirectly supported this work.</p>
+
+      <p>I thank all my current and past IDLab colleagues from our Semantic Web office:
+Anastasia, Ben, Brecht, Dieter D. P., Dieter D. W., Dörthe, Erik, Gerald, Harm, Julián, Joachim, Laurens, Martin, Miel, Pieter H., Pieter C., Ruben, Sven, Tom.
+Each of them has shaped this research in one way or another.
+Either by providing feedback, coming up with new ideas that inspired me, or by simply offering help when I needed it.
+In particular, I thank Ruben for his tireless enthusiasm and motivation.
+I was able to learn a lot from you, which has definitely helped me in becoming a better researcher.
+I am grateful to both Ruben and Pieter C. for inviting me to pursue a PhD at IDLab,
+it has influenced my life in a very positive way, and I can not dream of a better job.
+I am also thankful of all the critical and constructive feedback Ruben, Miel, Pieter and Anastasia have given me.</p>
+
+      <p>I thank my family for being there all my life, and shaping me into the person I have become.
+Mom and dad, thank you being there,
+for all the time and effort you have spent in me,
+and all the opportunities you have provided,
+I love you both.
+Finally, Elke, I love you for showing me the sides of life that were unknown to me,
+and I am glad to be living it with you.</p>
+
+      <p><br />
+Ruben<br />
+August 2019</p>
 
     </div>
 </section>
@@ -264,6 +327,117 @@ On the other hand, highly volatile and sensitive sensors within nuclear reactor 
 may require massive storage capabilities.
 In the future, more research will be needed to come up with techniques to store and query
 these various kinds of evolving knowledge graphs on the Web.</p>
+
+    </div>
+</section>
+
+  <section id="samenvatting" inlist="" rel="schema:hasPart" resource="#samenvatting">
+<div datatype="rdf:HTML" property="schema:description">
+      <h2 property="schema:name">Samenvatting</h2>
+
+      <p>In de afgelopen 30 jaar heeft het Web de manier waarop we informatie delen significant bevorderd,
+wat geleid heeft tot grote transformaties van onze samenleving.
+Origineel was informatie op het Web bedoeld voor mensen,
+en machines hadden het moeilijk om deze informatie te begrijpen op dezelfde manier als mensen.
+Dit hinderde <em>intelligente assistenten</em> om bepaalde taken autonoom uit te voeren,
+zoals bijvoorbeeld alle winkels vinden die rijst verkopen in de huidige omgeving,
+of bepalen wanneer het tijd is om te vertrekken om een vlucht te halen gebaseerd op de huidige verkeerssituatie en het weer.
+Om deze intelligente assistenten mogelijk te maken hebben onderzoekers gewerkt aan technologieën en standaarden
+om het Web begrijpbaar te maken voor machines.
+Sinds de afgelopen jaren worden <em>kennisgrafen</em> gebouwd op basis van deze technologieën
+om intelligente assistenten zoals Siri en Google Now deze taken te kunnen laten uitvoeren.</p>
+
+      <p>Het meeste onderzoek in de context van kennisgrafen is gefocust op <em>statische</em> gegevens.
+Er is echter een grote hoeveelheid <em>evoluerende</em> gegevens beschikbaar,
+zoals verkeersdata van snelweg sensoren of continue hartslag metingen.
+Aangezien er veel waarde vervat zit in evoluerende kennis
+is het belangrijk om deze informatie <em>op te slaan</em> in <em>evoluerende kennisgrafen</em>,
+en om deze <em>doorzoekbaar</em> te maken.
+Om deze redenen is dit de focus van mijn onderzoek.</p>
+
+      <p>Net zoals het Web, worden kennisgrafen meer en meer <em>gecentraliseerd</em>,
+en hebben deze maar een beperkte beschikbaarheid voor het publiek.
+Dit leidt tot informatie die meer en meer in de handen komt van enkele grote entiteiten,
+waardoor de democratische en <em>gedecentraliseerde</em> eigenschappen van het Web in gedrang komen.
+Gebeurtenissen in de afgelopen jaren hebben aangetoond dat de centralisatie van informatie op deze schaal problematisch is,
+aangezien het leidt tot problemen zoals censuur en manipulatie van informatie.
+Om deze redenen is er een voortgaande inspanning om het Web <em>opnieuw te decentraliseren</em>,
+en om het Web opnieuw een democratisch platform te maken door de macht terug te geven aan de mensen.
+Aldus is decentralisatie en democratisatie van informatie op het Web in de vorm van kennisgrafen een onderliggende focus van mijn onderzoek.</p>
+
+      <p>Om te helpen met het oplossen van de problemen met <em>evoluerende kennisgrafen</em>,
+en om het mogelijk te maken dat iedereen deze kan gebruiken,
+is <strong>het doel van dit doctoraat om het mogelijk te maken om <em>evoluerende</em> kennisgrafen <em>op te slaan</em> en <em>bevragen</em> op het Web</strong>.
+Om dit onderwerp te onderzoeken focus ik op vier uitdagingen gerelateerd aan dit onderwerp.
+Te eerste, om systemen die evoluerende kennisgrafen beheren te evalueren,
+kijk ik naar de <em>generatie van evoluerende gegevens</em>.
+Ten tweede onderzoek ik manieren om <em>evoluerende gegevens op te slaan</em>,
+zodat gegevens efficiënt op het Web gepubliceerd en bevraagd kunnen worden.
+Ten derde ontwerp ik een flexibel systeem om verschillende soorten gegevens te bevragen op het <em>Web</em>.
+Tot slot onderzoek ik manieren om <em>evoluerende gegevens te publiceren en bevragen op het Web</em>.</p>
+
+      <p>Om op een degelijke manier systemen te evalueren die evoluerende kennisgrafen beheren,
+is het nodig om eerst evoluerende kennisgrafen te <em>hebben</em> om deze systemen mee te testen.
+Aangezien bestaande evoluerende kennisgrafen beperkt zijn tot specifieke groottes,
+zijn deze niet geschikt voor de noden van uitgebreide systeemevaluaties
+waar configureerbare groottes van evoluerende kennisgrafen nodig zijn.
+Dit is waarom de eerste uitdaging focust op de generatie van evoluerende gegevens, als een vereiste voor de volgende uitdagingen.
+Concreet ontwerp ik een algoritme om synthetische datasets over het openbaar vervoer te genereren,
+gebaseerd op populatie distributies als invoer.
+Dit algoritme is geïmplementeerd en geëvalueerd in termen van realiteit en prestatie.
+Resultaten tonen aan dat dit algoritme nuttig is voor de evaluatie van systemen die evoluerende kennisgrafen beheren,
+met de garantie dat datasets voldoende realistisch zijn ten opzichte van analogen in de echte wereld.</p>
+
+      <p>De tweede uitdaging focust op het onderzoek van een Web-vriendelijke afweging tussen opslagruimte en opzoek efficiëntie
+voor evoluerende kennisgrafen.
+Hiervoor werd een opslagtechniek ontworpen die in staat is om evoluerende gegevens te indexeren,
+en samenhorige algoritmes werden ontwikkeld voor het doorzoeken van evoluerende gegevens op een efficiënte manier.
+Deze index is gebaseerd op een hybride van verschillende soorten opslagtechnieken,
+om verschillende temporele toegangspatronen efficiënt te maken.
+De zoekalgoritmen ondersteunen <em>startafstanden</em> en <em>limieten</em>,
+om willekeurige toegang tot deelverzamelingen van zoekresultaten mogelijk te maken,
+wat belangrijk is voor een Web-vriendelijke zoek toegang.
+Gebaseerd op een implementatie van deze opslagtechniek en zoekalgoritmen,
+tonen experimentele resultaten aan dat dit systeem er in slaagt om een afweging te bereiken tussen opslagruimte en opzoek efficiëntie
+die waardevol is voor het plaatsen van evoluerende kennisgrafen op het Web.
+Concreet worden zoektijden gereduceerd ten koste van een toename in opslagruimte.
+Deze kost is acceptabel aangezien opslag meestal vrij goedkoop is.</p>
+
+      <p>In de derde uitdaging wordt de <em>heterogeniteit</em> van het Web onderzocht.
+Concreet wordt een zoekmachine ontworpen die in staat is om te zoeken over verschillende soorten Web toegangen,
+gebaseerd op verschillende zoekalgoritmen.
+Zo een zoekmachine is nodig omdat bestaande systemen typisch focussen op één specifieke toegang of algoritme,
+what het moeilijk maakt om verschillende technieken te vergelijken met elkaar op een eerlijke manier.
+Daarnaast is de zoekmachine ontworpen op een modulaire manier,
+zodat nieuwe soorten Web toegangen en algoritmen ontwikkeld en ingeplugd kunnen worden op een flexibelen manier.</p>
+
+      <p>Tot slot verbindt de laatste uitdaging alle voorgaande uitdagingen met elkaar,
+en focust op de publicatie van evoluerende gegevens op het Web via een doorzoekbare toegang.
+Concreet introduceren we een doorzoekbare toegang voor evoluerende gegevens,
+en een algoritme aan de client-zijde voor de continue bevraging over deze toegang op een herhalende manier.
+Dit wordt gedaan door evoluerende gegevens te annoteren met bepaalde vervaltijden,
+zo dat clienten de optimale opzoekfrequentie kunnen bepalen,
+en dat niet-vervallen gegevens kunnen hergebruikt worden wanneer vluchtigere gegevens vervallen.
+Resultaten tonen aan dat deze manier er in slaagt om een lagere server belasting te bereiken in vergelijking met een continue zoekmachine die volledig aan de server zijde draait,
+ten koste van een toename in uitvoeringstijd en bandbreedte.</p>
+
+      <p>In deze vier uitdagingen werden technieken ontwikkeld om evoluerende kennisgrafen op te slaan en te bevragen
+op een Web-vriendelijke manier.
+Concreet kan dit gedaan worden door evoluerende kennisgrafen op te slaan in een systeem gebaseerd op deze ontwikkeld in de tweede uitdaging.
+Hier bovenop kan een Web toegang opgezet worden zoals deze ontworpen in de vierde uitdaging,
+welke bevraagd kan worden van de client-side om server belasting te verlagen zoals gedaan wordt in uitdaging drie en vier.
+Deze kunnen allemaal geëvalueerd worden met behulp van synthetische evoluerende kennisgrafen
+die gegenereerd kunnen worden met het algoritme van de eerste uitdaging.</p>
+
+      <p>Alhoewel dit onderzoek een manier aantoont om evoluerende kennisgrafen op te slaan en te bevragen op het Web,
+bestaat er geen één perfecte manier om dit te doen,
+maar er bestaan wel verschillende afwegingen voor verschillende toepassingen.
+Bijvoorbeeld, evoluerende kennisgrafen opslaan over kleine, traag evoluerende sensoren in het <em>internet der dingen</em>,
+kunnen beperkt zijn in opslagruimte.
+Aan de andere kant kunnen zeer vluchtige en gevoelige sensoren in nucleare reactoren
+zeer grote opslagruimte vereisen.
+In de toekomst zal meer onderzoek nodig zijn om technieken te onderzoeken
+om het mogelijk maken om verschillende soorten evoluerende kennisgrafen op te slaan en te bevragen op het Web.</p>
 
     </div>
 </section>
