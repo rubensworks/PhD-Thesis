@@ -1,14 +1,16 @@
 ## Examination Board
 
-Write me
-{:.todo}
-
-* TODO
+* Prof. Antoon Bronselaer
+* Prof. Erik Mannens
+* Dr. ir. Femke Ongenae
+* Prof. Katja Hose
+* Prof. Olaf Hartig
 
 **Chair**
 
-* TODO
+* Prof Filip De Turck
 
 **Supervisors**
 
-* TODO
+* Prof. Ruben Verborgh
+* Dr. ir. Miel Vander Sande
