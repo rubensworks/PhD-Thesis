@@ -3,14 +3,17 @@
 
 <!-- Context      -->
 The Web has become our most valuable tool for sharing information.
+Currently, this Web is mainly targeted at humans,
+whereas machines typically have a hard time understanding information on the Web.
 Using *knowledge graphs*, this information can be linked in a structured way,
 so that intelligent agents can act upon this data autonomously.
 Current knowledge graphs remain however rather static.
 As there is a lot of value in acting upon *evolving* knowledge,
 <!-- Need         -->
-there is a need for *evolving knowledge graphs*.
+there is a need for *evolving knowledge graphs*,
+and ways to manage them.
 <!-- Task         -->
-As such, the goal of this PhD is to allow such evolving knowledge graphs to be stored and queried,
+As such, the goal of this PhD is to allow such evolving knowledge graphs to be *stored* and *queried*,
 taking into account the *decentralized* nature Web
 where anyone should be able say anything about anything.
 <!-- Object       -->
