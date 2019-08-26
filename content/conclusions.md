@@ -17,22 +17,112 @@ Based on my research question, I focussed on four main challenges:
 3. **The Web is highly *heterogeneous*.**
 4. **Publishing *evolving* data via a *queryable interface* is costly.**
 
+I will discuss the findings within these challenges hereafter.
+
+#### Generating Evolving Data
+
 In [](#generating), the first challenge was tackled as a prerequisite for the next challenges.
-The goal of this work was to come up with a way to generate realistic public transport network datasets
-based on population distributions.
-The outcome was an algorithm and implementation that achieve this goal.
+The domain of public transport was chosen for this challenge,
+as it contains both geospatial and temporal dimensions,
+which makes it useful for benchmarking RDF data management systems that can handle various dimensions like these.
+Even though many real-world public transit network design and scheduling methodologies already exist,
+the synthetic generation of such datasets is not trivial.
+The goal of this work was to determine wether or not population distributions could be used as input to such a mimicking algorithm.
+Hence, this lead to the following [research question](#generating_researchquestion):
+
+> Can population distribution data be used to generate realistic synthetic public transport networks and scheduling?
+
+The main hypothesis of this work was: _public transport networks and schedules are correlated with the population distribution within the same area_.
+This hypothesis was tested and validated for two countries with a high level of confidence.
+As such, population distributions formed the basis of the mimicking algorithm of this work.
+
+Inspired by real-world public transit network design and scheduling methodologies,
+an multi-step algorithm was determined where regions, stops, edges, routes and trips were generated
+based on any population distribution and dependency rules.
+To evaluate the realism of generated datasets, an implementation of the algorithm was provided.
+For each step in the algorithm, distance functions were determined to measure the realism for each step.
+This realism was confirmed for different regions and transport types.
+
+With the provided mimicking algorithm,
+synthetic public transport networks and scheduling can be generated based on population distributions,
+which answers our research question.
+This tackles our initial challenge to support experimentation on systems that handle evolving knowledge graphs.
+
+One could however question whether such domain-specific datasets are sufficient for testing evolving knowledge graphs systems in general.
+As shown in [](#generating_methodology), the introduced data model contains a relatively small number of RDF properties and classes.
+While large domain specific knowledge graphs like these are valuable,
+domain-overlapping knowledge graphs such as [DBpedia](cite:cites dbpedia) and [Wikidata](cite:cites wikidata)
+many more distinct properties and classes, which place additional demands on systems.
+For such cases, multi-domain (evolving) knowledge graph generators could be created in future work.
+
+#### Indexing Evolving Data
 
 Next, in [](#storing), the challenge was to determine an approach
 that achieves a trade-off between storage size and lookup efficiency
 that is beneficial for publishing evolving knowledge graphs on the Web.
-The outcome of this work was
+This approach had to enable a Web-friendly storage approach,
+so that evolving knowledge graphs can be published on the Web without requiring very costly machines.
+Previous work has shown that by restricting queries on servers to [triple pattern queries](cite:cites ldf),
+and executing more complex queries client-side, server load can be reduced significantly.
+As such, our work built upon this idea by focusing on _triple pattern queries_.
+Furthermore, to reduce memory usage during query execution,
+we focus on _streaming_ results with optional _offsets_.
+Finally, we focus on three main versioned query atoms to support various kinds of temporal queries over evolving knowledge graphs.
+This lead to the following [research question](#storing_researchquestion):
+
+> How can we store RDF archives to enable efficient versioned triple pattern queries with offsets?
+
+This research question is answered by introducing
 (1) a storage technique for maintaining multiple versions of a knowledge graph
 and (2) querying algorithms that can be used to efficiently extract data from these versions.
+As was shown via our hypotheses, this storage technique is a hybrid of different existing storage approaches,
+which lead to a trade-off between all of them in terms of storage requirements and querying efficiency.
+Important to note is that the introduced storage technique is therefore not the most optimal for all situations.
+For specific use cases where only very specific query types are required,
+dedicated systems will likely be more efficient.
+However, when the domain of queries is broad,
+a more general-purpose like our approach is more fitting,
+as this will lead to sufficiently fast query execution in all cases,
+with acceptable storage requirements.
+
+In conclusion, our storage approach can be used be used as a backend
+for publishing evolving knowledge graphs through a low-cost triple pattern interface,
+which has been illustrated via [_Versioned_ Triple Pattern Fragments](cite:cites vtpf)
+on [http://versioned.linkeddatafragments.org/bear](http://versioned.linkeddatafragments.org/bear).
+Future challenges include the handling of very large numbers of versions and improving ingestion efficiency,
+which both could be resolved by dynamically creating intermediary snapshots within the delta chain.
+
+#### Heterogeneous Web
 
 In [](#querying), the challenge on handling the heterogeneous nature of the Web during querying was tackled.
-This was done through the design and development of a highly modular *meta* query engine
+This was done through the design and development of a highly modular *meta* query engine (Comunica)
 that simplifies the handling of various kinds of sources,
 and lowers the barrier for researching new query interfaces and algorithms.
+
+In order for Comunica to be usable as a research platform,
+its architecture needed to be flexible enough to handle the complete SPARQL 1.1 specification,
+and support heterogeneous interfaces.
+For this, the _actor_, _mediator_, and _publish-subscribe_ software patterns were applied
+to achieve an architecture where task-specific actors form building blocks,
+where buses and mediators are used to handle their inter-communication,
+which can be wired together through _dependency injection_.
+
+With Comunica, evaluating the performance of different query algorithms and other query-related approaches become more fair.
+Query algorithms are typically compared by implementing them in separate systems,
+which leads to confounding factors that may impact the performance results,
+such as the use of different programming languages or software libraries.
+As Comunica consists of small task-specific building blocks,
+different algorithms become different instances of such building blocks,
+which reduces confounding during experiments.
+
+Comunica's architecture is flexible enough to go outside the realm of standard SPARQL.
+It is for example usable to create an engine for [querying over evolving knowledge graphs](cite:cites mocha_2018).
+Concretely, support for OSTRICH datasources from [](#storing) was implemented,
+together with support for versioned queries.
+For this, the streaming results capability of OSTRICH proved compatible and beneficial
+to the streaming query evaluation of Comunica.
+
+#### Publishing and Querying Evolving Data
 
 Finally, [](#querying-evolving) handled the challenge on a query interface for evolving knowledge graphs.
 The main goal of this work was to determine whether (part of) the effort for executing continuous queries
@@ -41,8 +131,54 @@ in order to allow the server to handle more concurrent clients.
 The outcome of this work was a polling-based Web interface for evolving knowledge graphs,
 and a client-side algorithm that is able to perform continuous queries using this interface.
 
+The first [research question](#querying-evolving_researchquestion1) of this work was:
+
+> Can clients use volatility knowledge to perform more efficient continuous SPARQL query evaluation by polling for data?
+
+This question was answered by annotating dynamica data server-side with time annotations,
+and by introducing a client-side algorithm that can detect these annotations,
+and determine a polling frequency for continuous query evaluation based on that.
+By doing this, clients only have to re-download data from the server when it was changed.
+Furthermore, static data only have to be downloaded once from the server when needed,
+and can therefore optimally be cached by the client.
+In practise, one could however argue that no data is never truly indefinitely _static_,
+which is why practical implementations will require caches with a high maximum age for static data
+when performing continuous querying over long periods of time.
+
+Our second [research question](#querying-evolving_researchquestion2) was formulated as:
+
+> How does the client and server load of our solution compare to alternatives?
+
+This question was answered by comparing the server and client load
+of our approach with state of the art server-side engines.
+Results show a clear movement of load from server to client,
+at the cost of increased bandwidth usage and execution time.
+The benefit of this becomes especially clear when the number of concurrent clients increase.
+The server load of our approach scales significantly better compared to other approaches for an increasing number of clients.
+This is caused by the fact that each clients now helps with query execution,
+which frees up a significant portion of server load.
+Since multiple concurrent clients also lead to server requests for overlapping URLs,
+a server cache should theoretically be beneficial as well.
+However, follow-up work has shown that [such a cache leads to higher server load](cite:cites tpfqs2)
+due to the high cost of cache invalidation over dynamic data.
+This shows that caching dynamic data is unlikely to achieve overall performance benefits.
+More intelligent caching techniques may lead to better efficiency,
+by for example only caching data that will be valid for at least a given time period.
+
+The final [research question](#querying-evolving_researchquestion3) was defined as:
+
+> How do different time-annotation methods perform in terms of the resulting execution times?
+
+Results have shown that by exploiting named graphs for annotating expiration times to dynamic data,
+total execution times are the lowest compared to other annotation approaches.
+This is caused by the fact that the named graphs approach leads to a lower amount of triples to be downloaded from the server.
+And since bandwidth usage has a significant impact on query execution times,
+the number of triples that need to be download have such an impact.
+
+#### Overview
+
 Through investigating these four challenges,
-our research question can be answered.
+our main research question can be answered.
 Concretely, evolving knowledge graphs can be made queryable on the Web through a low-cost polling-based interface,
 with a hybrid snapshot/delta/timestamp-based storage system in the back end.
 On top of this and other interfaces,
