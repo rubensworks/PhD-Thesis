@@ -16,14 +16,15 @@ om intelligente assistenten zoals Siri en Google Now deze taken te kunnen laten 
 Het meeste onderzoek in de context van kennisgrafen is gefocust op *statische* gegevens.
 Er is echter een grote hoeveelheid *evoluerende* gegevens beschikbaar,
 zoals verkeersdata van snelweg sensoren of continue hartslag metingen.
-Aangezien er veel waarde vervat zit in evoluerende kennis
-is het belangrijk om deze informatie *op te slaan* in *evoluerende kennisgrafen*,
+Er zit veel waarde vervat zit in evoluerende kennis
+zoals bijvoorbeeld het bepalen van drukke dagelijkse momenten op de snelweg,
+of meldingen sturen wanneer de hartslag te hoog blijft voor onverwacht lange perioden.
+Daarom is het belangrijk om deze informatie *op te slaan* in *evoluerende kennisgrafen*,
 en om deze *doorzoekbaar* te maken.
-Om deze redenen is dit de focus van mijn onderzoek.
 
 Net zoals het Web, worden kennisgrafen meer en meer *gecentraliseerd*,
-en hebben deze maar een beperkte beschikbaarheid voor het publiek.
-Dit leidt tot informatie die meer en meer in de handen komt van enkele grote entiteiten,
+wat betekent dat informatie meer en meer in de handen komt van enkele grote entiteiten.
+Dit leidt tot een beperkte beschikbaarheid van informatie voor het publiek,
 waardoor de democratische en *gedecentraliseerde* eigenschappen van het Web in gedrang komen.
 Gebeurtenissen in de afgelopen jaren hebben aangetoond dat de centralisatie van informatie op deze schaal problematisch is,
 aangezien het leidt tot problemen zoals censuur en manipulatie van informatie.
@@ -31,9 +32,9 @@ Om deze redenen is er een voortgaande inspanning om het Web *opnieuw te decentra
 en om het Web opnieuw een democratisch platform te maken door de macht terug te geven aan de mensen.
 Aldus is decentralisatie en democratisatie van informatie op het Web in de vorm van kennisgrafen een onderliggende focus van mijn onderzoek.
 
-Om te helpen met het oplossen van de problemen met *evoluerende kennisgrafen*,
-en om het mogelijk te maken dat iedereen deze kan gebruiken,
+Om het gebruik van *evoluerende kennisgrafen* te vergemakkelijken,
 is **het doel van dit doctoraat om het mogelijk te maken om *evoluerende* kennisgrafen *op te slaan* en *bevragen* op het Web**.
+In de context van dit doctoraat ga ik uit van kennisgrafen die evolueren met een periodiciteit in de orde van minuten of trager.
 Om dit onderwerp te onderzoeken focus ik op vier uitdagingen gerelateerd aan dit onderwerp.
 Te eerste, om systemen die evoluerende kennisgrafen beheren te evalueren,
 kijk ik naar de *generatie van evoluerende gegevens*.
@@ -70,12 +71,12 @@ Concreet worden zoektijden gereduceerd ten koste van een toename in opslagruimte
 Deze kost is acceptabel aangezien opslag meestal vrij goedkoop is.
 
 In de derde uitdaging wordt de *heterogeniteit* van het Web onderzocht.
-Concreet wordt een zoekmachine ontworpen die in staat is om te zoeken over verschillende soorten Web toegangen,
+Concreet wordt een zoekmachine (Comunica) ontworpen die in staat is om te zoeken over verschillende soorten Web toegangen,
 gebaseerd op verschillende zoekalgoritmen.
-Zo een zoekmachine is nodig omdat bestaande systemen typisch focussen op één specifieke toegang of algoritme,
-what het moeilijk maakt om verschillende technieken te vergelijken met elkaar op een eerlijke manier.
-Daarnaast is de zoekmachine ontworpen op een modulaire manier,
+De zoekmachine is ontworpen op een modulaire manier,
 zodat nieuwe soorten Web toegangen en algoritmen ontwikkeld en ingeplugd kunnen worden op een flexibelen manier.
+Dit maakt het mogelijk om verschillende Web toegangen en algoritmen op een eerlijke manier met elkaar te vergelijken,
+wat dit een nuttig onderzoeksplatform maakt.
 
 Tot slot verbindt de laatste uitdaging alle voorgaande uitdagingen met elkaar,
 en focust op de publicatie van evoluerende gegevens op het Web via een doorzoekbare toegang.
@@ -89,7 +90,7 @@ ten koste van een toename in uitvoeringstijd en bandbreedte.
 
 In deze vier uitdagingen werden technieken ontwikkeld om evoluerende kennisgrafen op te slaan en te bevragen
 op een Web-vriendelijke manier.
-Concreet kan dit gedaan worden door evoluerende kennisgrafen op te slaan in een systeem gebaseerd op deze ontwikkeld in de tweede uitdaging.
+Concreet kan dit gedaan worden door evoluerende kennisgrafen op te slaan in een hybride systeem van de tweede uitdaging.
 Hier bovenop kan een Web toegang opgezet worden zoals deze ontworpen in de vierde uitdaging,
 welke bevraagd kan worden van de client-side om server belasting te verlagen zoals gedaan wordt in uitdaging drie en vier.
 Deze kunnen allemaal geëvalueerd worden met behulp van synthetische evoluerende kennisgrafen

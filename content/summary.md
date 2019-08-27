@@ -11,20 +11,21 @@ such as finding all stores that sell rice in the current area,
 or determining the time to leave for catching your flight on time based on the current traffic and weather conditions.
 To enable such intelligent agents, researchers have been investigating technologies and introducing standards
 for making the Web understandable for machines.
-In the recent years, *knowledge graphs* are being built based on these technologies
-to support intelligent agents such as Siri and Google Now to perform these tasks.
+In the recent years, these technologies are being used to build so-called *knowledge graphs*,
+which are collections of structured information to support intelligent agents such as Siri and Google Now.
 
 Most research on knowledge graphs has been focused on *static* data.
-There is however a huge amount of *evolving* data available,
+However, there is however a huge amount of *evolving* data available,
 such as traffic events from highway sensors or continuous heart rate measurements.
-As there is a lot of value in evolving knowledge,
-it is important to *store* this information in *evolving knowledge graphs*,
+There is a lot of value in evolving knowledge,
+such as for example the ability to determine daily busy traffic periods,
+or sending alerts when the heart rate is too high for an unexpectedly long period of time.
+As such, it is important to *store* this information in *evolving knowledge graphs*,
 and to make it *searchable*.
-As such, this is the primary focus of my research.
 
 Just like the Web, knowledge graphs are continuously becoming more and more *centralized*,
-and only having limited availability for the public.
-This leads to information becoming increasingly more in the hands of a few large entities,
+which means that information becomes increasingly more in the hands of a few large entities.
+This leads to information only having limited availability for the public,
 which endangers the democratic and *decentralized* nature of the Web.
 Events in recent years have shown that centralizing information at this scale is problematic,
 as it leads to issues such as censorship and manipulation of information.
@@ -34,9 +35,9 @@ As such, an underlying focus within my research is to enable this decentralizati
 of information on the Web,
 in the form of knowledge graphs.
 
-To help solve the open problems of *evolving knowledge graphs*,
-and to allow everyone use to them,
+To facilitate the usage of *evolving knowledge graphs*,
 **the goal of this PhD is to allow *evolving* knowledge graphs to be *stored* and *queried* on the *Web*.**
+In the scope of this PhD, I consider knowledge graphs that evolve with a periodicity in the order of minutes or slower.
 To investigate this topic, I focus on four challenges related to this topic.
 First, to allow systems that handle evolving knowledge graphs to be evaluated,
 I look into the *generation of evolving data*.
@@ -73,12 +74,12 @@ Concretely, query execution time is reduced at the cost of an increase in storag
 This cost is acceptable due to storage typically being cheap.
 
 In the third challenge, the *heterogeneous* nature of the Web is investigated.
-Concretely, a query engine is designed that can query over various kinds of Web interfaces,
+Concretely, a query engine (Comunica) is designed that can query over various kinds of Web interfaces,
 based on different kinds of query algorithms.
-Such an engine is needed as existing engines typically focus on one specific interface or algorithm,
-which makes it difficult to compare different approaches with each other in a fair way.
-Furthermore, the engine is designed in a modular way,
+The engine is designed in a modular way,
 so that new interfaces and algorithms can be developed and plugged in flexibly.
+This also allows different approaches to be compared fairly,
+which makes it a useful research platform.
 
 Finally, the last challenge ties everything together,
 and focuses on publishing evolving data on the Web via a queryable interface.
@@ -93,9 +94,8 @@ at the cost of an increase in execution time and bandwidth usage.
 Within these four challenges,
 methods are designed to allow evolving knowledge graphs to be stored and queried
 in a Web-friendly way.
-Concretely, this can be done by storing evolving knowledge graphs in a system
-based on the one designed for the second challenge.
-On top of this, a Web interface can be setup such as the one designed for the fourth challenge,
+Concretely, evolving knowledge graphs can be stored in the hybrid storage system from challenge two.
+On top of this, a low-cost temporal Web interface can be setup such as the one designed for the fourth challenge,
 which can then be queried client-side to reduce server load as seen in challenge three and four.
 All of this can then be evaluated using synthetic evolving knowledge graphs
 as generated with the algorithm from challenge one.

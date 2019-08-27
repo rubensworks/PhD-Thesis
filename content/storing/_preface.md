@@ -20,6 +20,8 @@ This chapter is based on the research question:
 "How can we store RDF archives to enable efficient versioned triple pattern queries with offsets?"
 We focus on triple pattern queries, as these are the fundamental building blocks
 for more complex SPARQL queries over knowledge graphs.
+For example, the [Triple Pattern Fragments interface](cite:cites ldf) exposes triple pattern access to datasets,
+which is sufficient for evaluating complex SPARQL queries on top of this.
 We answer this research question by introducing a storage technique
 that introduces various temporal indexes next to the typical indexes that are required for knowledge graphs.
 These indexes are essential for achieving efficient querying for different kinds of versioned queries.

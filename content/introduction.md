@@ -11,7 +11,7 @@ The social capabilities of humans are however *much more evolved* than most othe
 For example, [humans are one of the only animals that have clearly visible eye whites](https://pursuit.unimelb.edu.au/articles/why-we-show-the-whites-of-our-eyes).
 This allows people to see what other people are looking at,
 which simplifies *collaborative* tasks.
-Furthermore, [*theory of mind*](https://www.sciencedirect.com/topics/neuroscience/theory-of-mind) —the ability to understand that others have different perspectives—, [is much more pronounced in humans than other animals](https://mitpress.universitypressscholarship.com/view/10.7551/mitpress/9780262016056.001.0001/upso-9780262016056), which also strengthens our ability to *collaborate*.
+Furthermore, [*theory of mind*](https://www.sciencedirect.com/topics/neuroscience/theory-of-mind), the ability to understand that others have different perspectives, [is much more pronounced in humans than other animals](https://mitpress.universitypressscholarship.com/view/10.7551/mitpress/9780262016056.001.0001/upso-9780262016056), which also strengthens our ability to *collaborate*.
 While our collaborative capabilities were initially limited to physical tasks,
 the invention of *language* and *writing* allowed us to share *knowledge* with each other.
 
@@ -73,10 +73,11 @@ In order for this dream to become a reality,
 the Web had to become *machine-readable*.
 This Web extension is typically referred to as the *Semantic Web*.
 
-Now —almost twenty years later—, several standards and technologies have been developed to make this dream a reality,
+Now, almost twenty years later, several standards and technologies have been developed to make this dream a reality,
 [In 2013, more than four million Web domains were already using these technologies](http://iswc2013.semanticweb.org/content/keynote-ramanathan-v-guha.html).
 Using these Semantic Web technologies, so-called *knowledge graphs* are being constructed by many major companies world-wide,
 such as [Google](https://developers.google.com/knowledge-graph/) and [Microsoft](https://developer.microsoft.com/en-us/graph/).
+A knowledge graph is a collection of structured information that is organized in a graph.
 These knowledge graphs are being used to support tasks that were part of Tim Berners-Lee's original vision,
 such as managing day-to-day tasks with the [Google Now assistant](https://www.google.com/intl/nl/landing/now/).
 
@@ -172,7 +173,9 @@ and obstruction to receive information through censorship.
 
 For these reasons, there is a massive push for [*re-decentralizing the Web*](https://ruben.verborgh.org/articles/redecentralizing-the-web/),
 where people regain *ownership* of their data.
-Decentralization is however a technologically difficult thing.
+Decentralization is however a technologically difficult thing,
+as applications typically a single *centralized* entrypoint from which data is retrieved,
+and no such single entrypoint exist in a truly decentralized environment.
 As people do want ownership of their data, they do not want to give up their intelligent agents.
 As such, this decentralization wave requires significant research effort to achieve the same capabilities as these *centralized* knowledge graphs,
 which is why this is of important factor within my research.
@@ -221,7 +224,7 @@ related to this research question:
 {:#introduction-outline}
 
 Corresponding to my four research challenges,
-this thesis is based on the following four peer-reviewed publications:
+this thesis is bundles the following four peer-reviewed publications:
 
 * Ruben Taelman et al. [Generating Public Transport Data based on Population Distributions for RDF Benchmarking](https://www.rubensworks.net/raw/publications/2018/podigg.pdf).
     <br />In: *In Semantic Web Journal*. IOS Press, 2019.
