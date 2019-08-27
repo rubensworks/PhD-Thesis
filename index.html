@@ -10,7 +10,7 @@
   <meta name="citation_title" content="Storing and Querying Evolving Knowledge Graphs on the Web">
   <meta name="citation_author" content="Ruben Taelman" />
   
-  <meta name="citation_publication_date" content="2019/08/21" />
+  <meta name="citation_publication_date" content="2019/08/27" />
 </head>
 
 <body prefix="dctypes: http://purl.org/dc/dcmitype/ pimspace: http://www.w3.org/ns/pim/space# rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ solid: http://www.w3.org/ns/solid/terms# acl: http://www.w3.org/ns/auth/acl# dio: https://w3id.org/dio# lsc: http://linkedscience.org/lsc/ns#" typeof="schema:CreativeWork sioc:Post prov:Entity lsc:Research">
@@ -29,7 +29,9 @@
     </div>
 
     <div class="purpose">Thesis for obtaining the degree Doctor of Computer Science Engineering</div>
-    <div class="printonly" style="height: 8em"></div>
+    <div class="printonly canonical" style="height: 8em">
+    <br />Canonical version: <a href="https://phd.rubensworks.net/">https:/​/​phd.rubensworks.net/</a>
+</div>
 
     <div style="font-size: 1.1em">
       <p><br />
@@ -73,15 +75,18 @@ Legal deposit number: TBD<br />
 
       <!-- Context      -->
       <p>The Web has become our most valuable tool for sharing information.
+Currently, this Web is mainly targeted at humans,
+whereas machines typically have a hard time understanding information on the Web.
 Using <em>knowledge graphs</em>, this information can be linked in a structured way,
 so that intelligent agents can act upon this data autonomously.
 Current knowledge graphs remain however rather static.
 As there is a lot of value in acting upon <em>evolving</em> knowledge,
 <!-- Need         -->
-there is a need for <em>evolving knowledge graphs</em>.
+there is a need for <em>evolving knowledge graphs</em>,
+and ways to manage them.
 <!-- Task         -->
-As such, the goal of this PhD is to allow such evolving knowledge graphs to be stored and queried,
-taking into account the <em>decentralized</em> nature Web
+As such, the goal of this PhD is to allow such evolving knowledge graphs to be <em>stored</em> and <em>queried</em>,
+taking into account the <em>decentralized</em> nature of the Web
 where anyone should be able say anything about anything.
 <!-- Object       -->
 Concretely, four challenges related to this goal are investigated:
@@ -142,18 +147,18 @@ Thanks to the Web, I was able to easily <em>access information</em> on computers
 This allowed me to <em>learn</em>, and to <em>create</em> new things.</p>
 
       <p>As a teenager, I was never really the type of person that played a lot of video games.
-Nevertheless, I often came in contact with them through friends.
+Nevertheless, like most people of my generation, I often came in contact with them.
 Instead of being captivated to <em>play</em> these games,
 I was often intrigued by the way these games <em>worked</em>.
 This caused me to ponder on their internal processes,
 and wondering what it would take to make it myself.
 As such, I occasionally set out to <a href="https://www.rubensworks.net/projects/">implement or extend certain games</a>.
-The thing I enjoyed the most, however, was building things that connect people from all over the Web,
+The thing I enjoyed the most, however, was building things that connect people over the Web,
 which is why I also spent quite some time building Web sites to <a href="https://www.rubensworks.net/projects/tgcgames/">distribute games</a>
 and <a href="https://www.rubensworks.net/projects/allectroradio/">broadcast music</a>.</p>
 
       <p>After I graduated secondary school,
-it was obvious to pursue a further education related to computers and programming,
+the obvious choice was to pursue a further education related to computers and programming,
 which is how I ended up at Ghent University.
 The most impactful year for me was the final year of my Master’s,
 which is when I worked on my thesis.
@@ -168,8 +173,8 @@ I continued upon that research as a PhD topic, and became their colleague at Mul
 has been very exciting so far.
 I came in contact with many new interesting people,
 learned about new technologies,
-and traveled to various places.
-Most importantly, I was able to (at least slightly) advance the research domain,
+and traveled around the world.
+Most importantly, I was able to (at least slightly) advance the research domain
 through the contributions that are described in this PhD thesis.
 All of this was of course impossible without <a href="https://en.wikiquote.org/wiki/Isaac_Newton">standing on the shoulders of giants</a>.
 These giants are on the one hand all researchers that my work builds upon,
@@ -204,7 +209,7 @@ August 2019</p>
 <div datatype="rdf:HTML" property="schema:description">
       <h2 property="schema:name">Table of Contents</h2>
 
-      <ol class="index-entries index-entries-root" depth="0"><li><a href="#introduction" class="index-entry-name">Introduction</a><ol class="index-entries" depth="1"><li><a href="#introduction-the-web" class="index-entry-name">The Web</a><ol class="index-entries" depth="2"><li><a href="#catalysts-for-human-progress" class="index-entry-name">Catalysts for Human Progress</a></li><li><a href="#impact-of-the-web" class="index-entry-name">Impact of the Web</a></li><li><a href="#knowledge-graphs" class="index-entry-name">Knowledge Graphs</a></li><li><a href="#evolving-knowledge-graphs" class="index-entry-name">Evolving Knowledge Graphs</a></li><li><a href="#decentralized-knowledge-graphs" class="index-entry-name">Decentralized Knowledge Graphs</a></li></ol></li><li><a href="#introduction-research-question" class="index-entry-name">Research Question</a><ol class="index-entries" depth="2"></ol></li><li><a href="#introduction-outline" class="index-entry-name">Outline</a><ol class="index-entries" depth="2"></ol></li></ol></li><li><a href="#generating" class="index-entry-name">Generating Synthetic Evolving Data</a><ol class="index-entries" depth="1"><li><a href="#generating_introduction" class="index-entry-name">Introduction</a><ol class="index-entries" depth="2"></ol></li><li><a href="#generating_related-work" class="index-entry-name">Related Work</a><ol class="index-entries" depth="2"></ol></li><li><a href="#generating_public-transit-background" class="index-entry-name">Public Transit Background</a><ol class="index-entries" depth="2"><li><a href="#public-transit-planning" class="index-entry-name">Public Transit Planning</a></li><li><a href="#transit-feed-formats" class="index-entry-name">Transit Feed Formats</a></li></ol></li><li><a href="#generating_research-question" class="index-entry-name">Research Question</a><ol class="index-entries" depth="2"></ol></li><li><a href="#generating_methodology" class="index-entry-name">Method</a><ol class="index-entries" depth="2"><li><a href="#region" class="index-entry-name">Region</a></li><li><a href="#stops" class="index-entry-name">Stops</a></li><li><a href="#edges" class="index-entry-name">Edges</a></li><li><a href="#routes" class="index-entry-name">Routes</a></li><li><a href="#generating_subsec-methodology-trips" class="index-entry-name">Trips</a></li></ol></li><li><a href="#generating_implementation" class="index-entry-name">Implementation</a><ol class="index-entries" depth="2"><li><a href="#podigg" class="index-entry-name">PoDiGG</a></li><li><a href="#podigg-lc" class="index-entry-name">PoDiGG-LC</a></li><li><a href="#configuration" class="index-entry-name">Configuration</a></li></ol></li><li><a href="#generating_evaluation" class="index-entry-name">Evaluation</a><ol class="index-entries" depth="2"><li><a href="#generating_subsec:evaluation:coherence" class="index-entry-name">Coherence</a></li><li><a href="#generating_subsec:evaluation:distance" class="index-entry-name">Distance to Gold Standards</a></li><li><a href="#generating_subsec:evaluation:performance" class="index-entry-name">Performance</a></li><li><a href="#dataset-size" class="index-entry-name">Dataset size</a></li></ol></li><li><a href="#generating_discussion" class="index-entry-name">Discussion</a><ol class="index-entries" depth="2"><li><a href="#characteristics" class="index-entry-name">Characteristics</a></li><li><a href="#usage-within-benchmarks" class="index-entry-name">Usage within Benchmarks</a></li><li><a href="#limitations-and-future-work" class="index-entry-name">Limitations and Future Work</a></li><li><a href="#podigg-in-use" class="index-entry-name">PoDiGG In Use</a></li></ol></li><li><a href="#generating_conclusions" class="index-entry-name">Conclusions</a><ol class="index-entries" depth="2"></ol></li></ol></li><li><a href="#storing" class="index-entry-name">Storing Evolving Data</a><ol class="index-entries" depth="1"><li><a href="#storing_introduction" class="index-entry-name">Introduction</a><ol class="index-entries" depth="2"></ol></li><li><a href="#storing_related-work" class="index-entry-name">Related Work</a><ol class="index-entries" depth="2"><li><a href="#general-rdf-indexing-and-compression" class="index-entry-name">General </a></li><li><a href="#storing_related-work-archiving" class="index-entry-name">RDF Archiving</a></li><li><a href="#related-work-benchmarks" class="index-entry-name">RDF Archiving Benchmarks</a></li><li><a href="#query-atoms" class="index-entry-name">Query atoms</a></li></ol></li><li><a href="#storing_problem-statement" class="index-entry-name">Problem statement</a><ol class="index-entries" depth="2"></ol></li><li><a href="#storing_fundamentals" class="index-entry-name">Overview of Approaches</a><ol class="index-entries" depth="2"><li><a href="#storing_snapshot-delta-chain" class="index-entry-name">Snapshot and Delta Chain</a></li><li><a href="#storing_indexes" class="index-entry-name">Multiple Indexes</a></li><li><a href="#storing_local-changes" class="index-entry-name">Local Changes</a></li><li><a href="#storing_addition-deletion-counts" class="index-entry-name">Addition and Deletion counts</a></li></ol></li><li><a href="#storing_storage" class="index-entry-name">Hybrid Multiversion Storage</a><ol class="index-entries" depth="2"><li><a href="#storing_snapshot-storage" class="index-entry-name">Snapshot storage</a></li><li><a href="#storing_dictionary" class="index-entry-name">Delta Chain Dictionary</a></li><li><a href="#storing_delta-storage" class="index-entry-name">Delta Storage</a></li><li><a href="#storing_addition-counts" class="index-entry-name">Addition Counts</a></li><li><a href="#storing_deletion-counts" class="index-entry-name">Deletion Counts</a></li><li><a href="#storing_metadata" class="index-entry-name">Metadata</a></li></ol></li><li><a href="#storing_ingestions" class="index-entry-name">Changeset Ingestion Algorithms</a><ol class="index-entries" depth="2"><li><a href="#storing_batch-ingestion" class="index-entry-name">Batch Ingestion</a></li><li><a href="#storing_streaming-ingestion" class="index-entry-name">Streaming Ingestion</a></li></ol></li><li><a href="#storing_querying" class="index-entry-name">Versioned Query Algorithms</a><ol class="index-entries" depth="2"><li><a href="#version-materialization" class="index-entry-name">Version Materialization</a></li><li><a href="#delta-materialization" class="index-entry-name">Delta Materialization</a></li><li><a href="#version-query" class="index-entry-name">Version Query</a></li></ol></li><li><a href="#storing_evaluation" class="index-entry-name">Evaluation</a><ol class="index-entries" depth="2"><li><a href="#storing_implementation" class="index-entry-name">Implementation</a></li><li><a href="#experimental-setup" class="index-entry-name">Experimental Setup</a></li><li><a href="#results-3" class="index-entry-name">Results</a></li><li><a href="#discussion" class="index-entry-name">Discussion</a></li></ol></li><li><a href="#storing_conclusions" class="index-entry-name">Conclusions</a><ol class="index-entries" depth="2"></ol></li></ol></li><li><a href="#querying" class="index-entry-name">Querying on the Web</a><ol class="index-entries" depth="1"><li><a href="#querying_introduction" class="index-entry-name">Introduction</a><ol class="index-entries" depth="2"></ol></li><li><a href="#querying_related-work" class="index-entry-name">Related Work</a><ol class="index-entries" depth="2"><li><a href="#the-different-facets-of-sparql" class="index-entry-name">The Different Facets of SPARQL</a></li><li><a href="#linked-data-fragments" class="index-entry-name">Linked Data Fragments</a></li><li><a href="#software-design-patterns" class="index-entry-name">Software Design Patterns</a></li></ol></li><li><a href="#querying_features" class="index-entry-name">Requirement analysis</a><ol class="index-entries" depth="2"><li><a href="#sparql-query-evaluation" class="index-entry-name">SPARQL query evaluation</a></li><li><a href="#modularity" class="index-entry-name">Modularity</a></li><li><a href="#heterogeneous-interfaces" class="index-entry-name">Heterogeneous interfaces</a></li><li><a href="#federation" class="index-entry-name">Federation</a></li><li><a href="#web-based" class="index-entry-name">Web-based</a></li></ol></li><li><a href="#querying_architecture" class="index-entry-name">Architecture</a><ol class="index-entries" depth="2"><li><a href="#customizable-wiring-at-design-time-through-dependency-injection" class="index-entry-name">Customizable Wiring at Design-time through Dependency Injection</a></li><li><a href="#flexibility-at-run-time-using-the-actormediatorbus-pattern" class="index-entry-name">Flexibility at Run-time using the Actor–Mediator–Bus Pattern</a></li><li><a href="#modules" class="index-entry-name">Modules</a></li></ol></li><li><a href="#querying_implementation" class="index-entry-name">Implementation</a><ol class="index-entries" depth="2"></ol></li><li><a href="#querying_comparison-tpf-client" class="index-entry-name">Performance Analysis</a><ol class="index-entries" depth="2"></ol></li><li><a href="#querying_conclusions" class="index-entry-name">Conclusions</a><ol class="index-entries" depth="2"></ol></li></ol></li><li><a href="#querying-evolving" class="index-entry-name">Querying Evolving Data</a><ol class="index-entries" depth="1"><li><a href="#querying-evolving_introduction" class="index-entry-name">Introduction</a><ol class="index-entries" depth="2"></ol></li><li><a href="#querying-evolving_related-work" class="index-entry-name">Related Work</a><ol class="index-entries" depth="2"><li><a href="#querying-evolving_related-work_annotations" class="index-entry-name">RDF Annotations</a></li><li><a href="#temporal-data-in-the-rdf-model" class="index-entry-name">Temporal data in the </a></li><li><a href="#sparql-streaming-extensions" class="index-entry-name">SPARQL Streaming Extensions</a></li><li><a href="#triple-pattern-fragments" class="index-entry-name">Triple Pattern Fragments</a></li></ol></li><li><a href="#querying-evolving_problem-statement" class="index-entry-name">Problem Statement</a><ol class="index-entries" depth="2"></ol></li><li><a href="#querying-evolving_use-case" class="index-entry-name">Use Case</a><ol class="index-entries" depth="2"></ol></li><li><a href="#querying-evolving_dynamic-data-representation" class="index-entry-name">Dynamic Data Representation</a><ol class="index-entries" depth="2"><li><a href="#query-evolving_subsec:temporaldomains" class="index-entry-name">Time Labeling Types</a></li><li><a href="#query-evolving_sec:tatypes" class="index-entry-name">Methods for Time Annotation</a></li></ol></li><li><a href="#querying-evolving_query-engine" class="index-entry-name">Query Engine</a><ol class="index-entries" depth="2"><li><a href="#architecture" class="index-entry-name">Architecture</a></li><li><a href="#algorithms" class="index-entry-name">Algorithms</a></li></ol></li><li><a href="#querying-evolving_evaluation" class="index-entry-name">Evaluation</a><ol class="index-entries" depth="2"><li><a href="#querying-evolving_subsec:Results-ServerCost" class="index-entry-name">Server Cost</a></li><li><a href="#querying-evolving_subsec:Results-ClientCost" class="index-entry-name">Client Cost</a></li><li><a href="#querying-evolving_subsec:Results-AnnotationMethods" class="index-entry-name">Annotation Methods</a></li></ol></li><li><a href="#querying-evolving_conclusions" class="index-entry-name">Conclusions</a><ol class="index-entries" depth="2"><li><a href="#server-cost" class="index-entry-name">Server cost</a></li><li><a href="#client-cost" class="index-entry-name">Client cost</a></li><li><a href="#caching" class="index-entry-name">Caching</a></li><li><a href="#request-reduction" class="index-entry-name">Request reduction</a></li><li><a href="#performance" class="index-entry-name">Performance</a></li><li><a href="#annotation-methods" class="index-entry-name">Annotation methods</a></li></ol></li></ol></li><li><a href="#conclusions" class="index-entry-name">Conclusions</a><ol class="index-entries" depth="1"><li><a href="#contributions" class="index-entry-name">Contributions</a><ol class="index-entries" depth="2"></ol></li><li><a href="#future-work" class="index-entry-name">Future work</a><ol class="index-entries" depth="2"></ol></li></ol></li></ol>
+      <ol class="index-entries index-entries-root" depth="0"><li><a href="#introduction" class="index-entry-name">Introduction</a><ol class="index-entries" depth="1"><li><a href="#introduction-the-web" class="index-entry-name">The Web</a><ol class="index-entries" depth="2"><li><a href="#catalysts-for-human-progress" class="index-entry-name">Catalysts for Human Progress</a></li><li><a href="#impact-of-the-web" class="index-entry-name">Impact of the Web</a></li><li><a href="#knowledge-graphs" class="index-entry-name">Knowledge Graphs</a></li><li><a href="#evolving-knowledge-graphs" class="index-entry-name">Evolving Knowledge Graphs</a></li><li><a href="#decentralized-knowledge-graphs" class="index-entry-name">Decentralized Knowledge Graphs</a></li></ol></li><li><a href="#introduction-research-question" class="index-entry-name">Research Question</a><ol class="index-entries" depth="2"></ol></li><li><a href="#introduction-outline" class="index-entry-name">Outline</a><ol class="index-entries" depth="2"></ol></li></ol></li><li><a href="#generating" class="index-entry-name">Generating Synthetic Evolving Data</a><ol class="index-entries" depth="1"><li><a href="#generating_introduction" class="index-entry-name">Introduction</a><ol class="index-entries" depth="2"></ol></li><li><a href="#generating_related-work" class="index-entry-name">Related Work</a><ol class="index-entries" depth="2"></ol></li><li><a href="#generating_public-transit-background" class="index-entry-name">Public Transit Background</a><ol class="index-entries" depth="2"><li><a href="#public-transit-planning" class="index-entry-name">Public Transit Planning</a></li><li><a href="#transit-feed-formats" class="index-entry-name">Transit Feed Formats</a></li></ol></li><li><a href="#generating_research-question" class="index-entry-name">Research Question</a><ol class="index-entries" depth="2"></ol></li><li><a href="#generating_methodology" class="index-entry-name">Method</a><ol class="index-entries" depth="2"><li><a href="#region" class="index-entry-name">Region</a></li><li><a href="#stops" class="index-entry-name">Stops</a></li><li><a href="#edges" class="index-entry-name">Edges</a></li><li><a href="#routes" class="index-entry-name">Routes</a></li><li><a href="#generating_subsec-methodology-trips" class="index-entry-name">Trips</a></li></ol></li><li><a href="#generating_implementation" class="index-entry-name">Implementation</a><ol class="index-entries" depth="2"><li><a href="#podigg" class="index-entry-name">PoDiGG</a></li><li><a href="#podigg-lc" class="index-entry-name">PoDiGG-LC</a></li><li><a href="#configuration" class="index-entry-name">Configuration</a></li></ol></li><li><a href="#generating_evaluation" class="index-entry-name">Evaluation</a><ol class="index-entries" depth="2"><li><a href="#generating_subsec:evaluation:coherence" class="index-entry-name">Coherence</a></li><li><a href="#generating_subsec:evaluation:distance" class="index-entry-name">Distance to Gold Standards</a></li><li><a href="#generating_subsec:evaluation:performance" class="index-entry-name">Performance</a></li><li><a href="#dataset-size" class="index-entry-name">Dataset size</a></li></ol></li><li><a href="#generating_discussion" class="index-entry-name">Discussion</a><ol class="index-entries" depth="2"><li><a href="#characteristics" class="index-entry-name">Characteristics</a></li><li><a href="#usage-within-benchmarks" class="index-entry-name">Usage within Benchmarks</a></li><li><a href="#limitations-and-future-work" class="index-entry-name">Limitations and Future Work</a></li><li><a href="#podigg-in-use" class="index-entry-name">PoDiGG In Use</a></li></ol></li><li><a href="#generating_conclusions" class="index-entry-name">Conclusions</a><ol class="index-entries" depth="2"></ol></li></ol></li><li><a href="#storing" class="index-entry-name">Storing Evolving Data</a><ol class="index-entries" depth="1"><li><a href="#storing_introduction" class="index-entry-name">Introduction</a><ol class="index-entries" depth="2"></ol></li><li><a href="#storing_related-work" class="index-entry-name">Related Work</a><ol class="index-entries" depth="2"><li><a href="#general-rdf-indexing-and-compression" class="index-entry-name">General </a></li><li><a href="#storing_related-work-archiving" class="index-entry-name">RDF Archiving</a></li><li><a href="#related-work-benchmarks" class="index-entry-name">RDF Archiving Benchmarks</a></li><li><a href="#query-atoms" class="index-entry-name">Query atoms</a></li></ol></li><li><a href="#storing_problem-statement" class="index-entry-name">Problem statement</a><ol class="index-entries" depth="2"></ol></li><li><a href="#storing_fundamentals" class="index-entry-name">Overview of Approaches</a><ol class="index-entries" depth="2"><li><a href="#storing_snapshot-delta-chain" class="index-entry-name">Snapshot and Delta Chain</a></li><li><a href="#storing_indexes" class="index-entry-name">Multiple Indexes</a></li><li><a href="#storing_local-changes" class="index-entry-name">Local Changes</a></li><li><a href="#storing_addition-deletion-counts" class="index-entry-name">Addition and Deletion counts</a></li></ol></li><li><a href="#storing_storage" class="index-entry-name">Hybrid Multiversion Storage</a><ol class="index-entries" depth="2"><li><a href="#storing_snapshot-storage" class="index-entry-name">Snapshot storage</a></li><li><a href="#storing_dictionary" class="index-entry-name">Delta Chain Dictionary</a></li><li><a href="#storing_delta-storage" class="index-entry-name">Delta Storage</a></li><li><a href="#storing_addition-counts" class="index-entry-name">Addition Counts</a></li><li><a href="#storing_deletion-counts" class="index-entry-name">Deletion Counts</a></li><li><a href="#storing_metadata" class="index-entry-name">Metadata</a></li></ol></li><li><a href="#storing_ingestions" class="index-entry-name">Changeset Ingestion Algorithms</a><ol class="index-entries" depth="2"><li><a href="#storing_batch-ingestion" class="index-entry-name">Batch Ingestion</a></li><li><a href="#storing_streaming-ingestion" class="index-entry-name">Streaming Ingestion</a></li></ol></li><li><a href="#storing_querying" class="index-entry-name">Versioned Query Algorithms</a><ol class="index-entries" depth="2"><li><a href="#version-materialization" class="index-entry-name">Version Materialization</a></li><li><a href="#delta-materialization" class="index-entry-name">Delta Materialization</a></li><li><a href="#version-query" class="index-entry-name">Version Query</a></li></ol></li><li><a href="#storing_evaluation" class="index-entry-name">Evaluation</a><ol class="index-entries" depth="2"><li><a href="#storing_implementation" class="index-entry-name">Implementation</a></li><li><a href="#experimental-setup" class="index-entry-name">Experimental Setup</a></li><li><a href="#results-3" class="index-entry-name">Results</a></li><li><a href="#discussion" class="index-entry-name">Discussion</a></li></ol></li><li><a href="#storing_conclusions" class="index-entry-name">Conclusions</a><ol class="index-entries" depth="2"></ol></li></ol></li><li><a href="#querying" class="index-entry-name">Querying a heterogeneous Web</a><ol class="index-entries" depth="1"><li><a href="#querying_introduction" class="index-entry-name">Introduction</a><ol class="index-entries" depth="2"></ol></li><li><a href="#querying_related-work" class="index-entry-name">Related Work</a><ol class="index-entries" depth="2"><li><a href="#the-different-facets-of-sparql" class="index-entry-name">The Different Facets of SPARQL</a></li><li><a href="#linked-data-fragments" class="index-entry-name">Linked Data Fragments</a></li><li><a href="#software-design-patterns" class="index-entry-name">Software Design Patterns</a></li></ol></li><li><a href="#querying_features" class="index-entry-name">Requirement analysis</a><ol class="index-entries" depth="2"><li><a href="#sparql-query-evaluation" class="index-entry-name">SPARQL query evaluation</a></li><li><a href="#modularity" class="index-entry-name">Modularity</a></li><li><a href="#heterogeneous-interfaces" class="index-entry-name">Heterogeneous interfaces</a></li><li><a href="#federation" class="index-entry-name">Federation</a></li><li><a href="#web-based" class="index-entry-name">Web-based</a></li></ol></li><li><a href="#querying_architecture" class="index-entry-name">Architecture</a><ol class="index-entries" depth="2"><li><a href="#customizable-wiring-at-design-time-through-dependency-injection" class="index-entry-name">Customizable Wiring at Design-time through Dependency Injection</a></li><li><a href="#flexibility-at-run-time-using-the-actormediatorbus-pattern" class="index-entry-name">Flexibility at Run-time using the Actor–Mediator–Bus Pattern</a></li><li><a href="#modules" class="index-entry-name">Modules</a></li></ol></li><li><a href="#querying_implementation" class="index-entry-name">Implementation</a><ol class="index-entries" depth="2"></ol></li><li><a href="#querying_comparison-tpf-client" class="index-entry-name">Performance Analysis</a><ol class="index-entries" depth="2"></ol></li><li><a href="#querying_conclusions" class="index-entry-name">Conclusions</a><ol class="index-entries" depth="2"></ol></li></ol></li><li><a href="#querying-evolving" class="index-entry-name">Querying Evolving Data</a><ol class="index-entries" depth="1"><li><a href="#querying-evolving_introduction" class="index-entry-name">Introduction</a><ol class="index-entries" depth="2"></ol></li><li><a href="#querying-evolving_related-work" class="index-entry-name">Related Work</a><ol class="index-entries" depth="2"><li><a href="#querying-evolving_related-work_annotations" class="index-entry-name">RDF Annotations</a></li><li><a href="#temporal-data-in-the-rdf-model" class="index-entry-name">Temporal data in the </a></li><li><a href="#sparql-streaming-extensions" class="index-entry-name">SPARQL Streaming Extensions</a></li><li><a href="#triple-pattern-fragments" class="index-entry-name">Triple Pattern Fragments</a></li></ol></li><li><a href="#querying-evolving_problem-statement" class="index-entry-name">Problem Statement</a><ol class="index-entries" depth="2"></ol></li><li><a href="#querying-evolving_use-case" class="index-entry-name">Use Case</a><ol class="index-entries" depth="2"></ol></li><li><a href="#querying-evolving_dynamic-data-representation" class="index-entry-name">Dynamic Data Representation</a><ol class="index-entries" depth="2"><li><a href="#query-evolving_subsec:temporaldomains" class="index-entry-name">Time Labeling Types</a></li><li><a href="#query-evolving_sec:tatypes" class="index-entry-name">Methods for Time Annotation</a></li></ol></li><li><a href="#querying-evolving_query-engine" class="index-entry-name">Query Engine</a><ol class="index-entries" depth="2"><li><a href="#architecture" class="index-entry-name">Architecture</a></li><li><a href="#algorithms" class="index-entry-name">Algorithms</a></li></ol></li><li><a href="#querying-evolving_evaluation" class="index-entry-name">Evaluation</a><ol class="index-entries" depth="2"><li><a href="#querying-evolving_subsec:Results-ServerCost" class="index-entry-name">Server Cost</a></li><li><a href="#querying-evolving_subsec:Results-ClientCost" class="index-entry-name">Client Cost</a></li><li><a href="#querying-evolving_subsec:Results-AnnotationMethods" class="index-entry-name">Annotation Methods</a></li></ol></li><li><a href="#querying-evolving_conclusions" class="index-entry-name">Conclusions</a><ol class="index-entries" depth="2"><li><a href="#server-cost" class="index-entry-name">Server cost</a></li><li><a href="#client-cost" class="index-entry-name">Client cost</a></li><li><a href="#caching" class="index-entry-name">Caching</a></li><li><a href="#request-reduction" class="index-entry-name">Request reduction</a></li><li><a href="#performance" class="index-entry-name">Performance</a></li><li><a href="#annotation-methods" class="index-entry-name">Annotation methods</a></li></ol></li></ol></li><li><a href="#conclusions" class="index-entry-name">Conclusions</a><ol class="index-entries" depth="1"><li><a href="#contributions" class="index-entry-name">Contributions</a><ol class="index-entries" depth="2"><li><a href="#generating-evolving-data" class="index-entry-name">Generating Evolving Data</a></li><li><a href="#indexing-evolving-data" class="index-entry-name">Indexing Evolving Data</a></li><li><a href="#heterogeneous-web" class="index-entry-name">Heterogeneous Web</a></li><li><a href="#publishing-and-querying-evolving-data" class="index-entry-name">Publishing and Querying Evolving Data</a></li><li><a href="#overview" class="index-entry-name">Overview</a></li></ol></li><li><a href="#future-work" class="index-entry-name">Future work</a><ol class="index-entries" depth="2"></ol></li></ol></li></ol>
 
     </div>
 </section>
@@ -232,20 +237,21 @@ such as finding all stores that sell rice in the current area,
 or determining the time to leave for catching your flight on time based on the current traffic and weather conditions.
 To enable such intelligent agents, researchers have been investigating technologies and introducing standards
 for making the Web understandable for machines.
-In the recent years, <em>knowledge graphs</em> are being built based on these technologies
-to support intelligent agents such as Siri and Google Now to perform these tasks.</p>
+In the recent years, these technologies are being used to build so-called <em>knowledge graphs</em>,
+which are collections of structured information to support intelligent agents such as Siri and Google Now.</p>
 
       <p>Most research on knowledge graphs has been focused on <em>static</em> data.
-There is however a huge amount of <em>evolving</em> data available,
+However, there is however a huge amount of <em>evolving</em> data available,
 such as traffic events from highway sensors or continuous heart rate measurements.
-As there is a lot of value in evolving knowledge,
-it is important to <em>store</em> this information in <em>evolving knowledge graphs</em>,
-and to make it <em>searchable</em>.
-As such, this is the primary focus of my research.</p>
+There is a lot of value in evolving knowledge,
+such as for example the ability to determine daily busy traffic periods,
+or sending alerts when the heart rate is too high for an unexpectedly long period of time.
+As such, it is important to <em>store</em> this information in <em>evolving knowledge graphs</em>,
+and to make it <em>searchable</em>.</p>
 
       <p>Just like the Web, knowledge graphs are continuously becoming more and more <em>centralized</em>,
-and only having limited availability for the public.
-This leads to information becoming increasingly more in the hands of a few large entities,
+which means that information becomes increasingly more in the hands of a few large entities.
+This leads to information only having limited availability for the public,
 which endangers the democratic and <em>decentralized</em> nature of the Web.
 Events in recent years have shown that centralizing information at this scale is problematic,
 as it leads to issues such as censorship and manipulation of information.
@@ -255,8 +261,7 @@ As such, an underlying focus within my research is to enable this decentralizati
 of information on the Web,
 in the form of knowledge graphs.</p>
 
-      <p>To help solve the open problems of <em>evolving knowledge graphs</em>,
-and to allow everyone use to them,
+      <p>To facilitate the usage of <em>evolving knowledge graphs</em>,
 <strong>the goal of this PhD is to allow <em>evolving</em> knowledge graphs to be <em>stored</em> and <em>queried</em> on the <em>Web</em>.</strong>
 To investigate this topic, I focus on four challenges related to this topic.
 First, to allow systems that handle evolving knowledge graphs to be evaluated,
@@ -264,7 +269,8 @@ I look into the <em>generation of evolving data</em>.
 Secondly, I investigate methods to <em>store evolving data</em>,
 so that the data can be published and queried on the Web efficiently.
 Third, I design a flexible system to <em>query</em> various kinds of data on the <em>Web</em>.
-Finally, I investigate methods for <em>publishing and querying evolving data on the Web</em>.</p>
+Finally, I investigate methods for <em>publishing and querying evolving data on the Web</em>.
+In the scope of this PhD, I consider knowledge graphs that evolve with a periodicity in the order of minutes or slower.</p>
 
       <p>In order to properly evaluate systems that handle evolving knowledge graphs,
 one must first <em>have</em> evolving knowledge graphs to test these systems with.
@@ -294,12 +300,12 @@ Concretely, query execution time is reduced at the cost of an increase in storag
 This cost is acceptable due to storage typically being cheap.</p>
 
       <p>In the third challenge, the <em>heterogeneous</em> nature of the Web is investigated.
-Concretely, a query engine is designed that can query over various kinds of Web interfaces,
+Concretely, a query engine (Comunica) is designed that can query over various kinds of Web interfaces,
 based on different kinds of query algorithms.
-Such an engine is needed as existing engines typically focus on one specific interface or algorithm,
-which makes it difficult to compare different approaches with each other in a fair way.
-Furthermore, the engine is designed in a modular way,
-so that new interfaces and algorithms can be developed and plugged in flexibly.</p>
+The engine is designed in a modular way,
+so that new interfaces and algorithms can be developed and plugged in flexibly.
+This also allows different approaches to be compared fairly,
+which makes it a useful research platform.</p>
 
       <p>Finally, the last challenge ties everything together,
 and focuses on publishing evolving data on the Web via a queryable interface.
@@ -314,9 +320,8 @@ at the cost of an increase in execution time and bandwidth usage.</p>
       <p>Within these four challenges,
 methods are designed to allow evolving knowledge graphs to be stored and queried
 in a Web-friendly way.
-Concretely, this can be done by storing evolving knowledge graphs in a system
-based on the one designed for the second challenge.
-On top of this, a Web interface can be setup such as the one designed for the fourth challenge,
+Concretely, evolving knowledge graphs can be stored in the hybrid storage system from challenge two.
+On top of this, a low-cost temporal Web interface can be setup such as the one designed for the fourth challenge,
 which can then be queried client-side to reduce server load as seen in challenge three and four.
 All of this can then be evaluated using synthetic evolving knowledge graphs
 as generated with the algorithm from challenge one.</p>
@@ -353,14 +358,15 @@ om intelligente assistenten zoals Siri en Google Now deze taken te kunnen laten 
       <p>Het meeste onderzoek in de context van kennisgrafen is gefocust op <em>statische</em> gegevens.
 Er is echter een grote hoeveelheid <em>evoluerende</em> gegevens beschikbaar,
 zoals verkeersdata van snelweg sensoren of continue hartslag metingen.
-Aangezien er veel waarde vervat zit in evoluerende kennis
-is het belangrijk om deze informatie <em>op te slaan</em> in <em>evoluerende kennisgrafen</em>,
-en om deze <em>doorzoekbaar</em> te maken.
-Om deze redenen is dit de focus van mijn onderzoek.</p>
+Er zit veel waarde vervat zit in evoluerende kennis
+zoals bijvoorbeeld het bepalen van drukke dagelijkse momenten op de snelweg,
+of meldingen sturen wanneer de hartslag te hoog blijft voor onverwacht lange perioden.
+Daarom is het belangrijk om deze informatie <em>op te slaan</em> in <em>evoluerende kennisgrafen</em>,
+en om deze <em>doorzoekbaar</em> te maken.</p>
 
       <p>Net zoals het Web, worden kennisgrafen meer en meer <em>gecentraliseerd</em>,
-en hebben deze maar een beperkte beschikbaarheid voor het publiek.
-Dit leidt tot informatie die meer en meer in de handen komt van enkele grote entiteiten,
+wat betekent dat informatie meer en meer in de handen komt van enkele grote entiteiten.
+Dit leidt tot een beperkte beschikbaarheid van informatie voor het publiek,
 waardoor de democratische en <em>gedecentraliseerde</em> eigenschappen van het Web in gedrang komen.
 Gebeurtenissen in de afgelopen jaren hebben aangetoond dat de centralisatie van informatie op deze schaal problematisch is,
 aangezien het leidt tot problemen zoals censuur en manipulatie van informatie.
@@ -368,8 +374,7 @@ Om deze redenen is er een voortgaande inspanning om het Web <em>opnieuw te decen
 en om het Web opnieuw een democratisch platform te maken door de macht terug te geven aan de mensen.
 Aldus is decentralisatie en democratisatie van informatie op het Web in de vorm van kennisgrafen een onderliggende focus van mijn onderzoek.</p>
 
-      <p>Om te helpen met het oplossen van de problemen met <em>evoluerende kennisgrafen</em>,
-en om het mogelijk te maken dat iedereen deze kan gebruiken,
+      <p>Om het gebruik van <em>evoluerende kennisgrafen</em> te vergemakkelijken,
 is <strong>het doel van dit doctoraat om het mogelijk te maken om <em>evoluerende</em> kennisgrafen <em>op te slaan</em> en <em>bevragen</em> op het Web</strong>.
 Om dit onderwerp te onderzoeken focus ik op vier uitdagingen gerelateerd aan dit onderwerp.
 Te eerste, om systemen die evoluerende kennisgrafen beheren te evalueren,
@@ -377,7 +382,8 @@ kijk ik naar de <em>generatie van evoluerende gegevens</em>.
 Ten tweede onderzoek ik manieren om <em>evoluerende gegevens op te slaan</em>,
 zodat gegevens efficiënt op het Web gepubliceerd en bevraagd kunnen worden.
 Ten derde ontwerp ik een flexibel systeem om verschillende soorten gegevens te bevragen op het <em>Web</em>.
-Tot slot onderzoek ik manieren om <em>evoluerende gegevens te publiceren en bevragen op het Web</em>.</p>
+Tot slot onderzoek ik manieren om <em>evoluerende gegevens te publiceren en bevragen op het Web</em>.
+In de context van dit doctoraat ga ik uit van kennisgrafen die evolueren met een periodiciteit in de orde van minuten of trager.</p>
 
       <p>Om op een degelijke manier systemen te evalueren die evoluerende kennisgrafen beheren,
 is het nodig om eerst evoluerende kennisgrafen te <em>hebben</em> om deze systemen mee te testen.
@@ -407,12 +413,12 @@ Concreet worden zoektijden gereduceerd ten koste van een toename in opslagruimte
 Deze kost is acceptabel aangezien opslag meestal vrij goedkoop is.</p>
 
       <p>In de derde uitdaging wordt de <em>heterogeniteit</em> van het Web onderzocht.
-Concreet wordt een zoekmachine ontworpen die in staat is om te zoeken over verschillende soorten Web toegangen,
+Concreet wordt een zoekmachine (Comunica) ontworpen die in staat is om te zoeken over verschillende soorten Web toegangen,
 gebaseerd op verschillende zoekalgoritmen.
-Zo een zoekmachine is nodig omdat bestaande systemen typisch focussen op één specifieke toegang of algoritme,
-what het moeilijk maakt om verschillende technieken te vergelijken met elkaar op een eerlijke manier.
-Daarnaast is de zoekmachine ontworpen op een modulaire manier,
-zodat nieuwe soorten Web toegangen en algoritmen ontwikkeld en ingeplugd kunnen worden op een flexibelen manier.</p>
+De zoekmachine is ontworpen op een modulaire manier,
+zodat nieuwe soorten Web toegangen en algoritmen ontwikkeld en ingeplugd kunnen worden op een flexibelen manier.
+Dit maakt het mogelijk om verschillende Web toegangen en algoritmen op een eerlijke manier met elkaar te vergelijken,
+wat dit een nuttig onderzoeksplatform maakt.</p>
 
       <p>Tot slot verbindt de laatste uitdaging alle voorgaande uitdagingen met elkaar,
 en focust op de publicatie van evoluerende gegevens op het Web via een doorzoekbare toegang.
@@ -426,7 +432,7 @@ ten koste van een toename in uitvoeringstijd en bandbreedte.</p>
 
       <p>In deze vier uitdagingen werden technieken ontwikkeld om evoluerende kennisgrafen op te slaan en te bevragen
 op een Web-vriendelijke manier.
-Concreet kan dit gedaan worden door evoluerende kennisgrafen op te slaan in een systeem gebaseerd op deze ontwikkeld in de tweede uitdaging.
+Concreet kan dit gedaan worden door evoluerende kennisgrafen op te slaan in een hybride systeem van de tweede uitdaging.
 Hier bovenop kan een Web toegang opgezet worden zoals deze ontworpen in de vierde uitdaging,
 welke bevraagd kan worden van de client-side om server belasting te verlagen zoals gedaan wordt in uitdaging drie en vier.
 Deze kunnen allemaal geëvalueerd worden met behulp van synthetische evoluerende kennisgrafen
@@ -461,7 +467,7 @@ The social capabilities of humans are however <em>much more evolved</em> than mo
 For example, <a href="https://pursuit.unimelb.edu.au/articles/why-we-show-the-whites-of-our-eyes">humans are one of the only animals that have clearly visible eye whites</a>.
 This allows people to see what other people are looking at,
 which simplifies <em>collaborative</em> tasks.
-Furthermore, <a href="https://www.sciencedirect.com/topics/neuroscience/theory-of-mind"><em>theory of mind</em></a> —the ability to understand that others have different perspectives—, <a href="https://mitpress.universitypressscholarship.com/view/10.7551/mitpress/9780262016056.001.0001/upso-9780262016056">is much more pronounced in humans than other animals</a>, which also strengthens our ability to <em>collaborate</em>.
+Furthermore, <a href="https://www.sciencedirect.com/topics/neuroscience/theory-of-mind"><em>theory of mind</em></a>, the ability to understand that others have different perspectives, <a href="https://mitpress.universitypressscholarship.com/view/10.7551/mitpress/9780262016056.001.0001/upso-9780262016056">is much more pronounced in humans than other animals</a>, which also strengthens our ability to <em>collaborate</em>.
 While our collaborative capabilities were initially limited to physical tasks,
 the invention of <em>language</em> and <em>writing</em> allowed us to share <em>knowledge</em> with each other.</p>
 
@@ -469,13 +475,13 @@ the invention of <em>language</em> and <em>writing</em> allowed us to share <em>
 as shared knowledge allows larger groups of people to share goals
 and accomplish tasks that would have otherwise been impossible.
 Due to our <em>technological</em> progress,
-the <em>bandwidth</em> of these methods for sharing knowledge is always increasing,
+the <em>bandwidth</em> of these methods for sharing knowledge is always growing broader,
 which is continuously increasing the rate of human and technological progress.</p>
 
       <p>Throughout the last centuries, we saw three major revolutions in bandwidth.
 First, the invention of the printing press in the 15th century
 drastically increased rate at which books could be duplicated.
-Secondly, there was the invention of radio and television in the 20th century,
+Secondly, there was the invention of radio and television in the 20th century.
 As audio and video are cognitively less demanding than reading,
 this lowered the barrier for spreading knowledge even further.
 Third, we had the development of the internet near the end of the 20th century,
@@ -523,24 +529,25 @@ In order for this dream to become a reality,
 the Web had to become <em>machine-readable</em>.
 This Web extension is typically referred to as the <em>Semantic Web</em>.</p>
 
-      <p>Now —almost twenty years later—, several standards and technologies have been developed to make this dream a reality,
+      <p>Now, almost twenty years later, several standards and technologies have been developed to make this dream a reality,
 <a href="http://iswc2013.semanticweb.org/content/keynote-ramanathan-v-guha.html">In 2013, more than four million Web domains were already using these technologies</a>.
 Using these Semantic Web technologies, so-called <em>knowledge graphs</em> are being constructed by many major companies world-wide,
 such as <a href="https://developers.google.com/knowledge-graph/">Google</a> and <a href="https://developer.microsoft.com/en-us/graph/">Microsoft</a>.
+A knowledge graph is a collection of structured information that is organized in a graph.
 These knowledge graphs are being used to support tasks that were part of Tim Berners-Lee’s original vision,
 such as managing day-to-day tasks with the <a href="https://www.google.com/intl/nl/landing/now/">Google Now assistant</a>.</p>
 
       <p>The standard for modeling knowledge graphs is the <a property="schema:citation http://purl.org/spar/cito/cites" href="https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/">Resource Description Framework (RDF)</a> <span class="references">[<a href="#ref-2">2</a>]</span>.
 Fundamentally, it is based around the concept of <em>triples</em> that are used to make statements about <em>things</em>.
 A triple is made up of a <em>subject</em>, <em>predicate</em> and <em>object</em>,
-where the <em>subject</em> and <em>object</em> are resources (or things), and the <em>predicate</em> denotes their relationship.
-For example, <a href="#introduction-figure-triple">Fig. 1</a> shows an example of a simple triple indicating the nationality of a person.
+where the <em>subject</em> and <em>object</em> are resources (or <em>things</em>), and the <em>predicate</em> denotes their relationship.
+For example, <a href="#introduction-figure-triple">Fig. 1</a> shows a simple triple indicating the nationality of a person.
 Multiple resources can combined with each other through multiple triples, which forms a <em>graph</em>.
 <a href="#introduction-figure-graph">Fig. 2</a> shows an example of such a graph, which contains <em>knowledge</em> about a person.
 In order to look up information within such graphs, the <a property="schema:citation http://purl.org/spar/cito/cites" href="https://www.w3.org/TR/2013/REC-sparql11-query-20130321/">SPARQL query language</a> <span class="references">[<a href="#ref-3">3</a>]</span>
 was introduced as a standard.
 Essentially, <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> allows <abbr title='Resource Description Framework'>RDF</abbr> data to be looked up through combinations of <em>triple patterns</em>,
-which are triples where any of its elements can be replace with <em>variables</em> such as <code>?name</code>.
+which are triples where any of its elements can be replaced with <em>variables</em> such as <code>?name</code>.
 For example, <a href="#introduction-code-sparql">Listing 1</a> contains a <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query that find the names of all people that Alice knows.</p>
 
       <figure id="introduction-figure-triple">
@@ -588,7 +595,7 @@ and by observing highway sensors, traffic jams may be avoided by preemptively re
 
       <p>Due to the <a href="https://www.w3.org/TR/rdf11-concepts/#change-over-time">(RDF) knowledge graph model currently being <em>atemporal</em></a>,
 the usage of evolving knowledge graphs remains limited.
-As such, research and engineering is needed for new
+As such, research and engineering effort is needed for new
 models, storage techniques, and query algorithms
 for evolving knowledge graphs.
 As such, <em>evolving</em> knowledge graphs are the main focus of my research.</p>
@@ -596,7 +603,7 @@ As such, <em>evolving</em> knowledge graphs are the main focus of my research.</
       <h4 id="decentralized-knowledge-graphs">Decentralized Knowledge Graphs</h4>
 
       <p>As stated by Tim Berners-Lee, <a href="https://twitter.com/timberners_lee/status/228960085672599552">the Web is for everyone</a>.
-This means that the Web is a <em>free</em> platform (as <em>freedom</em>, not <em>free beer</em>),
+This means that the Web is a <em>free</em> platform (as in <em>freedom</em>, not <em>free beer</em>),
 where anyone can <em>say</em> anything about anything,
 and anyone can <em>access</em> anything that has been said.
 This is directly compatible with Article 19 of <a href="https://www.un.org/en/universal-declaration-human-rights/">the Universal Declaration of Human Rights</a>,
@@ -627,10 +634,12 @@ and obstruction to receive information through censorship.</p>
 
       <p>For these reasons, there is a massive push for <a href="https://ruben.verborgh.org/articles/redecentralizing-the-web/"><em>re-decentralizing the Web</em></a>,
 where people regain <em>ownership</em> of their data.
-Decentralization is however a technologically difficult thing.
+Decentralization is however a technologically difficult thing,
+as applications typically require a single <em>centralized</em> entrypoint from which data is retrieved,
+and no such single entrypoint exist in a truly decentralized environment.
 As people do want ownership of their data, they do not want to give up their intelligent agents.
 As such, this decentralization wave requires significant research effort to achieve the same capabilities as these <em>centralized</em> knowledge graphs,
-which is why this is of important factor within my research.
+which is why this is an important factor within my research.
 Specifically, I focus on supporting knowledge graphs <em>on the Web</em>,
 instead of only being available behind closed doors,
 so that they are available for everyone.</p>
@@ -665,8 +674,8 @@ related to this research question:</p>
  <br />
  Before knowledge graphs can be queried from the Web,
  different <em>interfaces</em> through which data is available,
- and different <em>algorithms</em> using which the data can be retrieved and combined
- need to be considered.</li>
+ and different <em>algorithms</em> with which the data can be retrieved
+ need to be combinable.</li>
         <li><strong>Publishing <em>evolving</em> data via a <em>queryable interface</em> is costly.</strong>
  <br />
  Centralized querying interfaces are hard to scale for an increasing number of concurrent clients,
@@ -677,7 +686,7 @@ related to this research question:</p>
       <h3 id="introduction-outline">Outline</h3>
 
       <p>Corresponding to my four research challenges,
-this thesis is based on the following four peer-reviewed publications:</p>
+this thesis is bundles the following four peer-reviewed publications as separate chapters:</p>
 
       <ul>
         <li>Ruben Taelman et al. <a href="https://www.rubensworks.net/raw/publications/2018/podigg.pdf">Generating Public Transport Data based on Population Distributions for <abbr title='Resource Description Framework'>RDF</abbr> Benchmarking</a>.
@@ -697,12 +706,13 @@ and takes into account population distributions for simulating the flow of vehic
 Next, in <a href="#storing">Chapter 3</a>, a storage architecture and querying algorithms are introduced
 for managing evolving data.
 It has been implemented as a system called <em>OSTRICH</em>,
-and extensive experimentation shows that this systems introduces a useful trade-off between storage size and querying efficiency.
-In <a href="#querying">Chapter 4</a>, A modular query engine is introduced called <em>Comunica</em> that is able to cope with the heterogeneity of data on the Web.
+and extensive experimentation shows that this systems introduces a useful trade-off between storage size and querying efficiency
+for publishing evolving knowledge graphs on the Web.
+In <a href="#querying">Chapter 4</a>, A modular query engine called <em>Comunica</em> is introduced that is able to cope with the heterogeneity of data on the Web.
 This engine has been designed to be highly flexible, so that it simplifies research within the query domain,
 where new query algorithms can for example be developed in a separate module, and plugged into the engine without much effort.
-In <a href="#querying-evolving">Chapter 5</a>, a publishing interface and accompanying querying algorithm (<em>TPF Query Streamer</em>) is introduced and evaluated
-to enable querying <em>evolving</em> data with a low volatility to be published at a low cost, and queried continuously.
+In <a href="#querying-evolving">Chapter 5</a>, a low-cost publishing interface and accompanying querying algorithm (<em>TPF Query Streamer</em>) is introduced and evaluated
+to enable continous querying of <em>evolving</em> data with a low volatility.
 Finally, this work is concluded in <a href="#conclusions">Chapter 6</a> and future research opportunities are discussed.</p>
 
     </div>
@@ -730,7 +740,7 @@ but real-world datasets only exist in fixed sizes.</p>
 assuming that we have population distributions as input.
 For this, we started from the research question:
 “Can population distribution data be used to generate realistic synthetic public transport networks and scheduling?”
-Concretely, we introduce a <em>realistic</em> mimicking algorithm for generating synthetic evolving knowledge graphs
+Concretely, we introduce a mimicking algorithm for generating <em>realistic</em> synthetic evolving knowledge graphs
 with configurable sizes and properties.
 The algorithm is based on established concepts from the domain of public transport networks design,
 and takes population distributions as input to generate realistic transport networks.
@@ -747,7 +757,7 @@ and has been evaluated to measure its performance and level of realism.</p>
       <li><a rev="lsc:participatesIn" property="foaf:maker schema:creator schema:author schema:publisher" href="https://ruben.verborgh.org/" typeof="foaf:Person schema:Person" resource="https://ruben.verborgh.org/profile/#me">Ruben Verborgh</a></li>
     </ul>
 
-    <p class="published-as">Published as <a href="https://www.rubensworks.net/raw/publications/2018/podigg.pdf">Generating Public Transport Data based on Population Distributions for <abbr title='Resource Description Framework'>RDF</abbr> Benchmarking</a></p>
+    <p class="published-as">Published as <em><a href="https://www.rubensworks.net/raw/publications/2018/podigg.pdf">Generating Public Transport Data based on Population Distributions for <abbr title='Resource Description Framework'>RDF</abbr> Benchmarking</a></em></p>
 
     <section id="generating_abstract" inlist="" rel="schema:hasPart" resource="#generating_abstract">
 <div datatype="rdf:HTML" property="schema:description">
@@ -2761,7 +2771,9 @@ and is memory friendly for machines with limited capabilities.</p>
 “How can we store <abbr title='Resource Description Framework'>RDF</abbr> archives to enable efficient versioned triple pattern queries with offsets?”
 We focus on triple pattern queries, as these are the fundamental building blocks
 for more complex <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> queries over knowledge graphs.
-We answer this research question by introducing a storage technique
+For example, the <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">Triple Pattern Fragments interface</a></span> <span class="references">[<a href="#ref-34">34</a>]</span> exposes triple pattern access to datasets,
+which is sufficient for evaluating complex <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> queries on top of this.
+We answer our research question by introducing a storage technique
 that introduces various temporal indexes next to the typical indexes that are required for knowledge graphs.
 These indexes are essential for achieving efficient querying for different kinds of versioned queries.
 We extensively evaluate this approach based on our implementation <em>OSTRICH</em>.
@@ -2782,7 +2794,7 @@ As storage is typically cheap, and ingestion can happen offline, this trade-off 
       <li><a rev="lsc:participatesIn" property="foaf:maker schema:creator schema:author schema:publisher" href="https://ruben.verborgh.org/" typeof="foaf:Person schema:Person" resource="https://ruben.verborgh.org/profile/#me">Ruben Verborgh</a></li>
     </ul>
 
-    <p class="published-as">Published as <a href="https://rdfostrich.github.io/article-jws2018-ostrich/">Triple Storage for Random-Access Versioned Querying of <abbr title='Resource Description Framework'>RDF</abbr> Archives</a></p>
+    <p class="published-as">Published as <em><a href="https://rdfostrich.github.io/article-jws2018-ostrich/">Triple Storage for Random-Access Versioned Querying of <abbr title='Resource Description Framework'>RDF</abbr> Archives</a></em></p>
 
     <section id="storing_abstract" inlist="" rel="schema:hasPart" resource="#storing_abstract">
 <div datatype="rdf:HTML" property="schema:description">
@@ -2834,26 +2846,26 @@ lowering the barrier to historical dataset publication and analysis.</p>
 there is an ongoing need for maintaining the history of datasets.
 Such archives can be used for looking up data at certain points in time,
 for requesting evolving changes,
-or for checking the temporal validity of these data <span class="references">[<a href="#ref-34">34</a>]</span>.
+or for checking the temporal validity of these data <span class="references">[<a href="#ref-35">35</a>]</span>.
 With the continuously increasing number of <a property="schema:citation http://purl.org/spar/cito/cites" href="https://www.w3.org/DesignIssues/LinkedData.html">Linked Open Datasets</a> <span class="references">[<a href="#ref-4">4</a>]</span>,
 archiving has become an issue for <a property="schema:citation http://purl.org/spar/cito/cites" href="https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/">RDF</a> <span class="references">[<a href="#ref-2">2</a>]</span> data as well.
-While the <abbr title='Resource Description Framework'>RDF</abbr> data model itself is atemporal, Linked Datasets typically <a property="schema:citation http://purl.org/spar/cito/cites" href="http://events.linkeddata.org/ldow2010/papers/ldow2010_paper12.pdf">change over time</a> <span class="references">[<a href="#ref-35">35</a>]</span> on
-<a property="schema:citation http://purl.org/spar/cito/cites" href="https://export.arxiv.org/pdf/1504.01891">dataset, schema, and/or instance level</a> <span class="references">[<a href="#ref-36">36</a>]</span>.
+While the <abbr title='Resource Description Framework'>RDF</abbr> data model itself is atemporal, Linked Datasets typically <a property="schema:citation http://purl.org/spar/cito/cites" href="http://events.linkeddata.org/ldow2010/papers/ldow2010_paper12.pdf">change over time</a> <span class="references">[<a href="#ref-36">36</a>]</span> on
+<a property="schema:citation http://purl.org/spar/cito/cites" href="https://export.arxiv.org/pdf/1504.01891">dataset, schema, and/or instance level</a> <span class="references">[<a href="#ref-37">37</a>]</span>.
 Such changes can include additions,
 modifications, or deletions of complete datasets, ontologies, and separate facts.
-While some evolving datasets, such as <a property="schema:citation http://purl.org/spar/cito/cites" href="http://www.cis.upenn.edu/~zives/research/dbpedia.pdf">DBpedia</a> <span class="references">[<a href="#ref-37">37</a>]</span>,
+While some evolving datasets, such as <a property="schema:citation http://purl.org/spar/cito/cites" href="http://www.cis.upenn.edu/~zives/research/dbpedia.pdf">DBpedia</a> <span class="references">[<a href="#ref-38">38</a>]</span>,
 are published as separate dumps per version,
 more direct and efficient access to prior versions is desired.</p>
 
         <p>Consequently,
 <abbr title='Resource Description Framework'>RDF</abbr> archiving systems emerged that, for instance, support query engines that use the standard <a property="schema:citation http://purl.org/spar/cito/cites" href="https://www.w3.org/TR/2013/REC-sparql11-query-20130321/">SPARQL query language</a> <span class="references">[<a href="#ref-3">3</a>]</span>.
-In 2015, however, <a property="schema:citation http://purl.org/spar/cito/cites" href="http://ceur-ws.org/Vol-1377/paper6.pdf">a survey on archiving Linked Open Data</a> <span class="references">[<a href="#ref-34">34</a>]</span> illustrated the need for improved versioning capabilities,
+In 2015, however, <a property="schema:citation http://purl.org/spar/cito/cites" href="http://ceur-ws.org/Vol-1377/paper6.pdf">a survey on archiving Linked Open Data</a> <span class="references">[<a href="#ref-35">35</a>]</span> illustrated the need for improved versioning capabilities,
 as current approaches have scalability issues at Web-scale.
 They either perform well for versioned query evaluation—at the cost of large storage space requirements—or
 require less storage space—at the cost of slower query evaluation.
 Furthermore, no existing solution performs well for all versioned query types, namely querying <em>at</em>, <em>between</em>, and <em>for</em> different versions.
 An efficient <abbr title='Resource Description Framework'>RDF</abbr> archive solution should have a scalable <em>storage model</em>,
-efficient <em>compression</em>, and <em>indexing methods</em> that enable expressive versioned querying <span class="references">[<a href="#ref-34">34</a>]</span>.</p>
+efficient <em>compression</em>, and <em>indexing methods</em> that enable expressive versioned querying <span class="references">[<a href="#ref-35">35</a>]</span>.</p>
 
         <p>In this article,
 we argue that supporting both <abbr title='Resource Description Framework'>RDF</abbr> archiving and <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> at once is difficult to scale due to their combined complexity.
@@ -2862,12 +2874,12 @@ Since triple patterns are the basic element of <abbr title='SPARQL Procotol and 
 such indexes can serve as an entry point for query engines.
 Our solution is applicable as:
 (a) an alternative index with efficient triple-pattern-based access for existing engines, in order to improve the efficiency of more expressive <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> queries; and
-(b) a data source for the Web-friendly <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">Triple Pattern Fragments</a></span> <span class="references">[<a href="#ref-38">38</a>]</span> (TPF) interface, i.e.,
+(b) a data source for the Web-friendly <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">Triple Pattern Fragments</a></span> <span class="references">[<a href="#ref-34">34</a>]</span> (TPF) interface, i.e.,
 a Web <abbr title='Application Programming Interface'>API</abbr> that provides access to <abbr title='Resource Description Framework'>RDF</abbr> datasets by triple pattern and partitions the results in pages.
 We focus on the performance-critical features of <em>stream-based results</em>, query result <em>offsets</em>, and <em>cardinality estimation</em>.
 Stream-based results allow more memory-efficient processing when query results are plentiful.
 The capability to efficiently offset (and limit) a large stream reduces processing time if only a subset is needed.
-Cardinality estimation is essential for efficient <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">query planning</a></span> <span class="references">[<a href="#ref-38">38</a>, <a href="#ref-39">39</a>]</span> in many query engines.</p>
+Cardinality estimation is essential for efficient <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">query planning</a></span> <span class="references">[<a href="#ref-34">34</a>, <a href="#ref-39">39</a>]</span> in many query engines.</p>
 
         <p>Concretely,
 this work introduces a storage technique with the following contributions:</p>
@@ -2978,15 +2990,15 @@ to allow any triple pattern to be resolved efficiently based on the <a property=
 <abbr title='Header Dictionary Triples'>HDT</abbr> archives are read-only, which leads to high efficiency and compressibility,
 but makes them unsuitable for cases where datasets change frequently.
 Its fast triple pattern queries and high compression rate make it
-an appropriate backend storage method for <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">TPF</a></span> <span class="references">[<a href="#ref-38">38</a>]</span> servers.
+an appropriate backend storage method for <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">TPF</a></span> <span class="references">[<a href="#ref-34">34</a>]</span> servers.
 Approaches like <a property="schema:citation http://purl.org/spar/cito/cites" href="http://lodlaundromat.org/pdf/lodlaundry.pdf">LOD Laundromat</a> <span class="references">[<a href="#ref-55">55</a>]</span> combine <abbr title='Header Dictionary Triples'>HDT</abbr> and <abbr title='Triple Pattern Fragments'>TPF</abbr> for hosting and publishing
 650K+ Linked Datasets containing 38B+ triples, proving its usefulness at large scale.
 Because of these reasons, we will reuse <abbr title='Header Dictionary Triples'>HDT</abbr> snapshots as part of our storage solution.</p>
 
         <h4 id="storing_related-work-archiving">RDF Archiving</h4>
 
-        <p>Linked Open Datasets typically <a property="schema:citation http://purl.org/spar/cito/cites" href="http://events.linkeddata.org/ldow2010/papers/ldow2010_paper12.pdf">change over time</a> <span class="references">[<a href="#ref-35">35</a>]</span>,
-creating a need for <a property="schema:citation http://purl.org/spar/cito/cites" href="http://ceur-ws.org/Vol-1377/paper6.pdf">maintaining the history of the datasets</a> <span class="references">[<a href="#ref-34">34</a>]</span>.
+        <p>Linked Open Datasets typically <a property="schema:citation http://purl.org/spar/cito/cites" href="http://events.linkeddata.org/ldow2010/papers/ldow2010_paper12.pdf">change over time</a> <span class="references">[<a href="#ref-36">36</a>]</span>,
+creating a need for <a property="schema:citation http://purl.org/spar/cito/cites" href="http://ceur-ws.org/Vol-1377/paper6.pdf">maintaining the history of the datasets</a> <span class="references">[<a href="#ref-35">35</a>]</span>.
 Hence, <abbr title='Resource Description Framework'>RDF</abbr> archiving has been an active area of research over the last couple of years.
 In the domain of non-RDF graph databases, several graph database extensions exist.
 These extensions are either <a property="schema:citation http://purl.org/spar/cito/cites" href="https://github.com/datablend/fluxgraph">wrapper-based</a> <span class="references">[<a href="#ref-56">56</a>, <a href="#ref-57">57</a>]</span>, which leads to sub-optimal querying due to the lack of indexing,
@@ -3003,7 +3015,7 @@ Furthermore,
 <em>an <abbr title='Resource Description Framework'>RDF</abbr> version of an <abbr title='Resource Description Framework'>RDF</abbr> archive A at snapshot i is the <abbr title='Resource Description Framework'>RDF</abbr> graph A(i) = {(s, p, o)|(s, p, o):[i] ∈ A}.</em>
 For the remainder of this article, we use the notation <em>V<sub>i</sub></em> to refer to the <abbr title='Resource Description Framework'>RDF</abbr> version <em>A(i)</em>.</p>
 
-        <p>The <a property="schema:citation http://purl.org/spar/cito/cites" href="https://export.arxiv.org/pdf/1504.01891">DIACHRON data model</a> <span class="references">[<a href="#ref-36">36</a>]</span> introduces the concept of <em>diachronic datasets</em>,
+        <p>The <a property="schema:citation http://purl.org/spar/cito/cites" href="https://export.arxiv.org/pdf/1504.01891">DIACHRON data model</a> <span class="references">[<a href="#ref-37">37</a>]</span> introduces the concept of <em>diachronic datasets</em>,
 i.e., datasets that contain diachronic entities, which are semantic entities that evolve over time.
 This data model formally defines a diachronic dataset as a set of dataset versions together with metadata annotations about this dataset.
 Each dataset version is defined as a set of records (i.e., tuples or triples), an associated schema,
@@ -3013,7 +3025,7 @@ Due to the simplicity of <abbr title='Resource Description Framework'>RDF</abbr>
 we will use the model of Fernández et al. for the remainder of this document.</p>
 
         <p>Systems for archiving Linked Open Data are categorized 
-into <a property="schema:citation http://purl.org/spar/cito/cites" href="http://ceur-ws.org/Vol-1377/paper6.pdf">three non-orthogonal storage strategies</a> <span class="references">[<a href="#ref-34">34</a>]</span>:</p>
+into <a property="schema:citation http://purl.org/spar/cito/cites" href="http://ceur-ws.org/Vol-1377/paper6.pdf">three non-orthogonal storage strategies</a> <span class="references">[<a href="#ref-35">35</a>]</span>:</p>
 
         <ul>
           <li>The <strong>Independent Copies (IC)</strong> approach creates separate instantiations of datasets for
@@ -3196,7 +3208,7 @@ The <abbr title='Benchmark of Rdf Archives'>BEAR</abbr> benchmark is based on th
 
         <dl>
           <dt>BEAR-A</dt>
-          <dd>58 weekly snapshots from the <a property="schema:citation http://purl.org/spar/cito/cites" href="http://events.linkeddata.org/ldow2010/papers/ldow2010_paper12.pdf">Dynamic Linked Data Observatory</a> <span class="references">[<a href="#ref-35">35</a>]</span>. This is the main dataset from the article on <a property="schema:citation http://purl.org/spar/cito/cites" href="http://semantic-web-journal.org/system/files/swj1814.pdf">BEAR</a> <span class="references">[<a href="#ref-60">60</a>]</span>.</dd>
+          <dd>58 weekly snapshots from the <a property="schema:citation http://purl.org/spar/cito/cites" href="http://events.linkeddata.org/ldow2010/papers/ldow2010_paper12.pdf">Dynamic Linked Data Observatory</a> <span class="references">[<a href="#ref-36">36</a>]</span>. This is the main dataset from the article on <a property="schema:citation http://purl.org/spar/cito/cites" href="http://semantic-web-journal.org/system/files/swj1814.pdf">BEAR</a> <span class="references">[<a href="#ref-60">60</a>]</span>.</dd>
           <dt>BEAR-B</dt>
           <dd>The 100 most volatile resources from <a property="schema:citation http://purl.org/spar/cito/cites" href="http://jens-lehmann.org/files/2012/program_el_dbpedia_live.pdf">DBpedia Live</a> <span class="references">[<a href="#ref-76">76</a>]</span> over the course of three months
 as three different granularities: instant, hour and day.</dd>
@@ -3240,7 +3252,7 @@ but they are significantly lower than the regular <abbr title='Timestamp-based'>
         <p>The queries of BEAR-C currently can not be solved by the archiving strategies in a straightforward way,
 but they are designed to help foster the development of future <abbr title='Resource Description Framework'>RDF</abbr> archiving solutions.
 While queries of BEAR-A and BEAR-B are just triple pattern queries and therefore do not cover the full <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> spectrum,
-they provide the basis for more complex queries, as is proven by the <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">TPF framework</a></span> <span class="references">[<a href="#ref-38">38</a>]</span>,
+they provide the basis for more complex queries, as is proven by the <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">TPF framework</a></span> <span class="references">[<a href="#ref-34">34</a>]</span>,
 which makes them sufficient for benchmarking.</p>
 
         <p><a property="schema:citation http://purl.org/spar/cito/cites" href="http://ceur-ws.org/Vol-1585/mepdaw2016_paper_03.pdf">EvoGen</a> <span class="references">[<a href="#ref-79">79</a>]</span> is an <abbr title='Resource Description Framework'>RDF</abbr> archive systems benchmark that is based on the synthetic <a property="schema:citation http://purl.org/spar/cito/cites" href="http://swat.cse.lehigh.edu/pubs/guo05a.pdf">LUBM dataset generator</a> <span class="references">[<a href="#ref-6">6</a>]</span>.
@@ -3305,7 +3317,7 @@ Furthermore, <abbr title='Timestamp-based'>TB</abbr> solutions can require less 
         <p>In summary, <abbr title='Independent Copies'>IC</abbr>, <abbr title='Change-based'>CB</abbr> and <abbr title='Timestamp-based'>TB</abbr> approaches can perform well for certain query types, but they can be slow for others.
 On the other hand, this efficiency typically comes at the cost of a large storage overhead, as is the case for IC-based approaches.</p>
 
-        <p><a property="schema:citation http://purl.org/spar/cito/cites" href="https://export.arxiv.org/pdf/1504.01891">DIACHRON QL</a> <span class="references">[<a href="#ref-36">36</a>]</span> is a <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query language extension
+        <p><a property="schema:citation http://purl.org/spar/cito/cites" href="https://export.arxiv.org/pdf/1504.01891">DIACHRON QL</a> <span class="references">[<a href="#ref-37">37</a>]</span> is a <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query language extension
 based on the DIACHRON data model that provides functionality similar to these query atoms
 in order to query specific versions, changesets, or all versions.</p>
 
@@ -4389,7 +4401,7 @@ or evaluating <abbr title='Version Materialization'>VM</abbr>, <abbr title='Delt
 Furthermore, we implemented <a href="https://zenodo.org/record/883010" class="mandatory" data-link-text="https:/​/​zenodo.org/​record/​883010">Node JavaScript bindings</a> that
 expose the <abbr title='Offset-Enabled Triple Store for Changesets'>OSTRICH</abbr> <abbr title='Application Programming Interface'>API</abbr> for ingesting and querying to JavaScript applications.
 We used these bindings to <a href="http://versioned.linkeddatafragments.org/bear" class="mandatory" data-link-text="http:/​/​versioned.linkeddatafragments.org/​bear">expose an <abbr title='Offset-Enabled Triple Store for Changesets'>OSTRICH</abbr> store</a>
-containing a dataset with 30M triples in 10 versions using <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">TPF</a></span> <span class="references">[<a href="#ref-38">38</a>]</span>, with the <a property="schema:citation http://purl.org/spar/cito/cites" href="http://rubensworks.net/raw/publications/2017/vtpf.pdf">VTPF feature</a> <span class="references">[<a href="#ref-40">40</a>]</span>.</p>
+containing a dataset with 30M triples in 10 versions using <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">TPF</a></span> <span class="references">[<a href="#ref-34">34</a>]</span>, with the <a property="schema:citation http://purl.org/spar/cito/cites" href="http://rubensworks.net/raw/publications/2017/vtpf.pdf">VTPF feature</a> <span class="references">[<a href="#ref-40">40</a>]</span>.</p>
 
         <h4 id="experimental-setup">Experimental Setup</h4>
 
@@ -5184,7 +5196,7 @@ Ruben Verborgh is a postdoctoral fellow of the Research Foundation – Flanders.
   </section>
   
   <section class="sub-paper">
-    <h2 id="querying">Querying on the Web</h2>
+    <h2 id="querying">Querying a heterogeneous Web</h2>
 
     <section class="sub-preface">
 <div datatype="rdf:HTML" property="schema:description">
@@ -5216,7 +5228,7 @@ As we introduce a system architecture in this chapter, no research question is a
       <li><a rev="lsc:participatesIn" property="foaf:maker schema:creator schema:author schema:publisher" href="https://ruben.verborgh.org/" typeof="foaf:Person schema:Person" resource="https://ruben.verborgh.org/profile/#me">Ruben Verborgh</a></li>
     </ul>
 
-    <p class="published-as">Published as <a href="https://comunica.github.io/Article-ISWC2018-Resource/">Comunica: a Modular <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> Query Engine for the Web</a></p>
+    <p class="published-as">Published as <em><a href="https://comunica.github.io/Article-ISWC2018-Resource/">Comunica: a Modular <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> Query Engine for the Web</a></em></p>
 
     <section id="querying_abstract" inlist="" rel="schema:hasPart" resource="#querying_abstract">
 <div datatype="rdf:HTML" property="schema:description">
@@ -5273,11 +5285,11 @@ Linked Data is increasingly published through <em>different Web interfaces</em>,
 such as
 data dumps, <a property="schema:citation http://purl.org/spar/cito/cites" href="https://www.w3.org/DesignIssues/LinkedData.html">Linked Data documents</a> <span class="references">[<a href="#ref-4">4</a>]</span>,
 <a property="schema:citation http://purl.org/spar/cito/cites" href="https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/">SPARQL endpoints</a> <span class="references">[<a href="#ref-86">86</a>]</span>
-and <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">Triple Pattern Fragments (TPF) interfaces</a></span> <span class="references">[<a href="#ref-38">38</a>]</span>.
+and <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">Triple Pattern Fragments (TPF) interfaces</a></span> <span class="references">[<a href="#ref-34">34</a>]</span>.
 This has led to entirely different query evaluation strategies,
 such as <a property="schema:citation http://purl.org/spar/cito/cites" href="https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/">server-side</a> <span class="references">[<a href="#ref-86">86</a>]</span>,
 <a property="schema:citation http://purl.org/spar/cito/cites" href="http://olafhartig.de/files/Hartig_QueryingLD_DBSpektrum_Preprint.pdf">link-traversal-based</a> <span class="references">[<a href="#ref-87">87</a>]</span>,
-<span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">shared client–server query processing</a></span> <span class="references">[<a href="#ref-38">38</a>]</span>,
+<span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">shared client–server query processing</a></span> <span class="references">[<a href="#ref-34">34</a>]</span>,
 and
 client-side (by downloading data dumps and loading them locally).</p>
 
@@ -5304,7 +5316,7 @@ because they are too costly to implement and maintain.
 For example,
 it is currently unknown
 how the <a property="schema:citation http://purl.org/spar/cito/citesAsAuthority" href="http://iswc2015.semanticweb.org/sites/iswc2015.semanticweb.org/files/93660097.pdf">Linked Data Eddies algorithm</a> <span class="references">[<a href="#ref-91">91</a>]</span>
-performs over a <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">federation</a></span> <span class="references">[<a href="#ref-38">38</a>]</span>
+performs over a <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">federation</a></span> <span class="references">[<a href="#ref-34">34</a>]</span>
 of <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1007/978-3-319-48472-3_48"><a href="https://arxiv.org/pdf/1608.08148.pdf">brTPF interfaces</a></span> <span class="references">[<a href="#ref-92">92</a>]</span>.
 Another example is that the effects of various <a property="schema:citation http://purl.org/spar/cito/cites" href="http://linkeddatafragments.org/publications/eswc2015.pdf">optimizations and extensions for <abbr title='Triple Pattern Fragments'>TPF</abbr> interfaces</a> <span class="references">[<a href="#ref-88">88</a>, <a href="#ref-89">89</a>, <a href="#ref-90">90</a>, <a href="#ref-91">91</a>, <a href="#ref-92">92</a>, <a href="#ref-40">40</a>, <a href="#ref-93">93</a>, <a href="#ref-94">94</a>]</span>
 have only been evaluated in isolation,
@@ -5388,9 +5400,9 @@ as they are not supported out-of-the-box.
 This issue of modularity and heterogeneity are two of the main problems we aim to solve within Comunica.
 The differences between Comunica and existing frameworks will be explained in more detail in <a href="#features"></a>.</p>
 
-        <p>The <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">Triple Pattern Fragments client</a></span> <span class="references">[<a href="#ref-38">38</a>]</span> (also known as Client.js or <code>ldf-client</code>) is a client-side <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> engine
+        <p>The <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">Triple Pattern Fragments client</a></span> <span class="references">[<a href="#ref-34">34</a>]</span> (also known as Client.js or <code>ldf-client</code>) is a client-side <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> engine
 that retrieves data over <abbr title='Hypertext Transfer Protocol'>HTTP</abbr>
-through <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">Triple Pattern Fragments (TPF) interfaces</a></span> <span class="references">[<a href="#ref-38">38</a>]</span>.
+through <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">Triple Pattern Fragments (TPF) interfaces</a></span> <span class="references">[<a href="#ref-34">34</a>]</span>.
 <a property="schema:citation http://purl.org/spar/cito/cites" href="http://linkeddatafragments.org/publications/eswc2015.pdf">Different algorithms</a> <span class="references">[<a href="#ref-88">88</a>, <a href="#ref-93">93</a>, <a href="#ref-94">94</a>]</span> for this client and
 <a property="schema:citation http://purl.org/spar/cito/cites" href="http://linkeddatafragments.org/publications/iswc2015-amf.pdf">TPF interface extensions</a> <span class="references">[<a href="#ref-89">89</a>, <a href="#ref-90">90</a>, <a href="#ref-92">92</a>, <a href="#ref-40">40</a>]</span> have been proposed to reduce effort of server or client in some way.
 All of these efforts are however implemented and evaluated in isolation.
@@ -5403,7 +5415,7 @@ to integrate data from different sources,
 <em>federated query processing</em> has been an active area of research.
 However, most of the existing frameworks require <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> endpoints on every source.
 The <abbr title='Triple Pattern Fragments'>TPF</abbr> Client instead federates over <abbr title='Triple Pattern Fragments'>TPF</abbr> interfaces,
-and achieves <span property="schema:citation http://purl.org/spar/cito/citesAsEvidence" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">similar performance compared to the state of the art</a></span> <span class="references">[<a href="#ref-38">38</a>]</span>
+and achieves <span property="schema:citation http://purl.org/spar/cito/citesAsEvidence" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">similar performance compared to the state of the art</a></span> <span class="references">[<a href="#ref-34">34</a>]</span>
 despite its usage of a more lightweight interface.
 However, no frameworks exist that enable federation over heterogeneous interfaces,
 such as the federation over any combination of <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> endpoints and <abbr title='Triple Pattern Fragments'>TPF</abbr> interfaces.
@@ -5415,7 +5427,7 @@ to query a web of Linked Data documents.</p>
         <h4 id="linked-data-fragments">Linked Data Fragments</h4>
 
         <p>In order to formally capture the heterogeneity of different Web interfaces to publish <abbr title='Resource Description Framework'>RDF</abbr> data,
-the <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">Linked Data Fragment</a></span> <span class="references">[<a href="#ref-38">38</a>]</span> (LDF) conceptual framework
+the <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">Linked Data Fragment</a></span> <span class="references">[<a href="#ref-34">34</a>]</span> (LDF) conceptual framework
 uniformly characterizes responses of Web interfaces to RDF-based knowledge graphs.
 The simplest type of LDF is a <em>data dump</em>—it is the response of a single <abbr title='Hypertext Transfer Protocol'>HTTP</abbr> requests for a complete <abbr title='Resource Description Framework'>RDF</abbr> dataset.
 Other types of LDFs includes responses of <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> endpoints,
@@ -5424,7 +5436,7 @@ Other types of LDFs includes responses of <abbr title='SPARQL Procotol and RDF Q
         <p>Existing LDF research highlights that,
 when it comes to publishing datasets on the Web, there is no silver bullet:
 no single interface works well in all situations,
-as each one involves <span property="schema:citation http://purl.org/spar/cito/citesAsEvidence" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">trade-offs</a></span> <span class="references">[<a href="#ref-38">38</a>]</span>.
+as each one involves <span property="schema:citation http://purl.org/spar/cito/citesAsEvidence" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">trade-offs</a></span> <span class="references">[<a href="#ref-34">34</a>]</span>.
 As such, data publishers must choose the type of interface that matches their intended use case, target audience and infrastructure.
 This however complicates client-side engines that need to retrieve data from the resulting heterogeneity of interfaces.
 As shown by the <abbr title='Triple Pattern Fragments'>TPF</abbr> approach, interfaces can be self-descriptive and expose one or more <a property="schema:citation http://purl.org/spar/cito/cites" href="http://arxiv.org/abs/1609.07108">features</a> <span class="references">[<a href="#ref-99">99</a>]</span>,
@@ -5798,7 +5810,7 @@ These sources are passed down through the chain of query operation actors,
 until the quad pattern level is reached.
 At this level, different actors exist for handling a single source of a certain type,
 such as <abbr title='Triple Pattern Fragments'>TPF</abbr> interfaces, <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> endpoints, local or remote datadumps.
-In the case of multiple sources, one actor exists that implements a <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">federation algorithm defined for TPF</a></span> <span class="references">[<a href="#ref-38">38</a>]</span>,
+In the case of multiple sources, one actor exists that implements a <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">federation algorithm defined for TPF</a></span> <span class="references">[<a href="#ref-34">34</a>]</span>,
 but instead of federating over different <abbr title='Triple Pattern Fragments'>TPF</abbr> interfaces, it federates over different single-source quad pattern actors.</p>
 
         <p>At the end of the pipeline, different actors are available for serializing the results of a query in different ways.
@@ -5835,7 +5847,7 @@ In future work, we intend to implement additional actors for supporting <abbr ti
         <p>Comunica currently supports querying over the following types of <em>heterogeneous datasources and interfaces</em>:</p>
 
         <ul>
-          <li><span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">Triple Pattern Fragments interfaces</a></span> <span class="references">[<a href="#ref-38">38</a>]</span></li>
+          <li><span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">Triple Pattern Fragments interfaces</a></span> <span class="references">[<a href="#ref-34">34</a>]</span></li>
           <li>Quad Pattern Fragments interfaces (<a href="https://github.com/LinkedDataFragments/Server.js/tree/feature-qpf-latest" class="mandatory" data-link-text="https:/​/​github.com/​LinkedDataFragments/​Server.js/​tree/​feature-​qpf-​latest">an experimental extension of <abbr title='Triple Pattern Fragments'>TPF</abbr> with a fourth graph element</a>)</li>
           <li><a property="schema:citation http://purl.org/spar/cito/cites" href="https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/">SPARQL endpoints</a> <span class="references">[<a href="#ref-86">86</a>]</span></li>
           <li>Local and remote dataset dumps in <abbr title='Resource Description Framework'>RDF</abbr> serializations.</li>
@@ -6019,7 +6031,7 @@ As such, when evolving knowledge graphs need to be published on the Web,
 an interface is needed that scales well in a public Web environment with a potentially large number of concurrent clients.</p>
 
         <p>The work in this chapter is based on the research question:
-“Can clients use volatility knowledge to perform more efficient continuous <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query evaluation by polling for data?”
+“Can clients use volatility knowledge to perform more efficient continuous <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query evaluation by polling for data?”.
 We answer this research question by introducing a query interface
 that exposes evolving knowledge graphs annotated with their volatility.
 Based on these volatility annotations, clients can detect for <em>how long</em> parts of the knowledge graph will remain valid,
@@ -6041,7 +6053,7 @@ This shows that our technique is a good candidate for publishing evolving knowle
       <li><a rev="lsc:participatesIn" property="foaf:maker schema:creator schema:author schema:publisher" href="https://www.ugent.be/ea/idlab/en/members/rik-van-de-walle.htm" typeof="foaf:Person schema:Person" resource="https://data.verborgh.org/people/rik_van_de_walle">Rik Van de Walle</a></li>
     </ul>
 
-    <p class="published-as">Published as <a href="https://www.rubensworks.net/raw/publications/2016/Continuous_Client-Side_Query_Evaluation_over_Dynamic_Linked_Data.pdf">Continuous Client-side Query Evaluation over Dynamic Linked Data</a></p>
+    <p class="published-as">Published as <em><a href="https://www.rubensworks.net/raw/publications/2016/Continuous_Client-Side_Query_Evaluation_over_Dynamic_Linked_Data.pdf">Continuous Client-side Query Evaluation over Dynamic Linked Data</a></em></p>
 
     <section id="querying-evolving_abstract" inlist="" rel="schema:hasPart" resource="#querying-evolving_abstract">
 <div datatype="rdf:HTML" property="schema:description">
@@ -6201,7 +6213,7 @@ datasets; for simple queries and small datasets the opposite is true.</p>
 
         <p>Experiments have shown that <a property="schema:citation http://purl.org/spar/cito/cites" href="http://link.springer.com/chapter/10.1007/978-3-642-41338-4_18">more than half of public <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> endpoints have an availability of less than 95%</a> <span class="references">[<a href="#ref-115">115</a>]</span>.
 Any number of clients can send arbitrarily complex <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> queries, which could form a bottleneck in endpoints.
-<span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf"><em>Triple Pattern Fragments</em> (TPF)</a></span> <span class="references">[<a href="#ref-38">38</a>]</span> aim to solve this issue of high interface cost by moving part of
+<span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf"><em>Triple Pattern Fragments</em> (TPF)</a></span> <span class="references">[<a href="#ref-34">34</a>]</span> aim to solve this issue of high interface cost by moving part of
 the query evaluation to the client, which reduces the server load, at the cost of increased query times and bandwidth.
 The purposely limited interface only accepts separate triple pattern queries.
 Clients can use it to evaluate more complex <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> queries locally,
@@ -6796,7 +6808,7 @@ evaluate dynamic queries with a low server cost.
 Our low-cost publication technique for dynamic data is useful when the number of potential simultaneous clients
 is large. When this data is needed for only a small number of clients in a closed off environment
 and query evaluation must happen fast, traditional approaches like <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr> or <abbr title='Continuous Sparql'>C-SPARQL</abbr> are advised.
-These are only two possible points on the <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf"><em>Linked Data Fragments</em> axis</a></span> <span class="references">[<a href="#ref-38">38</a>]</span>, depending on the
+These are only two possible points on the <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf"><em>Linked Data Fragments</em> axis</a></span> <span class="references">[<a href="#ref-34">34</a>]</span>, depending on the
 publication requirements, combinations of these approaches can be used.</p>
 
         <h4 id="annotation-methods">Annotation methods</h4>
@@ -6846,22 +6858,116 @@ and I discuss future research efforts that are needed to advance this work furth
         <li><strong>Publishing <em>evolving</em> data via a <em>queryable interface</em> is costly.</strong></li>
       </ol>
 
+      <p>I will discuss the findings within these challenges hereafter.</p>
+
+      <h4 id="generating-evolving-data">Generating Evolving Data</h4>
+
       <p>In <a href="#generating">Chapter 2</a>, the first challenge was tackled as a prerequisite for the next challenges.
-The goal of this work was to come up with a way to generate realistic public transport network datasets
-based on population distributions.
-The outcome was an algorithm and implementation that achieve this goal.</p>
+The domain of public transport was chosen for this challenge,
+as it contains both geospatial and temporal dimensions,
+which makes it useful for benchmarking <abbr title='Resource Description Framework'>RDF</abbr> data management systems that can handle various dimensions like these.
+Even though many real-world public transit network design and scheduling methodologies already exist,
+the synthetic generation of such datasets is not trivial.
+The goal of this work was to determine wether or not population distributions could be used as input to such a mimicking algorithm.
+Hence, this lead to the following <a href="#generating_researchquestion">research question</a>:</p>
+
+      <blockquote>
+        <p>Can population distribution data be used to generate realistic synthetic public transport networks and scheduling?</p>
+      </blockquote>
+
+      <p>The main hypothesis of this work was: <em>public transport networks and schedules are correlated with the population distribution within the same area</em>.
+This hypothesis was tested and validated for two countries with a high level of confidence.
+As such, population distributions formed the basis of the mimicking algorithm of this work.</p>
+
+      <p>Inspired by real-world public transit network design and scheduling methodologies,
+a multi-step algorithm was determined where regions, stops, edges, routes and trips are generated
+based on any population distribution and dependency rules.
+To evaluate the realism of generated datasets, an implementation of the algorithm was provided.
+For each step in the algorithm, distance functions were determined to measure the realism for each step.
+This realism was confirmed for different regions and transport types.</p>
+
+      <p>With the provided mimicking algorithm,
+synthetic public transport networks and scheduling can be generated based on population distributions,
+which answers our research question.
+This tackles our initial challenge to support experimentation on systems that handle evolving knowledge graphs.</p>
+
+      <p>One could however question whether such domain-specific datasets are sufficient for testing evolving knowledge graphs systems in general.
+As shown in <a href="#generating_methodology">Section 2.5</a>, the introduced data model contains a relatively small number of <abbr title='Resource Description Framework'>RDF</abbr> properties and classes.
+While large domain specific knowledge graphs like these are valuable,
+domain-overlapping knowledge graphs such as <a property="schema:citation http://purl.org/spar/cito/cites" href="http://www.cis.upenn.edu/~zives/research/dbpedia.pdf">DBpedia</a> <span class="references">[<a href="#ref-38">38</a>]</span> and <a property="schema:citation http://purl.org/spar/cito/cites" href="https://storage.googleapis.com/pub-tools-public-publication-data/pdf/42240.pdf">Wikidata</a> <span class="references">[<a href="#ref-127">127</a>]</span>
+many more distinct properties and classes, which place additional demands on systems.
+For such cases, multi-domain (evolving) knowledge graph generators could be created in future work.</p>
+
+      <h4 id="indexing-evolving-data">Indexing Evolving Data</h4>
 
       <p>Next, in <a href="#storing">Chapter 3</a>, the challenge was to determine an approach
 that achieves a trade-off between storage size and lookup efficiency
 that is beneficial for publishing evolving knowledge graphs on the Web.
-The outcome of this work was
+This approach had to enable a Web-friendly storage approach,
+so that evolving knowledge graphs can be published on the Web without requiring very costly machines.
+Previous work has shown that by restricting queries on servers to <span property="schema:citation http://purl.org/spar/cito/cites" resource="https://dx.doi.org/10.1016/j.websem.2016.03.003"><a href="http://linkeddatafragments.org/publications/jws2016.pdf">triple pattern queries</a></span> <span class="references">[<a href="#ref-34">34</a>]</span>,
+and executing more complex queries client-side, server load can be reduced significantly.
+As such, our work built upon this idea by focusing on <em>triple pattern queries</em>.
+Furthermore, to reduce memory usage during query execution,
+we focus on <em>streaming</em> results with optional <em>offsets</em>.
+Finally, we focus on three main versioned query atoms to support various kinds of temporal queries over evolving knowledge graphs.
+This lead to the following <a href="#storing_researchquestion">research question</a>:</p>
+
+      <blockquote>
+        <p>How can we store <abbr title='Resource Description Framework'>RDF</abbr> archives to enable efficient versioned triple pattern queries with offsets?</p>
+      </blockquote>
+
+      <p>This research question is answered by introducing
 (1) a storage technique for maintaining multiple versions of a knowledge graph
-and (2) querying algorithms that can be used to efficiently extract data from these versions.</p>
+and (2) querying algorithms that can be used to efficiently extract data from these versions.
+As was shown via our hypotheses, this storage technique is a hybrid of different existing storage approaches,
+which lead to a trade-off between all of them in terms of storage requirements and querying efficiency.
+Important to note is that the introduced storage technique is therefore not the most optimal for all situations.
+For specific use cases where only very specific query types are required,
+dedicated systems will likely be more efficient.
+However, when the domain of queries is broad,
+a more general-purpose like our approach is more fitting,
+as this will lead to sufficiently fast query execution in most cases,
+with acceptable storage requirements.</p>
+
+      <p>In conclusion, our storage approach can be used be used as a backend
+for publishing evolving knowledge graphs through a low-cost triple pattern interface,
+which has been illustrated via <a property="schema:citation http://purl.org/spar/cito/cites" href="http://rubensworks.net/raw/publications/2017/vtpf.pdf"><em>Versioned</em> Triple Pattern Fragments</a> <span class="references">[<a href="#ref-40">40</a>]</span>
+on <a href="http://versioned.linkeddatafragments.org/bear">http:/​/​versioned.linkeddatafragments.org/bear</a>.
+Future challenges include the handling of very large numbers of versions and improving ingestion efficiency,
+which both could be resolved by dynamically creating intermediary snapshots within the delta chain.</p>
+
+      <h4 id="heterogeneous-web">Heterogeneous Web</h4>
 
       <p>In <a href="#querying">Chapter 4</a>, the challenge on handling the heterogeneous nature of the Web during querying was tackled.
-This was done through the design and development of a highly modular <em>meta</em> query engine
+This was done through the design and development of a highly modular <em>meta</em> query engine (Comunica)
 that simplifies the handling of various kinds of sources,
 and lowers the barrier for researching new query interfaces and algorithms.</p>
+
+      <p>In order for Comunica to be usable as a research platform,
+its architecture needed to be flexible enough to handle the complete <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> 1.1 specification,
+and support heterogeneous interfaces.
+For this, the <em>actor</em>, <em>mediator</em>, and <em>publish-subscribe</em> software patterns were applied
+to achieve an architecture where task-specific actors form building blocks,
+and buses and mediators are used to handle their inter-communication,
+which can be wired together through <em>dependency injection</em>.</p>
+
+      <p>With Comunica, evaluating the performance of different query algorithms and other query-related approaches become more fair.
+Query algorithms are typically compared by implementing them in separate systems,
+which leads to confounding factors that may impact the performance results,
+such as the use of different programming languages or software libraries.
+As Comunica consists of small task-specific building blocks,
+different algorithms become different instances of such building blocks,
+which reduces confounding during experiments.</p>
+
+      <p>Comunica’s architecture is flexible enough to go outside the realm of standard <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr>.
+It is for example usable to create an engine for <a property="schema:citation http://purl.org/spar/cito/cites" href="https://rdfostrich.github.io/article-mocha-2018/">querying over evolving knowledge graphs</a> <span class="references">[<a href="#ref-128">128</a>]</span>.
+Concretely, support for <abbr title='Offset-Enabled Triple Store for Changesets'>OSTRICH</abbr> datasources from <a href="#storing">Chapter 3</a> was implemented,
+together with support for versioned queries.
+For this, the streaming results capability of <abbr title='Offset-Enabled Triple Store for Changesets'>OSTRICH</abbr> proved compatible and beneficial
+to the streaming query evaluation of Comunica.</p>
+
+      <h4 id="publishing-and-querying-evolving-data">Publishing and Querying Evolving Data</h4>
 
       <p>Finally, <a href="#querying-evolving">Chapter 5</a> handled the challenge on a query interface for evolving knowledge graphs.
 The main goal of this work was to determine whether (part of) the effort for executing continuous queries
@@ -6870,9 +6976,62 @@ in order to allow the server to handle more concurrent clients.
 The outcome of this work was a polling-based Web interface for evolving knowledge graphs,
 and a client-side algorithm that is able to perform continuous queries using this interface.</p>
 
-      <p>Through investigating these four challenges,
-our research question can be answered.
-Concretely, evolving knowledge graphs can be made queryable on the Web through a low-cost polling-based interface,
+      <p>The first <a href="#querying-evolving_researchquestion1">research question</a> of this work was:</p>
+
+      <blockquote>
+        <p>Can clients use volatility knowledge to perform more efficient continuous <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> query evaluation by polling for data?</p>
+      </blockquote>
+
+      <p>This question was answered by annotating dynamic data server-side with time annotations,
+and by introducing a client-side algorithm that can detect these annotations,
+and determine a polling frequency for continuous query evaluation based on that.
+By doing this, clients only have to re-download data from the server when it was changed.
+Furthermore, static data only have to be downloaded once from the server when needed,
+and can therefore optimally be cached by the client.
+In practise, one could however argue that no data is never truly indefinitely <em>static</em>,
+which is why practical implementations will require caches with a high maximum age for static data
+when performing continuous querying over long periods of time.</p>
+
+      <p>Our second <a href="#querying-evolving_researchquestion2">research question</a> was formulated as:</p>
+
+      <blockquote>
+        <p>How does the client and server load of our solution compare to alternatives?</p>
+      </blockquote>
+
+      <p>This question was answered by comparing the server and client load
+of our approach with state of the art server-side engines.
+Results show a clear movement of load from server to client,
+at the cost of increased bandwidth usage and execution time.
+The benefit of this becomes especially clear when the number of concurrent clients increase.
+The server load of our approach scales significantly better compared to other approaches for an increasing number of clients.
+This is caused by the fact that each clients now helps with query execution,
+which frees up a significant portion of server load.
+Since multiple concurrent clients also lead to server requests for overlapping URLs,
+a server cache should theoretically be beneficial as well.
+However, follow-up work has shown that <a property="schema:citation http://purl.org/spar/cito/cites" href="http://rubensworks.net/raw/publications/2018/on_the_semantics_of_tpf-qs_towards_publishing_and_querying_rdf_streams_at_web-scale.pdf">such a cache leads to higher server load</a> <span class="references">[<a href="#ref-129">129</a>]</span>
+due to the high cost of cache invalidation over dynamic data.
+This shows that caching dynamic data is unlikely to achieve overall performance benefits.
+More intelligent caching techniques may lead to better efficiency,
+by for example only caching data that will be valid for at least a given time period.</p>
+
+      <p>The final <a href="#querying-evolving_researchquestion3">research question</a> was defined as:</p>
+
+      <blockquote>
+        <p>How do different time-annotation methods perform in terms of the resulting execution times?</p>
+      </blockquote>
+
+      <p>Results have shown that by exploiting named graphs for annotating expiration times to dynamic data,
+total execution times are the lowest compared to other annotation approaches.
+This is caused by the fact that the named graphs approach leads to a lower amount of triples to be downloaded from the server.
+And since bandwidth usage has a significant impact on query execution times,
+the number of triples that need to be download have such an impact.</p>
+
+      <h4 id="overview">Overview</h4>
+
+      <p>By investigating these four challenges,
+our main research question can be answered.
+Concretely, evolving knowledge graphs with a low volatility (order of minutes or slower)
+can be made queryable on the Web through a low-cost polling-based interface,
 with a hybrid snapshot/delta/timestamp-based storage system in the back end.
 On top of this and other interfaces,
 intelligent client-side query engines can perform continuous queries.
@@ -6888,26 +7047,64 @@ without having to be a giant company with a large budget.</p>
 
       <h3 id="future-work">Future work</h3>
 
-      <p>While I formulated one possible answer the question
+      <p>While I have formulated one possible answer the question
 on how to store and query evolving knowledge graphs on the Web,
 this is definitely not the <em>only</em> answer.
 As such, further research is needed on all aspects.</p>
 
       <p>Regarding the storage aspect, alternative techniques for storing evolving knowledge graphs
 with different trade-offs will be useful for different scenarios.
-On the one hand, storage techniques could be developed for low-end devices,
+On the one hand, dedicated storage techniques should be developed for low-end devices,
 such as small sensors in the Internet of Things.
-On the other hand, storage techniques could be developed for very high-end devices,
+On the other hand, storage techniques should be developed for very high-end devices,
 such as required for the infrastructure within nuclear reactors.</p>
 
-      <p>Regarding querying, more work will be needed to solve open problems with <em>decentralized</em> knowledge graphs.
-For example, new techniques and algorithms are needed to
-(1) intelligently navigate the the Web by following relevant links for a given query,
-(1) enable efficient querying over a <em>large number of sources</em>,
-(2) allow <em>authentication-aware</em> querying over <em>private</em> data,
-and (3) support <em>collaborative</em> querying between agents that handle similar queries.</p>
+      <p>Furthermore, current storage solutions mainly focus on the <em>syntactical</em> querying over evolving knowledge graphs,
+but they do not really consider the issue of <a property="schema:citation http://purl.org/spar/cito/cites" href="https://rdfostrich.github.io/article-versioned-reasoning/"><em>semantic querying</em></a> <span class="references">[<a href="#ref-130">130</a>]</span> yet,
+which involves taking into account the <em>meaning</em> of things through ontology-based inferencing.
+Semantic querying over evolving knowledge graphs is needed to enable semantic analysis over such knowledge,
+such as analyzing concept drift <span class="references">[<a href="#ref-131">131</a>]</span> or tracking diseases in biomedical datasets over time <span class="references">[<a href="#ref-132">132</a>]</span>.
+As such, the area of semantic querying over evolving knowledge graphs requires further research.</p>
 
-      <p>As I put a strong emphasis on <em>reusability</em> during this PhD,
+      <p>During this PhD, I mainly focused on publishing and querying evolving knowledge graphs
+with predictable periodicity in the order of one minute.
+Knowledge graphs with faster, slower or unpredictable periodicities may require different techniques.
+As such, more work is needed to investigate the impact of different kinds of
+evolving knowledge graphs on publishing and querying.
+For instance, evolving knowledge graphs with slower periodicities may benefit more from being published
+through an interface that is well cacheable, compared to more volatile knowledge graphs.</p>
+
+      <p>Next, standardization efforts will be needed to truly bring evolving knowledge graphs to the Web,
+in the form of temporal query languages, temporal models and exchange formats.
+For the sake of compatibility, these should be extensions or they should be representable
+in the existing Linked Data stack, which will mainly impact <abbr title='Resource Description Framework'>RDF</abbr> and <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr>.
+The <a href="https://www.w3.org/community/rsp/" class="mandatory" data-link-text="https:/​/​www.w3.org/​community/​rsp/​">W3C <abbr title='Resource Description Framework'>RDF</abbr> Stream Processing community group</a>
+is a first effort that aims to explore these issues.</p>
+
+      <p>Due to the many remaining challenges,
+it will take more research and engineering effort before we will see
+the true adoption of publishing and querying evolving knowledge graphs on the Web.
+Nevertheless, it is important to open up these evolving knowledge graphs to the public Web,
+so that humanity can benefit from this as whole,
+instead of only being usable by organizations internally behind closed doors.</p>
+
+      <p>In a broader sense, more work will be needed to solve open problems with <em>decentralized</em> knowledge graphs.
+The <a property="schema:citation http://purl.org/spar/cito/cites" href="http://crosscloud.org/2016/www-mansour-pdf.pdf">Solid ecosystem</a> <span class="references">[<a href="#ref-133">133</a>]</span> is becoming an important driver within this decentralization effort,
+as it offers several fundamental standards to build a decentralized Web.
+As such, future Web research will benefit significantly by building upon these standards.
+Concretely, new techniques and algorithms are needed to
+(1) intelligently navigate the the Web by <a property="schema:citation http://purl.org/spar/cito/cites" href="http://olafhartig.de/files/Hartig_QueryingLD_DBSpektrum_Preprint.pdf">following relevant links for a given query</a> <span class="references">[<a href="#ref-87">87</a>]</span>,
+(2) enable efficient querying over a <em>large number of sources</em>,
+(3) allow <em>authentication-aware</em> querying over <em>private</em> data,
+and (4) support <em>collaborative</em> querying between agents that handle similar queries.</p>
+
+      <p>Next to these technical issues, organizational and societal changes will also be needed.
+For instance, the European General Data Protection Regulation places strict demands on companies that handle personal data.
+Decentralization efforts such as Solid are being investigated by organizations
+such as <a property="schema:citation http://purl.org/spar/cito/cites" href="https://drive.verborgh.org/publications/buyle_egose_2019.pdf">governments to reshape the relationship with their citizens</a> <span class="references">[<a href="#ref-134">134</a>]</span>,
+by giving people true ownership over their data, and making governments data consumers.</p>
+
+      <p>As I placed a strong emphasis on <em>reusability</em> during this PhD,
 all of the tools and experiments that were implemented
 are available under an open license.
 Furthermore, well-established development methods from the software industry were followed
@@ -7000,15 +7197,15 @@ which is <a href="https://www.un.org/en/universal-declaration-human-rights/">a f
   <dt id="ref-33">[33]</dt>
   <dd resource="https://svn.aksw.org/papers/2017/ESWC_2017_MOCHA/public.pdf" typeof="schema:Article">Georgala, K., Spasić, M., Jovanovik, M., Petzka, H., Röder, M., Ngomo, A.-C.N.: MOCHA2017: The Mighty Storage Challenge at ESWC 2017. In: Dragoni, M., Solanki, M., and Blomqvist, E. (eds.) Semantic Web Challenges. pp. 3–15. Springer International Publishing, Cham (2017).</dd>
   <dt id="ref-34">[34]</dt>
-  <dd resource="http://ceur-ws.org/Vol-1377/paper6.pdf" typeof="schema:Article">Fernández, J.D., Polleres, A., Umbrich, J.: Towards Efficient Archiving of Dynamic Linked Open Data. In: Debattista, J., d’Aquin, M., and Lange, C. (eds.) Proceedings of te First DIACHRON Workshop on Managing the Evolution and Preservation of the Data Web. pp. 34–49 (2015).</dd>
-  <dt id="ref-35">[35]</dt>
-  <dd resource="http://events.linkeddata.org/ldow2010/papers/ldow2010_paper12.pdf" typeof="schema:Article">Umbrich, J., Decker, S., Hausenblas, M., Polleres, A., Hogan, A.: Towards Dataset Dynamics: Change Frequency of Linked Open Data Sources. 3rd International Workshop on Linked Data on the Web (LDOW). (2010).</dd>
-  <dt id="ref-36">[36]</dt>
-  <dd resource="https://export.arxiv.org/pdf/1504.01891" typeof="schema:Article">Meimaris, M., Papastefanatos, G., Viglas, S., Stavrakas, Y., Pateritsas, C., Anagnostopoulos, I.: A Query Language for Multi-version Data Web Archives. Expert Systems. 33, 383–404 (2016).</dd>
-  <dt id="ref-37">[37]</dt>
-  <dd resource="http://www.cis.upenn.edu/~zives/research/dbpedia.pdf" typeof="schema:Chapter">Auer, S., Bizer, C., Kobilarov, G., Lehmann, J., Cyganiak, R., Ives, Z.: DBpedia: A Nucleus for a Web of Open Data. In: The semantic web. pp. 722–735. Springer (2007).</dd>
-  <dt id="ref-38">[38]</dt>
   <dd resource="https://dx.doi.org/10.1016/j.websem.2016.03.003" typeof="schema:Article">Verborgh, R., Vander Sande, M., Hartig, O., Van Herwegen, J., De Vocht, L., De Meester, B., Haesendonck, G., Colpaert, P.: Triple Pattern Fragments: a Low-cost Knowledge Graph Interface for the Web. Journal of Web Semantics. 37–38, 184–206 (2016).</dd>
+  <dt id="ref-35">[35]</dt>
+  <dd resource="http://ceur-ws.org/Vol-1377/paper6.pdf" typeof="schema:Article">Fernández, J.D., Polleres, A., Umbrich, J.: Towards Efficient Archiving of Dynamic Linked Open Data. In: Debattista, J., d’Aquin, M., and Lange, C. (eds.) Proceedings of te First DIACHRON Workshop on Managing the Evolution and Preservation of the Data Web. pp. 34–49 (2015).</dd>
+  <dt id="ref-36">[36]</dt>
+  <dd resource="http://events.linkeddata.org/ldow2010/papers/ldow2010_paper12.pdf" typeof="schema:Article">Umbrich, J., Decker, S., Hausenblas, M., Polleres, A., Hogan, A.: Towards Dataset Dynamics: Change Frequency of Linked Open Data Sources. 3rd International Workshop on Linked Data on the Web (LDOW). (2010).</dd>
+  <dt id="ref-37">[37]</dt>
+  <dd resource="https://export.arxiv.org/pdf/1504.01891" typeof="schema:Article">Meimaris, M., Papastefanatos, G., Viglas, S., Stavrakas, Y., Pateritsas, C., Anagnostopoulos, I.: A Query Language for Multi-version Data Web Archives. Expert Systems. 33, 383–404 (2016).</dd>
+  <dt id="ref-38">[38]</dt>
+  <dd resource="http://www.cis.upenn.edu/~zives/research/dbpedia.pdf" typeof="schema:Chapter">Auer, S., Bizer, C., Kobilarov, G., Lehmann, J., Cyganiak, R., Ives, Z.: DBpedia: A Nucleus for a Web of Open Data. In: The semantic web. pp. 722–735. Springer (2007).</dd>
   <dt id="ref-39">[39]</dt>
   <dd resource="https://sites.fas.harvard.edu/~cs265/papers/neumann-2008.pdf" typeof="schema:Article">Neumann, T., Weikum, G.: RDF-3X: a RISC-style engine for <abbr title='Resource Description Framework'>RDF</abbr>. Proceedings of the VLDB Endowment. 1, 647–659 (2008).</dd>
   <dt id="ref-40">[40]</dt>
@@ -7185,6 +7382,22 @@ which is <a href="https://www.un.org/en/universal-declaration-human-rights/">a f
   <dd resource="https://code.google.com/p/cqels/wiki/CQELS_engine" typeof="schema:CreativeWork">Levan, C.: <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr> engine: Instructions on Experimenting <abbr title='Continuous Query Evaluation over Linked Stream'>CQELS</abbr>. <a href="https://code.google.com/p/cqels/wiki/CQELS_engine">https:/​/​code.google.com/p/cqels/wiki/CQELS_engine</a></dd>
   <dt id="ref-126">[126]</dt>
   <dd resource="http://streamreasoning.org/download" typeof="schema:CreativeWork">StreamReasoning: Continuous <abbr title='SPARQL Procotol and RDF Query Language'>SPARQL</abbr> (C-SPARQL) Ready To Go Pack. <a href="http://streamreasoning.org/download">http:/​/​streamreasoning.org/download</a></dd>
+  <dt id="ref-127">[127]</dt>
+  <dd resource="https://storage.googleapis.com/pub-tools-public-publication-data/pdf/42240.pdf" typeof="schema:Article">Vrandečić, D., Krötzsch, M.: Wikidata: a free collaborative knowledge base. (2014).</dd>
+  <dt id="ref-128">[128]</dt>
+  <dd resource="https://rdfostrich.github.io/article-mocha-2018/" typeof="schema:Article">Taelman, R., Vander Sande, M., Verborgh, R.: Versioned Querying with <abbr title='Offset-Enabled Triple Store for Changesets'>OSTRICH</abbr> and Comunica in MOCHA 2018. In: Proceedings of the 5th SemWebEval Challenge at ESWC 2018 (2018).</dd>
+  <dt id="ref-129">[129]</dt>
+  <dd resource="http://rubensworks.net/raw/publications/2018/on_the_semantics_of_tpf-qs_towards_publishing_and_querying_rdf_streams_at_web-scale.pdf" typeof="schema:Article">Taelman, R., Tommasini, R., Van Herwegen, J., Vander Sande, M., Della Valle, E., Verborgh, R.: On the Semantics of TPF-QS towards Publishing and Querying <abbr title='Resource Description Framework'>RDF</abbr> Streams at Web-scale. In: Proceedings of the 14th International Conference on Semantic Systems (2018).</dd>
+  <dt id="ref-130">[130]</dt>
+  <dd resource="https://rdfostrich.github.io/article-versioned-reasoning/" typeof="schema:Article">Taelman, R., Takeda, H., Vander Sande, M., Verborgh, R.: The Fundamentals of Semantic Versioned Querying. In: Proceedings of the 12th International Workshop on Scalable Semantic Web Knowledge Base Systems co-located with 17th International Semantic Web Conference (2018).</dd>
+  <dt id="ref-131">[131]</dt>
+  <dd resource="#conceptdrift" typeof="schema:Article">Wang, S., Schlobach, S., Klein, M.: Concept drift and how to identify it. Web Semantics: Science, Services and Agents on the World Wide Web. 9, 247–265 (2011).</dd>
+  <dt id="ref-132">[132]</dt>
+  <dd resource="#biomedical" typeof="schema:Article">Afgan, E., Baker, D., Van den Beek, M., Blankenberg, D., Bouvier, D., Čech, M., Chilton, J., Clements, D., Coraor, N., Eberhard, C., others: The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2016 update. Nucleic acids research. 44, W3–W10 (2016).</dd>
+  <dt id="ref-133">[133]</dt>
+  <dd resource="http://crosscloud.org/2016/www-mansour-pdf.pdf" typeof="schema:Article">Mansour, E., Sambra, A.V., Hawke, S., Zereba, M., Capadisli, S., Ghanem, A., Aboulnaga, A., Berners-Lee, T.: A demonstration of the solid platform for social web applications. In: Proceedings of the 25th International Conference Companion on World Wide Web. pp. 223–226. International World Wide Web Conferences Steering Committee (2016).</dd>
+  <dt id="ref-134">[134]</dt>
+  <dd resource="https://drive.verborgh.org/publications/buyle_egose_2019.pdf" typeof="schema:Article">Buyle, R., Taelman, R., Mostaert, K., Joris, G., Mannens, E., Verborgh, R., Berners-Lee, T.: Streamlining governmental processes by putting citizens in control of their personal data. Proceedings of the 6th International Conference on Electronic Governance and Open Society: Challenges in Eurasia. (2019).</dd>
 </dl>
 </section>
 </footer>
