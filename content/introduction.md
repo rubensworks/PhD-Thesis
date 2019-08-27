@@ -19,13 +19,13 @@ Methods for sharing knowledge are essential catalysts for human progress,
 as shared knowledge allows larger groups of people to share goals
 and accomplish tasks that would have otherwise been impossible.
 Due to our *technological* progress,
-the *bandwidth* of these methods for sharing knowledge is always increasing,
+the *bandwidth* of these methods for sharing knowledge is always growing broader,
 which is continuously increasing the rate of human and technological progress.
 
 Throughout the last centuries, we saw three major revolutions in bandwidth.
 First, the invention of the printing press in the 15th century
 drastically increased rate at which books could be duplicated.
-Secondly, there was the invention of radio and television in the 20th century,
+Secondly, there was the invention of radio and television in the 20th century.
 As audio and video are cognitively less demanding than reading,
 this lowered the barrier for spreading knowledge even further.
 Third, we had the development of the internet near the end of the 20th century,
@@ -84,14 +84,14 @@ such as managing day-to-day tasks with the [Google Now assistant](https://www.go
 The standard for modeling knowledge graphs is the [Resource Description Framework (RDF)](cite:cites spec:rdf).
 Fundamentally, it is based around the concept of *triples* that are used to make statements about *things*.
 A triple is made up of a *subject*, *predicate* and *object*,
-where the *subject* and *object* are resources (or things), and the *predicate* denotes their relationship.
-For example, [](#introduction-figure-triple) shows an example of a simple triple indicating the nationality of a person.
+where the *subject* and *object* are resources (or *things*), and the *predicate* denotes their relationship.
+For example, [](#introduction-figure-triple) shows a simple triple indicating the nationality of a person.
 Multiple resources can combined with each other through multiple triples, which forms a *graph*.
 [](#introduction-figure-graph) shows an example of such a graph, which contains *knowledge* about a person.
 In order to look up information within such graphs, the [SPARQL query language](cite:cites spec:sparqllang)
 was introduced as a standard.
 Essentially, SPARQL allows RDF data to be looked up through combinations of *triple patterns*,
-which are triples where any of its elements can be replace with *variables* such as `?name`.
+which are triples where any of its elements can be replaced with *variables* such as `?name`.
 For example, [](#introduction-code-sparql) contains a SPARQL query that find the names of all people that Alice knows.
 
 <figure id="introduction-figure-triple">
@@ -136,7 +136,7 @@ and by observing highway sensors, traffic jams may be avoided by preemptively re
 
 Due to the [(RDF) knowledge graph model currently being *atemporal*](https://www.w3.org/TR/rdf11-concepts/#change-over-time),
 the usage of evolving knowledge graphs remains limited.
-As such, research and engineering is needed for new
+As such, research and engineering effort is needed for new
 models, storage techniques, and query algorithms
 for evolving knowledge graphs.
 As such, *evolving* knowledge graphs are the main focus of my research.
@@ -144,7 +144,7 @@ As such, *evolving* knowledge graphs are the main focus of my research.
 #### Decentralized Knowledge Graphs
 
 As stated by Tim Berners-Lee, [the Web is for everyone](https://twitter.com/timberners_lee/status/228960085672599552).
-This means that the Web is a *free* platform (as *freedom*, not *free beer*),
+This means that the Web is a *free* platform (as in *freedom*, not *free beer*),
 where anyone can *say* anything about anything,
 and anyone can *access* anything that has been said.
 This is directly compatible with Article 19 of [the Universal Declaration of Human Rights](https://www.un.org/en/universal-declaration-human-rights/),
@@ -174,11 +174,11 @@ and obstruction to receive information through censorship.
 For these reasons, there is a massive push for [*re-decentralizing the Web*](https://ruben.verborgh.org/articles/redecentralizing-the-web/),
 where people regain *ownership* of their data.
 Decentralization is however a technologically difficult thing,
-as applications typically a single *centralized* entrypoint from which data is retrieved,
+as applications typically require a single *centralized* entrypoint from which data is retrieved,
 and no such single entrypoint exist in a truly decentralized environment.
 As people do want ownership of their data, they do not want to give up their intelligent agents.
 As such, this decentralization wave requires significant research effort to achieve the same capabilities as these *centralized* knowledge graphs,
-which is why this is of important factor within my research.
+which is why this is an important factor within my research.
 Specifically, I focus on supporting knowledge graphs *on the Web*,
 instead of only being available behind closed doors,
 so that they are available for everyone.
@@ -212,8 +212,8 @@ related to this research question:
     <br />
     Before knowledge graphs can be queried from the Web,
     different *interfaces* through which data is available,
-    and different *algorithms* using which the data can be retrieved and combined
-    need to be considered.
+    and different *algorithms* with which the data can be retrieved
+    need to be combinable.
 4. **Publishing *evolving* data via a *queryable interface* is costly.**
     <br />
     Centralized querying interfaces are hard to scale for an increasing number of concurrent clients,
@@ -224,7 +224,7 @@ related to this research question:
 {:#introduction-outline}
 
 Corresponding to my four research challenges,
-this thesis is bundles the following four peer-reviewed publications:
+this thesis is bundles the following four peer-reviewed publications as separate chapters:
 
 * Ruben Taelman et al. [Generating Public Transport Data based on Population Distributions for RDF Benchmarking](https://www.rubensworks.net/raw/publications/2018/podigg.pdf).
     <br />In: *In Semantic Web Journal*. IOS Press, 2019.
@@ -243,10 +243,11 @@ and takes into account population distributions for simulating the flow of vehic
 Next, in [](#storing), a storage architecture and querying algorithms are introduced
 for managing evolving data.
 It has been implemented as a system called *OSTRICH*,
-and extensive experimentation shows that this systems introduces a useful trade-off between storage size and querying efficiency.
-In [](#querying), A modular query engine is introduced called *Comunica* that is able to cope with the heterogeneity of data on the Web.
+and extensive experimentation shows that this systems introduces a useful trade-off between storage size and querying efficiency
+for publishing evolving knowledge graphs on the Web.
+In [](#querying), A modular query engine called *Comunica* is introduced that is able to cope with the heterogeneity of data on the Web.
 This engine has been designed to be highly flexible, so that it simplifies research within the query domain,
 where new query algorithms can for example be developed in a separate module, and plugged into the engine without much effort.
-In [](#querying-evolving), a publishing interface and accompanying querying algorithm (*TPF Query Streamer*) is introduced and evaluated
-to enable querying *evolving* data with a low volatility to be published at a low cost, and queried continuously.
+In [](#querying-evolving), a low-cost publishing interface and accompanying querying algorithm (*TPF Query Streamer*) is introduced and evaluated
+to enable continous querying of *evolving* data with a low volatility.
 Finally, this work is concluded in [](#conclusions) and future research opportunities are discussed.

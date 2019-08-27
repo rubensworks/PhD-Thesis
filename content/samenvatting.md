@@ -34,7 +34,6 @@ Aldus is decentralisatie en democratisatie van informatie op het Web in de vorm 
 
 Om het gebruik van *evoluerende kennisgrafen* te vergemakkelijken,
 is **het doel van dit doctoraat om het mogelijk te maken om *evoluerende* kennisgrafen *op te slaan* en *bevragen* op het Web**.
-In de context van dit doctoraat ga ik uit van kennisgrafen die evolueren met een periodiciteit in de orde van minuten of trager.
 Om dit onderwerp te onderzoeken focus ik op vier uitdagingen gerelateerd aan dit onderwerp.
 Te eerste, om systemen die evoluerende kennisgrafen beheren te evalueren,
 kijk ik naar de *generatie van evoluerende gegevens*.
@@ -42,6 +41,7 @@ Ten tweede onderzoek ik manieren om *evoluerende gegevens op te slaan*,
 zodat gegevens efficiënt op het Web gepubliceerd en bevraagd kunnen worden.
 Ten derde ontwerp ik een flexibel systeem om verschillende soorten gegevens te bevragen op het *Web*.
 Tot slot onderzoek ik manieren om *evoluerende gegevens te publiceren en bevragen op het Web*.
+In de context van dit doctoraat ga ik uit van kennisgrafen die evolueren met een periodiciteit in de orde van minuten of trager.
 
 Om op een degelijke manier systemen te evalueren die evoluerende kennisgrafen beheren,
 is het nodig om eerst evoluerende kennisgrafen te *hebben* om deze systemen mee te testen.

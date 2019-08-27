@@ -14,7 +14,7 @@ To solve this problem, we focus on the generation of evolving knowledge graphs
 assuming that we have population distributions as input.
 For this, we started from the research question:
 "Can population distribution data be used to generate realistic synthetic public transport networks and scheduling?"
-Concretely, we introduce a _realistic_ mimicking algorithm for generating synthetic evolving knowledge graphs
+Concretely, we introduce a mimicking algorithm for generating _realistic_ synthetic evolving knowledge graphs
 with configurable sizes and properties.
 The algorithm is based on established concepts from the domain of public transport networks design,
 and takes population distributions as input to generate realistic transport networks.

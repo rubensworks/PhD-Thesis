@@ -10,18 +10,18 @@ Thanks to the Web, I was able to easily *access information* on computers, progr
 This allowed me to *learn*, and to *create* new things.
 
 As a teenager, I was never really the type of person that played a lot of video games.
-Nevertheless, I often came in contact with them through friends.
+Nevertheless, like most people of my generation, I often came in contact with them.
 Instead of being captivated to *play* these games,
 I was often intrigued by the way these games *worked*.
 This caused me to ponder on their internal processes,
 and wondering what it would take to make it myself.
 As such, I occasionally set out to [implement or extend certain games](https://www.rubensworks.net/projects/).
-The thing I enjoyed the most, however, was building things that connect people from all over the Web,
+The thing I enjoyed the most, however, was building things that connect people over the Web,
 which is why I also spent quite some time building Web sites to [distribute games](https://www.rubensworks.net/projects/tgcgames/)
 and [broadcast music](https://www.rubensworks.net/projects/allectroradio/).
 
 After I graduated secondary school,
-it was obvious to pursue a further education related to computers and programming,
+the obvious choice was to pursue a further education related to computers and programming,
 which is how I ended up at Ghent University.
 The most impactful year for me was the final year of my Master's,
 which is when I worked on my thesis.
@@ -36,8 +36,8 @@ Working at <strike>Multimedia Lab</strike>, <strike>Data Science Lab</strike>, [
 has been very exciting so far.
 I came in contact with many new interesting people,
 learned about new technologies,
-and traveled to various places.
-Most importantly, I was able to (at least slightly) advance the research domain,
+and traveled around the world.
+Most importantly, I was able to (at least slightly) advance the research domain
 through the contributions that are described in this PhD thesis.
 All of this was of course impossible without [standing on the shoulders of giants](https://en.wikiquote.org/wiki/Isaac_Newton).
 These giants are on the one hand all researchers that my work builds upon,

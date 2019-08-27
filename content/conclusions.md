@@ -37,7 +37,7 @@ This hypothesis was tested and validated for two countries with a high level of 
 As such, population distributions formed the basis of the mimicking algorithm of this work.
 
 Inspired by real-world public transit network design and scheduling methodologies,
-an multi-step algorithm was determined where regions, stops, edges, routes and trips were generated
+a multi-step algorithm was determined where regions, stops, edges, routes and trips are generated
 based on any population distribution and dependency rules.
 To evaluate the realism of generated datasets, an implementation of the algorithm was provided.
 For each step in the algorithm, distance functions were determined to measure the realism for each step.
@@ -82,7 +82,7 @@ For specific use cases where only very specific query types are required,
 dedicated systems will likely be more efficient.
 However, when the domain of queries is broad,
 a more general-purpose like our approach is more fitting,
-as this will lead to sufficiently fast query execution in all cases,
+as this will lead to sufficiently fast query execution in most cases,
 with acceptable storage requirements.
 
 In conclusion, our storage approach can be used be used as a backend
@@ -104,7 +104,7 @@ its architecture needed to be flexible enough to handle the complete SPARQL 1.1 
 and support heterogeneous interfaces.
 For this, the _actor_, _mediator_, and _publish-subscribe_ software patterns were applied
 to achieve an architecture where task-specific actors form building blocks,
-where buses and mediators are used to handle their inter-communication,
+and buses and mediators are used to handle their inter-communication,
 which can be wired together through _dependency injection_.
 
 With Comunica, evaluating the performance of different query algorithms and other query-related approaches become more fair.
@@ -135,7 +135,7 @@ The first [research question](#querying-evolving_researchquestion1) of this work
 
 > Can clients use volatility knowledge to perform more efficient continuous SPARQL query evaluation by polling for data?
 
-This question was answered by annotating dynamica data server-side with time annotations,
+This question was answered by annotating dynamic data server-side with time annotations,
 and by introducing a client-side algorithm that can detect these annotations,
 and determine a polling frequency for continuous query evaluation based on that.
 By doing this, clients only have to re-download data from the server when it was changed.
@@ -177,9 +177,10 @@ the number of triples that need to be download have such an impact.
 
 #### Overview
 
-Through investigating these four challenges,
+By investigating these four challenges,
 our main research question can be answered.
-Concretely, evolving knowledge graphs can be made queryable on the Web through a low-cost polling-based interface,
+Concretely, evolving knowledge graphs with a low volatility (order of minutes or slower)
+can be made queryable on the Web through a low-cost polling-based interface,
 with a hybrid snapshot/delta/timestamp-based storage system in the back end.
 On top of this and other interfaces,
 intelligent client-side query engines can perform continuous queries.
@@ -212,6 +213,7 @@ but they do not really consider the issue of [*semantic querying*](cite:cites se
 which involves taking into account the *meaning* of things through ontology-based inferencing.
 Semantic querying over evolving knowledge graphs is needed to enable semantic analysis over such knowledge,
 such as analyzing [concept drift](cite:cites conceptdrift) or [tracking diseases in biomedical datasets over time](cite:cites biomedical).
+As such, the area of semantic querying over evolving knowledge graphs requires further research.
 
 During this PhD, I mainly focused on publishing and querying evolving knowledge graphs
 with predictable periodicity in the order of one minute.
@@ -223,12 +225,12 @@ through an interface that is well cacheable, compared to more volatile knowledge
 
 Next, standardization efforts will be needed to truly bring evolving knowledge graphs to the Web,
 in the form of temporal query languages, temporal models and exchange formats.
-For the sake of compatibility, these should be extensions or be representable
+For the sake of compatibility, these should be extensions or they should be representable
 in the existing Linked Data stack, which will mainly impact RDF and SPARQL.
 The [W3C RDF Stream Processing community group](https://www.w3.org/community/rsp/){:.mandatory}
 is a first effort that aims to explore these issues.
 
-Due to the long list of remaining challenges,
+Due to the many remaining challenges,
 it will take more research and engineering effort before we will see
 the true adoption of publishing and querying evolving knowledge graphs on the Web.
 Nevertheless, it is important to open up these evolving knowledge graphs to the public Web,
@@ -236,7 +238,7 @@ so that humanity can benefit from this as whole,
 instead of only being usable by organizations internally behind closed doors.
 
 In a broader sense, more work will be needed to solve open problems with *decentralized* knowledge graphs.
-The [Solid ecosystem](cite:cites solid) is becoming an important driver in this decentralization effort,
+The [Solid ecosystem](cite:cites solid) is becoming an important driver within this decentralization effort,
 as it offers several fundamental standards to build a decentralized Web.
 As such, future Web research will benefit significantly by building upon these standards.
 Concretely, new techniques and algorithms are needed to

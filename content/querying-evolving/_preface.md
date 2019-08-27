@@ -14,7 +14,7 @@ As such, when evolving knowledge graphs need to be published on the Web,
 an interface is needed that scales well in a public Web environment with a potentially large number of concurrent clients.
 
 The work in this chapter is based on the research question:
-"Can clients use volatility knowledge to perform more efficient continuous SPARQL query evaluation by polling for data?"
+"Can clients use volatility knowledge to perform more efficient continuous SPARQL query evaluation by polling for data?".
 We answer this research question by introducing a query interface
 that exposes evolving knowledge graphs annotated with their volatility.
 Based on these volatility annotations, clients can detect for *how long* parts of the knowledge graph will remain valid,

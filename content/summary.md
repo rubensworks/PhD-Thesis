@@ -37,7 +37,6 @@ in the form of knowledge graphs.
 
 To facilitate the usage of *evolving knowledge graphs*,
 **the goal of this PhD is to allow *evolving* knowledge graphs to be *stored* and *queried* on the *Web*.**
-In the scope of this PhD, I consider knowledge graphs that evolve with a periodicity in the order of minutes or slower.
 To investigate this topic, I focus on four challenges related to this topic.
 First, to allow systems that handle evolving knowledge graphs to be evaluated,
 I look into the *generation of evolving data*.
@@ -45,6 +44,7 @@ Secondly, I investigate methods to *store evolving data*,
 so that the data can be published and queried on the Web efficiently.
 Third, I design a flexible system to *query* various kinds of data on the *Web*.
 Finally, I investigate methods for *publishing and querying evolving data on the Web*.
+In the scope of this PhD, I consider knowledge graphs that evolve with a periodicity in the order of minutes or slower.
 
 In order to properly evaluate systems that handle evolving knowledge graphs,
 one must first *have* evolving knowledge graphs to test these systems with.
