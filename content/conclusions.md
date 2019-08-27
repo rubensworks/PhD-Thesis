@@ -195,26 +195,63 @@ without having to be a giant company with a large budget.
 
 ### Future work
 
-While I formulated one possible answer the question
+While I have formulated one possible answer the question
 on how to store and query evolving knowledge graphs on the Web,
 this is definitely not the *only* answer.
 As such, further research is needed on all aspects.
 
 Regarding the storage aspect, alternative techniques for storing evolving knowledge graphs
 with different trade-offs will be useful for different scenarios.
-On the one hand, storage techniques could be developed for low-end devices,
+On the one hand, dedicated storage techniques should be developed for low-end devices,
 such as small sensors in the Internet of Things.
-On the other hand, storage techniques could be developed for very high-end devices,
+On the other hand, storage techniques should be developed for very high-end devices,
 such as required for the infrastructure within nuclear reactors.
 
-Regarding querying, more work will be needed to solve open problems with *decentralized* knowledge graphs.
-For example, new techniques and algorithms are needed to
-(1) intelligently navigate the the Web by following relevant links for a given query,
-(1) enable efficient querying over a *large number of sources*,
-(2) allow *authentication-aware* querying over *private* data,
-and (3) support *collaborative* querying between agents that handle similar queries.
+Furthermore, current storage solutions mainly focus on the *syntactical* querying over evolving knowledge graphs,
+but they do not really consider the issue of [*semantic querying*](cite:cites semanticversioning) yet,
+which involves taking into account the *meaning* of things through ontology-based inferencing.
+Semantic querying over evolving knowledge graphs is needed to enable semantic analysis over such knowledge,
+such as analyzing [concept drift](cite:cites conceptdrift) or [tracking diseases in biomedical datasets over time](cite:cites biomedical).
 
-As I put a strong emphasis on *reusability* during this PhD,
+During this PhD, I mainly focused on publishing and querying evolving knowledge graphs
+with predictable periodicity in the order of one minute.
+Knowledge graphs with faster, slower or unpredictable periodicities may require different techniques.
+As such, more work is needed to investigate the impact of different kinds of
+evolving knowledge graphs on publishing and querying.
+For instance, evolving knowledge graphs with slower periodicities may benefit more from being published
+through an interface that is well cacheable, compared to more volatile knowledge graphs.
+
+Next, standardization efforts will be needed to truly bring evolving knowledge graphs to the Web,
+in the form of temporal query languages, temporal models and exchange formats.
+For the sake of compatibility, these should be extensions or be representable
+in the existing Linked Data stack, which will mainly impact RDF and SPARQL.
+The [W3C RDF Stream Processing community group](https://www.w3.org/community/rsp/){:.mandatory}
+is a first effort that aims to explore these issues.
+
+Due to the long list of remaining challenges,
+it will take more research and engineering effort before we will see
+the true adoption of publishing and querying evolving knowledge graphs on the Web.
+Nevertheless, it is important to open up these evolving knowledge graphs to the public Web,
+so that humanity can benefit from this as whole,
+instead of only being usable by organizations internally behind closed doors.
+
+In a broader sense, more work will be needed to solve open problems with *decentralized* knowledge graphs.
+The [Solid ecosystem](cite:cites solid) is becoming an important driver in this decentralization effort,
+as it offers several fundamental standards to build a decentralized Web.
+As such, future Web research will benefit significantly by building upon these standards.
+Concretely, new techniques and algorithms are needed to
+(1) intelligently navigate the the Web by [following relevant links for a given query](cite:cites linkeddataqueries),
+(2) enable efficient querying over a *large number of sources*,
+(3) allow *authentication-aware* querying over *private* data,
+and (4) support *collaborative* querying between agents that handle similar queries.
+
+Next to these technical issues, organizational and societal changes will also be needed.
+For instance, the European General Data Protection Regulation places strict demands on companies that handle personal data.
+Decentralization efforts such as Solid are being investigated by organizations
+such as [governments to reshape the relationship with their citizens](cite:cites solid_gov),
+by giving people true ownership over their data, and making governments data consumers.
+
+As I placed a strong emphasis on *reusability* during this PhD,
 all of the tools and experiments that were implemented
 are available under an open license.
 Furthermore, well-established development methods from the software industry were followed
