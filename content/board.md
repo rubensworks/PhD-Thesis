@@ -1,16 +1,16 @@
 ## Examination Board
 
 * Prof. Antoon Bronselaer
-* Prof. Erik Mannens
-* Dr. ir. Femke Ongenae
-* Prof. Katja Hose
 * Prof. Olaf Hartig
+* Prof. Katja Hose
+* Prof. Erik Mannens
+* Prof. Femke Ongenae
 
 **Chair**
 
-* Prof Filip De Turck
+* Prof. Filip De Turck
 
-**Supervisors**
+**Advisors**
 
 * Prof. Ruben Verborgh
-* Dr. ir. Miel Vander Sande
+* Dr. Miel Vander Sande
