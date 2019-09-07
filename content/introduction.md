@@ -6,7 +6,7 @@
 
 #### Catalysts for Human Progress
 
-Since the dawn of Mankind, biological evolution has shaped us into social animals.
+Since the dawn of mankind, biological evolution has shaped us into social creatures.
 The social capabilities of humans are however *much more evolved* than most other other species.
 For example, [humans are one of the only animals that have clearly visible eye whites](https://pursuit.unimelb.edu.au/articles/why-we-show-the-whites-of-our-eyes).
 This allows people to see what other people are looking at,
@@ -32,6 +32,8 @@ Third, we had the development of the internet near the end of the 20th century,
 and the invention of the World Wide Web in 1989 on top of that,
 which gave us a globally interlinked information space
 that is fully *open* and *decentralized*, where anyone can say anything about anything.
+<span class=comment data-author=RV>I definitely like the intro here</span>
+<span class=comment data-author=RV>However, these other inventions were also open and decentralized, so would be nice to sketch the continuation</span>
 With the Web, bandwidth for knowledge sharing has become nearly unlimited,
 as knowledge no longer has to go through a few large radio or tv stations,
 but can now be shared over a virtually unlimited amount of Web pages,
@@ -62,6 +64,7 @@ Next to that, it is also significantly [disrupting businesses models that have b
 
 Even though the Web has only existed for a brief window of time,
 it has already made a significant impact on world for the better.
+<span class=comment data-author=RV>some repetition here</span>
 Yet, the goal of curiosity-driven researchers is to uncover
 what the next steps are to improve the world *even more*.
 
@@ -118,14 +121,14 @@ The results of this query would be `"Bob"` and `"Carol"`.
 
 #### Evolving Knowledge Graphs
 
-Within *Big Data*, we talk about the three V's: *volume*, *velocity* and *variety*.
+Within *Big Data*, we talk about the three V's: *volume*, *velocity*, and *variety*.
 As the Web meets these three requirements, it can be seen as a global *Big Data*set.
 Specifically, the Web is highly *volatile*,
 as it is continuously evolving,
 and it does so at an increasing rate.
-For example, [Google is processing more than *40.000 search requests* *every second*](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#6907ae2460ba),
+For example, [Google is processing more than *40,000 search requests* *every second*](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#6907ae2460ba),
 [*500 hours of video* are being uploaded to YouTube *every minute*](https://expandedramblings.com/index.php/youtube-statistics/),
-and [more than *5.000* tweets are being sent *every seconds*](https://blog.hootsuite.com/twitter-statistics/).
+and [more than *5,000* tweets are being sent *every second*](https://blog.hootsuite.com/twitter-statistics/).
 
 A lot of research and engineering work is needed to make it possible to handle this evolving data.
 For instance, it should be possible to *store* all of this data as fast as possible,
@@ -198,10 +201,12 @@ During my research, I focus on *four* main challenges
 related to this research question:
 
 1. **Experimentation requires *realistic* evolving data.**
+<span class=comment data-author=RV><q>representative</q>?</span>
     <br />
     In order to *evaluate* the performance of systems that handle *evolving* knowledge graphs,
     a flexible method for *obtaining* such data needs to be available.
 2. **Indexing evolving data involves a *trade-off* between *storage size* and *lookup efficiency*.**
+<span class=comment data-author=RV><q>storage efficiency</q>? (also includes time to create indices)</span>
     <br />
     Indexing techniques are used to improve the efficiency of querying,
     but comes at the cost of increased storage.
@@ -215,6 +220,7 @@ related to this research question:
     and different *algorithms* with which the data can be retrieved
     need to be combinable.
 4. **Publishing *evolving* data via a *queryable interface* is costly.**
+<span class=comment data-author=RV>I don't think <q>costly</q> is the right term here. It involves more data, and the cost (or another trade-off) is a consequence of that. This is also reflected in your description of this challenge, which does not seem to involve cost.</span>
     <br />
     Centralized querying interfaces are hard to scale for an increasing number of concurrent clients,
     especially when the knowledge graphs that are being queried over are continuously evolving.
@@ -224,7 +230,8 @@ related to this research question:
 {:#introduction-outline}
 
 Corresponding to my four research challenges,
-this thesis is bundles the following four peer-reviewed publications as separate chapters:
+this thesis bundles the following four peer-reviewed publications as separate chapters:
+<span class=comment data-author=RV>something about you being the lead author on them</span>
 
 * Ruben Taelman et al. [Generating Public Transport Data based on Population Distributions for RDF Benchmarking](https://www.rubensworks.net/raw/publications/2018/podigg.pdf).
     <br />In: *In Semantic Web Journal*. IOS Press, 2019.
