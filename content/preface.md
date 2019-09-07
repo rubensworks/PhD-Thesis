@@ -25,7 +25,7 @@ the obvious choice was to pursue a further education related to computers and pr
 which is how I ended up at Ghent University.
 The most impactful year for me was the final year of my Master's,
 which is when I worked on my thesis.
-Due to my existing interest in Web technologies,
+Because of my existing interest in Web technologies,
 I chose for a topic in the *Semantic Web* domain.
 Under the excellent supervision of [Ruben Verborgh](https://ruben.verborgh.org/) and [Pieter Colpaert](https://pietercolpaert.be/),
 I investigated [*continuous querying*](https://www.rubensworks.net/publications/taelman_mastersthesis/) within the Semantic Web.
@@ -44,7 +44,7 @@ These giants are on the one hand all researchers that my work builds upon,
 and on the other hand everyone that has directly or indirectly supported this work.
 
 I thank all my current and past IDLab colleagues from our Semantic Web office:
-Anastasia, Ben, Brecht, Dieter D. P., Dieter D. W., Dörthe, Erik, Gerald, Harm, Julián, Joachim, Laurens, Martin, Miel, Pieter H., Pieter C., Ruben, Sven, Tom.
+Anastasia, Ben, Brecht, Dieter D. P., Dieter D. W., Dörthe, Erik, Gerald, Harm, Julián, Joachim, Laurens, Martin, Miel, Pieter H., Pieter C., Ruben, Sven, Tom.
 Each of them has shaped this research in one way or another.
 Either by providing feedback, coming up with new ideas that inspired me, or by simply offering help when I needed it.
 In particular, I thank Ruben for his tireless enthusiasm and motivation.
