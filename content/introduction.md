@@ -214,6 +214,7 @@ related to this research question:
     and the amount of *querying speedup*,
     so that evolving data can be stored in a Web-friendly way.
 3. **The Web is highly *heterogeneous*.**
+<span class=comment data-author=RV>I would be more specific and talk about API heterogeneity.</span>
     <br />
     Before knowledge graphs can be queried from the Web,
     different *interfaces* through which data is available,
