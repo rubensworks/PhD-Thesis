@@ -6,15 +6,15 @@ which has lead to major transformations of our society.
 Initially, information on the Web was targeted at humans,
 and machines had a difficult time understanding information on the Web
 in the same way as humans can.
-This hindered *intelligent agents* to perform certain tasks autonomously,
-such as finding all stores that sell rice in the current area,
+This hindered *intelligent agents* in performing certain tasks autonomously,
+such as finding all stores that sell a certain product in your current area,
 or determining the time to leave for catching your flight on time based on the current traffic and weather conditions.
 To enable such intelligent agents, researchers have been investigating technologies and introducing standards
 for making the Web understandable for machines.
 In the recent years, these technologies are being used to build so-called *knowledge graphs*,
-which are collections of structured information to support intelligent agents such as Siri and Google Now.
+which are collections of structured information to support intelligent agents such as Siri and Google Assistant.
 
-Most research on knowledge graphs has been focused on *static* data.
+Most research on knowledge graphs has focused on *static* data.
 However, there is however a huge amount of *evolving* data available,
 such as traffic events from highway sensors or continuous heart rate measurements.
 There is a lot of value in evolving knowledge,
@@ -36,15 +36,18 @@ of information on the Web,
 in the form of knowledge graphs.
 
 To facilitate the usage of *evolving knowledge graphs*,
-**the goal of this PhD is to allow *evolving* knowledge graphs to be *stored* and *queried* on the *Web*.**
+**the goal of this PhD is allowing *evolving* knowledge graphs to be *stored* and *queried* on the *Web*.**
+<span class="comment" data-author="RV"><q>stored on the Web</q> seems not technically accurate</span>
 To investigate this topic, I focus on four challenges related to this topic.
 First, to allow systems that handle evolving knowledge graphs to be evaluated,
 I look into the *generation of evolving data*.
-Secondly, I investigate methods to *store evolving data*,
+Second, I investigate methods to *store evolving data*,
 so that the data can be published and queried on the Web efficiently.
 Third, I design a flexible system to *query* various kinds of data on the *Web*.
 Finally, I investigate methods for *publishing and querying evolving data on the Web*.
 In the scope of this PhD, I consider knowledge graphs that evolve with a periodicity in the order of minutes or slower.
+<span class="comment" data-author="RV">perhaps argue a) why distinction is needed b) reason for focus</span>
+<span class="comment" data-author="RV">missing transition to the 4 paragraphs below that will detail each of the 4</span>
 
 In order to properly evaluate systems that handle evolving knowledge graphs,
 one must first *have* evolving knowledge graphs to test these systems with.
@@ -53,6 +56,8 @@ they are unsuited for the needs of extensive system evaluations,
 where configurable evolving knowledge graph sizes are required.
 This is why this first challenge focuses on the generation of evolving data, as a prerequisite to the next challenges.
 Concretely, an algorithm is designed to generate synthetic public transport network datasets,
+<span class="comment" data-author="RV"><em>you</em> designed it 🙂</span>
+<span class="comment" data-author="RV">similar below; very important for PhD that you are the actor</span>
 based on population distributions as input.
 This algorithm is implemented and evaluated in terms of realism and performance.
 Results show that this algorithm is valuable for evaluating systems that handle evolving knowledge graphs,
