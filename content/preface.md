@@ -47,7 +47,7 @@ I thank all my current and past IDLab colleagues from our Semantic Web office:
 Anastasia, Ben, Brecht, Dieter D. P., Dieter D. W., Dörthe, Erik, Gerald, Harm, Julián, Joachim, Laurens, Martin, Miel, Pieter H., Pieter C., Ruben, Sven, Tom.
 Each of them has shaped this research in one way or another.
 Either by providing feedback, coming up with new ideas that inspired me, or by simply offering help when I needed it.
-In particular, I thank Ruben for his tireless enthusiasm and motivation.
+In particular, I thank Ruben and Miel for their tireless enthusiasm and motivation.
 I was able to learn a lot from you, which has definitely helped me in becoming a better researcher.
 I am grateful to both Ruben and Pieter C. for inviting me to pursue a PhD at IDLab,
 it has influenced my life in a very positive way, and I can not dream of a better job.
