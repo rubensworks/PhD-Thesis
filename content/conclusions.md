@@ -12,10 +12,10 @@ and I discuss future research efforts that are needed to advance this work furth
 
 Based on my research question, I focussed on four main challenges:
 
-1. **Experimentation requires *realistic* evolving data.**
-2. **Indexing evolving data involves a *trade-off* between *storage size* and *lookup efficiency*.**
-3. **The Web is highly *heterogeneous*.**
-4. **Publishing *evolving* data via a *queryable interface* is costly.**
+1. **Experimentation requires *representative* evolving data.**
+2. **Indexing evolving data involves a *trade-off* between *storage efficiency* and *lookup efficiency*.**
+3. **Web interfaces are highly *heterogeneous*.**
+4. **Publishing *evolving* data via a *queryable interface* involves *continuous* updates to clients.**
 
 I will discuss the findings within these challenges hereafter.
 
