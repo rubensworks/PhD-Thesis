@@ -30,10 +30,9 @@ As audio and video are cognitively less demanding than reading,
 this lowered the barrier for spreading knowledge even further.
 Third, we had the development of the internet near the end of the 20th century,
 and the invention of the World Wide Web in 1989 on top of that,
-which gave us a globally interlinked information space
-that is fully *open* and *decentralized*, where anyone can say anything about anything.
-<span class=comment data-author=RV>I definitely like the intro here</span>
-<span class=comment data-author=RV>However, these other inventions were also open and decentralized, so would be nice to sketch the continuation</span>
+which gave us a globally interlinked information space.
+Like the inventions before, the Web is fully *open* and *decentralized*,
+where anyone can say anything about anything.
 With the Web, bandwidth for knowledge sharing has become nearly unlimited,
 as knowledge no longer has to go through a few large radio or tv stations,
 but can now be shared over a virtually unlimited amount of Web pages,
@@ -62,9 +61,7 @@ Next to that, it is also significantly [disrupting businesses models that have b
 
 #### Knowledge Graphs
 
-Even though the Web has only existed for a brief window of time,
-it has already made a significant impact on world for the better.
-<span class=comment data-author=RV>some repetition here</span>
+The Web has made a positive significant impact on the world.
 Yet, the goal of curiosity-driven researchers is to uncover
 what the next steps are to improve the world *even more*.
 
@@ -200,39 +197,36 @@ This lead me to the following research question for my PhD:
 During my research, I focus on *four* main challenges
 related to this research question:
 
-1. **Experimentation requires *realistic* evolving data.**
-<span class=comment data-author=RV><q>representative</q>?</span>
+1. **Experimentation requires *representative* evolving data.**
     <br />
     In order to *evaluate* the performance of systems that handle *evolving* knowledge graphs,
     a flexible method for *obtaining* such data needs to be available.
-2. **Indexing evolving data involves a *trade-off* between *storage size* and *lookup efficiency*.**
-<span class=comment data-author=RV><q>storage efficiency</q>? (also includes time to create indices)</span>
+2. **Indexing evolving data involves a *trade-off* between *storage efficiency* and *lookup efficiency*.**
     <br />
     Indexing techniques are used to improve the efficiency of querying,
-    but comes at the cost of increased storage.
-    As such, it is important to find a good *balance* between the amount of *storage*,
+    but comes at the cost of increased storage space and preprocessing time.
+    As such, it is important to find a good *balance* between the amount of *storage* space with its indexing time,
     and the amount of *querying speedup*,
     so that evolving data can be stored in a Web-friendly way.
-3. **The Web is highly *heterogeneous*.**
-<span class=comment data-author=RV>I would be more specific and talk about API heterogeneity.</span>
+3. **Web interfaces are highly *heterogeneous*.**
     <br />
     Before knowledge graphs can be queried from the Web,
     different *interfaces* through which data is available,
     and different *algorithms* with which the data can be retrieved
     need to be combinable.
-4. **Publishing *evolving* data via a *queryable interface* is costly.**
-<span class=comment data-author=RV>I don't think <q>costly</q> is the right term here. It involves more data, and the cost (or another trade-off) is a consequence of that. This is also reflected in your description of this challenge, which does not seem to involve cost.</span>
+4. **Publishing *evolving* data via a *queryable interface* involves *continuous* updates to clients.**
     <br />
     Centralized querying interfaces are hard to scale for an increasing number of concurrent clients,
-    especially when the knowledge graphs that are being queried over are continuously evolving.
+    especially when the knowledge graphs that are being queried over are continuously evolving,
+    and clients need to be notified of data updates continuously.
     New kinds of interfaces and querying algorithms are needed to cope with this scalability issue.
 
 ### Outline
 {:#introduction-outline}
 
 Corresponding to my four research challenges,
-this thesis bundles the following four peer-reviewed publications as separate chapters:
-<span class=comment data-author=RV>something about you being the lead author on them</span>
+this thesis bundles the following four peer-reviewed publications as separate chapters,
+for which I am the lead author:
 
 * Ruben Taelman et al. [Generating Public Transport Data based on Population Distributions for RDF Benchmarking](https://www.rubensworks.net/raw/publications/2018/podigg.pdf).
     <br />In: *In Semantic Web Journal*. IOS Press, 2019.

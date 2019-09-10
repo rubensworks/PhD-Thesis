@@ -445,7 +445,7 @@ i.e., a streaming algorithm with a larger buffer size, which is faster, but does
 
 As shown in [](#storing_results-ostrich-compressability),
 when applying gzip directly on the raw N-Triples input already achieves significant space savings.
-However, OSTRICH, HDT-IC and HDT-CB are able to reduce the required storage space _even further_ when they are used as a pre-processing step before applying gzip.
+However, OSTRICH, HDT-IC and HDT-CB are able to reduce the required storage space _even further_ when they are used as a preprocessing step before applying gzip.
 This shows that these approaches are better—storage-wise—for the archival of versioned datasets.
 This table also shows that OSTRICH datasets with more versions are more prone to space savings
 using compression techniques like gzip compared to OSTRICH datasets with fewer versions.

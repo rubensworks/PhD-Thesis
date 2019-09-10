@@ -92,9 +92,9 @@ on [http://versioned.linkeddatafragments.org/bear](http://versioned.linkeddatafr
 Future challenges include the handling of very large numbers of versions and improving ingestion efficiency,
 which both could be resolved by dynamically creating intermediary snapshots within the delta chain.
 
-#### Heterogeneous Web
+#### Heterogeneous Web Interfaces
 
-In [](#querying), the challenge on handling the heterogeneous nature of the Web during querying was tackled.
+In [](#querying), the challenge on handling the heterogeneous nature of Web interfaces during querying was tackled.
 This was done through the design and development of a highly modular *meta* query engine (Comunica)
 that simplifies the handling of various kinds of sources,
 and lowers the barrier for researching new query interfaces and algorithms.
