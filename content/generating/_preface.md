@@ -20,9 +20,3 @@ The algorithm is based on established concepts from the domain of public transpo
 and takes population distributions as input to generate realistic transport networks.
 The algorithm has been implemented in a system called _PoDiGG_,
 and has been evaluated to measure its performance and level of realism.
-
-<span class=comment data-author=RV>The author listing below is weird. I would just insert an official citation here.</span>
-
-<span class=comment data-author=RV>Perhaps we might want the abstract directly below the title of the chapter.</span>
-
-<span class=comment data-author=RV>(same for other chapters)</span>
