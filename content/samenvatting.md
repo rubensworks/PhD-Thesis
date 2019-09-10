@@ -6,12 +6,12 @@ wat geleid heeft tot grote transformaties van onze samenleving.
 Origineel was informatie op het Web bedoeld voor mensen,
 en machines hadden het moeilijk om deze informatie te begrijpen op dezelfde manier als mensen.
 Dit hinderde *intelligente assistenten* om bepaalde taken autonoom uit te voeren,
-zoals bijvoorbeeld alle winkels vinden die rijst verkopen in de huidige omgeving,
+zoals bijvoorbeeld alle winkels vinden die een bepaald product verkopen in jouw huidige omgeving,
 of bepalen wanneer het tijd is om te vertrekken om een vlucht te halen gebaseerd op de huidige verkeerssituatie en het weer.
 Om deze intelligente assistenten mogelijk te maken hebben onderzoekers gewerkt aan technologieën en standaarden
 om het Web begrijpbaar te maken voor machines.
 Sinds de afgelopen jaren worden *kennisgrafen* gebouwd op basis van deze technologieën
-om intelligente assistenten zoals Siri en Google Now deze taken te kunnen laten uitvoeren.
+om intelligente assistenten zoals Siri en Google Assistant deze taken te kunnen laten uitvoeren.
 
 Het meeste onderzoek in de context van kennisgrafen is gefocust op *statische* gegevens.
 Er is echter een grote hoeveelheid *evoluerende* gegevens beschikbaar,
@@ -33,7 +33,7 @@ en om het Web opnieuw een democratisch platform te maken door de macht terug te 
 Aldus is decentralisatie en democratisatie van informatie op het Web in de vorm van kennisgrafen een onderliggende focus van mijn onderzoek.
 
 Om het gebruik van *evoluerende kennisgrafen* te vergemakkelijken,
-is **het doel van dit doctoraat om het mogelijk te maken om *evoluerende* kennisgrafen *op te slaan* en *bevragen* op het Web**.
+is **het doel van dit doctoraat om het mogelijk te maken om *evoluerende* kennisgrafen te *publiceren* en *bevragen* op het Web**.
 Om dit onderwerp te onderzoeken focus ik op vier uitdagingen gerelateerd aan dit onderwerp.
 Te eerste, om systemen die evoluerende kennisgrafen beheren te evalueren,
 kijk ik naar de *generatie van evoluerende gegevens*.
@@ -41,7 +41,9 @@ Ten tweede onderzoek ik manieren om *evoluerende gegevens op te slaan*,
 zodat gegevens efficiënt op het Web gepubliceerd en bevraagd kunnen worden.
 Ten derde ontwerp ik een flexibel systeem om verschillende soorten gegevens te bevragen op het *Web*.
 Tot slot onderzoek ik manieren om *evoluerende gegevens te publiceren en bevragen op het Web*.
-In de context van dit doctoraat ga ik uit van kennisgrafen die evolueren met een periodiciteit in de orde van minuten of trager.
+In de context van dit doctoraat ga ik uit van traag evoluerende kennisgrafen die veranderen met een periodiciteit in de orde van minuten of trager,
+omdat snellere periodiciteiten zoals relevant binnen stroom verwerking beduidend andere technische vereisten nodig hebben.
+Hierna zal ik de vier uitdagingen in meer detail uitleggen.
 
 Om op een degelijke manier systemen te evalueren die evoluerende kennisgrafen beheren,
 is het nodig om eerst evoluerende kennisgrafen te *hebben* om deze systemen mee te testen.
@@ -57,7 +59,7 @@ met de garantie dat datasets voldoende realistisch zijn ten opzichte van analoge
 
 De tweede uitdaging focust op het onderzoek van een Web-vriendelijke afweging tussen opslagruimte en opzoek efficiëntie
 voor evoluerende kennisgrafen.
-Hiervoor werd een opslagtechniek ontworpen die in staat is om evoluerende gegevens te indexeren,
+Hiervoor ontwerpte ik een opslagtechniek die in staat is om evoluerende gegevens te indexeren,
 en samenhorige algoritmes werden ontwikkeld voor het doorzoeken van evoluerende gegevens op een efficiënte manier.
 Deze index is gebaseerd op een hybride van verschillende soorten opslagtechnieken,
 om verschillende temporele toegangspatronen efficiënt te maken.
@@ -71,7 +73,7 @@ Concreet worden zoektijden gereduceerd ten koste van een toename in opslagruimte
 Deze kost is acceptabel aangezien opslag meestal vrij goedkoop is.
 
 In de derde uitdaging wordt de *heterogeniteit* van het Web onderzocht.
-Concreet wordt een zoekmachine (Comunica) ontworpen die in staat is om te zoeken over verschillende soorten Web toegangen,
+Concreet ontwerpte ik zoekmachine (Comunica) die in staat is om te zoeken over verschillende soorten Web toegangen,
 gebaseerd op verschillende zoekalgoritmen.
 De zoekmachine is ontworpen op een modulaire manier,
 zodat nieuwe soorten Web toegangen en algoritmen ontwikkeld en ingeplugd kunnen worden op een flexibelen manier.
@@ -80,7 +82,7 @@ wat dit een nuttig onderzoeksplatform maakt.
 
 Tot slot verbindt de laatste uitdaging alle voorgaande uitdagingen met elkaar,
 en focust op de publicatie van evoluerende gegevens op het Web via een doorzoekbare toegang.
-Concreet introduceren we een doorzoekbare toegang voor evoluerende gegevens,
+Concreet introduceerde ik een doorzoekbare toegang voor evoluerende gegevens,
 en een algoritme aan de client-zijde voor de continue bevraging over deze toegang op een herhalende manier.
 Dit wordt gedaan door evoluerende gegevens te annoteren met bepaalde vervaltijden,
 zo dat clienten de optimale opzoekfrequentie kunnen bepalen,

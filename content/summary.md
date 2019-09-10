@@ -36,8 +36,7 @@ of information on the Web,
 in the form of knowledge graphs.
 
 To facilitate the usage of *evolving knowledge graphs*,
-**the goal of this PhD is allowing *evolving* knowledge graphs to be *stored* and *queried* on the *Web*.**
-<span class="comment" data-author="RV"><q>stored on the Web</q> seems not technically accurate</span>
+**the goal of this PhD is allowing *evolving* knowledge graphs to be *published* and *queried* on the *Web*.**
 To investigate this topic, I focus on four challenges related to this topic.
 First, to allow systems that handle evolving knowledge graphs to be evaluated,
 I look into the *generation of evolving data*.
@@ -45,9 +44,9 @@ Second, I investigate methods to *store evolving data*,
 so that the data can be published and queried on the Web efficiently.
 Third, I design a flexible system to *query* various kinds of data on the *Web*.
 Finally, I investigate methods for *publishing and querying evolving data on the Web*.
-In the scope of this PhD, I consider knowledge graphs that evolve with a periodicity in the order of minutes or slower.
-<span class="comment" data-author="RV">perhaps argue a) why distinction is needed b) reason for focus</span>
-<span class="comment" data-author="RV">missing transition to the 4 paragraphs below that will detail each of the 4</span>
+In the scope of this PhD, I consider slowly evolving knowledge graphs that update with a periodicity in the order of minutes or slower,
+because faster periodicities as required for stream processing require significantly different technical requirements.
+Below, I will explain the four challenges in more detail.
 
 In order to properly evaluate systems that handle evolving knowledge graphs,
 one must first *have* evolving knowledge graphs to test these systems with.
@@ -55,31 +54,30 @@ As existing evolving knowledge graphs are limited to having only specific sizes,
 they are unsuited for the needs of extensive system evaluations,
 where configurable evolving knowledge graph sizes are required.
 This is why this first challenge focuses on the generation of evolving data, as a prerequisite to the next challenges.
-Concretely, an algorithm is designed to generate synthetic public transport network datasets,
-<span class="comment" data-author="RV"><em>you</em> designed it 🙂</span>
-<span class="comment" data-author="RV">similar below; very important for PhD that you are the actor</span>
+Concretely, I designed an algorithm to generate synthetic public transport network datasets,
 based on population distributions as input.
-This algorithm is implemented and evaluated in terms of realism and performance.
+I provide an implementation of this algorithm,
+and evaluated it in terms of realism and performance.
 Results show that this algorithm is valuable for evaluating systems that handle evolving knowledge graphs,
 while still guaranteeing that the datasets are sufficiently realistic with respect to real-world analogues.
 
 The second challenge focuses on investigating a Web-friendly trade-off between storage size and query efficiency
 for evolving knowledge graphs.
-For this, a storage approach was designed that can index evolving data,
-and accompanying algorithms were developed for querying over this evolving data in an efficient manner.
+For this, I designed a storage approach that can index evolving data,
+and I developed accompanying algorithms for querying over this evolving data in an efficient manner.
 The index is based on a hybrid between different kinds of storage mechanisms,
 to enable efficient lookups for different temporal access patterns.
 The query algorithms supports *offsets* and *limits*,
 to enable random access to subsets of query results,
 which is important for Web-friendly query interfaces.
-Based on an implementation of this storage approach and querying algorithms,
+Based on my implementation of this storage approach and querying algorithms,
 experimental results show that this system achieves a trade-off between storage size and query efficiency
 that is useful for hosting evolving knowledge graphs on the Web.
 Concretely, query execution time is reduced at the cost of an increase in storage size.
 This cost is acceptable due to storage typically being cheap.
 
 In the third challenge, the *heterogeneous* nature of the Web is investigated.
-Concretely, a query engine (Comunica) is designed that can query over various kinds of Web interfaces,
+Concretely, I designed a query engine (Comunica) that can query over various kinds of Web interfaces,
 based on different kinds of query algorithms.
 The engine is designed in a modular way,
 so that new interfaces and algorithms can be developed and plugged in flexibly.
@@ -88,7 +86,7 @@ which makes it a useful research platform.
 
 Finally, the last challenge ties everything together,
 and focuses on publishing evolving data on the Web via a queryable interface.
-Concretely, we introduce a query interface for evolving data,
+Concretely, I introduced a query interface for evolving data,
 and a client-side algorithm for continuous querying over this interface in a polling-based manner.
 This is done by annotating evolving data server-side with predetermined expiration times,
 so that clients can determine the optimal polling frequency,
