@@ -171,7 +171,7 @@ for assessing the performance of RDF stream processing systems with temporal and
 
 #### PoDiGG In Use
 
-PoDiGG and PoDiGG-LC have been developed for usage within the \hobbit platform.
+PoDiGG and PoDiGG-LC have been developed for usage within the HOBBIT platform.
 This platform is being developed within the HOBBIT project and aims to provide
 an environment for benchmarking RDF systems for Big Linked Data.
 The platform provides several default dataset generators, including PoDiGG,

@@ -6,6 +6,7 @@ The [research question of this PhD](#research-question) was defined as
 The answer to this question is neither simple nor complete.
 In this final chapter,
 I first summarize an answer to this question,
+the limitations of my work,
 and I discuss future research efforts that are needed to advance this work further.
 
 ### Contributions
@@ -47,13 +48,6 @@ With the provided mimicking algorithm,
 synthetic public transport networks and scheduling can be generated based on population distributions,
 which answers our research question.
 This tackles our initial challenge to support experimentation on systems that handle evolving knowledge graphs.
-
-One could however question whether such domain-specific datasets are sufficient for testing evolving knowledge graphs systems in general.
-As shown in [](#generating_methodology), the introduced data model contains a relatively small number of RDF properties and classes.
-While large domain specific knowledge graphs like these are valuable,
-domain-overlapping knowledge graphs such as [DBpedia](cite:cites dbpedia) and [Wikidata](cite:cites wikidata)
-many more distinct properties and classes, which place additional demands on systems.
-For such cases, multi-domain (evolving) knowledge graph generators could be created in future work.
 
 #### Indexing Evolving Data
 
@@ -194,7 +188,94 @@ Furthermore, no high-cost Web infrastructure is needed to publish or query such 
 which lowers the barrier for smaller, *decentralized* evolving knowledge graphs to be published,
 without having to be a giant company with a large budget.
 
-### Future work
+### Limitations
+
+There are several limitations to my contributions that require attention,
+which will be discussed hereafter.
+
+#### Generating Evolving Data
+
+In [](#generating), I introduced a mimicking algorithm for generating public transport datasets.
+One could however question whether such domain-specific datasets are sufficient for testing evolving knowledge graphs systems in general.
+As shown in [](#generating_methodology), the introduced data model contains a relatively small number of RDF properties and classes.
+While large domain specific knowledge graphs like these are valuable,
+domain-overlapping knowledge graphs such as [DBpedia](cite:cites dbpedia) and [Wikidata](cite:cites wikidata)
+many more distinct properties and classes, which place additional demands on systems.
+For such cases, multi-domain (evolving) knowledge graph generators could be created in future work.
+
+Furthermore, the mimicking algorithm produces temporal data in a batch-based manner,
+instead of a continuous *streaming* process.
+This requires an evolving knowledge graph to be produced with a fixed temporal range,
+and does it does not allow knowledge graphs to evolve continuously for an non-predetermined amount of time.
+The latter would be valuable for stream processing systems that need to be evaluated for long periods of time,
+which would require an adaptation to the algorithm to make it streaming.
+
+#### Indexing Evolving Data
+
+In [](#storing), a storage mechanism for evolving knowledge graphs was introduced.
+The main limitation of this work is that ingestion times continuously increase
+when more versions are added.
+This is caused by the fact that versions are typically relative to the previous version,
+whereas this storage approach handles versions relative to the initial version.
+As such, such versions need to be converted at ingestion time,
+which takes continuously longer for more versions.
+This shows that this approach can currently not be used for knowledge graphs that evolve indefinitely long,
+such as [DBpedia Live](cite:cites dbpedialive).
+One possible solution to this problem would be to fully maintain the latest version for faster relative version recalculation.
+
+The second main limitation is the fact that delta (DM) queries do not efficiently support result offsets.
+As such, my approach is not ideal for use cases where random-access in version differences is needed within very large evolving knowledge graphs,
+such as for example finding the 10th or 1000th most read book between 2018 and 2019.
+My algorithm naively applies an offset by iterating and voiding results until the offset amount is reach,
+as opposed to the more intelligent offset algorithms for the other versioned query types where an index is used to apply the offset.
+One possible solution would be to add an additional index for optimizing the offsets for delta queries,
+which would also lead to increased storage space and ingestion times.
+
+#### Heterogeneous Web Interfaces
+
+The main limitation of the Comunica meta query engine from [](#querying)
+is its non-interruptible architecture.
+This means that once the execution of a certain query operation is started,
+it can not be stopped until it is completed without killing the engine completely.
+This means that meta-algorithms that dynamically switch between algorithms depending on their execution times
+can not be implemented within Comunica.
+In order to make this possible, a significant change to the architecture of Comunica would
+be required where every actor could be interrupted after being started,
+where these interruptions would have to be propagated through to chained operations.
+
+Another limitation of Comunica is its development complexity,
+which is a consequence of its modularity.
+Practise has shown that there is a steep learning curve for adding new modules to Comunica,
+which is due to the dependency injection system that is error-prone.
+To alleviate this problem, [tutorials are being created and presented](https://github.com/comunica?utf8=%E2%9C%93&q=tutorial&type=&language=),
+and [tools are being developed](https://github.com/LinkedSoftwareDependencies/Components.js-Generator) to simplify the usage of the dependency injection framework.
+Furthermore, higher-level tools such as [GraphQL-LD](cite:cites graphqlld) and [LDflex](https://github.com/RubenVerborgh/LDflex) are being developed
+to lower the barrier for querying with Comunica.
+
+#### Publishing and Querying Evolving Data
+
+The main limitation of our publishing and querying approach for evolving data from [](#querying-evolving)
+is the fact that it only works for slowly evolving data.
+From the moment that data changes at the order of one second or faster,
+then the polling-based query approach becomes too slow,
+and results become outdated even before they are produced.
+This is mainly caused by the roundtrip times of HTTP requests,
+and the fact that multiple of them are needed because of the Triple Pattern Fragments querying approach.
+For data that evolves much faster, a polling-based approach like this is not a good solution.
+Socket-like solutions where client and server maintain an open connection would be able to reach much higher data velocities,
+since servers can send updates to subscribed clients immediately,
+without having to wait for a client request, which reduces result latency.
+
+The second limitation to consider is the significantly higher bandwidth usage
+compared to other approaches, which has been shown in [follow-up work](cite:cites tpfqs2).
+This means that this approach is not ideal for use cases where bandwidth is limited,
+such as querying from low-end mobile devices,
+or querying in rural areas with a slow internet connection.
+This higher bandwidth usage is inherent to the Triple Pattern Fragments approach,
+since more data needs to be downloaded from the server,
+so that the client can process it locally.
+
+### Open Challenges
 
 While I have formulated one possible answer the question
 on how to store and query evolving knowledge graphs on the Web,
