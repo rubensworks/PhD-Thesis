@@ -1,0 +1,5 @@
+Ruben Taelman obtained his MSc degree in Computer Science Engineering in 2015 with great distinction at Ghent University. Following this, he joined IDLab (Ghent University – imec) as a PhD researcher in Semantic Web Technologies.
+
+Concretely, his research concerns the decentralized publication and querying of Linked Data on the Web, and investigating the trade-offs that exist between server and client. He regularly collaborates with international research labs for which he visited the National Institute of Informatics in Japan for 4 months (2017-2018), and the WU University in Austria for 3 months (2019).
+
+He has co-authored more than 30 papers, of which 18 as first author to conferences such as International Semantic Web Conference and the Web Conference, and 2 as the first author to the Semantic Web Journal and the Journal of Web Semantics. Additionally, he serves as a regular reviewer and program committee member for these journals and conferences. Next to that, he is actively applying his research by developing reusable software that can be used by developers and other researchers. He shares his research outcomes publicly at https://www.rubensworks.net/.
