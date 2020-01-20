@@ -304,7 +304,7 @@ main {
   counter-reset: section;
 
   // Chapters
-  h2 {
+  h2:not(.no-label-increment) {
     counter-increment: section;
     counter-reset: subsection;
 
@@ -316,7 +316,7 @@ main {
   }
 
   // Sections
-  h3 {
+  h3:not(.no-label-increment) {
     counter-increment: subsection;
     counter-reset: subsubsection;
   
@@ -326,7 +326,7 @@ main {
   }
 
   // Subsections
-  h4 {
+  h4:not(.no-label-increment) {
     counter-increment: subsubsection;
     counter-reset: subsubsubsection;
   
@@ -336,7 +336,7 @@ main {
   }
   
   // Subsubsections
-  h5 {
+  h5:not(.no-label-increment) {
     counter-increment: subsubsubsection;
     
     &::before {

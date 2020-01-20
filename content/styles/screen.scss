@@ -207,7 +207,7 @@ main, #appendix {
   }
 
   // Chapters
-  h2 {
+  h2:not(.no-label-increment) {
     font-size: 2.5em;
     font-weight: bolder;
     margin: 4em 0 1em 0;
@@ -222,7 +222,7 @@ main, #appendix {
   }
 
   // Subsections
-  h3 {
+  h3:not(.no-label-increment) {
     font-size: 1.5em;
     font-weight: bold;
     margin: 1.5em 0 .5em;
@@ -236,7 +236,7 @@ main, #appendix {
   }
 
   // Titled paragraphs
-  h4 {
+  h4:not(.no-label-increment) {
     font-size: 1.2em;
     font-weight: bold;
     
@@ -249,7 +249,7 @@ main, #appendix {
   }
   
   // Titled sub-paragraphs
-  h5 {
+  h5:not(.no-label-increment) {
     font-weight: bold;
     margin: 0 1em 0 0;
     
