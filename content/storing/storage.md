@@ -129,7 +129,7 @@ they will only be stored once.
 Each addition and deletion store uses three trees with a different triple component order (SPO, POS and OSP),
 as discussed in [](#storing_indexes).
 
-The relative position of each triple inside the delta to the deletion trees speeds up the process
+The relative position (defined in [](#storing_relativeposition)) of each triple inside the delta to the deletion trees speeds up the process
 of patching a snapshot's triple pattern subset for any given offset.
 In fact, seven relative positions are stored for each deleted triple: one for each possible triple pattern (`SP?`, `S?O`, `S??`, `?PO`, `?P?`, `??O`, `???`),
 except for `SPO` since this position will always be 0 as each triple is stored only once.
@@ -138,6 +138,13 @@ This position information serves two purposes:
 to resolve offsets for any triple pattern against any version;
 and 2) it allows deletion counts for any triple pattern and version to be determined efficiently.
 The use of the relative position and the local change flag during querying will be further explained in [](#querying).
+
+<figure id="storing_relativeposition" class="equation">
+<code>relative_position(t, D, p) = count{t' | t' ∈ D ∧ p(t') ∧ t' < t}</code>
+<figcaption markdown="block">
+Relative position of a triple (t) inside a delta (D) for a triple pattern (p).
+</figcaption>
+</figure>
 
 <figure id="storing_example-delta-storage" class="table" markdown="1">
 
