@@ -69,7 +69,8 @@ We can use the deletion's position in the delta as offset in the snapshot
 because this position represents the number of deletions that came before that triple inside the snapshot given a consistent triple order.
 [](#storing_query-vm-example) shows simplified storage contents where triples are represented as a single letter,
 and there is only a single snapshot and delta.
-In the following paragraphs, we explain the offset convergence loop of the algorithm in function of this data for different offsets.
+In the following paragraphs, we explain the offset convergence loop of the algorithm in function of this data for different offsets,
+when querying all triples in version 1.
 
 <figure id="storing_query-vm-example" class="table" markdown="1">
 
@@ -99,7 +100,7 @@ which results in a new snapshot offset of 2.
 We now apply this new snapshot offset.
 As the snapshot offset has changed, we enter a second iteration of the loop.
 Now, the head of the snapshot stream is `C`.
-We offset the deletions stream to `C`, which again results in `B`.
+We offset the deletions stream to the first element on or before `C`, which again results in `B`.
 As this offset results in the same snapshot offset,
 we stop iterating and use the snapshot stream with offset 2 starting from `C`.
 
@@ -156,9 +157,9 @@ The following definitions correspond to elements from the loop on lines 12-17:
 We prove this by induction over the iterations of the loop.
 For `n=1` this follows from line 9 and `∀ x offset(x) ≥ 0.`
 
-For `n+1` we know by induction that `off(n) ≥ off(n-1)`.
+For `n+1` we assume that `off(n) ≥ off(n-1)`.
 Since `snapshot` is ordered, `snapshot[ori + off(n)] ≥ snapshot[ori + off(n-1)]`.
-From lines 13-14 follows that `t(n) = snapshot[ori + off(n-1)]`,
+From lines 13-14 it follows that `t(n) = snapshot[ori + off(n-1)]`,
 together this gives `t(n+1) ≥ t(n)`.
 
 From this, we get:
@@ -198,7 +199,7 @@ together with `additions` starting at index 0 and line 25,
 returns the requested result.
 
 If `ori ≥ |snapshot\deletions|`, `version[ori] = additions[ori - |snapshot\deletions|]`.
-From lines 20-22 follows that `snapshot` gets emptied and `additions` gets shifted for the remaining required elements `(ori - |snapshot\deletions|)`, which then also returns the requested result on line 25.
+From lines 20-22 it follows that `snapshot` gets emptied and `additions` gets shifted for the remaining required elements `(ori - |snapshot\deletions|)`, which then also returns the requested result on line 25.
 
 #### Delta Materialization
 

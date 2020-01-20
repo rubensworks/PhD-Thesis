@@ -19,10 +19,10 @@ in RDF datasets, which allow parts of the data to be stored in relational databa
 in order to increase compression and improve the efficiency of query evaluation.
 These emergent schemas are recently being exploited as _characteristics sets_
 in [native RDF approaches](cite:cites axondb,odyssey).
-For the remainder of this article, we focus the RDF-specific techniques that have direct relevance to our approach.
+For the remainder of this article, we focus on the RDF-specific techniques that have direct relevance to our approach.
 
 [RDF-3X](cite:cites rdf3x) is an RDF storage technique that is based
-on a clustered B+Tree with 18 indexes in which triples are sorted lexicographically.
+on a clustered B+Tree with 15 indexes in which triples are sorted lexicographically.
 Given that a triple consists of
 a subject (S), predicate (P) and object (O),
 it includes six indexes for different triple component orders (SPO, SOP, OSP, OPS, PSO and POS),
@@ -110,7 +110,7 @@ i.e., datasets that contain diachronic entities, which are semantic entities tha
 This data model formally defines a diachronic dataset as a set of dataset versions together with metadata annotations about this dataset.
 Each dataset version is defined as a set of records (i.e., tuples or triples), an associated schema,
 temporal information about this version and metadata specific to this version.
-Domain data must be reified in order to store it in the DIACHRON model.
+Domain data must be [reified](https://www.w3.org/DesignIssues/Reify.html) in order to store it in the DIACHRON model.
 Due to the simplicity of RDF archive model compared to the domain-specific DIACHRON data model,
 we will use the model of Fernández et al. for the remainder of this document.
 
@@ -158,7 +158,7 @@ Based on the Theory of Patches from the [Darcs software management system](cite:
 [Cassidy et. al.](cite:cites vcrdf) propose to store changes to graphs as a series of patches, which makes it a CB approach.
 They describe operations on versioned graphs such as reverse, revert and merge.
 An implementation of their approach is provided using the Redland python library and MySQL
-by representing each patch as named graphs and serializing them in [TriG](cito:citesAsAuthority TriG).
+by representing each patch as a named graph and serializing it in [TriG](cito:citesAsAuthority TriG).
 Furthermore, a preliminary evaluation shows that their implementation is significantly slower
 than a native RDF store. They suggest a native implementation of the approach to avoid some of the overhead.
 
@@ -230,7 +230,7 @@ Delta chain in which deltas are relative to the previous delta, as is done in [T
 </figure>
 
 #### RDF Archiving Benchmarks
-{:#related-work-benchmarks}
+{:#storing_related-work-benchmarks}
 
 [BEAR](cite:cites bear) is a benchmark for RDF archive systems.
 The BEAR benchmark is based on three real-world datasets from different domains:
@@ -260,7 +260,7 @@ Due to HDT not supporting quads, the TB and TB/CB approaches could not be implem
 
 Results show that IC for both Jena and HDT requires more storage space than the compressed deltas for the three datasets.
 CB results in less storage space for both approaches for BEAR-A and BEAR-B, but not for BEAR-C because that dataset is so dynamic that
-the deltas require more storage space than they would in with IC.
+the deltas require more storage space than they would with IC.
 Jena-TB results in the least storage space of Jena-based approaches,
 however,
 it fails for BEAR-B-instant because of the large amount of versions
@@ -297,7 +297,7 @@ Hence, we will use the BEAR dataset in this work for benchmarking our system.
 
 The query atoms that will be introduced in this section are based on
 the [RDF data model](cite:cites spec:rdf) and [SPARQL query language](cite:cites spec:sparqllang).
-In these models, a _triple pattern_ is defined as _(U ∪ V) × (U ∪ V) × (U ∪ L ∪ V)_, with _V_ being the infinite set of variables.
+In these models, a _triple pattern_ is defined as an element in _(U ∪ V) × (U ∪ V) × (U ∪ L ∪ V)_, with _V_ being the infinite set of variables.
 A set of triple patterns is called a _Basic Graph Pattern_, which forms the basis of a SPARQL query.
 The evaluation of a SPARQL query _Q_ on an RDF graph _G_ containing RDF triples,
 produces a bag of solution mappings _\[\[Q\]\]<sub>G</sub>_.

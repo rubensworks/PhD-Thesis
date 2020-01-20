@@ -33,7 +33,7 @@ to illustrate the different storage components with.
 
 <figcaption markdown="block">
 Example of a small RDF archive with 4 versions.
-We assume that the following URI prefixes: `: http://example.org`, `foaf: http://xmlns.com/foaf/0.1/`
+We assume the following URI prefixes: `: http://example.org`, `foaf: http://xmlns.com/foaf/0.1/`
 </figcaption>
 </figure>
 
@@ -50,7 +50,7 @@ we assume the following requirements for the snapshot storage:
 
 These requirements are needed for ensuring the efficiency of the querying algorithms that will be introduced in [](#querying).
 For the implementation of snapshots,
-existing techniques such as [HDT](cite:cites hdt) fulfill all the requirements.
+existing techniques such as [HDT](cite:cites hdt) fulfill all these requirements.
 Therefore,
 we do not introduce a new snapshot approach, but use HDT in our implementation.
 This will be explained further in [](#storing_implementation).
@@ -64,7 +64,7 @@ This is done for three main reasons:
 2) reducing I/O overhead when retrieving data; and
 3) simplify and optimize querying.
 As our storage approach essentially stores each triple three or six times,
-a dictionary can definitely reduce storage space requirements.
+a dictionary can significantly reduce storage space requirements.
 
 Each delta chain consists of two dictionaries, one for the snapshot and one for the deltas.
 The snapshot dictionary consists of triple components that already existed in the snapshot.

@@ -20,7 +20,7 @@ This leads us to the following research question:
 
 The focus of this article is evaluating version materialization (VM), delta materialization (DM), and version (VQ) queries efficiently,
 as CV and CM queries can be expressed in [terms of the other ones](cite:cites tpfarchives).
-In total, our research question indentifies the following requirements:
+In total, our research question identifies the following requirements:
 
 - an efficient RDF archive storage technique;
 - VM, DM and VQ triple pattern querying algorithms on top of this storage technique;

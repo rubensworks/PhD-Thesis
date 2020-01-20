@@ -22,7 +22,7 @@ Memory-mapping is required so that not all data must be loaded in-memory when qu
 which would not always be possible for large datasets.
 For our delta dictionary, we extend HDT's dictionary implementation with adjustments to make it work with unsorted triple components.
 We compress this delta dictionary with [gzip](http://www.gzip.org/), which requires decompression during querying and ingestion.
-Finally, for storing our addition counts, we use the Hash Database of Kyoto Cabinet, which is also memory-mapped.
+Finally, for storing our addition counts, we use the memory-mapped Hash Database of Kyoto Cabinet.
 
 We provide a developer-friendly C/C++ API for ingesting and querying data based on an OSTRICH store.
 Additionally, we provide command-line tools for ingesting data into an OSTRICH store,
@@ -35,7 +35,7 @@ containing a dataset with 30M triples in 10 versions using [TPF](cite:cites ldf)
 #### Experimental Setup
 
 As mentioned before in [](#storing_related-work-benchmarks), we evaluate our approach using the BEAR benchmark.
-We chose for this benchmark because it provides a complete set of tools and data for benchmarking RDF versioning systems,
+We chose this benchmark because it provides a complete set of tools and data for benchmarking RDF versioning systems,
 containing datasets, queries and easy-to-use engines to compare with.
 
 We extended the existing BEAR implementation for the evaluation of offsets.
@@ -45,7 +45,7 @@ In all other cases, naive offsets had to be implemented by iterating over the re
 until a number of elements equal to the desired offset were consumed.
 This modified implementation is available on [GitHub](https://github.com/rdfostrich/bear/tree/ostrich-eval-journal){:.mandatory}.
 To test the scalability of our approach for datasets with few and large versions, we use the BEAR-A benchmark.
-We use the ten first versions of the BEAR-A dataset, which contains 30M to 66M triples per version.
+We use the first ten versions of the BEAR-A dataset, which contains 30M to 66M triples per version.
 This dataset was compiled from the [Dynamic Linked Data Observatory](http://swse.deri.org/dyldo/).
 To test for datasets with many smaller versions, we use BEAR-B with the daily and hourly granularities.
 The daily dataset contains 89 versions and the hourly dataset contains 1,299 versions,
@@ -54,7 +54,7 @@ We did not evaluate BEAR-B-instant, because OSTRICH requires increasingly
 more time for each new version ingestion, as will be shown in the next section.
 As BEAR-B-hourly with 1,299 versions already takes more than three days to ingest,
 the 21,046 versions from BEAR-B-instant would require too much time to ingest.
-Our experiments were executed on a 64-bit
+All of our experiments were executed on a 64-bit
 Ubuntu 14.04 machine with 128 GB of memory and a
 24-core 2.40 GHz CPU.
 
@@ -119,11 +119,11 @@ because of the lower amount of versions.
 Within the scope of this work, we use this fixed threshold of 200.
 We consider investigating the impact of different threshold levels and methods for dynamically determining optimal levels future work.
 
-[](#storing_results-ostrich-ingestion-rate-beara) shows linearly increasing ingestion rate for each consecutive version for BEAR-A,
-while [](#storing_results-ostrich-ingestion-size-beara) shows corresponding linearly increasing storage sizes.
+[](#storing_results-ostrich-ingestion-rate-beara) shows an increasing ingestion rate for each consecutive version for BEAR-A,
+while [](#storing_results-ostrich-ingestion-size-beara) shows corresponding increasing storage sizes.
 Analogously, [](#storing_results-ostrich-ingestion-rate-bearb-hourly) shows the ingestion rate for BEAR-B-hourly,
-which increases linearly until around version 1100, after which it increases significantly.
-[](#storing_results-ostrich-ingestion-size-bearb-hourly) shows near-linearly increasing storage sizes.
+which increases until around version 1100, after which it increases significantly.
+[](#storing_results-ostrich-ingestion-size-bearb-hourly) shows faster increasing storage sizes.
 
 [](#storing_results-ostrich-ingestion-rate-beara-compare) compares the BEAR-A ingestion rate of the streaming and batch algorithms.
 The streaming algorithm starts of slower than the batch algorithm but grows linearly,
@@ -166,7 +166,7 @@ The lowest sizes per dataset are indicated in italics.
 | HDT-CB          |   *18* | *0.02*        |   *0.07*      |
 
 <figcaption markdown="block">
-Ingestion times for each of the RDF archive approaches with BEAR-A, BEAR-B-daily and BEAR-B-hourly.
+Ingestion times (minutes) for each of the RDF archive approaches with BEAR-A, BEAR-B-daily and BEAR-B-hourly.
 The lowest times per dataset are indicated in italics.
 </figcaption>
 </figure>
@@ -213,7 +213,7 @@ Cumulative OSTRICH store sizes for each consecutive BEAR-B-hourly version in GB 
 </figcaption>
 </figure>
 
-<figure id="results-ostrich-compressability" class="table" markdown="1">
+<figure id="storing_results-ostrich-compressability" class="table" markdown="1">
 
 | Format        | Dataset  | Size      | gzip      | Savings  |
 |---------------|----------|----------:|----------:|---------:|
@@ -253,8 +253,8 @@ as all compressed sizes were in all cases two to three times larger than the N-T
 
 ##### Query Evaluation
 
-Figures [10](#storing_results-beara-vm-sumary), [11](#storing_results-beara-dm-summary) and [12](#storing_results-beara-vq-summary) respectively
-summarize the VM, DM and VQ query durations of all BEAR-A queries on the ten first versions of the BEAR-A dataset for the different approaches.
+Figures [24](#storing_results-beara-vm-sumary), [25](#storing_results-beara-dm-summary) and [26](#storing_results-beara-vq-summary) respectively
+summarize the VM, DM and VQ query durations of all BEAR-A queries on the first ten versions of the BEAR-A dataset for the different approaches.
 HDT-IC clearly outperforms all other approaches in all cases,
 while the Jena-based approaches are orders of magnitude slower than the HDT-based approaches and OSTRICH in all cases.
 OSTRICH is about two times faster than HDT-CB for VM queries, and slightly slower for both DM and VQ queries.
@@ -267,7 +267,7 @@ and that predicate-queries are also significantly slower for all approaches.
 <figure id="storing_results-beara-vm-sumary">
 <img src="storing/img/query/results_beara-vm-summary.svg" alt="[bear-a vm]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
-Median BEAR-A VM query results for all triple patterns for all versions.
+Median BEAR-A VM query results for all triple patterns for the first 10 versions.
 </figcaption>
 </figure>
 
@@ -285,7 +285,7 @@ Median BEAR-A VQ query results for all triple patterns.
 </figcaption>
 </figure>
 
-Figures [13](#storing_results-bearb-daily-vm-sumary), [14](#storing_results-bearb-daily-dm-summary) and [15](#storing_results-bearb-daily-vq-summary)
+Figures [27](#storing_results-bearb-daily-vm-sumary), [28](#storing_results-bearb-daily-dm-summary) and [29](#storing_results-bearb-daily-vq-summary)
 contain the query duration results for the BEAR-B queries on the complete BEAR-B-daily dataset for the different approaches.
 Jena-based approaches are again slower than both the HDT-based ones and OSTRICH.
 For VM queries, OSTRICH is slower than HDT-IC, but faster than HDT-CB, which becomes slower for larger versions.
@@ -298,7 +298,7 @@ in which we can see that predicate-queries are again consistently slower for all
 <figure id="storing_results-bearb-daily-vm-sumary">
 <img src="storing/img/query/results_bearb-daily-vm-summary.svg" alt="[bear-b-daily vm]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
-Median BEAR-B-daily VM query results for all triple patterns for all versions.
+Median BEAR-B-daily VM query results for all triple patterns for the first 10 versions.
 </figcaption>
 </figure>
 
@@ -316,7 +316,7 @@ Median BEAR-B-daily VQ query results for all triple patterns.
 </figcaption>
 </figure>
 
-Figures [16](#storing_results-bearb-hourly-vm-sumary), [17](#storing_results-bearb-hourly-dm-summary) and [18](#storing_results-hourly-daily-vq-summary)
+Figures [30](#storing_results-bearb-hourly-vm-sumary), [31](#storing_results-bearb-hourly-dm-summary) and [32](#storing_results-hourly-daily-vq-summary)
 show the query duration results for the BEAR-B queries on the complete BEAR-B-hourly dataset for all approaches.
 OSTRICH again outperforms Jena-based approaches in all cases.
 HDT-IC is faster for VM queries than OSTRICH, but HDT-CB is significantly slower, except for the first 100 versions.
@@ -328,7 +328,7 @@ with the same conclusion as before that predicate-queries are slower.
 <figure id="storing_results-bearb-hourly-vm-sumary">
 <img src="storing/img/query/results_bearb-hourly-vm-summary.svg" alt="[bear-b-hourly vm]" height="200em" class="figure-medium-width">
 <figcaption markdown="block">
-Median BEAR-B-hourly VM query results for all triple patterns for all versions.
+Median BEAR-B-hourly VM query results for all triple patterns for the first 10 versions.
 </figcaption>
 </figure>
 
@@ -352,7 +352,7 @@ From our evaluation of offsets, [](#storing_results-offset-vm) shows that OSTRIC
 while other approaches grow beyond that for larger offsets, except for HDT-IC+.
 HDT-CB, Jena-CB and Jena-CB/TB are not included in this and the following figures
 because they require full materialization before offsets can be applied, which is expensive and therefore take a very long time to evaluate.
-For DM queries, all approaches have growing evaluating times for larger offsets including OSTRICH, as can be seen in [](#storing_results-offset-dm).
+For DM queries, all approaches have growing evaluation times for larger offsets including OSTRICH, as can be seen in [](#storing_results-offset-dm).
 Finally, OSTRICH has VQ evaluation times that are approximately independent of the offset value,
 while other approaches again have growing evaluation times, as shown in [](#storing_results-offset-vq).
 
@@ -380,7 +380,7 @@ Median VQ query results for different offsets in the BEAR-A dataset.
 #### Discussion
 
 In this section, we interpret and discuss the results from previous section.
-We discuss the ingestion, compressbility, query evaluation, offset efficiency and test our hypotheses.
+We discuss the ingestion, compressibility, query evaluation, offset efficiency and test our hypotheses.
 
 ##### Ingestion
 
@@ -400,7 +400,7 @@ which indicates that the large number of triples that need to be handled for lon
 This is also the reason why OSTRICH has memory issues during ingestion at the end of such chains.
 One future optimization could be to maintain the last version of each chain in a separate index for faster patching.
 Or a new ingestion algorithm could be implemented that accepts input in the correct alternative CB format.
-Alternatively, a new snapshot could dynamically be created when ingestion time becomes too large,
+Alternatively, a new snapshot can dynamically be created when ingestion time becomes too large,
 which could for example for BEAR-B-hourly take place around version 1000.
 
 <figure id="storing_triples-bearb-hourly-altcb">
@@ -444,7 +444,7 @@ i.e., a streaming algorithm with a larger buffer size, which is faster, but does
 ##### Compressibility
 
 As shown in [](#storing_results-ostrich-compressability),
-when applying gzip directly on the raw N-Triples input already achieves significant space savings.
+when applying gzip directly on the raw N-Triples input, this already achieves significant space savings.
 However, OSTRICH, HDT-IC and HDT-CB are able to reduce the required storage space _even further_ when they are used as a preprocessing step before applying gzip.
 This shows that these approaches are better—storage-wise—for the archival of versioned datasets.
 This table also shows that OSTRICH datasets with more versions are more prone to space savings
@@ -476,7 +476,7 @@ That is because the current DM algorithm naively offsets these streams by iterat
 over the stream until a number of elements equal to the desired offset have been consumed.
 Furthermore, other IC and TB approaches outperform OSTRICH's DM result stream offsetting.
 This introduces a new point of improvement for future work,
-seeing whether or not OSTRICH would allow more efficient DM offsets by adjusting either the algorithm or the storage format.
+seeing whether or not OSTRICH would allow more efficient DM offsets by adjusting either the algorithm or storage format.
 
 ##### Hypotheses
 
@@ -489,7 +489,7 @@ Tables containing p-values of the results can be found in [Appendix E](https://r
 For our [first hypothesis](#storing_hypothesis-qualitative-querying), we expect OSTRICH lookup times to remain independent of version for VM and DM queries.
 We validate this hypothesis by building a linear regression model with as response the lookup time,
 and as factors version and number of results.
-The [appendix](https://rdfostrich.github.io/article-jws2018-ostrich/#hypo-test-1){:.mandatory} contains the influence of each factor, which shows that for all cases,
+The [appendix (E)](https://rdfostrich.github.io/article-jws2018-ostrich/#hypo-test-1){:.mandatory} contains the influence of each factor, which shows that for all cases,
 we can accept the null hypothesis that the version factor has no influence on the models with a confidence of 99%.
 Based on these results, we *accept* our [first hypothesis](#storing_hypothesis-qualitative-querying).
 
@@ -501,7 +501,7 @@ query evaluation is *slower* for VM and *faster* or *equal* for DM and VQ.
 Results from previous section showed that for BEAR-A, BEAR-B-daily and BEAR-B-hourly,
 OSTRICH requires *less* space than HDT-IC, which means that we *accept* Hypothesis 2.
 In order to validate that query evaluation is slower for VM but faster or equal for DM and VQ,
-we compared the means using the two-sample t-test, for which the results can be found in the [appendix](https://rdfostrich.github.io/article-jws2018-ostrich/#hypo-test-2){:.mandatory}.
+we compared the means using the two-sample t-test, for which the results can be found in the [appendix (E)](https://rdfostrich.github.io/article-jws2018-ostrich/#hypo-test-2){:.mandatory}.
 In all cases, the means are not equal with a confidence of 95%.
 For BEAR-B-daily and BEAR-B-hourly, HDT-IC is faster for VM queries, but slower for DM and VQ queries.
 For BEAR-A, HDT-IC is faster for all query types.
@@ -517,7 +517,7 @@ In [Hypothesis 4](#storing_hypothesis-qualitative-cb-storage), we stated that OS
 storage space than CB-based approaches,
 and in [Hypothesis 5](#storing_hypothesis-qualitative-cb-querying) that query evaluation is *faster* or *equal*.
 In all cases OSTRICH requires more storage space than HDT-CB, which is why we *accept* Hypothesis 4.
-For the query evaluation, we again compare the means in the [appendix](https://rdfostrich.github.io/article-jws2018-ostrich/#hypo-test-3){:.mandatory} using the same test.
+For the query evaluation, we again compare the means in the [appendix (E)](https://rdfostrich.github.io/article-jws2018-ostrich/#hypo-test-3){:.mandatory} using the same test.
 In BEAR-A, VQ queries in OSTRICH are not faster for BEAR-A, and VM queries in OSTRICH are not faster for BEAR-B-daily,
 which is why we *reject* Hypothesis 5.
 However, only one in three query atoms are not fulfilled, and OSTRICH is faster than HDT-CB for BEAR-B-hourly.
@@ -530,7 +530,7 @@ and query evaluation is faster unless the number of versions is low.
 Finally, in our [last hypothesis](#storing_hypothesis-qualitative-ingestion),
 we state that average query evaluation times are lower than other non-IC approaches at the cost of increased ingestion times.
 In all cases, the ingestion time for OSTRICH is higher than the other approaches,
-and as shown in the [appendix](https://rdfostrich.github.io/article-jws2018-ostrich/#hypo-test-3){:.mandatory}, query evaluation times for non-IC approaches are lower for BEAR-B-hourly.
+and as shown in the [appendix (E)](https://rdfostrich.github.io/article-jws2018-ostrich/#hypo-test-3){:.mandatory}, query evaluation times for non-IC approaches are lower for BEAR-B-hourly.
 This means that we *reject* Hypothesis 6 because it only holds for BEAR-B-hourly and not for BEAR-A and BEAR-B-daily.
 In general, OSTRICH ingestion is slower than other approaches,
 but improves query evaluation time compared to other non-IC approaches,

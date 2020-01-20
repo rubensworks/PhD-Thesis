@@ -18,7 +18,7 @@ ensure that any triple pattern query can be resolved quickly.
 The additions and deletions are stored separately
 because access patterns to additions and deletions in deltas differ between VM, DM, and VQ queries.
 To efficiently support inter-delta DM queries, each addition and deletion value contains a _local change_ flag
-that indicates if the change is not relative to the snapshot.
+that indicates whether or not the change is relative to the snapshot.
 Finally, in order to provide cardinality estimation for any triple pattern,
 we store an additional count data structure.
 
@@ -54,13 +54,13 @@ Our storage approach consists of six different indexes that are used for separat
 in three different triple component orders, namely: `SPO`, `POS` and `OSP`.
 These indexes are B+Trees, thereby, the starting triple for any triple pattern can be found in logarithmic time.
 Consequently, the next triples can be found by iterating through the links between each tree leaf.
-[](#triple-pattern-index-mapping) shows an overview of which triple patterns can be mapped to which index.
+[](#storing_triple-pattern-index-mapping) shows an overview of which triple patterns can be mapped to which index.
 In contrast to [other approaches](cite:cites rdf3x,hexastore) that ensure certain triple orders,
 we use three indexes instead of all six possible component orders,
 because we only aim to reduce the iteration scope of the lookup tree for any triple pattern.
 For each possible triple pattern,
 we now have an index that locates the first triple component in logarithmic time,
-and identifies the terminating element of the result stream without necessarily having iterate to the last value of the tree.
+and identifies the terminating element of the result stream without necessarily having to iterate to the last value of the tree.
 For some scenarios, it might be beneficial to ensure the order of triples in the result stream,
 so that more efficient stream joining algorithms can be used, such as sort-merge join.
 If this would be needed, `OPS`, `PSO` and `SOP` indexes could optionally be added

@@ -1,6 +1,6 @@
 In this chapter, we tackle the second challenge of this PhD, which is:
 "Indexing evolving data involves a *trade-off* between *storage size* and *lookup efficiency*".
-As *evolving* knowledge graphs add a temporal dimension to regular knowledge graphs,
+Since *evolving* knowledge graphs add a temporal dimension to regular knowledge graphs,
 new storage and querying techniques are required.
 A naive way to handle this temporal dimension would be to store each knowledge graph version as a separately materialized knowledge graph.
 This can however introduce a tremendous storage overhead when consecutive versions are similar to each other.

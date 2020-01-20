@@ -50,7 +50,7 @@ Because our querying algorithms require the relative position of each deletion w
 we have to calculate these positions during ingestion.
 We do this using the helper function `calculatePositions(triple)`.
 This function depends on external mappings that persist over the duration of the ingestion phase
-that map from triple to a counter for each possible triple pattern.
+that map from a triple to a counter for each possible triple pattern.
 When this helper function is called for a certain triple,
 we increment the counters for the seven possible triple patterns of the triple.
 For the triple itself, we do not maintain a counter, as its value is always 1.

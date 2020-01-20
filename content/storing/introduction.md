@@ -34,7 +34,7 @@ such indexes can serve as an entry point for query engines.
 Our solution is applicable as:
 (a) an alternative index with efficient triple-pattern-based access for existing engines, in order to improve the efficiency of more expressive SPARQL queries; and
 (b) a data source for the Web-friendly [Triple Pattern Fragments](cite:cites ldf) (TPF) interface, i.e.,
-a Web API that provides access to RDF datasets by triple pattern and partitions the results in pages.
+a Web API that provides access to RDF datasets by triple patterns and partitions the results in pages.
 We focus on the performance-critical features of _stream-based results_, query result _offsets_, and _cardinality estimation_.
 Stream-based results allow more memory-efficient processing when query results are plentiful.
 The capability to efficiently offset (and limit) a large stream reduces processing time if only a subset is needed.
