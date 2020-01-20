@@ -3,7 +3,8 @@ FUNCTION RemoveLooseStops(S, E, N, O, r)
     Set of stops S
     Set of edges E between the stops from S
     Maximum number N of closest stations to consider
-    Maximum average distance O around a stop to be considered a loose station
+    Maximum average distance O around a stop to be considered
+        a loose station
     Radius r in which to look for stops.
 FOREACH s in S with degree of 1 w.r.t. E DO
     sx = x coordinate of s
@@ -21,4 +22,5 @@ FOREACH s in S with degree of 1 w.r.t. E DO
             ox += dx; oy += dy
             s' = random station around o with radius a * r
             IF s' exists
-                add edge between s and s' to E and continue next for-loop iteration
+                add edge between s and s' to E and continue
+                    next for-loop iteration

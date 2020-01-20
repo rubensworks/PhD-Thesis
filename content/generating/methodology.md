@@ -77,7 +77,7 @@ To make it [region-based](cite:cites generatingnetworkbasedmovingobjects),
 the selection uses a weighted Zipf-like-distribution, where cells with high population values have a higher chance
 of being picked than cells with lower values.
 The shape of this Zipf curve can be scaled to allow for different stop distributions to be configured.
-Furthermore, a minimum distance between stops can be configured, to avoid situations where all stops are placed in highly population areas.
+Furthermore, a minimum distance between stops can be configured, to avoid situations where all stops are placed in highly populated areas.
 
 **Edge-based**
 Another stop generation phase exists after the edge generation
@@ -162,7 +162,7 @@ Illustration of the second phase of stop generation where edges are modified to 
 </figure>
 
 #### Edges
-The next phase in public transit network generation connects the stops that were generated in the previous phase with edges.
+The next phase in public transit network generation connects stops that were generated in the previous phase with edges.
 In order to simulate real transit network structures, we split up this generation phase into three sequential steps.
 In the first step, clusters of nearby stops are formed, to lay the foundation for short-distance routes.
 Next, these local clusters are connected with each other, to be able to form long-distance routes.
@@ -191,14 +191,14 @@ The iteration will halt when all clusters are merged and there is only one conne
 
 **Cleanup**
 The final cleanup step will make sure that the number of stops that are connected by only one edge are reduced.
-In real train networks, the majority of stations are connected with at least more than one other stations.
+In real train networks, the majority of stations are connected with at least more than one other station.
 The two earlier generation steps however generate a significant number of *loose stops*,
 which are connected with only a single other stop with a direct edge.
 In this step, these loose stops are identified, and an attempt is made to connect them to other nearby stops as shown in [](#generating_alg:methodology:loosestops).
 For each loose stop, this is done by first identifying the direction of the single edge of the loose stop on line 18.
-This direction is scaled by the radius in which to look for stops, and defines the stepsize for the loop the starts on line 20.
+This direction is scaled by the radius in which to look for stops, and defines the stepsize for the loop that starts on line 20.
 This loop starts from the loose stop and iteratively moves the search position in the defined direction, until it finds a random stop in the radius,
-or the search distance exceeds the average distance of between the stops in the neighbourhood of this loose stop.
+or the search distance exceeds the average distance between the stops in the neighbourhood of this loose stop.
 This random stop from line 22 can be determined
 by finding all stations that have a distance to the search point that is below the radius, and picking a random stop from this collection.
 If such a stop is found, an edge is added from our loose stop to this stop.

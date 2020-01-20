@@ -69,9 +69,9 @@ The function in [](#generating_math:eval:closest) is used to determine the close
 in a set of elements $$B$$ to a given element $$a$$, given a distance function $$f$$.
 The function in [](#generating_math:eval:distance) calculates the distance between all elements in $$A$$ and all elements in $$B$$,
 given a distance function $$f$$.
-The computational complexity of $$\chi$$ is $$O(\|B\| \cdot \kappa(f))$$,
+The computational complexity of $$\chi$$ is $$O(|B| \cdot \kappa(f))$$,
 where $$\kappa(f)$$ is the cost for one distance calculation for $$f$$.
-The complexity of $$\Delta$$ then becomes $$O(\|A\| \cdot \|B\| \cdot \kappa(f))$$.
+The complexity of $$\Delta$$ then becomes $$O(|A| \cdot |B| \cdot \kappa(f))$$.
 
 <figure id="generating_math:eval:closest" class="equation" markdown="1">
 $$
@@ -91,7 +91,7 @@ $$
 \dfrac{
       \sum\limits_{a \in A}{f(a, \chi(a, B, f))}
     + \sum\limits_{b \in B}{f(b, \chi(b, A, f))}
-    }{\|A\| + \|B\|}
+    }{|A| + |B|}
 \end{aligned}
 $$
 <figcaption markdown="block">
@@ -102,9 +102,9 @@ Function to calculate the distance between all elements in a set of elements.
 ##### Stops Distance
 For measuring the distance between two sets of stops $$S_1$$ and $$S_2$$,
 we introduce the distance function from [](#generating_math:stops:distance).
-This measures the distance between every possible pair of stops using the Euclidian distance function $$d$$.
+This measures the distance between every possible pair of stops using the Euclidean distance function $$d$$.
 Assuming a constant execution time for $$\kappa(d)$$,
-the computational complexity for $$\Delta_\text{s}$$ is $$O(\|S_1\| \cdot \|S_2\|)$$.
+the computational complexity for $$\Delta_\text{s}$$ is $$O(|S_1| \cdot |S_2|)$$.
 
 <figure id="generating_math:stops:distance" class="equation" markdown="1">
 $$
@@ -113,21 +113,21 @@ $$
 \end{aligned}
 $$
 <figcaption markdown="block">
-Function to calculate the distance between two stops.
+Function to calculate the distance between two sets of stops.
 </figcaption>
 </figure>
 
 ##### Edges Distance
 In order to measure the distance between two sets of edges $$E_1$$ and $$E_2$$,
 we use the distance function from [](#generating_math:eval:edges:distance),
-which measures the distance between all pairs of edges using the distance function $d_\text{e}$.
+which measures the distance between all pairs of edges using the distance function $$d_\text{e}$$.
 This distance function $$d_\text{e}$$, which is introduced in [](#generating_math:eval:edge:distance),
-measures the Euclidian distance between the start and endpoints of each edge, and between the different edges,
+measures the Euclidean distance between the start and endpoints of each edge, and between the different edges,
 weighed by the length of the edges.
 The constant $$1$$ in [](#generating_math:eval:edge:distance) is to ensure that the distance between two edges that have an equal length,
 but exist at a different position, is not necessarily zero.
 The computational cost of $$d_\text{e}$$ can be considered as a constant,
-so the complexity of $$\Delta_\text{e}$$ becomes $$O(\|E_1\| \cdot \|E_2\|)$$.
+so the complexity of $$\Delta_\text{e}$$ becomes $$O(|E_1| \cdot |E_2|)$$.
 
 <figure id="generating_math:eval:edges:distance" class="equation" markdown="1">
 $$
@@ -153,7 +153,7 @@ $$
 \end{aligned}
 $$
 <figcaption markdown="block">
-Function to calculate the distance of an edge.
+Function to calculate the distance between two edges.
 </figcaption>
 </figure>
 
@@ -165,7 +165,7 @@ which is calculated by considering the edges in each route and measuring the dis
 between those two sets using the distance function $$\Delta_\text{e}$$ from [](#generating_math:eval:edges:distance).
 By considering the maximum amount of edges per route as $$e_\text{max}$$,
 the complexity of $$d_\text{r}$$ becomes $$O(e_\text{max}^2)$$
-This leads to a complexity of $$O(\|R_1\| \cdot \|R_2\| \cdot e_\text{max}^2)$$ for $$\Delta_\text{r}$$.
+This leads to a complexity of $$O(|R_1| \cdot |R_2| \cdot e_\text{max}^2)$$ for $$\Delta_\text{r}$$.
 
 <figure id="generating_math:eval:routes:distance" class="equation" markdown="1">
 $$
@@ -193,11 +193,11 @@ Function to calculate the distance between two routes.
 Finally, we measure the distance between two sets of connections $$C_1$$ and $$C_2$$
 using the function from [](#generating_math:eval:connections:distance).
 The distance between two connections is measured using the function from [](#generating_math:eval:connection:distance),
-which is done by considering their respective temporal distance weighed by a constant $$d_\epsilon$$ --when serializing time in milliseconds, we set $$d_\epsilon$$ to $$60000$$.--,
+which is done by considering their respective temporal distance weighed by a constant $$d_\epsilon$$ --when serializing time in milliseconds, we set $$d_\epsilon$$ to $$60000$$--,
 and their geospatial distance using the edge distance function $$d_\text{e}$$.
 The complexity of time calculation in $$d_\text{c}$$ can be considered being constant,
 which makes it overall complexity $$O(e_\text{max}^2)$$.
-For $$\Delta_\text{c}$$, this leads to a complexity of $$O(\|C_1\| \cdot \|C_2\| \cdot e_\text{max}^2)$$.
+For $$\Delta_\text{c}$$, this leads to a complexity of $$O(|C_1| \cdot |C_2| \cdot e_\text{max}^2)$$.
 
 <figure id="generating_math:eval:connections:distance" class="equation" markdown="1">
 $$
@@ -234,7 +234,7 @@ In practice, we only observed extreme execution times for the respective distanc
 For routes, we implemented an optimization, with the same worst-case complexity,
 that indexes routes based on their geospatial position, and performs radial search around each route
 when the closest one from a set of other routes should be found.
-For connections, we consider the linear time dimension when performing binary search for finding the closest connection from a set of elements.
+For connections, we consider the linear time dimension when performing binary search for finding the closest connection within a set of elements.
 
 ##### Metrics
 In order to measure the realism of each generator phase, we introduce a *realism* factor $$\rho$$ for each phase.

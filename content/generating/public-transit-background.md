@@ -21,7 +21,7 @@ shows that these processes are typically subdivided into [five sequential steps]
 5. **crew scheduling and rostering**, the assignment of drivers and additional crew to trips.
 
 In this paper, we only consider the first three steps for our mimicking algorithm,
-which lead to all the required information
+which leads to all the required information
 that is of importance to passengers in a public transit schedule.
 We present the three steps from this survey in more detail hereafter.
 
@@ -39,7 +39,7 @@ Given this input, routes are designed based on the following [objectives](cite:c
 * **historical background**: Existing routes may influence the new design.
 
 The next step is the setting of frequencies, which is based on the routes from the previous step, public demand and vehicle availability.
-The main objectives in this step are based on the following [metrics](cite:cites transitnetworkdesignscheduling):
+The main objectives in this step are based on the following [measures](cite:cites transitnetworkdesignscheduling):
 
 * **demand satisfaction**: How many stops are serviced frequently enough to avoid overcrowding and long waiting times.
 * **number of line runs**: How many times each line is serviced -- a trade-off between the operator's aim for minimization and the public demand for maximization.
@@ -66,7 +66,7 @@ The specification uses the following terminology to define the rules for a publi
 * **Route** is a time-independent collection of stops, describing the sequence of stops a certain vehicle follows in a certain public transit line. For example the train route from Brussels to Ghent.
 * **Trip** is a collection of stops with their respective stop times, such as the route from Brussels to Ghent at a certain time.
 
-The \zip file is put online by a public transit operator, to be downloaded by [route planning](cite:cites routeplanning) software.
+The zip file is put online by a public transit operator, to be downloaded by [route planning](cite:cites routeplanning) software.
 [Two models are commonly used to then extract these rules into a graph](cite:cites pyrga2008efficient).
 In a *time-expanded model*, a large graph is modeled with arrivals and departures as nodes and edges connect departures and arrivals together.
 The weights on these edges are constant.

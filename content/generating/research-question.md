@@ -11,7 +11,7 @@ between the distribution of stops in an area and its population distribution,
 we discover a positive correlation of 0.439 for Belgium and 0.459 for the Netherlands (*p*-values in both cases &lt; 0.00001),
 thereby validating our hypothesis with a confidence of 99%.
 Because of the continuous population variable and the binary variable indicating whether or not there is a stop,
-the correlation is calculated using the [point-biserial correlation coefficient](https://github.com/PoDiGG/podigg-evaluate/blob/master/stats/correlation.r){:.mandatory}.
+the correlation is [calculated](https://github.com/PoDiGG/podigg-evaluate/blob/master/stats/correlation.r){:.mandatory} using the [point-biserial correlation coefficient](cite:cites pointbiserialcorrelation).
 For the calculation of these correlations, we ignored the population value outliers.
 Following this conclusion, our mimicking algorithm will use such population distributions as input,
 and derive public transport networks and trip instances.

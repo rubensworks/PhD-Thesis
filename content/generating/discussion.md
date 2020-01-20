@@ -25,14 +25,14 @@ and the Belgium and Netherlands geospatial regions in [](#generating_subsec:eval
 
 #### Usage within Benchmarks
 
-A~synthetic dataset generator,
+A synthetic dataset generator,
 which is one of the main contributions of this work,
 forms an essential aspect of benchmarks for [(RDF) data management systems](cite:cites ldbc,benchmarkhandbook).
 Prescribing a&nbsp;concrete benchmark that includes the evaluation of tasks is out of scope.
 However,
 to provide a guideline on how our dataset generator can be used as part of a benchmark,
 we relate the primary elements of public transport datasets to *choke points* in data management systems,
-i.e., key technical challenges in these system.
+i.e., key technical challenges in these systems.
 Below, we list choke points related to *storage* and *querying* within data management systems and route planning systems.
 For each choke point, we introduce example tasks to evaluate them in the context of public transport datasets.
 The querying choke points are inspired by the choke points identified by [Petzka et. al. for faceted browsing](cite:cites petzka2017benchmarking).
@@ -118,7 +118,7 @@ The sequential steps in the presented mimicking algorithm require persistence of
 Currently, PoDiGG is implemented in such a way that all data is kept in-memory for the duration of the generation, until it is serialized.
 When large datasets need to be generated, this requires a larger amount of memory to be allocated to the generator.
 Especially for large amounts of routes or connections, where 100 million connections already require almost 10GB of memory to be allocated.
-While performance was not the primary concern in this work, in future work, improvements could be made in the future.
+While performance was not the primary concern in this work, in future work, improvements could be made.
 A first possible solution would be to use a memory-mapped database for intermediary data,
 so that not all data must remain in memory at all times.
 An alternative solution would be to modify the mimicking process to a streaming algorithm,
@@ -134,8 +134,9 @@ When similar generation algorithms are introduced in the future, this evaluation
 Our results showed that all sub-generators, except for the trips generator, produced output with a high realism value.
 The trips are still closer to real data than a random generator, but this can be further improved in future work.
 This can be done by for instance taking into account [network capacities](cite:cites transitnetworkdesignscheduling)
-on certain edges when instantiating routes as trips,
-because we currently assume infinite edge capacities, which can result in a large amount of connections over an edge at the same time,
+on certain edges when instantiating routes as trips.
+This is because we currently assume infinite edge capacities,
+which can result in a large amount of connections over an edge at the same time,
 which may not be realistic for certain networks.
 Alternatively, we could include other factors in the generation algorithm,
 such as the location of certain points of interest, such as shopping areas, schools and tourist spots.
@@ -153,7 +154,7 @@ with the last position of each vehicle being of importance when choosing the nex
 ##### Alternative Implementations
 An alternative way of implementing this generator would be to define declarative dependency rules for public transport networks,
 based on the work by [Pengyue et. al.](cite:cites syntheticidsgenerator). This would require a semantic extension to the engine
-so that is aware of the relevant ontologies and that it can serialize to one or more RDF formats.
+so that it is aware of the relevant ontologies and that it can serialize to one or more RDF formats.
 Alternatively, machine learning techniques could be used
 to automatically learn the structure and characteristics of real datasets
 and create [similar realistic synthetic datasets](cite:cites machinelearningsyntheticdataset),
@@ -175,7 +176,7 @@ PoDiGG and PoDiGG-LC have been developed for usage within the HOBBIT platform.
 This platform is being developed within the HOBBIT project and aims to provide
 an environment for benchmarking RDF systems for Big Linked Data.
 The platform provides several default dataset generators, including PoDiGG,
-which can be used to benchmark systems.
+which can be used to benchmark RDF systems.
 
 PoDiGG, and its generated datasets are being used in the [ESWC Mighty Storage Challenge 2017 and 2018](cite:cites mocha2017).
 The first task of this challenge consists of RDF data ingestion into triple stores,

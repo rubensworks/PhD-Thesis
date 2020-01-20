@@ -48,7 +48,7 @@ They introduce three types of dependencies for the generation of instances:
 * **inter-record (vertical) dependencies**: Relationships between different instances.
 
 Their engine is able to accept such dependencies as part of a semantic graph definition,
-and iteratively create new instances to form a synthetic dataset.
+and iteratively creates new instances to form a synthetic dataset.
 This tool however outputs non-RDF CSV files, which makes it impossible to directly use this system for
 the generation of public transport datasets in RDF using existing ontologies.
 For our public transport use case, individual entities such as stops, stations and connections
@@ -71,11 +71,11 @@ since this level of structuredness can have an impact on how certain data is sto
 This is because these systems may behave differently on datasets with different levels of structuredness,
 as they can have certain optimizations for some cases.
 In order to measure this structuredness, the authors introduce the *coherence*
-metric of a dataset $$D$$ with a type system $$\mathcal{T}$$ that can be calculated as follows:
+measure of a dataset $$D$$ with a type system $$\mathcal{T}$$ that can be calculated as follows:
 
 $$
 \begin{aligned}
-    CH(\mathcal{T}, D) = \sum_{\forall{T \in \mathcal{T}}} WT(CV(T, D)) * CV(T, D)
+    CH(\mathcal{T}, D) = \sum_{T \in \mathcal{T}} WT(CV(T, D)) * CV(T, D)
 \end{aligned}
 $$
 
@@ -85,12 +85,12 @@ and is calculated as the fraction of type instances that set a value for all its
 The factor $$WT(CV(T, D))$$ is used to weight this sum,
 so that the coherence is always a value between 0 and 1, with 1 representing a perfect structuredness.
 A maximal coherence means that all instances in the dataset have values for all possible properties in the type system,
-which is for example the case in relational databases without optional values.
-Based on this metric, the authors introduce a generic method for creating variants of real datasets
+which is for example the case in relational databases without null values.
+Based on this measure, the authors introduce a generic method for creating variants of real datasets
 with different sizes while maintaining a similar structuredness.
 The authors describe a method to calculate the coverage value of this dataset,
 which has been [implemented as a procedure in the Virtuoso RDF store](cite:cites socialnetworkdatasetgenerator).
 As the goal of our work is to generate *realistic* RDF public transport datasets,
-we will use this metric to compare the realism of generated datasets with real datasets.
-As this high-level metric is used to define *realism* over any kind of RDF dataset,
-we will introduce new metrics to validate the realism for specifically the case of public transport datasets.
+we will use this measure to compare the realism of generated datasets with real datasets.
+As this high-level measure is used to define *realism* over any kind of RDF dataset,
+we will introduce new measures to validate the realism for specifically the case of public transport datasets.

@@ -9,11 +9,11 @@ Real-world datasets are almost ideal, as they offer these realistic circumstance
 but they are often hard to obtain and inflexible for testing.
 For these reasons, synthetic dataset generators are typically preferred
 over real-world datasets due to their intrinsic flexibility.
-Unfortunately, many synthetic dataset that are generated within benchmarks are insufficiently realistic,
+Unfortunately, many synthetic datasets that are generated within benchmarks are insufficiently realistic,
 raising questions about the generalizability of benchmark results to real-world scenarios.
 <!--need-->
-In order to benchmark geospatial and temporal RDF data management systems
-such as route planners
+In order to benchmark geospatial and temporal RDF data management systems,
+such as route planners,
 with sufficient external validity and depth,
 <!--task-->
 we designed PoDiGG,

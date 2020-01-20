@@ -93,7 +93,7 @@ PoDiGG has a logging mechanism, which provides continuous feedback to the user a
 Finally, PoDiGG provides the option to derive realistic public transit queries over the generated network,
 aimed at testing the load of route planning systems.
 This is done by iteratively selecting two random stops weighed by their size
-and choosing a random starting time based on the same time distribution as discussed in [](#generating_subsec:methodology:trips).
+and choosing a random starting time based on the same time distribution as discussed in [](#generating_subsec-methodology-trips).
 This is serialized to a [JSON format](https://github.com/linkedconnections/benchmark-belgianrail#transit-schedules){:.mandatory}
 that was introduced for benchmarking the [Linked Connections route planner](cite:cites linkedconnections).
 
@@ -308,7 +308,7 @@ The *seed* parameter can be used to introduce pseudo-randomness into the output.
     <tr>
         <td><code>vehicle_speedup</code></td>
         <td><code>1000</code></td>
-        <td>Vehicle speedup in km/(h$^2$)</td>
+        <td>Vehicle speedup in km/(h<sup>2</sup>)</td>
     </tr>
     <tr>
         <td><code>hourly_weekday_distribution</code></td>
