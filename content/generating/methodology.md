@@ -95,7 +95,7 @@ After the second stop generation phase, these line structures become more appare
 Real stops with line structures.
 </figcaption>
 </figure>
-
+ 
 <figure id="generating_fig:methodology:stopplacementp1" class="subfigure">
 <img src="generating/img/stops_parameterized_1.png" alt="Generation phase step 1">
 <figcaption markdown="block">
@@ -149,7 +149,7 @@ Choosing a random point within the area, weighted by population value.
 </figcaption>
 </figure>
 
-<figure id="generating_fig:methodology:stopplacementp2" class="subfigure">
+<figure id="generating_fig:methodology:stopsphase2_4" class="subfigure">
 <img src="generating/img/stops_phase2_4.svg" alt="Generation phase step 2" class="figure-small">
 <figcaption markdown="block">
 Modify edges so that the path includes this new point.
