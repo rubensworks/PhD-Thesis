@@ -102,7 +102,7 @@ when a large number of distinct predicates is present.
 
 A delta chain can contain multiple instances of the same triple,
 since it could be added in one version and removed in the next.
-Triples that revert a previous addition or deletion within the same delta chain, are called _local changes_,
+Triples that revert a previous non-local-change (addition or deletion) within the same delta chain, are called _local changes_,
 and are important for query evaluation.
 Determining the locality of changes can be costly,
 thus we pre-calculate this information during ingestion time and store it for each versioned triple,
