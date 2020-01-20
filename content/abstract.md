@@ -15,7 +15,7 @@ and ways to manage them.
 <!-- Task         -->
 As such, the goal of this PhD is to allow such evolving knowledge graphs to be *stored* and *queried*,
 taking into account the *decentralized* nature of the Web
-where anyone should be able say anything about anything.
+where anyone should be able to say anything about anything.
 <!-- Object       -->
 Concretely, four challenges related to this goal are investigated:
 (1) generation of evolving data,

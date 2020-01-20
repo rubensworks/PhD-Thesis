@@ -15,7 +15,7 @@ In the recent years, these technologies are being used to build so-called *knowl
 which are collections of structured information to support intelligent agents such as Siri and Google Assistant.
 
 Most research on knowledge graphs has focused on *static* data.
-However, there is however a huge amount of *evolving* data available,
+However, there is a huge amount of *evolving* data available,
 such as traffic events from highway sensors or continuous heart rate measurements.
 There is a lot of value in evolving knowledge,
 such as for example the ability to determine daily busy traffic periods,
