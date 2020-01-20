@@ -38,7 +38,7 @@ in server and client cost, as we will discuss in the paragraphs below.
 {:#querying-evolving_subsec:Results-ServerCost}
     
 The server performance results from our main experiment can be seen in [](#querying-evolving_fig:res:scalability-server).
-This plot shows an increasing CPU usage for C-SPARQL and CQELS for higher numbers of concurrent query executions.
+On the one hand, this plot shows an increasing CPU usage for C-SPARQL and CQELS for higher numbers of concurrent query executions.
 On the other hand, our solution never reaches more than one percent of server CPU usage.
 [](#querying-evolving_fig:res:scalability-server-200) shows a detailed view on the measurements in the case of 200 simultaneous
 query executions: the CPU peaks for the alternative approaches are much higher and more frequent than for our solution.

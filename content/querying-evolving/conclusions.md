@@ -42,7 +42,7 @@ We can also confirm [Hypothesis 3](#querying-evolving_hypothesis3) about the pos
 from the results in [](#querying-evolving_subsec:Results-AnnotationMethods).
 Our caching solution has a positive effect on the execution times.
 In an optimal scenario for our use case, caching would lead to an execution time reduction of 60% because three of the five triple
-patterns in the query for our use case from [](#querying-evolving_use-case) are dynamic.
+patterns in the query for our use case from [](#querying-evolving_use-case) are static.
 For our results, this caching leads to an average reduction of 56% which is close to the optimal case.
 Since we are working with dynamic data, some required background-data is bound to overlap, in these
 cases it is advantageous to have a client-side caching solution so that these redundant requests for

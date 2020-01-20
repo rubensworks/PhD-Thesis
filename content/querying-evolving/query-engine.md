@@ -70,7 +70,7 @@ A first step in this transformation is to detect which triple patterns inside th
 refer to static triples and which refer to dynamic triples.
 We detect this by making a separate query for each of the triple patterns and transforming each of them
 to a dynamic query.
-An example of such a transformation can be found in [](#query-evolving_listing:example:dynamic).
+An example of such a transformation can be found in [](#querying-evolving_listing:example:dynamictransformation).
 We then evaluate each of these transformed queries and assume a triple pattern is
 *dynamic* if its corresponding query has at least one result.
 Another step before the actual query splitting is the conversion of blank nodes to variables.
@@ -87,24 +87,24 @@ depending on whether or not the pattern is respectively static or dynamic.
 This assignment must maintain the hierarchical structure of the original query,
 in some cases this causes triple patterns to be present in the dynamic query when using complex operators
 like `UNION` to maintain correct query semantics.
-An example of this query transformation for our basic query from [](#query-evolving_listing:usecase:basicquery)
-can be found in [](#query-evolving_listing:usecase:staticquery) and [](#query-evolving_listing:usecase:dynamicquery).
+An example of this query transformation for our basic query from [](#querying-evolving_listing:usecase:basicquery)
+can be found in [](#querying-evolving_listing:example:staticquery) and [](#querying-evolving_listing:example:dynamicquery).
 
-<figure id="querying-evolving_listing:example:dynamic" class="listing">
+<figure id="querying-evolving_listing:example:dynamictransformation" class="listing">
 ````/querying-evolving/code/example-timesensitive.sparql````
 <figcaption markdown="block">
 Dynamic SPARQL query for the triple pattern `?s ?p ?o` for graph-based annotation with expiration times.
 </figcaption>
 </figure>
 
-<figure id="querying-evolving_listing:usecase:dynamicquery" class="listing">
+<figure id="querying-evolving_listing:example:staticquery" class="listing">
 ````/querying-evolving/code/usecase-staticquery.sparql````
 <figcaption markdown="block">
 Static SPARQL query which has been derived from the basic SPARQL query from [](#querying-evolving_listing:usecase:basicquery) by the *Rewriter* module.
 </figcaption>
 </figure>
 
-<figure id="querying-evolving_listing:ta:originaltriples" class="listing">
+<figure id="querying-evolving_listing:example:dynamicquery" class="listing">
 ````/querying-evolving/code/usecase-dynamicquery.sparql````
 <figcaption markdown="block">
 Dynamic SPARQL query which has been derived from the basic SPARQL query from [](#querying-evolving_listing:usecase:basicquery) by the *Rewriter* module. Graph-based annotation is used with expiration times.
@@ -118,13 +118,11 @@ This is done by filling in each dynamic result into the static query variables.
 It is possible that multiple results are returned from the dynamic query evaluation, which
 is the same amount of materialized static queries that can be derived.
 Assuming that we, for example, find the following single dynamic query result from the dynamic query in
-[](#query-evolving_listing:usecase:dynamicquery):
-$$\{ \texttt{?id} \mapsto \texttt{<http://example.org/train\#train4815>},
-    \texttt{?delay} \mapsto \texttt{"P10S"\^{}\^{}xsd:duration}
-\}$$
+[](#querying-evolving_listing:usecase:dynamicquery):
+<code>{?id ↦ <http://example.org/train#train4815>, ?delay ↦ "P10S"ˆˆxsd:duration}</code>
 then we can derive the materialized static query by filling in these two variables into the static query from
-[](#query-evolving_listing:usecase:staticquery), the resulting query can be found in 
-[](#query-evolving_listing:usecase:materializedstaticquery).
+[](#querying-evolving_listing:usecase:staticquery).
+The resulting query can be found in [](#querying-evolving_listing:usecase:materializedstaticquery).
 
 <figure id="querying-evolving_listing:usecase:materializedstaticquery" class="listing">
 ````/querying-evolving/code/usecase-materializedstaticquery.sparql````
@@ -147,5 +145,5 @@ This connection is the intersection of the variables present in the `WHERE` clau
 static and dynamic queries.
 Since the dynamic query results are already available at this point, these variables
 all have values, so this cache identifier can be represented by these variable results.
-The graph connection between the static and dynamic queries from [](#query-evolving_listing:usecase:staticquery) and [](#query-evolving_listing:usecase:dynamicquery) is `?id`.
+The graph connection between the static and dynamic queries from [](#querying-evolving_listing:usecase:staticquery) and [](#querying-evolving_listing:usecase:dynamicquery) is `?id`.
 The cache identifier for a result where `?id` is `"train:4815"` is for example `"?id=train:4815"`.

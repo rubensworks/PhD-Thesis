@@ -40,11 +40,11 @@ a singleton property for the predicate of each dynamic triple.
 Each of these singleton properties can then be annotated with its time annotation, being either
 a time interval or expiration&nbsp;times.
 
-##### Graphs
+**Graphs**
 To time-annotate triples using *graphs*, we can encapsulate triples inside contexts,
 and annotate each context graph with a time annotation.
 
-##### Implicit Graphs
+**Implicit Graphs**
 A&nbsp;TPF interface gives a unique IRI to each fragment corresponding to a&nbsp;triple pattern, including patterns without variables, i.e., actual triples.
 Since Triple Pattern Fragments are the basis of our solution, we can interpret each fragment as a&nbsp;graph.
 We will refer to these as *implicit graphs*.
@@ -64,9 +64,9 @@ This would be possible if these different identifiers are linked to each other w
 for example `owl:sameAs` relationships that our query engine takes into account, which would introduce further overhead.
 
 We will execute our use case for each of these annotation methods.
-In practise, an annotation method must be chosen depending on the requirements and available technologies.
+In practice, an annotation method must be chosen depending on the requirements and available technologies.
 If we have a datastore that supports quads, graph-based annotation is the best choice because of it requires the least amount of triples.
 If our datastore does not support quads, we can use singleton properties.
-If we have a TPF-like interface at which our data is hosted, we can use implicit graphs as annotation technique,
-if however many of those triples can be grouped under the same time label, singleton properties are a better alternative because
+If we have a TPF-like interface at which our data is hosted, we can use implicit graphs as annotation technique.
+If however many of those triples can be grouped under the same time label, singleton properties are a better alternative because
 the latter has grouping support.

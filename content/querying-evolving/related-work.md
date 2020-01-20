@@ -65,7 +65,7 @@ which indicates that the subject is only valid up until the given time.
 #### SPARQL Streaming Extensions
 
 Several SPARQL extensions exist that enable querying over data streams.
-These data streams are traditionaly represented as a monotonically non-decreasing stream of triples that are annotated with their timestamp.
+These data streams are traditionally represented as a monotonically non-decreasing stream of triples that are annotated with their timestamp.
 These require [*continuous processing*](cite:cites streamreasoning) of queries because of the constantly changing data.
 
 [C-SPARQL](cite:cites csparql) is an approach to querying over static and dynamic data.
@@ -87,7 +87,7 @@ approaches like C-SPARQL.
 This means that CQELS natively implements all query operators without transforming it to another
 language, removing the overhead of delegating it to another system.
 The syntax is similar to that of C-SPARQL, also supporting query registration and time windows.
-According to previous research CQELS, CQELS performs much better than C-SPARQL for large
+According to [previous research on CQELS](cite:cites cqels), CQELS performs much better than C-SPARQL for large
 datasets; for simple queries and small datasets the opposite is true.
 
 #### Triple Pattern Fragments
