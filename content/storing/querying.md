@@ -223,6 +223,9 @@ For the second case, the start version does not correspond to the snapshot versi
 The algorithm iterates over the triple pattern iteration scope of the addition and deletion trees in a sort-merge join-like operation,
 and only emits the triples that have a different addition/deletion flag for the two versions.
 
+In both cases, result stream offsetting happens naively by manually iterating
+over the stream for a given number of times to reach the given offset.
+
 ##### Estimated count
 
 For the first case, the start version corresponds to the snapshot version.
