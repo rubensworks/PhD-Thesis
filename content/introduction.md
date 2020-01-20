@@ -7,17 +7,17 @@
 #### Catalysts for Human Progress
 
 Since the dawn of mankind, biological evolution has shaped us into social creatures.
-The social capabilities of humans are however *much more evolved* than most other other species.
+The social capabilities of humans are however *much more evolved* than most other species.
 For example, [humans are one of the only animals that have clearly visible eye whites](https://pursuit.unimelb.edu.au/articles/why-we-show-the-whites-of-our-eyes).
 This allows people to see what other people are looking at,
 which simplifies *collaborative* tasks.
-Furthermore, [*theory of mind*](https://www.sciencedirect.com/topics/neuroscience/theory-of-mind), the ability to understand that others have different perspectives, [is much more pronounced in humans than other animals](https://mitpress.universitypressscholarship.com/view/10.7551/mitpress/9780262016056.001.0001/upso-9780262016056), which also strengthens our ability to *collaborate*.
+Furthermore, [*theory of mind*](https://www.sciencedirect.com/topics/neuroscience/theory-of-mind), the ability to understand that others have different perspectives, [is much more pronounced in humans than in other animals](https://mitpress.universitypressscholarship.com/view/10.7551/mitpress/9780262016056.001.0001/upso-9780262016056), which also strengthens our ability to *collaborate*.
 While our collaborative capabilities were initially limited to physical tasks,
-the invention of *language* and *writing* allowed us to share *knowledge* with each other.
+the adoption of *language* and *writing* allowed us to share *knowledge* with each other.
 
 Methods for sharing knowledge are essential catalysts for human progress,
 as shared knowledge allows larger groups of people to share goals
-and accomplish tasks that would have otherwise been impossible.
+and accomplish tasks that would have been impossible otherwise.
 Due to our *technological* progress,
 the *bandwidth* of these methods for sharing knowledge is always growing broader,
 which is continuously increasing the rate of human and technological progress.
@@ -25,7 +25,7 @@ which is continuously increasing the rate of human and technological progress.
 Throughout the last centuries, we saw three major revolutions in bandwidth.
 First, the invention of the printing press in the 15th century
 drastically increased rate at which books could be duplicated.
-Secondly, there was the invention of radio and television in the 20th century.
+Second, there was the invention of radio and television in the 20th century.
 As audio and video are cognitively less demanding than reading,
 this lowered the barrier for spreading knowledge even further.
 Third, we had the development of the internet near the end of the 20th century,
@@ -73,11 +73,11 @@ In order for this dream to become a reality,
 the Web had to become *machine-readable*.
 This Web extension is typically referred to as the *Semantic Web*.
 
-Now, almost twenty years later, several standards and technologies have been developed to make this dream a reality,
+Now, almost twenty years later, several standards and technologies have been developed to make this dream a reality.
 [In 2013, more than four million Web domains were already using these technologies](http://iswc2013.semanticweb.org/content/keynote-ramanathan-v-guha.html).
 Using these Semantic Web technologies, so-called *knowledge graphs* are being constructed by many major companies world-wide,
 such as [Google](https://developers.google.com/knowledge-graph/) and [Microsoft](https://developer.microsoft.com/en-us/graph/).
-A knowledge graph is a collection of structured information that is organized in a graph.
+A [knowledge graph](cite:cites knowledgegraph) is a collection of structured information that is organized in a graph.
 These knowledge graphs are being used to support tasks that were part of Tim Berners-Lee's original vision,
 such as managing day-to-day tasks with the [Google Now assistant](https://www.google.com/intl/nl/landing/now/).
 
@@ -86,13 +86,13 @@ Fundamentally, it is based around the concept of *triples* that are used to make
 A triple is made up of a *subject*, *predicate* and *object*,
 where the *subject* and *object* are resources (or *things*), and the *predicate* denotes their relationship.
 For example, [](#introduction-figure-triple) shows a simple triple indicating the nationality of a person.
-Multiple resources can combined with each other through multiple triples, which forms a *graph*.
+Multiple resources can be combined with each other through multiple triples, which forms a *graph*.
 [](#introduction-figure-graph) shows an example of such a graph, which contains *knowledge* about a person.
 In order to look up information within such graphs, the [SPARQL query language](cite:cites spec:sparqllang)
 was introduced as a standard.
 Essentially, SPARQL allows RDF data to be looked up through combinations of *triple patterns*,
 which are triples where any of its elements can be replaced with *variables* such as `?name`.
-For example, [](#introduction-code-sparql) contains a SPARQL query that find the names of all people that Alice knows.
+For example, [](#introduction-code-sparql) contains a SPARQL query that finds the names of all people that Alice knows.
 
 <figure id="introduction-figure-triple">
 <img src="img/triple.svg" alt="A triple" />
@@ -111,14 +111,15 @@ A small knowledge graph about Alice.
 <figure id="introduction-code-sparql" class="listing">
 ````/code/query.sparql````
 <figcaption markdown="block">
-A simplified SPARQL query selecting the names of all people that Alice knows.
-The results of this query would be `"Bob"` and `"Carol"`.
+A SPARQL query selecting the names of all people that Alice knows.
+The single result of this query would be `"Bob"`.
+Full URIs are omitted in this example.
 </figcaption>
 </figure>
 
 #### Evolving Knowledge Graphs
 
-Within *Big Data*, we talk about the three V's: *volume*, *velocity*, and *variety*.
+Within *Big Data*, we talk about the four V's: *volume*, *velocity*, *variety* and *veracity*.
 As the Web meets these three requirements, it can be seen as a global *Big Data*set.
 Specifically, the Web is highly *volatile*,
 as it is continuously evolving,
@@ -139,7 +140,7 @@ the usage of evolving knowledge graphs remains limited.
 As such, research and engineering effort is needed for new
 models, storage techniques, and query algorithms
 for evolving knowledge graphs.
-As such, *evolving* knowledge graphs are the main focus of my research.
+That is why *evolving* knowledge graphs are the main focus of my research.
 
 #### Decentralized Knowledge Graphs
 
@@ -211,8 +212,8 @@ related to this research question:
 3. **Web interfaces are highly *heterogeneous*.**
     <br />
     Before knowledge graphs can be queried from the Web,
-    different *interfaces* through which data is available,
-    and different *algorithms* with which the data can be retrieved
+    different *interfaces* through which data are available,
+    and different *algorithms* with which data can be retrieved
     need to be combinable.
 4. **Publishing *evolving* data via a *queryable interface* involves *continuous* updates to clients.**
     <br />
@@ -238,18 +239,18 @@ for which I am the lead author:
     <br />In: *The Semantic Web: ESWC 2016 Satellite Events, Revised Selected Papers*. Springer, May 2016.
 
 
-In [](#generating) a mimicking algorithm (*PoDiGG*) is introduced for generating *realistic* evolving public transport data,
+In [](#generating), a mimicking algorithm (*PoDiGG*) is introduced for generating *realistic* evolving public transport data,
 so that it can be used to benchmark systems that work with evolving data.
 This algorithm is based on established concepts for designing public transport networks,
 and takes into account population distributions for simulating the flow of vehicles.
 Next, in [](#storing), a storage architecture and querying algorithms are introduced
 for managing evolving data.
 It has been implemented as a system called *OSTRICH*,
-and extensive experimentation shows that this systems introduces a useful trade-off between storage size and querying efficiency
+and extensive experimentation shows that this system introduces a useful trade-off between storage size and querying efficiency
 for publishing evolving knowledge graphs on the Web.
-In [](#querying), A modular query engine called *Comunica* is introduced that is able to cope with the heterogeneity of data on the Web.
+In [](#querying), a modular query engine called *Comunica* is introduced that is able to cope with the heterogeneity of data on the Web.
 This engine has been designed to be highly flexible, so that it simplifies research within the query domain,
 where new query algorithms can for example be developed in a separate module, and plugged into the engine without much effort.
 In [](#querying-evolving), a low-cost publishing interface and accompanying querying algorithm (*TPF Query Streamer*) is introduced and evaluated
-to enable continous querying of *evolving* data with a low volatility.
+to enable continuous querying of *evolving* data with a low volatility.
 Finally, this work is concluded in [](#conclusions) and future research opportunities are discussed.
