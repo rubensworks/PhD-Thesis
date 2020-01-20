@@ -501,7 +501,8 @@ query evaluation is *slower* for VM and *faster* or *equal* for DM and VQ.
 Results from previous section showed that for BEAR-A, BEAR-B-daily and BEAR-B-hourly,
 OSTRICH requires *less* space than HDT-IC, which means that we *accept* Hypothesis 2.
 In order to validate that query evaluation is slower for VM but faster or equal for DM and VQ,
-we compared the means using the two-sample t-test, for which the results can be found in the [appendix (E)](https://rdfostrich.github.io/article-jws2018-ostrich/#hypo-test-2){:.mandatory}.
+we compared the means using the independent two-group t-test, for which the results can be found in the [appendix (E)](https://rdfostrich.github.io/article-jws2018-ostrich/#hypo-test-2){:.mandatory}.
+Normality of the groups was determined using the Kolmogorov-Smirnov test, for which p-values of 0.00293 or less were found.
 In all cases, the means are not equal with a confidence of 95%.
 For BEAR-B-daily and BEAR-B-hourly, HDT-IC is faster for VM queries, but slower for DM and VQ queries.
 For BEAR-A, HDT-IC is faster for all query types.
