@@ -14,4 +14,10 @@ Comunica has been designed in such a way that support for new interfaces and que
 and these modules can then be *plugged* into Comunica when they are needed.
 This engine simplifies the research and development of new query interfaces and algorithms,
 as new techniques can be tested immediately in conjunction with other already existing interfaces and algorithms.
-As we introduce a system architecture in this chapter, no research question is applicable here.
+
+This chapter introduces a system architecture.
+Unlike previous chapters were the goal was to research new methods,
+the goal of this chapter is to introduce a new architecture.
+While this work required research to determine a suitable architecture,
+no novel methods were introduced.
+As such, no research question was applicable here.
