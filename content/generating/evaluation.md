@@ -91,7 +91,7 @@ $$
 \dfrac{
       \sum\limits_{a \in A}{f(a, \chi(a, B, f))}
     + \sum\limits_{b \in B}{f(b, \chi(b, A, f))}
-    }{|A| + |B|}
+    }{(|A| + |B|) * \text{arg max}_{a \in A, b \in B} f(a, b)}
 \end{aligned}
 $$
 <figcaption markdown="block">
