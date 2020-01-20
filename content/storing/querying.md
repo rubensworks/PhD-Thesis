@@ -140,17 +140,17 @@ We will make use of bracket notation to indicate lists (ordered sets):
 
 Furthermore, we will use the following definitions:
 
- - `snapshot(tp, version)` is the ordered list of triples matching the given triple pattern `tp` in the corresponding snapshot, from here on shortened to `snapshot`.
- - `additions(version)` and `deletions(version)` are the corresponding ordered additions and deletions for the given version, from here on shortened to `additions` and `deletions`.
+ - `snapshot(tp, version)` is the ordered list of triples matching the given triple pattern `tp` in the corresponding snapshot, from here on shortened to `snapshot`, as used on line 2.
+ - `additions(version)` and `deletions(version)` are the corresponding ordered additions and deletions for the given version, from here on shortened to `additions` and `deletions`, as used on lines 7 and 8.
  - `originalOffset` is how much the versioned list should be shifted, from here on shortened to `ori`.
- - `PatchedSnapshotIterator(snapshot, deletions, additions)` is a function that returns the list `snapshot\deletions + additions`.
+ - `PatchedSnapshotIterator(snapshot, deletions, additions)` is a function that returns the list `snapshot\deletions + additions`, as used on line 26.
 
-The following definitions correspond to elements from the loop on lines 12-17:
+The following definitions correspond to elements from the loop on lines 12-18:
 
- - `deletions(x)` is the ordered list `{d | d ∈ deletions, d ≥ x}`, with `x` a triple.
- - `offset(x) = |deletions| - |deletions(x)|`, with `x` a triple.
+ - `deletions(x)` is the ordered list `{d | d ∈ deletions, d ≥ x}`, with `x` a triple corresponding to the function call on lines 15 and 16.
+ - `offset(x) = |deletions| - |deletions(x)|`, with `x` a triple, as used on line 17.
  - `t(i)` is the triple generated at line 13-14 for iteration `i`.
- - `off(i)` is the offset generated at line 16 for iteration `i`.
+ - `off(i)` is the offset generated at line 17 for iteration `i`.
 
 **Lemma 1**: `off(n) ≥ off(n-1)`  
 *Proof*:  
@@ -170,16 +170,16 @@ From this, we get:
 * `|deletions| - |deletions(t(n+1))| ≥ |deletions| - |deletions(t(n))|`  
 * `offset(t(n+1)) ≥ offset(t(n))`
 
-Together with lines 15-16 this gives us `off(n+1) ≥ off(n)`.
+Together with lines 15-17 this gives us `off(n+1) ≥ off(n)`.
 
-**Corollary 1**: The loop on lines 12-17 always terminates.  
+**Corollary 1**: The loop on lines 12-18 always terminates.  
 *Proof*:  
 Following the definitions, the end condition of the loop is `ori + off(n) = ori + off(n+1)`.
 From Lemma 1 we know that `off` is a non-decreasing function.
 Since `deletions` is a finite list of triples, there is an upper limit for `off` (`|deletions|`),
 causing `off` to stop increasing at some point which triggers the end condition.
 
-**Corollary 2**: When the loop on lines 12-17 terminates, `offset = |{d | d ∈ deletions, d ≤ snapshot[ori + offset]}|` and `ori + offset < |snapshot|`  
+**Corollary 2**: When the loop on lines 12-18 terminates, `offset = |{d | d ∈ deletions, d ≤ snapshot[ori + offset]}|` and `ori + offset < |snapshot|`  
 *Proof*:  
 The first part follows from the definition of `deletions` and `offset`.
 The second part follows from `offset ≤ |deletions|` and line 11.
@@ -195,11 +195,11 @@ Due to `|snapshot\deletions| = |snapshot| - |deletions|`, this corresponds t
 From Corollary 1 we know that the loop terminates
 and from Corollary 2 and line 13 that snapshot points to the element at position
 `ori + |{d | d ∈ deletions, d ≤ snapshot[ori + offset]}|` which,
-together with `additions` starting at index 0 and line 25,
+together with `additions` starting at index 0 and line 26,
 returns the requested result.
 
 If `ori ≥ |snapshot\deletions|`, `version[ori] = additions[ori - |snapshot\deletions|]`.
-From lines 20-22 it follows that `snapshot` gets emptied and `additions` gets shifted for the remaining required elements `(ori - |snapshot\deletions|)`, which then also returns the requested result on line 25.
+From lines 21-23 it follows that `snapshot` gets emptied and `additions` gets shifted for the remaining required elements `(ori - |snapshot\deletions|)`, which then also returns the requested result on line 26.
 
 #### Delta Materialization
 
