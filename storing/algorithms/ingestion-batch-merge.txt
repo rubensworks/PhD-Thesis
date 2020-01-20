@@ -9,7 +9,8 @@ mergeChangesets(changesetOriginal, changesetIngest) {
       changesetNew.add(triple)
       changesetNew.setLocalChange(triple, false)
     }
-    changesetNew.setAddition(triple, changesetIngest.isAddition(triple))
+    changesetNew.setAddition(triple,
+      changesetIngest.isAddition(triple))
   }
   return changesetNew
 }
