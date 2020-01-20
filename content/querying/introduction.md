@@ -68,7 +68,7 @@ _extensions_ and _customization_ of algorithms and functionality.
 Users can build and fine-tune a concrete engine
 by wiring the required modules through an RDF configuration document.
 By publishing this document,
-experiments can repeated and adapted by others.
+experiments can be repeated and adapted by others.
 2. Within Comunica, multiple **heterogeneous interfaces** are first-class citizens. This enables federated querying over heterogeneous sources and makes it for example possible to evaluate queries over any combination of SPARQL endpoints, TPF interfaces, datadumps, or other types of interfaces.
 3. Comunica is implemented using **Web-based technologies** in JavaScript, which enables usage through browsers, the command line, the [SPARQL protocol](cite:cites spec:sparqlprot), or any Web or JavaScript application.
 

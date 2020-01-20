@@ -11,12 +11,12 @@ Finally, we give an overview of all modules.
 
 #### Customizable Wiring at Design-time through Dependency Injection
 
-There is no such thing as _the_ Comunica engine,
-instead, Comunica is a meta engine that can be _instantiated_ into different engines based on different configurations.
+There is no such thing as _the_ Comunica engine.
+Instead, Comunica is a meta engine that can be _instantiated_ into different engines based on different configurations.
 Comunica achieves this customizability at design-time using the concept of [_dependency injection_](cite:cites DependencyInjection).
 Using a configuration file, which is created before an engine is started,
 components for an engine can be _selected_, _configured_ and _combined_.
-For this, we use the [Components.js](cite:cites componentsjs) JavaScript dependency injection framework,
+For this, we use the [Components.js](cite:cites componentsjs) JavaScript dependency injection framework.
 This framework is based on semantic module descriptions and configuration files
 using the [Object-Oriented Components ontology](cite:cites vanherwegen_semsci_2017).
 
@@ -122,20 +122,21 @@ on a parse bus with two subscribed actors.
 The first parser is very fast but requires a lot of memory,
 while the second parser is slower, but requires less memory.
 Which one is best, depends on the use case and is determined by the Mediator.
-The mediator first calls the _tests_ the actors for the action, and then _runs_ the action using the _best_ actor.
+The mediator first calls the _tests_ of the actors for the given action,
+and then _runs_ the action using the _best_ actor.
 </figcaption>
 </figure>
 
 #### Modules
 
 At the time of writing, Comunica consists of 79 different modules.
-This consists of 13 buses, 3 mediator types, 57 actors and 6 other modules.
+These consist of 13 buses, 3 mediator types, 57 actors and 6 other modules.
 In this section, we will only discuss the most important actors and their interactions.
 
 The main bus in Comunica is the _query operation_ bus, which consists of 19 different actors
 that provide at least one possible implementation of the typical SPARQL operations such as quad patterns, basic graph patterns (BGPs), unions, projects, ...
 These actors interact with each other using streams of _quad_ or _solution mappings_,
-and act on a query plan expressed in in [SPARQL algebra](cite:cites spec:sparqllang).
+and act on a query plan expressed in [SPARQL algebra](cite:cites spec:sparqllang).
 
 In order to enable heterogeneous sources to be queried in a federated way,
 we allow a list of sources, annotated by type, to be passed when a query is initiated.

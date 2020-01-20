@@ -16,11 +16,11 @@ resulting in a so-called [_SPARQL endpoint_](cito:citeAsAuthority spec:sparqlpr
 This is similar to how an SQL interface
 provides access to a relation database.
 The internal storage can either be a native RDF store, e.g., [AllegroGraph](cito:citesAsAuthority allegrograph) and [Blazegraph](cito:citesAsAuthority blazegraph),
-or a non-RDF store, e.g., [Virtuoso](cito:citesAsAuthority virtuoso) uses a object-relational database management system.
+or a non-RDF store, e.g., [Virtuoso](cito:citesAsAuthority virtuoso) uses an object-relational database management system.
 
 Various algorithms have been proposed for optimized SPARQL query evaluation.
-Some algorithms for example use the concept of [query rewriting](cite:cites SparqlOptimization) based on algebraic equivalent query operations,
-others have proposed the [optimization of Basic Graph Pattern evaluation](cite:cites SparqlSelectivityOptimization) using selectivity estimation of triple patterns.
+Some algorithms for example use the concept of [query rewriting](cite:cites SparqlOptimization) based on algebraic equivalent query operations.
+Others have proposed the [optimization of Basic Graph Pattern evaluation](cite:cites SparqlSelectivityOptimization) using selectivity estimation of triple patterns.
 
 In order to evaluate SPARQL queries over datasets of different storage types,
 SPARQL query frameworks were developed, such as
@@ -35,15 +35,15 @@ which makes swapping out query algorithms for specific query operators hard or s
 Furthermore, complex things such as federated querying over heterogeneous interfaces are difficult to implement using these frameworks,
 as they are not supported out-of-the-box.
 This issue of modularity and heterogeneity are two of the main problems we aim to solve within Comunica.
-The differences between Comunica and existing frameworks will be explained in more detail in [](#features).
+The differences between Comunica and existing frameworks will be explained in more detail in [](#querying_features).
 
 The [Triple Pattern Fragments client](cite:cites ldf) (also known as Client.js or `ldf-client`) is a client-side SPARQL engine
 that retrieves data over HTTP
 through [Triple Pattern Fragments (TPF) interfaces](cite:cites ldf).
 [Different algorithms](cite:cites tpfoptimization, cyclades, tpfqs) for this client and
-[TPF interface extensions](cite:cites tpfamf, tpfsubstring, brtpf, vtpf) have been proposed to reduce effort of server or client in some way.
+[TPF interface extensions](cite:cites tpfamf, tpfsubstring, brtpf, vtpf) have been proposed to reduce effort of the server or client in some way.
 All of these efforts are however implemented and evaluated in isolation.
-Furthermore, the implementations are tied to TPF interface, which makes it impossible to use them for other types of datasources and interfaces.
+Furthermore, the implementations are tied to the TPF interface, which makes it impossible to use them for other types of datasources and interfaces.
 With Comunica, we aim to solve this by modularizing query operation implementations into separate modules,
 so that they can be plugged in and combined in different ways, on top of different datasources and interfaces.
 
