@@ -1,7 +1,7 @@
 ## Examination Board
 
 * Prof. Antoon Bronselaer
-* Prof. Olaf Hartig
+* Dr. Olaf Hartig, Docent
 * Prof. Katja Hose
 * Prof. Erik Mannens
 * Prof. Femke Ongenae
