@@ -52,6 +52,8 @@ I was able to learn a lot from you, which has definitely helped me in becoming a
 I am grateful to both Ruben and Pieter C. for inviting me to pursue a PhD at IDLab,
 it has influenced my life in a very positive way, and I can not dream of a better job.
 I am also thankful of all the critical and constructive feedback Ruben, Miel, Pieter and Anastasia have given me.
+Last but not least, I thank the examination board Antoon Bronselaer, Olaf Hartig, Katja Hose, Erik Mannens, Femke Ongenae and Filip De Turck
+for their critical analysis and comments on this dissertation.
 
 I thank my family for being there all my life, and shaping me into the person I have become.
 Mom and dad, thank you being there,
