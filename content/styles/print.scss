@@ -102,3 +102,19 @@ figcaption {
   width: auto;
   height: 8em;
 }
+
+figure.numbered pre {
+  counter-reset: precode;
+
+  code {
+    &::before {
+      color: lightgray;
+      left: -1.75em;
+      text-align: right;
+      display: inline-block;
+      width: 1.5em;
+      content: counter(precode) " ";
+      counter-increment: precode;
+    }
+  }
+}
