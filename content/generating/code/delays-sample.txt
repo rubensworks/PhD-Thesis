@@ -1,5 +1,5 @@
-trip_id,stop_sequence,delay_departure,delay_arrival,delay_departure_reason         ,delay_arrival_reason
-100_4  ,0            ,0              ,1405754      ,                               ,td:RepairWork
-100_6  ,0            ,0              ,1751671      ,                               ,td:BrokenDownTrain
-100_6  ,1            ,1751671        ,1553820      ,td:BrokenDownTrain             ,td:BrokenDownTrain
-100_7  ,0            ,2782295        ,0            ,td:TreeAndVegetationCuttingWork,
+trip_id,stop,delay_dep,delay_arr,delay_dep_reason,delay_arr_reason
+100_4  ,0   ,0        ,1405754  ,                ,td:RepairWork
+100_6  ,0   ,0        ,1751671  ,                ,td:BrokenTrain
+100_6  ,1   ,1751671  ,1553820  ,td:BrokenTrain  ,td:BrokenTrain
+100_7  ,0   ,2782295  ,0        ,td:TreeWork     ,
