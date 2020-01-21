@@ -23,3 +23,7 @@ Our evaluations show that the server load with this approach scales better
 with an increasing number of concurrent clients
 compared other solutions.
 This shows that our technique is a good candidate for publishing evolving knowledge graphs on the Web.
+
+Since this research was performed at the start of my PhD,
+follow-up work has been done since then.
+For this reason, the chapter ends with an addendum that summarizes the relevant follow-up work.
