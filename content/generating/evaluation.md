@@ -8,6 +8,8 @@ Finally, we provide an indicative efficiency and scalability evaluation of the g
 All scripts that were used for the following evaluation can be found on [GitHub](https://github.com/PoDiGG/podigg-evaluate){:.mandatory}.
 Our experiments were executed on a 64-bit Ubuntu 14.04 machine with 128 GB of memory and a 24-core 2.40 GHz CPU.
 
+<div class="printonly empty-page">&nbsp;</div>
+
 #### Coherence
 {:#generating_subsec:evaluation:coherence}
 

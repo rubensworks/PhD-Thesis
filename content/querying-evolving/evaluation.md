@@ -1,3 +1,5 @@
+<div class="printonly empty-page">&nbsp;</div>
+
 ### Evaluation
 {:#querying-evolving_evaluation}
 
@@ -54,6 +56,8 @@ CPU usage of nearly zero percent for the whole duration of the query evaluation.
 The clients using the client-side TPF Query Streamer solution that was presented in this work
 had an initial CPU peak reaching about 80%, which dropped to about
 5% after 4 seconds.
+
+<div class="printonly empty-page">&nbsp;</div>
 
 #### Annotation Methods
 {:#querying-evolving_subsec:Results-AnnotationMethods}

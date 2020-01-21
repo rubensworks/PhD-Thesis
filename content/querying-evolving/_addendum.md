@@ -1,4 +1,4 @@
-<div style="page-break-after: always;">&nbsp;</div>
+<div class="printonly empty-page">&nbsp;</div>
 
 ### Addendum
 {:#querying-evolving_addendum}

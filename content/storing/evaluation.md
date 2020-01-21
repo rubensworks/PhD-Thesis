@@ -441,6 +441,8 @@ which makes the latter usable for very large datasets that don't fit in memory.
 In future work, a hybrid between the current streaming and batch algorithm could be investigated,
 i.e., a streaming algorithm with a larger buffer size, which is faster, but doesn't require unbounded amounts of memory.
 
+<div class="printonly empty-page">&nbsp;</div>
+
 ##### Compressibility
 
 As shown in [](#storing_results-ostrich-compressability),

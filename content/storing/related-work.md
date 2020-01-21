@@ -7,6 +7,8 @@ Finally, we discuss suitable benchmarks and different query types for RDF archiv
 This section does not contain an exhaustive list of all relevant solutions and techniques,
 instead, only those that are most relevant to this work are mentioned.
 
+<div class="printonly empty-page">&nbsp;</div>
+
 #### General RDF Indexing and Compression
 
 RDF storage systems typically use indexing and compression techniques

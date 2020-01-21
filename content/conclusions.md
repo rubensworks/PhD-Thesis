@@ -210,6 +210,8 @@ and does it does not allow knowledge graphs to evolve continuously for an non-pr
 The latter would be valuable for stream processing systems that need to be evaluated for long periods of time,
 which would require an adaptation to the algorithm to make it streaming.
 
+<div class="printonly empty-page">&nbsp;</div>
+
 #### Indexing Evolving Data
 
 In [](#storing), a storage mechanism for evolving knowledge graphs was introduced.
