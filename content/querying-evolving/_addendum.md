@@ -16,7 +16,7 @@ These two parts are summarized hereafter.
 
 [RSP-QL](cite:cites rspql) is a formal reference model in which different
 RDF Stream Processing (RSP) systems can be compared to each other,
-such as [C-SPARQL](cite:cites csparql), [CQELS](cite:cites cqels) and [TPF-QS](tpfqs).
+such as [C-SPARQL](cite:cites csparql), [CQELS](cite:cites cqels) and [TPF-QS](cite:cites tpfqs).
 It can be seen as an extension of RDF and SPARQL, by introducing temporal semantics.
 In the next paragraphs, I will summarize the RSP-QL model,
 explain how TPF-QS fits into this,
