@@ -1,0 +1,11 @@
+# All hypotheses
+PREFIX ls: <http://linkedscience.org/lsc/ns#>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?test ?name WHERE {
+  ?topic ls:tests ?test.
+  ?test schema:name ?nameRaw.
+
+  # Remove HTML tags
+  BIND(REPLACE(?nameRaw, "<[^>]*>", "", "i") AS ?name)
+}

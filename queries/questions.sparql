@@ -1,0 +1,10 @@
+# All research questions
+PREFIX schema: <http://schema.org/>
+
+SELECT ?question ?name WHERE {
+  ?topic schema:question ?question.
+  ?question schema:name ?nameRaw.
+
+  # Remove HTML tags
+  BIND(REPLACE(?nameRaw, "<[^>]*>", "", "i") AS ?name)
+}

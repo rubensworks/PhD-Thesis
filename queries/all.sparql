@@ -1,0 +1,6 @@
+# All data
+PREFIX schema: <http://schema.org/>
+
+SELECT ?s ?p WHERE {
+  ?s ?p ?o
+}

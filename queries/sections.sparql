@@ -1,0 +1,8 @@
+# All sections (not supported yet by Comunica)
+PREFIX schema: <http://schema.org/>
+
+SELECT * WHERE {
+  _:b schema:hasPart ?partList.
+  ?partList rdf:rest*/rdf:first ?section.
+  ?section schema:name ?name.
+}
