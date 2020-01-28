@@ -10,6 +10,8 @@ the client will know when the data becomes invalid and has to fetch new data to 
 To capture the temporal scope of data triples, we annotate this data with time.
 In this section, we discuss two different types of time labeling, and different methods to annotate this data.
 
+<div class="printonly empty-page">&nbsp;</div>
+
 #### Time Labeling Types
 {:#query-evolving_subsec:temporaldomains}
 

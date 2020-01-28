@@ -1,5 +1,3 @@
-<div class="printonly empty-page">&nbsp;</div>
-
 ### Conclusions
 {:#storing_conclusions}
 

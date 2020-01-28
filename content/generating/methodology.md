@@ -44,6 +44,8 @@ step 4 corresponds to the route design step in public transit planning
 and step 5 corresponds to both the frequencies setting and timetabling.
 These steps are explained in the following subsections.
 
+<div class="printonly empty-page">&nbsp;</div>
+
 #### Region
 
 In order to create networks, we sample geographic regions in which such networks exist as two-dimensional matrices.

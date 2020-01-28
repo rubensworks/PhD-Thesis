@@ -86,6 +86,8 @@ on [http://versioned.linkeddatafragments.org/bear](http://versioned.linkeddatafr
 Future challenges include the handling of very large numbers of versions and improving ingestion efficiency,
 which both could be resolved by dynamically creating intermediary snapshots within the delta chain.
 
+<div class="printonly empty-page">&nbsp;</div>
+
 #### Heterogeneous Web Interfaces
 
 In [](#querying), the challenge on handling the heterogeneous nature of Web interfaces during querying was tackled.
@@ -210,8 +212,6 @@ and does it does not allow knowledge graphs to evolve continuously for an non-pr
 The latter would be valuable for stream processing systems that need to be evaluated for long periods of time,
 which would require an adaptation to the algorithm to make it streaming.
 
-<div class="printonly empty-page">&nbsp;</div>
-
 #### Indexing Evolving Data
 
 In [](#storing), a storage mechanism for evolving knowledge graphs was introduced.
@@ -232,6 +232,8 @@ My algorithm naively applies an offset by iterating and voiding results until th
 as opposed to the more intelligent offset algorithms for the other versioned query types where an index is used to apply the offset.
 One possible solution would be to add an additional index for optimizing the offsets for delta queries,
 which would also lead to increased storage space and ingestion times.
+
+<div class="printonly empty-page">&nbsp;</div>
 
 #### Heterogeneous Web Interfaces
 

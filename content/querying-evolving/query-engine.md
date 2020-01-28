@@ -61,8 +61,6 @@ Finally, the *Result Manager* retrieves previous *materialized static query* res
 the local cache or executes this query for the first time and stores its results in the cache.
 These results are then sent to the client who had initiated continuous query.
 
-<div class="printonly empty-page">&nbsp;</div>
-
 #### Algorithms
     
 **Query rewriting**

@@ -1,5 +1,3 @@
-<div class="printonly empty-page">&nbsp;</div>
-
 ### Evaluation
 {:#querying-evolving_evaluation}
 
@@ -45,6 +43,8 @@ On the other hand, our solution never reaches more than one percent of server CP
 [](#querying-evolving_fig:res:scalability-server-200) shows a detailed view on the measurements in the case of 200 simultaneous
 query executions: the CPU peaks for the alternative approaches are much higher and more frequent than for our solution.
 
+<div class="printonly empty-page">&nbsp;</div>
+
 #### Client Cost
 {:#querying-evolving_subsec:Results-ClientCost}
     
@@ -56,8 +56,6 @@ CPU usage of nearly zero percent for the whole duration of the query evaluation.
 The clients using the client-side TPF Query Streamer solution that was presented in this work
 had an initial CPU peak reaching about 80%, which dropped to about
 5% after 4 seconds.
-
-<div class="printonly empty-page">&nbsp;</div>
 
 #### Annotation Methods
 {:#querying-evolving_subsec:Results-AnnotationMethods}

@@ -54,6 +54,8 @@ The objectives for this step are the following:
 * **fleet size**: The total amount of available vehicles and their usage will influence the timetabling possibilities.
 * **historical background**: Existing timetables may influence the new design.
 
+<div class="printonly empty-page">&nbsp;</div>
+
 #### Transit Feed Formats
 
 The de-facto standard for public transport time schedules is

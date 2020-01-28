@@ -38,6 +38,8 @@ as knowledge no longer has to go through a few large radio or tv stations,
 but can now be shared over a virtually unlimited amount of Web pages,
 which leads to a more *social* human species.
 
+<div class="printonly empty-page">&nbsp;</div>
+
 #### Impact of the Web
 
 At the time of writing, the Web is 30 years old.
@@ -141,6 +143,8 @@ As such, research and engineering effort is needed for new
 models, storage techniques, and query algorithms
 for evolving knowledge graphs.
 That is why *evolving* knowledge graphs are the main focus of my research.
+
+<div class="printonly empty-page">&nbsp;</div>
 
 #### Decentralized Knowledge Graphs
 

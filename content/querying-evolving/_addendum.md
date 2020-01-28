@@ -51,6 +51,8 @@ where each of them adds time annotations to the solution mappings.
 *IStream* streams the difference between the answer of the current evaluation and the one of the previous iteration;
 *DStream* streams the part of the answer at the previous iteration that is not in the current one.
 
+<div class="printonly empty-page">&nbsp;</div>
+
 **TPF-QS in terms of RSP-QL**
 
 From the perspective of a TPF-QS client, the data that was retrieved from a TPF server
@@ -88,6 +90,8 @@ of an RDF statement that was used in the last solution mapping expires.
 Comparison TPF-QS, C-SPARQL, and CQELS in terms of the main elements of the RSP-QL reference model.
 </figcaption>
 </figure>
+
+<div class="printonly empty-page">&nbsp;</div>
 
 #### Evaluation
 

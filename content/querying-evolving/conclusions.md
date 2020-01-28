@@ -10,6 +10,8 @@ After that, the effect of our client-side cache will be explained.
 Next, we will discuss the effect of time annotation on the amount of requests to be sent, after which the
 performance of our solution will be shown and the effects of the annotation methods.
 
+<div class="printonly empty-page">&nbsp;</div>
+
 #### Server cost
 The results from [](#querying-evolving_subsec:Results-ServerCost) confirm [Hypothesis 1](#querying-evolving_hypothesis1), in which we wanted to
 know if we could lower the server cost when compared to C-SPARQL and CQELS.
@@ -53,6 +55,8 @@ Future research should indicate what the limits of such a client-side cache for 
 whether or not it is advantageous to reuse this cache for different queries.
 
 <meta property="lsc:confirms" resource="#querying-evolving_hypothesis3">
+
+<div class="printonly empty-page">&nbsp;</div>
 
 #### Request reduction
 By annotating dynamic data with a time annotation, we successfully reduced the amount of required requests

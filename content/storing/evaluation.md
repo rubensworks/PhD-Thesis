@@ -87,6 +87,8 @@ Finally, we evaluated the offset capabilities of OSTRICH
 by comparing it with custom offset implementations for the other approaches.
 We evaluated the blank triple pattern query with offsets ranging from 2 to 4,096 with a limit of 10 results.
 
+<div class="printonly empty-page">&nbsp;</div>
+
 #### Results
 
 In this section, we present the results of our evaluation.
@@ -440,8 +442,6 @@ while the streaming algorithm only uses a small fraction of that memory,
 which makes the latter usable for very large datasets that don't fit in memory.
 In future work, a hybrid between the current streaming and batch algorithm could be investigated,
 i.e., a streaming algorithm with a larger buffer size, which is faster, but doesn't require unbounded amounts of memory.
-
-<div class="printonly empty-page">&nbsp;</div>
 
 ##### Compressibility
 

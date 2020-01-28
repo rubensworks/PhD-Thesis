@@ -81,3 +81,5 @@ In the next section, we discuss the related work, followed by the main features 
 After that, we introduce the architecture of Comunica in [](#querying_architecture), and its implementation in [](#querying_implementation).
 Next, we compare the performance of different Comunica configurations with the TPF Client in [](#querying_comparison-tpf-client).
 Finally, [](#querying_conclusions) concludes and discusses future work.
+
+<div class="printonly empty-page">&nbsp;</div>
