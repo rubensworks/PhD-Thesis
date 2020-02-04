@@ -1,0 +1,23 @@
+- Fix hanging titles
+- Add addendum on TPF-QS
+- Fix incorrect handling of BEAR abbreviation
+- Explain offsetting for DM
+- Clarify links to pseudocode Algorithm 3 from proof
+- Clarify issues with Storage Hypothesis 3
+- Fix incorrect definition of a local change
+- Add formal definition of a relative position
+- Improve normalization of Equation 5
+- Clarify research in Chapter 4
+- Thank jury in preface
+- Add list of publications
+- Number listings in print-mode as well
+- Fix listings running outside pages
+- Fix incorrect label for Subfix 5.3
+- Fix section counter starting from 2 in print-mode
+- Fix typos on querying evolving chapter
+- Fix typos on querying chapter
+- Fix typos on storing chapter
+- Fix typos in generating chapter
+- Fix typos in introduction
+- Fix typos in abstract and summary
+- Update title Olaf
