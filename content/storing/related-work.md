@@ -129,16 +129,16 @@ In the following sections, we discuss several existing RDF archiving systems, wh
 
 | Name                                        | IC | CB | TB |
 | ------------------------------------------- |----|----|----|
-| [SemVersion](cite:cites semversion)         | ✓  |    |    |
-| [Cassidy et. al.](cite:cites vcrdf)         |    | ✓  |    |
-| [R&WBase](cite:cites rwbase)                |    | ✓  |    |
-| [R43ples](cite:cites r43ples)               |    | ✓  |    |
-| [Hauptman et. al.](cite:cites vcld)         |    |    | ✓  |
-| [X-RDF-3X](cite:cites xrdf3x)               |    |    | ✓  |
-| [RDF-TX](cite:cites rdftx)                  |    |    | ✓  |
-| [v-RDFCSA](cite:cites selfindexingarchives) |    |    | ✓  |
-| [Dydra](cite:cites dydra)                   |    |    | ✓  |
-| [TailR](cite:cites tailr)                   | ✓  | ✓  |    |
+| [SemVersion](cite:cites semversion)         | X  |    |    |
+| [Cassidy et. al.](cite:cites vcrdf)         |    | X  |    |
+| [R&WBase](cite:cites rwbase)                |    | X  |    |
+| [R43ples](cite:cites r43ples)               |    | X  |    |
+| [Hauptman et. al.](cite:cites vcld)         |    |    | X  |
+| [X-RDF-3X](cite:cites xrdf3x)               |    |    | X  |
+| [RDF-TX](cite:cites rdftx)                  |    |    | X  |
+| [v-RDFCSA](cite:cites selfindexingarchives) |    |    | X  |
+| [Dydra](cite:cites dydra)                   |    |    | X  |
+| [TailR](cite:cites tailr)                   | X  | X  |    |
 
 <figcaption markdown="block">
 Overview of RDF archiving solutions with their corresponding storage strategy:

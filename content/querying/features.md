@@ -27,11 +27,11 @@ In [](#querying_features-comparison), we summarize the availability of these fea
 
 | Feature                  | TPF Client | ARQ    | RDFLib | rdflib.js | rdfstore-js | Comunica |
 | ------------------------ |------------|--------|--------|-----------|-------------|----------|
-| SPARQL                   | ✓(1)       | ✓      | ✓      | ✓(1)      | ✓(1)        | ✓(1)     |
-| Modularity               |            |        |        |           |             | ✓        |
-| Heterogeneous interfaces |            | ✓(2,3) | ✓(2,3) | ✓(3)      | ✓(3)        | ✓        |
-| Federation               | ✓          | ✓(4)   | ✓(4)   |           |             | ✓        |
-| Web-based                | ✓          |        |        | ✓         | ✓           | ✓        |
+| SPARQL                   | X(1)       | X      | X      | X(1)      | X(1)        | X(1)     |
+| Modularity               |            |        |        |           |             | X        |
+| Heterogeneous interfaces |            | X(2,3) | X(2,3) | X(3)      | X(3)        | X        |
+| Federation               | X          | X(4)   | X(4)   |           |             | X        |
+| Web-based                | X          |        |        | X         | X           | X        |
 
 <figcaption markdown="block">
 Comparison of the availability of the main features of Comunica in similar works.
