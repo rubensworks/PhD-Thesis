@@ -10,7 +10,7 @@
   <meta name="citation_title" content="Storing and Querying Evolving Knowledge Graphs on the Web">
   <meta name="citation_author" content="Ruben Taelman" />
   
-  <meta name="citation_publication_date" content="2020/02/04" />
+  <meta name="citation_publication_date" content="2020/02/20" />
 </head>
 
 <body prefix="dctypes: http://purl.org/dc/dcmitype/ pimspace: http://www.w3.org/ns/pim/space# rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ solid: http://www.w3.org/ns/solid/terms# acl: http://www.w3.org/ns/auth/acl# dio: https://w3id.org/dio# lsc: http://linkedscience.org/lsc/ns#" typeof="schema:CreativeWork sioc:Post prov:Entity lsc:Research">
@@ -5518,7 +5518,7 @@ Finally, we discuss the software design patterns that are essential in the archi
         <p><a property="schema:citation http://purl.org/spar/cito/cites" href="https://www.w3.org/TR/2013/REC-sparql11-query-20130321/">SPARQL</a> <span class="references">[<a href="#ref-4">4</a>]</span> is the W3C-recommended <abbr title='Resource Description Framework'>RDF</abbr> query language.
 The traditional way to implement a SPARQL query processor
 is to use it as an interface to an underlying database,
-resulting in a so-called <a property="schema:citation http://purl.org/spar/cito/citeAsAuthority" href="https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/"><em>SPARQL endpoint</em></a> <span class="references">[<a href="#ref-88">88</a>]</span>.
+resulting in a so-called <a property="schema:citation http://purl.org/spar/cito/citesAsAuthority" href="https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/"><em>SPARQL endpoint</em></a> <span class="references">[<a href="#ref-88">88</a>]</span>.
 This is similar to how an SQL interface
 provides access to a relation database.
 The internal storage can either be a native <abbr title='Resource Description Framework'>RDF</abbr> store, e.g., AllegroGraph <span class="references">[<a href="#ref-97">97</a>]</span> and <a property="schema:citation http://purl.org/spar/cito/citesAsAuthority" href="https://www.taylorfrancis.com/books/e/9780429102455/chapters/10.1201/b16859-17">Blazegraph</a> <span class="references">[<a href="#ref-77">77</a>]</span>,
