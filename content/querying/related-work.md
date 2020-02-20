@@ -12,7 +12,7 @@ Finally, we discuss the software design patterns that are essential in the archi
 [SPARQL](cite:cites spec:sparqllang) is the W3C-recommended RDF query language.
 The traditional way to implement a SPARQL query processor
 is to use it as an interface to an underlying database,
-resulting in a so-called [_SPARQL endpoint_](cito:citeAsAuthority spec:sparqlprot).
+resulting in a so-called [_SPARQL endpoint_](cito:citesAsAuthority spec:sparqlprot).
 This is similar to how an SQL interface
 provides access to a relation database.
 The internal storage can either be a native RDF store, e.g., [AllegroGraph](cito:citesAsAuthority allegrograph) and [Blazegraph](cito:citesAsAuthority blazegraph),
